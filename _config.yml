@@ -3,3 +3,4 @@ theme: jekyll-theme-minimal
 url: "https://briancalbrecht.github.io" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
