@@ -1,5 +1,6 @@
 theme: jekyll-theme-minimal
 plugins: jekyll-sitemap
 
-title: [Brian C. Albrecht]
-description: [A short description of your site's purpose]
+url: "http://briancalbrecht.github.io" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
