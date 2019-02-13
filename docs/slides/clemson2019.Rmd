@@ -30,6 +30,7 @@ First, government failure theory:
   - Politics as social conflict (Acemoglu 2003)
   
 --
+
   - Boettke, Coyne, and Leeson (2007):
       
 .center[when we examine policy reality in light of that economic]
@@ -85,7 +86,7 @@ better choices concerning profit-making
 - Politics moves from conflict to cooperation as selection improves
 
 ---
-Outline
+Roadmap for Talk
 ====================================
 
 1. Simple Coasean Example
@@ -176,9 +177,9 @@ Dynamic Model
 - If steel productivity in foreign countries follows a random walk, then $C$ will follow a random walk
 
 
-- Once $C> C^*$, consumers will enter
+- Once $C$ crosses some threshold consumers will enter
 
-- $C^*$ depends on $O_C$ and the time-series properties of $C$
+- Threshold depends on $O_C$ and the time-series properties of $C$
 
 ---
 Theoretical Results
@@ -244,6 +245,7 @@ $$\textrm{Entry benefit} = \underbrace{E \int_t^{\infty} e^{-\rho t}[C(t) - B(t)
 - $N = C - B$: net social cost of the current policy
 
 - If $N>0$, policy is **inefficient**
+
 
 ---
 Brownian Motion
@@ -528,9 +530,12 @@ Re-framing Political Economy
 Normative Implications:
 
 - Proposition 1 and 2 lead to a *pre*sumption of efficiency 
-  (Breton 1992)
+  (Breton 1993)
+  
+- However, policies are efficient by assumption
+  - Avoid "whatever is, is efficient" tautologies
 
-- Long last policies likely have a hidden efficiency justification (Hendrickson et al 2018)
+- Long last policies likely have a hidden efficiency justification (Hendrickson, Salter, and Albrecht 2018)
 
 --
 
