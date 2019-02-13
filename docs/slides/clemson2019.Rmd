@@ -519,7 +519,7 @@ Between Cooperation and Conflict
 class: center, middle
 
 ###`r icon::fa("link")` Paper: [bit.ly/bca-evolution](http://bit.ly/bca-evolution) <br>
-###`r icon::fa("link")` Slides: [bit.ly/bca-clemson2019](https://bit.ly/bca-clemson2019) <br>
+###`r icon::fa("link")` Slides: [bit.ly/bca-clemson](https://bit.ly/bca-clemson) <br>
 ###`r icon::fa("twitter")` [@briancalbrecht](https://twitter.com/briancalbrecht)
 
 ---
