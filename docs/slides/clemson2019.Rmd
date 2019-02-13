@@ -4,7 +4,7 @@ author: "<br>Brian C. Albrecht <span style = 'font-size: 50%;'> University of Mi
 date: '`r format(Sys.time(), "%B %d, %Y")`<br><br> `r icon::fa("link")` [bit.ly/bca-evolution](http://bit.ly/bca-evolution) <br>`r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
 output:
   xaringan::moon_reader:
-    css: ["/defaults/brian-xaringan-themer.css"]
+    css: [defaults/brian-xaringan-themer.css]
     nature:
       titleSlideClass: ["left", "middle", "inverse"]
       ratio: "16:9"
@@ -15,7 +15,7 @@ output:
           </div>
         </div>`
     citation_package: natbib
-bibliography: ["/defaults/library.bib"]
+bibliography: [defaults/library.bib]
 ---
 Two Conflicting Views of Politics
 ====================================
