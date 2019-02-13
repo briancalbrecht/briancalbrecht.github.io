@@ -1,0 +1,560 @@
+---
+title: "Evolution, Uncertainty, and the Asymptotic Efficiency of Policy"
+author: "<br>Brian C. Albrecht <span style = 'font-size: 50%;'> University of Minnesota</span><br><br> Joshua R. Hendrickson<span style = 'font-size: 50%;'> University of Missippi</span><br><br> Alexander William Salter<span style = 'font-size: 50%;'> Texas Tech University</span><br><br>"
+date: '`r format(Sys.time(), "%B %d, %Y")`<br><br> `r icon::fa("link")` [bit.ly/bca-evolution](http://bit.ly/bca-evolution) <br>`r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
+output:
+  xaringan::moon_reader:
+    css: ["C:/Users/brian/Documents/defaults/brian-xaringan-themer.css"]
+    nature:
+      titleSlideClass: ["left", "middle", "inverse"]
+      ratio: "16:9"
+      class: ["left", "middle"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+    citation_package: natbib
+bibliography: ["C:/Users/Brian/Documents/defaults/library.bib"]
+---
+Two Conflicting Views of Politics
+====================================
+
+- Government failure theory:
+
+  - Political decision makers have power and can extract from citizens 
+  
+  - Politics involves concentrated benefits and dispered costs (Olson 1965)
+  
+  - Politics as social conflict (Acemoglu 2003)
+  
+  - Boettke, Coyne, and Leeson (2007):
+      
+.center[when we examine policy reality in light of that economic]
+.center[theory we see **inefficient policies** all the time]
+
+---
+Two Conflicting Views of Politics
+====================================
+
+- Chicago school of political economy/Political Coase theorem:
+
+  - Politics essentially reflects the preferences of voters
+  
+  - Politics reflects supply and demand for legislation (Becker 1983)
+  
+  - Politics as exchange (Buchanan 1987)
+  
+  - Stigler (1992):
+  
+.center[every durable social institution or practice]
+.center[**is efficient**, or it would not persist over time]
+
+---
+Move to Evolutionary Perspective
+====================================
+
+- For efficiency, institutions must **select** for efficient policies
+
+--
+
+- Alchian (1950): profit mechanism selects for firms who have made relatively
+better choices concerning profit-making
+
+--
+
+- **Goal**: develop a model of politics as dynamic, evolutionary process
+
+--
+
+- Interest group formation in democracies as selection mechanism: 
+  - Interest groups pay cost to form,
+  
+  - Enter politics, and 
+  
+  - Overturn policies
+
+--
+
+- Politics moves from conflict to cooperation as selection improves
+
+
+---
+Static Political "Coase" Theorem
+====================================
+
+- Suppose competiting interest groups bargain over policy
+  - e.g. steel producers vs. steel consumers
+
+- Steel producers wants to enact tariffs with benefit $B$ to them
+
+- Consumers would incur a cost $C$
+
+- Without organization costs, new policy is enacted if $B > C$
+
+---
+Static Political "Coase" Theorem
+====================================
+
+- In standard model, tariffs are inefficient since $B < C$
+
+- Consumers can organize into interest group and block tariff
+
+- Consumers can offer to pay producers an amount $B + \epsilon < C$
+
+- Without transaction costs, no tariff policy is efficient
+
+- Yet we see many tariffs: why?
+
+---
+Adding Organizational Costs
+====================================
+
+
+- Cost of organizing group $i \in \{P, C\}:~~O_i$
+
+- Organize and enact policy if $B - O_P > 0$
+
+- If $B<C$, to prevent this policy, consumers must form and pay a bribe, costing them:  $B - O_P + \epsilon + O_C$
+
+- If $B < C$, but $B + \epsilon + (O_C - O_P) > C$, then bribe will never materialize
+
+- Rest of society is better off living with $C$ than working to prevent
+
+- $O_C - O_P$ creates wedge preventing efficient policies
+  - Olson (1965)
+
+
+
+---
+Moving to Dynamics
+====================================
+
+- Previous examples can't speak to dynamic persistence vs. transitory policies
+
+- As if a one time, eternal vote on policy
+
+- A policy passed last week is just as likely to be inefficient as long, lasting and wide spread policies
+
+- We address the difference with a dynamic model
+
+
+---
+Dynamic Model
+====================================
+
+- $B$ flow benefit to producers $\Rightarrow$  $B/r$ present value
+  - $r=$ real interest rate
+  
+
+- To overturn policy, consumers would have to enter the political market and pay the producers $B/r + \epsilon$
+
+
+- If steel productivity in foreign countries follows a random walk, then $C$ will follow a random walk
+
+
+- Once $C> C^*$, consumers will enter
+
+- $C^*$ depends on $O_C$ and the time-series properties of $C$
+
+---
+Theoretical Results
+====================================
+
+- ### Proposition 1: 
+  - Policy inefficiencies are eliminated in the long run
+
+--
+
+- ### Proposition 2: 
+  - The level of inefficiency is bounded in the short run
+
+--
+
+- ### Proposition 3:
+  - Static analysis finds too many inefficient politics
+
+
+---
+Building On
+====================================
+  
+- Interest group models of politics
+
+  - Stigler (1971), Peltzman (1976), Posner (1974), Becker (1983), Tollison (1988)
+  
+  - Focus on dynamic **selection mechanisms**
+  
+--
+
+- Evolutionary perspective of institutions
+
+  - Markets: Alchian (1950), Smith (2007), Todd and Gigerenzer (2012)
+  
+  - Common law: Rubin (1977), Priest (1977), Gennaioli and Shleifer (2007)
+  
+  - Focus on **legislative institutions**
+
+
+---
+A Formal Model
+====================================
+
+- Standard real option model
+
+- Time is continuous, lasts forever
+
+- Current policy generates: 
+  - Flow benefits to current interest group: $B$
+  - Flow cost to rest of society: $C$
+
+- Cost to organize an interest group: $O$
+
+
+---
+class:middle
+$$\textrm{Entry benefit} = \underbrace{E \int_t^{\infty} e^{-\rho t} C(t)dt}_{\textrm{Expected Cost Saving}} - \underbrace{\bigg(E \int_t^{\infty} e^{-\rho t} B(t)dt + \epsilon\bigg)}_\textrm{Expected Bribe} - \underbrace{O}_{\textrm{Entry Cost}}$$
+- Alternatively,
+
+$$\textrm{Entry benefit} = \underbrace{E \int_t^{\infty} e^{-\rho t}[C(t) - B(t)]dt - \epsilon}_{\textrm{Expected Net Cost Saving}} - \underbrace{O}_{\textrm{Entry Cost}}$$
+
+- $N = C - B$: net social cost of the current policy
+
+- If $N>0$, policy is **inefficient**
+
+---
+Brownian Motion
+====================================
+
+- Net social cost of the policy varies randomly and exogenously
+  - Outside control of any interest group
+
+- Geometric Brownian motion
+$$\frac{dN(t)}{N(t)} = \mu dt + \sigma dz$$
+  - $\mu \geq 0$: expected rate of change in the net cost
+  - $\sigma$: conditional standard deviation
+  - $dz$: increment of a Wiener process
+    - $dz = \epsilon \sqrt{dt}$, where $\epsilon$ is drawn from a standard normal distribution 
+    
+---
+Real Option to Enter
+====================================
+
+
+- The interest group always has the option to enter the political market and end the costly policy
+
+- Option to enter is like a financial option
+
+- Can derive the value of this option as a function of the net cost of existing legislation
+
+- Can determine the precise value for the net cost at which the prospective interest group will decide to enter the market
+
+---
+name:option_value
+Option Value
+====================================
+
+- Let $V(N)$ be the option value to enter the political market
+
+- Recursive representation:
+$$V(N, t) = \frac{1}{1 + \rho \Delta t} E V(N', t + \Delta t)$$
+  - $\rho$: rate of time preference
+  - $E$: expectations operator
+  - $N'$: net cost of the policy after a time interval of length $\Delta t$
+
+- [In continuous time](#continuous_time) $$\rho V(N) = \frac{1}{dt} E dV$$
+
+---
+name:diffeq_solution
+Solution
+====================================
+
+- $\rho V(N) = 1/dt E dV$ has [known solution](#diffeq_solving)
+$$V(N) = \alpha_1 N^{\beta^+} + \alpha_2 N^{\beta^-}$$
+- Simplify using economic intuition
+
+- First, option becomes worthless when net cost goes to zero
+
+$$\lim_{N \rightarrow 0} V(N) = 0$$
+- Only holds if $\alpha_2=0$
+
+$$V(N) = \alpha_1 N^{\beta^+}$$
+
+---
+class:middle
+
+- Second, let $N^*$ be the net cost when the interest group enters
+
+- At $N^*$ the interest group must be indifferent between holding and exercising option
+
+$$V(N^*) = \alpha_1 (N^*)^{\beta^+} = \frac{N^*}{\rho - \mu} - O$$
+
+- We assume that $\epsilon \approx 0$
+
+- Solving this expression for $\alpha_1$ yields:
+$$\alpha_1 = (N^*)^{-\beta^+}  \bigg(\frac{N^*}{\rho - \mu} - O\bigg)$$
+
+---
+Full Solution
+====================================
+$$V(N) = \underbrace{\bigg(\frac{N}{N^*}\bigg)^{\beta^+}}_{\textrm{Stochastic Discount Factor}} \times \underbrace{\bigg(\frac{N^*}{\rho - \mu} - O\bigg)}_{\textrm{Value at the Exercise Point}}$$
+--
+
+- High $N^*$ raises yields greater benefit when option is exercised
+  - Do not pay $O$ on low $N$ policies
+  
+- However, high $N^*$ means longer wait times on policies
+
+--
+
+- The optimal $N^*$ trades these off to maximize option value
+
+$$N^* = \bigg(\frac{\beta}{\beta - 1}\bigg) (\rho - \mu) O$$
+
+---
+Stochastic Time
+====================================
+
+- $N^*$ is proportional to organizational cost, $O$
+
+- If $N \geq N^*$, the interest group will enter the political market and bribe the existing interest group to overturn the inefficient policy
+
+- $N$ is stochastic, the amount of time that an inefficient policy will last is also stochastic
+
+- Let $\tilde{T}$ denote the time period when the interest group enters,
+$$\tilde{T} = \inf \{t \geq 0 | N \geq N^* \}$$
+
+
+---
+Selection Mechanism
+====================================
+
+- Consider a particular policy $j$
+
+- Prospective interest groups will enter whenever $N_j \geq N^*_j$
+
+- Interest group entry is a **selection mechanism** that eliminates inefficient policies
+
+- Inefficient policies will tend to be eliminated faster as $N^*_j$ declines, such as when $O$ declines
+
+---
+Asymptotic Efficiency
+====================================
+
+### Proposition 1: The probability that any inefficient policy $j$ survives goes to zero as time goes to infinity.
+--
+Idea: 
+
+- Equivalent to stating that the stopping time is finite, or $P(\tilde{T} < \infty) = 1$. 
+
+- Known result for Brownian motion with a constant barrier
+  - See Stokey (2009, Theorem 5.1)
+
+---
+class: middle, center
+
+##"Every durable social institution or practice is efficient, <br> or it would not persist over time."
+
+.right[George Stigler (1992)]
+
+
+---
+Bounded Inefficiency
+====================================
+
+### Proposition 2: For any parameters $\rho, \mu_j, \sigma_j$ there is an upper bound on the level of inefficiency.
+--
+
+- Similar result to static model
+
+Proof: 
+
+If a policy is still in place at time $t$, this implies that the net cost to society $N_j(t)$ is below $N_j^*$. 
+
+$$\frac{N_j(t)}{\rho - \mu_j} \leq %\frac{N_j^*}{\rho - \mu_j} = 
+\bigg(\frac{\beta_j}{\beta_j - 1}\bigg) O_j.$$
+
+This provides the upper bound on the level of inefficiency.
+
+
+
+---
+Implication for Political Economy
+====================================
+
+
+- Political economists who want to argue that a particular long-lasting policy is inefficient must
+
+  1. Reconsider the magnitude of the cost of the policy, or
+  
+  2. Explain why the organizational costs are so high
+  
+- Otherwise, political economists can claim there are $10 trillion bills on the sidewalk
+
+---
+Comparative Inefficiency
+====================================
+
+### Corollary: The bound on the inefficiencies is increasing in the organizational costs, $O_j$.
+
+- Implication: societies with lower organizational costs will have more efficient policies
+
+- More later on this
+
+
+---
+Dynamic vs. Static 
+====================================
+### Proposition 3: There exist policies that are dynamically efficient that are statically inefficient.
+
+- Proof: In a static environment, interest groups have not entered if 
+$$E\int_0^{\infty} e^{-\rho t} [C_j(t) - B_j(t)] dt =  E\int_0^{\infty} e^{-\rho t} N_j(t) dt = \frac{N_j}{\rho - \mu_j} \leq O_j$$
+
+In the dynamic model, it is
+$$\frac{N_j(t)}{\rho - \mu_j} \leq \frac{\beta_j}{\beta_j - 1}O_j$$
+
+---
+The Role of Uncertainty
+====================================
+
+- People prefer to wait and see if the net costs are moderate before paying the organizational costs
+
+- If costs remain moderate, people will be willing to tolerate them
+
+- Political economists who do not consider the politics as a process will **over-diagnose inefficiencies**
+
+
+---
+Model Implications
+====================================
+
+1. Losers must be compensated 
+
+2. Durable legislation helps efficiency
+
+3. Lowering political organization costs improves efficiency
+
+
+
+---
+Just Compensation (Cutsinger 2018)
+====================================
+
+- In 2010, the House of Representatives changed significantly
+
+- They eliminated a housing counseling assistance program 
+
+- Program had given $88 million to non-profit organization
+
+- Justice Department's settlement authority restored half of funding
+
+- $30 million came from large banks based on their conduct in the mortgage backed securities market
+
+
+---
+Durability of Legislation
+====================================
+
+- Settlement authority makes policy effectively **more durable**: even if overturned, but be paid value of rents
+
+- Raises $E\int_0^{\infty} e^{-\rho t} C_j(t) dt$ and encourages entry
+
+
+- If efficiency improving legislation is likely to be overturned later legislatures, willingness to pay $O_j$ drops
+
+- Similar result to principal-agent models of politicians: future benefits encourage efficient action today
+
+- $\Rightarrow$ Institutions that enhance durability improve efficiency
+
+
+---
+Independent Judiciary 
+====================================
+
+
+- Durability has value, then legislatures will have an incentive to make it difficult to overturn legislation 
+
+- Landes and Posner (1975): independent judiciary can favor original interpretations and need not be subservient to current legislatures
+
+- Anderson, Shughart, and Tollison (1989): legislatures reward judges who display independence with higher salaries
+
+- Implication: judicial independence could explain variation in interest group
+formation and the efficiency of policy
+
+
+---
+Free Speech
+====================================
+
+- Our most direct implication: lower $O_j$ improves efficiency
+
+- U.S. Supreme Court upheld freedom of speech for corporations, unions, and non-profits
+making explicit reference to interest groups
+
+- Justice Kennedy argued in favor of the **informational role** of interest groups, not just constitutional rights
+
+- Speech restrictions increase the organizational costs
+
+- If our theory is correct, the ruling is efficiency enhancing
+
+---
+Between Cooperation and Conflict
+====================================
+
+- In
+
+- Normative claims must move to the institutional level and organizational costs
+
+- The institutional level is strictly speaking, outside of the maximization calculus
+
+- This is the Alchian move, away from firm decision making and to the institutional/market level
+
+
+
+
+
+---
+
+class: center, middle
+
+###`r icon::fa("link")` Paper: [bit.ly/bca-evolution](http://bit.ly/bca-evolution) <br>
+###`r icon::fa("link")` Slides: [bit.ly/bca-clemson2019](https://bit.ly/bca-clemson2019) <br>
+###`r icon::fa("twitter")` [@briancalbrecht](https://twitter.com/briancalbrecht)
+
+---
+name:continuous_time
+
+Continuous Time
+====================================
+
+$$V(N, t) = \frac{1}{1 + \rho \Delta t} E V(N', t + \Delta t)$$
+
+- Multiplying both side of  by $1 + \rho \Delta t$ and re-arranging yields $$\rho V(N) = \frac{1}{\Delta t} E dV$$ where $EdV := E V(N', t + \Delta t) - V(N, t)$.
+
+- Taking the limit as $\Delta t$ goes to zero.
+$$\rho V(N) = \frac{1}{dt} E dV$$
+- [Return](#option_value)
+
+---
+name:diffeq_solving
+
+Solving Differential Equation
+====================================
+
+Using Ito's Lemma option formula can be written as
+$$\rho V(N) = \frac{1}{dt} E\bigg[ V'(N) dN + \frac{1}{2} V''(N) (dN)^2\bigg]$$
+Substituting and simplifying yields:
+$$\frac{1}{2} \sigma^2 N^2 V''(N) + \mu N V'(N) - \rho V(N) = 0$$
+Second-order differential equation has a known solution of the form:
+$$V(N) = \alpha_1 N^{\beta^+} + \alpha_2 N^{\beta^-}$$
+
+---
+Solving Differential Equation
+====================================
+
+$$V(N) = \alpha_1 N^{\beta^+} + \alpha_2 N^{\beta^-}$$
+
+where $\alpha_1$ and $\alpha_2$ are positive constants and $\beta^+$ and $\beta^-$ are the positive and negative solutions, respectively, to the quadratic equation:
+$$\frac{1}{2} \beta^2 + \bigg(\mu - \frac{1}{2} \sigma^2\bigg) \beta - \rho = 0$$
+
+- [Return](#diffeq_solution)
