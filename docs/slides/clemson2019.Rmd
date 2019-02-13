@@ -1,7 +1,7 @@
 ---
 title: "Evolution, Uncertainty, and the Asymptotic Efficiency of Policy"
 author: "<br>Brian C. Albrecht <span style = 'font-size: 50%;'> University of Minnesota</span><br><br> Joshua R. Hendrickson<span style = 'font-size: 50%;'> University of Missippi</span><br><br> Alexander William Salter<span style = 'font-size: 50%;'> Texas Tech University</span><br><br>"
-date: '`r format(Sys.time(), "%B %d, %Y")`<br><br> `r icon::fa("link")` [bit.ly/bca-evolution](http://bit.ly/bca-evolution) <br>`r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
+date: '`r format(Sys.time(), "%B %d, %Y")`<br><br> Paper `r icon::fa("link")`  [bit.ly/bca-evolution](http://bit.ly/bca-evolution) <br>`r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
 output:
   xaringan::moon_reader:
     css: [libs/brian-xaringan-themer.css]
@@ -512,8 +512,27 @@ making explicit reference to interest groups
 - If our theory is correct, the ruling is efficiency enhancing
 
 
+---
+Re-framing Political Economy
+====================================
 
+Normative Implications:
 
+- Proposition 1 and 2 lead to a *pre*sumption of efficiency 
+  (Breton 1992)
+
+- Long last policies likely have a hidden efficiency justification (Hendrickson et al 2018)
+
+--
+
+Positive Implications:
+
+- Role of political economist is to identify the relevant organizational costs
+
+- Mirrors Steven Cheung's (1998) approach to economics:
+
+.center["whenever the Pareto condition fails to hold we would]
+.center[immediately know that some constraints are missing."]
 
 
 ---
