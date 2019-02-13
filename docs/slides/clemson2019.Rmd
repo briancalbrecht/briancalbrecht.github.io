@@ -37,7 +37,7 @@ First, government failure theory:
 .center[theory we see **inefficient policies** all the time]
 
 ---
-Two Conflicting Views of Politics
+Two Views of Politics
 ====================================
 
 Second, Chicago school of political economy
@@ -58,7 +58,7 @@ Second, Chicago school of political economy
 .center[**is efficient**, or it would not persist over time]
 
 ---
-Move to Evolutionary Perspective
+An Evolutionary Middleground
 ====================================
 
 - For efficiency, institutions must **select** for efficient policies
