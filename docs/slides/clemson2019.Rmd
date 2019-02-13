@@ -139,13 +139,13 @@ Adding Organizational Costs
 
 - Organize and enact policy if $B - O_P > 0$
 
-- If $B<C$, to prevent this policy, consumers must form and pay a bribe, costing them:  $B - O_P + \epsilon + O_C$
+- If $B<C$, to prevent this policy, consumers must form and pay a bribe, costing them:  $$\underbrace{B - O_P + \epsilon}_{\textrm{Bribe/Transfer}} + \underbrace{O_C}_{\textrm{Organizational Cost}}$$
 
 - If $B < C$, but $B + \epsilon + (O_C - O_P) > C$, then bribe will never materialize
 
 - Rest of society is better off living with $C$ than working to prevent
 
-- $O_C - O_P$ creates wedge preventing efficient policies
+- $O_C - O_P$ creates friction that prevents efficient bargains
   - Olson (1965)
 
 
@@ -532,7 +532,7 @@ Normative Implications:
 - Proposition 1 and 2 lead to a *pre*sumption of efficiency 
   (Breton 1993)
   
-- However, policies are not efficient by assumption
+- However, policies are **not efficient by assumption**
   - Avoid "whatever is, is efficient" tautologies
 
 - Long last policies likely have a hidden efficiency justification (Hendrickson, Salter, and Albrecht 2018)
