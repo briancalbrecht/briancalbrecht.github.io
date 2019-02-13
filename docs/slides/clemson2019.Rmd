@@ -532,7 +532,7 @@ Normative Implications:
 - Proposition 1 and 2 lead to a *pre*sumption of efficiency 
   (Breton 1993)
   
-- However, policies are efficient by assumption
+- However, policies are not efficient by assumption
   - Avoid "whatever is, is efficient" tautologies
 
 - Long last policies likely have a hidden efficiency justification (Hendrickson, Salter, and Albrecht 2018)
