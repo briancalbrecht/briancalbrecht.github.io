@@ -145,8 +145,7 @@ Adding Organizational Costs
 
 - Rest of society is better off living with $C$ than working to prevent
 
-- $O_C - O_P$ creates friction that prevents efficient bargains
-  - Olson (1965)
+- $O_C - O_P$ creates friction that prevents efficient bargains (Olson 1965)
 
 
 
