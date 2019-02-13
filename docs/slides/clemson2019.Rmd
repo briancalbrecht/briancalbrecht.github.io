@@ -1,6 +1,6 @@
 ---
 title: "Evolution, Uncertainty, and the Asymptotic Efficiency of Policy"
-author: "<br>Brian C. Albrecht <span style = 'font-size: 50%;'> University of Minnesota</span><br><br> Joshua R. Hendrickson<span style = 'font-size: 50%;'> University of Missippi</span><br><br> Alexander William Salter<span style = 'font-size: 50%;'> Texas Tech University</span><br><br>"
+author: "<br>Brian C. Albrecht <span style = 'font-size: 50%;'> University of Minnesota</span><br><br> Joshua R. Hendrickson<span style = 'font-size: 50%;'> University of Mississippi</span><br><br> Alexander William Salter<span style = 'font-size: 50%;'> Texas Tech University</span><br><br>"
 date: '`r format(Sys.time(), "%B %d, %Y")`<br><br> Paper `r icon::fa("link")`  [bit.ly/bca-evolution](http://bit.ly/bca-evolution) <br>`r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
 output:
   xaringan::moon_reader:
