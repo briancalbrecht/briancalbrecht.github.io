@@ -32,8 +32,8 @@ First, government failure theory:
 
   - Boettke, Coyne, and Leeson (2007):
       
-.center[when we examine policy reality in light of that economic]
-.center[theory we see **inefficient policies** all the time]
+###.center[when we examine policy reality in light of that economic]
+###.center[theory we see **inefficient policies** all the time]
 
 ---
 Two Views of Politics
@@ -53,14 +53,14 @@ Second, Chicago school of political economy
   
   - Stigler (1992):
   
-.center[every durable social institution or practice]
-.center[**is efficient**, or it would not persist over time]
+### .center[every durable social institution or practice]
+### .center[**is efficient**, or it would not persist over time]
 
 ---
 An Evolutionary Middleground
 ====================================
 
-- For efficiency, institutions must **select** for efficient policies
+- For efficiency, institutions must systematically  **select** for those policies
 
 --
 
@@ -119,9 +119,9 @@ Static Political "Coase" Theorem
 Static Political "Coase" Theorem
 ====================================
 
-- In standard model, tariffs are inefficient since `\(B &lt; C\)`
+- In standard model, tariffs are inefficient: `\(B &lt; C\)`
 
-- Consumers can organize into interest group and block tariff
+- Consumers can organize into their own interest group and block tariff
 
 - Consumers can offer to pay producers an amount `\(B + \epsilon &lt; C\)`
 
@@ -138,15 +138,17 @@ Adding Organizational Costs
 ====================================
 
 
-- Cost of organizing group `\(i \in \{P, C\}:~~O_i\)`
+- Cost of organizing an interest `\(~O_i\)` for `\(i \in \{P,C\}\)`
 
-- Organize and enact policy if `\(B - O_P &gt; 0\)`
+- Producers want to organize and enact tariff if `\(B - O_P &gt; 0\)`
 
-- If `\(B&lt;C\)`, to prevent this policy, consumers must form and pay a bribe, costing them:  `$$\underbrace{B - O_P + \epsilon}_{\textrm{Bribe/Transfer}} + \underbrace{O_C}_{\textrm{Organizational Cost}}$$`
+- If `\(B&lt;C\)`, to prevent inefficient tariff, consumers must form and pay a bribe, costing them:  `$$\underbrace{B - O_P + \epsilon}_{\textrm{Bribe/Transfer}} + \underbrace{O_C}_{\textrm{Organizational Cost}}$$`
+
+--
 
 - If `\(B &lt; C\)`, but `\(B + \epsilon + (O_C - O_P) &gt; C\)`, then bribe will never materialize
 
-- Rest of society is better off living with `\(C\)` than working to prevent
+- Consumers are better off living with `\(C\)` than working to prevent
 
 - `\(O_C - O_P\)` creates friction that prevents efficient bargains (Olson 1965)
 
@@ -156,9 +158,9 @@ Adding Organizational Costs
 Moving to Dynamics
 ====================================
 
-- Previous examples can't speak to dynamic persistence vs. transitory policies
+- Previous examples can't speak to dynamic persistence vs. temporary policies
 
-- As if a one time, eternal vote on policy
+- Model of a one time, eternal vote on policy
 
 - A policy passed last week is just as likely to be inefficient as long, lasting and wide spread policies
 
@@ -175,16 +177,19 @@ Dynamic Model
 
 - To overturn policy, consumers would have to enter the political market and pay the producers `\(B/r + \epsilon\)`
 
+--
 
-- If steel productivity in foreign countries follows a random walk, then `\(C\)` will follow a random walk
+Adding uncertainty:
+
+- If steel productivity in foreign countries follows a random walk, then cost of tariff `\(C\)` will follow a random walk
 
 
-- Once `\(C\)` crosses some threshold consumers will enter
+- Once `\(C\)` crosses some threshold, consumers will enter
 
 - Threshold depends on `\(O_C\)` and the time-series properties of `\(C\)`
 
 ---
-Theoretical Results
+Preview of Results
 ====================================
 
 - ### Proposition 1: 
@@ -198,7 +203,7 @@ Theoretical Results
 --
 
 - ### Proposition 3:
-  - Static analysis finds too many inefficient politics
+  - Static inefficiency `\(\nRightarrow\)` dynamic inefficiency
 
 
 ---
@@ -239,21 +244,28 @@ A Formal Model
 
 ---
 class:middle
+
+- Entering politics to overturn current policy:
 `$$\textrm{Entry benefit} = \underbrace{E \int_t^{\infty} e^{-\rho t} C(t)dt}_{\textrm{Expected Cost Saving}} - \underbrace{\bigg(E \int_t^{\infty} e^{-\rho t} B(t)dt + \epsilon\bigg)}_\textrm{Expected Bribe} - \underbrace{O}_{\textrm{Entry Cost}}$$`
 - Alternatively,
 
 `$$\textrm{Entry benefit} = \underbrace{E \int_t^{\infty} e^{-\rho t}[C(t) - B(t)]dt - \epsilon}_{\textrm{Expected Net Cost Saving}} - \underbrace{O}_{\textrm{Entry Cost}}$$`
 
-- `\(N = C - B\)`: net social cost of the current policy
-
-- If `\(N&gt;0\)`, policy is **inefficient**
-
-
 ---
-Brownian Motion
+Beyond Political "Coase" Theorem
 ====================================
 
-- Net social cost of the policy varies randomly and exogenously
+- `\(N = C - B\)`: net social cost of the current policy
+
+- If `\(N&gt;0\)`, current policy is **inefficient**
+
+- In a Coasean world
+
+---
+Policy Uncertainty
+====================================
+
+- Suppose net social cost of the policy varies randomly and exogenously
   - Outside control of any interest group
 
 - Geometric Brownian motion
