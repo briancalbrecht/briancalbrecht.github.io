@@ -25,7 +25,7 @@ Government failure theory:
 
   - Political decision makers have power and can extract from citizens 
   
-  - Politics involves concentrated benefits and dispered costs (Olson 1965)
+  - Politics involves concentrated benefits and dispersed costs (Olson 1965)
   
   - Politics as social conflict (Acemoglu 2003)
   
@@ -41,12 +41,12 @@ Two Views of Politics
 ====================================
 
 However, Chicago school of political economy claims
-
-  - Politics essentially reflects the preferences of voters
   
   - Politics reflects supply and demand for legislation (Becker 1983)
   
-  - Political "Coase" theorem leads to efficiency
+  - Democracy is efficient (Wittman 1989, 1995)
+  
+  - More broadly, a political "Coase" theorem leads to efficiency
 
 --
   
@@ -57,7 +57,7 @@ However, Chicago school of political economy claims
 
 
 ---
-An Evolutionary Middleground
+An Evolutionary Middle-ground
 ====================================
 
 - For efficiency, as Chicago school claims, institutions must systematically  **select** for those policies
@@ -71,7 +71,7 @@ better choices concerning profit-making
 
 - **Goal**: model politics as dynamic, evolutionary process
 
-- In politics, interest group formation replces explicit choice of politicians
+- In politics, interest group formation replaces explicit choice of politicians
 
 ---
 A Selection Mechanism
@@ -92,7 +92,7 @@ A Selection Mechanism
 
 
 ---
-Roadmap for Talk
+Road map for Talk
 ====================================
 
 1. Simple Coasean Example
