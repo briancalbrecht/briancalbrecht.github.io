@@ -18,7 +18,7 @@ output:
     lib_dir: libs
 bibliography: [libs/library.bib]
 ---
-Two Views of Politics
+Views of Politics
 ====================================
 
 Government failure theory:
@@ -37,30 +37,31 @@ Government failure theory:
 ###.center[theory we see **inefficient policies** all the time]
 
 ---
-Two Views of Politics
+Can Politics Be Efficient?
 ====================================
 
-However, Chicago school of political economy claims
-  
-  - Politics reflects supply and demand for legislation (Becker 1983)
-  
-  - Democracy is efficient (Wittman 1989, 1995)
-  
-  - More broadly, a political "Coase" theorem leads to efficiency
+Yes, if
 
+1. Define away inefficiency
+
+  - Cheung (1998): "The Pareto condition is always satisfied"
+  
 --
-  
-  - Stigler (1992):
-  
-### .center[every durable social institution or practice]
-### .center[**is efficient**, or it would not persist over time]
 
+2. No transaction costs (Coase 1960)
+
+  - Wittman (1989): "Democratic political markets are structured to reduce these costs"
+  
+--
+
+3. The political sphere **selects** for efficient policies
+  - Today's presentation
 
 ---
 An Evolutionary Middle-ground
 ====================================
 
-- For efficiency, as Chicago school claims, institutions must systematically  **select** for those policies
+- For efficiency, institutions must systematically  **select** for those policies
 
 - Alchian (1950): profit mechanism selects for firms who have made relatively
 better choices concerning profit-making
@@ -77,9 +78,9 @@ better choices concerning profit-making
 A Selection Mechanism
 ====================================
 
-- We model interest groups (Becker 1983)
+- We model interest groups, as in Becker (1983) and others
 
-- At any point in time, interest groups can leave efficiency gains on the table
+- At any point in time, interest groups may want to leave gains from trade on the table
 
 - Once possible gains are large enough:
   - Interest groups pay cost to form,
@@ -126,7 +127,7 @@ Static Political "Coase" Theorem
 Static Political "Coase" Theorem
 ====================================
 
-- In the standard model, tariffs are inefficient: $B < C$
+- In a competitive model, tariffs are inefficient: $B < C$
 
 - Consumers can organize into their own interest group and block tariff
 
@@ -165,15 +166,18 @@ Adding Organizational Costs
 Moving to Dynamics
 ====================================
 
-- Previous examples can't speak to dynamic persistence vs. temporary policies
+- These examples can't speak to long-lasting vs. temporary policies
+  - No distinction in Becker (1983), Wittman (1989), Peltzman (1990), etc
 
 - These examples are like a one time, eternal vote on policy
 
 - A policy passed last week is just as likely to be inefficient as long-lasting and widespread policies
 
-- No distinction in Becker (1983), Wittman (1989), Peltzman (1990), etc
+--
 
 - We argue there is an important difference
+
+- Long-lasting policies have survived an (imperfectly) competitive selection mechanism
 
 
 ---
@@ -182,7 +186,7 @@ Adding Uncertainty
 
 - If steel productivity in foreign countries follows a random walk, then cost of tariff $C$ will follow a random walk
 
-- Once $C$ crosses some threshold, the consumer group will enter giving **selection**
+- Once $C$ crosses some threshold, the consumer group will enter and **select the efficient** policy
 
 - The longer a policy survives, the less likely it is inefficient
 
@@ -203,7 +207,7 @@ Preview of Results
 --
 
 - ### Proposition 3:
-  - Static inefficiency $\nRightarrow$ dynamic inefficiency
+  - Policies remain in the dynamic problem that do not in the static problem
 
 
 ---
@@ -257,13 +261,14 @@ Beyond Political "Coase" Theorem
 
 - $N = C - B$: net social cost of the current policy
 
-- If $N$ is positive, current policy is **inefficient** (fails standard cost/benefit)
+- If $N$ is positive, current policy is **inefficient** 
+  - Current policy fails standard cost/benefit
 
 - In a Coasean world with no transaction costs, the policy will be overturned
-
+--
 - We have two frictions:
-  - Organizational costs
-  - Uncertainty about future cost of policy
+  1. Organizational costs
+  2. Uncertainty about future cost of policy
 
 ---
 Policy Uncertainty
@@ -432,13 +437,15 @@ Implication for Political Economy
   
   2. Explain why the organizational costs are so high
   
-- Otherwise, political economists can claim there are $10 trillion bills on the sidewalk
+- Otherwise, political economists can go around claiming there are $10 trillion bills on the sidewalk
 
 ---
 Comparative Inefficiency
 ====================================
 
 ### Corollary: The bound on the inefficiencies is increasing in the organizational costs, $O_j$.
+
+- Move analysis to institutional level, compared to policy
 
 - Implication: societies with lower organizational costs will have more efficient policies
 
@@ -448,7 +455,7 @@ Comparative Inefficiency
 ---
 Dynamic vs. Static 
 ====================================
-### Proposition 3: There exist policies that are dynamically efficient that are statically inefficient.
+### Proposition 3: Policies remain in the dynamic problem that do not in the static problem.
 
 - Proof: In a static environment, interest groups have not entered if 
 $$E\int_0^{\infty} e^{-\rho t} [C_j(t) - B_j(t)] dt =  E\int_0^{\infty} e^{-\rho t} N_j(t) dt = \frac{N_j}{\rho - \mu_j} \leq O_j$$
@@ -464,8 +471,15 @@ The Role of Uncertainty
 
 - If costs remain moderate, people will be willing to tolerate them
 
-- Political economists who do not consider the politics as a process will **over-diagnose inefficiencies**
 
+---
+background-image: url(images/evolution/tikz_A.png)
+background-size: contain
+
+
+---
+background-image: url(images/evolution/tikz_B.png)
+background-size: contain
 
 ---
 Model Implications
@@ -553,7 +567,7 @@ Normative Implications:
 - However, policies are **not efficient by assumption**
   - Avoid "whatever is, is efficient" tautologies
   
-- Between government failure theory and Chicago school
+- Between government failure theory and "efficiency always"
 
 - Long last policies likely have a hidden efficiency justification
   - e.g. Hendrickson, Salter, and Albrecht (2018) on capital taxation
@@ -572,6 +586,10 @@ Positive Implications:
 
 .center["whenever the Pareto condition fails to hold we would]
 .center[immediately know that some constraints are missing."]
+--
+
+Downside
+- Only applies to long-lasting policies
 
 
 ---
