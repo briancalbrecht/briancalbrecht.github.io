@@ -587,6 +587,7 @@ Positive Implications:
 
 .center["whenever the Pareto condition fails to hold we would]
 .center[immediately know that some constraints are missing."]
+
 --
 
 Downside
