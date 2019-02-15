@@ -310,7 +310,7 @@ Option Value
 
 - Let $V(N)$ be the option value to enter the political market
 
-- Recursive representation:
+- Recursive Bellman representation:
 $$V(N, t) = \frac{1}{1 + \rho \Delta t} E V(N', t + \Delta t)$$
   - $\rho$: rate of time preference
   - $E$: expectations operator
@@ -419,8 +419,6 @@ Bounded Inefficiency
 ### Proposition 2: For any parameters $\rho, \mu_j, \sigma_j$ there is an upper bound on the level of inefficiency.
 --
 
-- Similar result to static example with $O_C - O_P$
-
 Proof: 
 
 If a policy is still in place at time $t$, this implies that the net cost to society $N_j(t)$ is below $N_j^*$. 
@@ -428,34 +426,11 @@ If a policy is still in place at time $t$, this implies that the net cost to soc
 $$\frac{N_j(t)}{\rho - \mu_j} \leq %\frac{N_j^*}{\rho - \mu_j} = 
 \bigg(\frac{\beta_j}{\beta_j - 1}\bigg) O_j.$$
 
-This provides the upper bound on the level of inefficiency.
+--
 
+- Corollary: The bound is increasing in the organizational costs, $O_j$.
 
-
----
-Implication for Political Economy
-====================================
-
-
-- Political economists who want to argue that a particular long-lasting policy is inefficient must
-
-  1. Reconsider the magnitude of the cost of the policy, or
-  
-  2. Explain why the organizational costs are so high
-  
-- Otherwise, political economists can go around claiming there are $10 trillion bills on the sidewalk
-
----
-Comparative Inefficiency
-====================================
-
-### Corollary: The bound on the inefficiencies is increasing in the organizational costs, $O_j$.
-
-- Move analysis to institutional level, compared to policy
-
-- Implication: societies with lower organizational costs will have more efficient policies
-
-- More later on this
+- Similar result to static example with $O_C - O_P$
 
 
 ---
@@ -523,9 +498,13 @@ Durability of Legislation
 - Durability raises $E\int_0^{\infty} e^{-\rho t} C_j(t) dt$ and encourages entry
 
 
-- If efficiency improving legislation is likely to be overturned later legislatures, willingness to pay $O_j$ drops
+- If legislation is likely to be overturned later legislatures, willingness to pay $O_j$ drops
 
-- Similar result to principal-agent models of politicians: future benefits encourage efficient action today
+--
+
+- Similar result to principal-agent models of politicians:
+
+  - Future benefits encourage efficient action today
 
 - $\Rightarrow$ Institutions that enhance durability improve efficiency
 
@@ -573,10 +552,26 @@ Normative Implications:
 - However, policies are **not efficient by assumption**
   - Avoid "whatever is, is efficient" tautologies
   
+--
+  
 - Between government failure theory and "efficiency always"
 
 - Long last policies likely have a hidden efficiency justification
   - e.g. Hendrickson, Salter, and Albrecht (2018) on capital taxation
+
+
+---
+Implication for Political Economy
+====================================
+
+
+- Political economists who want to argue that a particular long-lasting policy is inefficient must
+
+  1. Reconsider the magnitude of the cost of the policy, or
+  
+  2. Explain why the organizational costs are so high
+  
+- Otherwise, political economists can go around claiming there are $10 trillion bills on the sidewalk
 
 ---
 Re-framing Political Economy
