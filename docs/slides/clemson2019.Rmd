@@ -71,7 +71,7 @@ $\Rightarrow$ In the long-run, production is efficient
 
 --
 
-- **Our goal**: develop model of politics as dynamic, evolutionary process
+- **Our paper**: develop model of politics as dynamic, evolutionary process
 
 - In politics, interest group formation replaces explicit choice of politicians
 
