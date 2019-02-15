@@ -91,7 +91,7 @@ A Selection Mechanism
 
 
 ---
-Road map for Talk
+Road Map for Talk
 ====================================
 
 1. Simple Coasean Example
@@ -186,6 +186,8 @@ Adding Uncertainty
 
 - Once $C$ crosses some threshold, the consumer group will enter and **select the efficient** policy
 
+--
+
 - The longer a policy survives, the less likely it is inefficient
 
 - Eventually all inefficient policies will cross the threshold
@@ -205,7 +207,7 @@ Preview of Results
 --
 
 - ### Proposition 3:
-  - Policies remain in the dynamic problem that do not in the static problem
+  - Policies remain in the dynamic problem that do not in the static
 
 
 ---
