@@ -67,7 +67,7 @@ better choices concerning profit-making
 
 - In markets, selection replaces explicit choice of firm managers
 
-- In the long-run, production is efficient
+$\Rightarrow$ In the long-run, production is efficient
 
 --
 
@@ -75,7 +75,7 @@ better choices concerning profit-making
 
 - In politics, interest group formation replaces explicit choice of politicians
 
-- In the long-run, policy is efficient
+$\Rightarrow$ In the long-run, policy is efficient
 
 ---
 A Selection Mechanism
