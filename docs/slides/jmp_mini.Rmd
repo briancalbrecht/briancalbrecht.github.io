@@ -103,14 +103,12 @@ Road Forward
 =======================
 
 - Extend to imperfectly transferable utility case
-  - Directly speak to competitive matching literature
-  - N&ouml;ldeke & Samuelson (2014, 2018) provide framework already
+  - Especially relevant for competitive matching models
+  - N&ouml;ldeke & Samuelson (2014, 2018) provide framework
 
 - Drop price-taking assumption to study boundaries of perfect competition
   - All examples in the literature are **not perfectly competitive**
   - Conjecture: With small trembles, an economy with inefficient investment is not approximately competitive
-  
---
 
 - Any applications?
 
