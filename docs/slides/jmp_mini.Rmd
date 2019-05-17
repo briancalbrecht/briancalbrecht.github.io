@@ -53,7 +53,7 @@ My Question
 
 - **No**, if markets are competitive
 
-- Formally, inefficient equilibria are not robust to a reasonable refinement: trembling-hand perfection
+- Formally, inefficient equilibria are not robust to a trembling-hand refinement
 
 ---
 Sketch of My Environment
@@ -72,9 +72,9 @@ Sketch of My Environment
 Results so far
 =====================
 
-- **Main Theorem**: With a continuum of players, every perfect equilibria is efficient.
+- **Main Theorem**: With a continuum of players, every perfect equilibria is efficient
 
-- Proposition: In the limit of any sequence of finite games, every perfect equilibria is efficient.
+- Proposition: In the appropriate limit of any sequence of finite games, every perfect equilibria is efficient
 
 ---
 Simple General Mechanism
@@ -89,13 +89,13 @@ Simple General Mechanism
 
 --
 
-- Possibility of "mistakes" by others constrains conjectures
+- Possibility of "mistakes" by others constrains equilibrium conjectures
 
 - Under a trembling-hand perturbation, all strategies are played
 
 - Refined beliefs are constrained to be as-if markets were complete
 
-- Complete markets $\Rightarrow$ efficiency
+- As-if complete markets $\Rightarrow$ efficiency
 
 
 ---
@@ -103,8 +103,11 @@ Road Forward
 =======================
 
 - Extend to imperfectly transferable utility case
+
   - Especially relevant for competitive matching models
   - N&ouml;ldeke & Samuelson (2014, 2018) provide framework
+
+--
 
 - Drop price-taking assumption to study boundaries of perfect competition
   - All examples in the literature are **not perfectly competitive**
