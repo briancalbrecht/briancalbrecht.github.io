@@ -55,7 +55,7 @@ Sketch of Environment
 
 --
 
-.center[![](url(briancalbrecht.github.io/docs/slides/images/jmp/tikz_B.png))]
+.center[![](url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_B.png))]
 
 
 ---
