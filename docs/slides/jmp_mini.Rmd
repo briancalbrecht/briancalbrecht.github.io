@@ -1,0 +1,107 @@
+---
+title: "Perfect Equilibria under Competition: <br> Investment without Coordination Failures<br><br>"
+author: "Brian C. Albrecht<br> <span style = 'font-size: 50%;'> University of Minnesota<br> Department of Economics</span><br><br>"
+date: '`r format(Sys.time(), "%B %d, %Y")`'
+output:
+  xaringan::moon_reader:
+    css: [libs/brian-xaringan-themer.css]
+    nature:
+      titleSlideClass: ["left", "middle", "inverse"]
+      ratio: "16:9"
+      class: ["left", "middle"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+    citation_package: natbib
+    lib_dir: libs
+bibliography: [libs/library.bib]
+---
+
+Competitive Coordination
+====================================
+
+- Real investments are sunk in the face of possible coordination problems
+  - Invest in education before signing a wage contract
+  - Produce goods before having a buyer lined up
+  - Write a JMP before knowing the topic is unpopular
+--
+<br>
+<br>
+- When investments are sunk before entering a competitive market, **coordination problems** can arise*
+
+- $\Rightarrow$ People may underinvest in skills
+
+
+
+<font color=#777777>
+.footnote[.red.bold[*] Makowski & Ostroy (1995), Cole, Malaith, & Postlewaite (1999a, 1999b), Makowski (2004), N&ouml;ldeke & Samuelson (2014), Felli & Roberts (2016)]
+</font>
+
+---
+My JMP
+====================================
+
+
+- Are the sunk investments we see likely to be inefficient?
+
+- **No**, if people are price-takers
+
+- Formally, inefficient equilibria are not robust to a reasonable refinement: trembling hand perfection
+
+---
+Sketch of Environment
+====================================
+
+- Continuum of buyers and sellers, finite types
+
+- Quasi-linear utility
+
+--
+.center[![](images/jmp/tikz_b.png)]
+
+
+---
+Simple General Mechanism
+====================================
+
+- Coordination problems arise because markets are incomplete
+
+- <b>And</b> people must hold conflicting, pessimistic conjectures
+  - Buyers think price will be high
+  - Sellers think price will be low
+
+--
+
+- Possible "mistakes" by others constrain conjectures
+
+- Under a trembling hand perturbation, all strategies are played
+
+- Refined beliefs are constrained to be as-if markets were complete
+
+- Complete markets $\Rightarrow$ efficiency
+
+
+---
+Road Forward
+=======================
+
+- What I Have Proven:
+
+  - With a continuum of players, every perfect equilibria is efficient
+
+  - In an appropriate limit of any sequence of finite games, every perfect equilibria is efficient
+
+
+- Next Steps:
+
+  - Extend to imperfectly transferable utility case
+
+  - Drop price-taking assumption to study boundaries of perfect competition
+
+
+---
+class: center, middle
+
+# Thank You

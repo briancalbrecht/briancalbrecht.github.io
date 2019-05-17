@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Perfect Equilibria under Competition:   Investment without Coordination Failures</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Brian C. Albrecht   University of Minnesota  Department of Economics" />
+    <meta name="date" content="2019-05-17" />
+    <link rel="stylesheet" href="libs\brian-xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: left, middle, inverse, title-slide
+
+# Perfect Equilibria under Competition: <br> Investment without Coordination Failures<br><br>
+### Brian C. Albrecht<br> <span style="font-size: 50%;"> University of Minnesota<br> Department of Economics</span><br><br>
+### May 17, 2019
+
+---
+
+
+Competitive Coordination
+====================================
+
+- Real investments are sunk in the face of possible coordination problems
+  - Invest in education before signing a wage contract
+  - Produce goods before having a buyer lined up
+  - Write a JMP before knowing the topic is unpopular
+--
+&lt;br&gt;
+&lt;br&gt;
+- When investments are sunk before entering a competitive market, **coordination problems** can arise*
+
+- `\(\Rightarrow\)` People may underinvest in skills
+
+
+
+&lt;font color=#777777&gt;
+.footnote[.red.bold[*] Makowski &amp; Ostroy (1995), Cole, Malaith, &amp; Postlewaite (1999a, 1999b), Makowski (2004), N&amp;ouml;ldeke &amp; Samuelson (2014), Felli &amp; Roberts (2016)]
+&lt;/font&gt;
+
+---
+My JMP
+====================================
+
+
+- Are the sunk investments we see likely to be inefficient?
+
+- **No**, if people are price-takers
+
+- Formally, inefficient equilibria are not robust to a reasonable refinement: trembling hand perfection
+
+---
+Sketch of Environment
+====================================
+
+- Continuum of buyers and sellers, finite types
+
+- Quasi-linear utility
+
+--
+.center[![](images/jmp/tikz_b.png)]
+
+
+---
+Simple General Mechanism
+====================================
+
+- Coordination problems arise because markets are incomplete
+
+- &lt;b&gt;And&lt;/b&gt; people must hold conflicting, pessimistic conjectures
+  - Buyers think price will be high
+  - Sellers think price will be low
+
+--
+
+- Possible "mistakes" by others constrain conjectures
+
+- Under a trembling hand perturbation, all strategies are played
+
+- Refined beliefs are constrained to be as-if markets were complete
+
+- Complete markets `\(\Rightarrow\)` efficiency
+
+
+---
+Road Forward
+=======================
+
+- What I Have Proven:
+
+  - With a continuum of players, every perfect equilibria is efficient
+
+  - In an appropriate limit of any sequence of finite games, every perfect equilibria is efficient
+
+
+- Next Steps:
+
+  - Extend to imperfectly transferable utility case
+
+  - Drop price-taking assumption to study boundaries of perfect competition
+
+
+---
+class: center, middle
+
+# Thank You
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"class": ["left", "middle"],
+"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div>` "
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

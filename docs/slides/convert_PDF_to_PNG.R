@@ -7,13 +7,13 @@ library(magick)
 library(pdftools)
 
 
-path <- "tikz_charts/evolution.pdf"
+path <- "tikz_charts/jmp.pdf"
 
 nr_pages <-  pdftools::pdf_info(path)$pages  
 
 for (i in seq_along(1:nr_pages)) {
     
-    file_name <- paste0("images/evolution/tikz_", LETTERS[i], ".png")
+    file_name <- paste0("images/jmp/tikz_", LETTERS[i], ".png")
 
     image_read_pdf(path, pages = i) %>% 
         image_trim() %>%

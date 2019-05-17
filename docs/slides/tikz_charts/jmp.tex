@@ -1,0 +1,161 @@
+\documentclass[12pt,letterpaper]{article}           % fleqn: align equations left
+
+% Document:
+\usepackage{geometry}                                     % Custom margins for single page, etc.
+\usepackage{fullpage}                                     % Use the full page
+\usepackage{setspace}                                     % Enables custom margins, doublespacing, etc.
+\usepackage{pdflscape}                                    % Use: \begin{landscape} ... \end{landscape}
+
+% Font/text:
+\usepackage[latin9]{inputenc}                             % Font definition and input type
+\usepackage[T1]{fontenc}                                  % Font output type
+\usepackage{lmodern}                                      % Latin Modern fonts
+\usepackage{textcomp}                                     % Supports many additional symbols
+
+%\usepackage[urw-garamond]{mathdesign} %dont use with amssymb, etc
+%%%%Packages used without Mathdesign
+\usepackage{amsmath}                                      % Math equations, etc.
+\usepackage{amsthm}                                       % Math theorems, etc.
+\usepackage{amsfonts}                                     % Math fonts (e.g. script fonts)
+\usepackage{amssymb}                                      % Math symbols such as infinity
+\DeclareMathOperator*{\Max}{Max}                          % Better looking max function
+\DeclareMathOperator*{\Min}{Min}                          % Better looking min function
+
+%%%%%%%%%%%%%%%%%%%%%%%5
+\usepackage{xcolor}                                        % Enables colored text
+\definecolor{darkblue}{rgb}{0.0,0.0,0.66}                 % Custom color: dark blue
+\usepackage[hyperfootnotes=false,bookmarksopen]{hyperref} % Enable hyperlinks, expand menu subtree
+\hypersetup{                                              % Custom hyperlink settings
+    pdffitwindow=false,                                   % true: window fit to page when opened
+    pdfstartview={XYZ null null 1.00},                    % Fits the default zoom of the page to 100%
+    pdfnewwindow=true,                                    % Links in new window
+    colorlinks=true,                                      % false: boxed links; true: colored links
+    linkcolor=darkblue,                                   % Color of internal links
+    citecolor=darkblue,                                   % Color of links to bibliography
+    urlcolor=darkblue  }                                  % Color of external links
+
+% Images:
+\usepackage{graphicx}                                     % Allows .jpg images to be included
+%\usepackage{epstopdf}                                    % Convert .eps images on the fly
+%\usepackage{subfig}                                       % Enables arrayed images
+\usepackage[section]{placeins}                            % Forces floats to stay in section
+\usepackage{float}                                        % Used with restylefloat
+\restylefloat{figure}                                     % "H" forces a figure to be "exactly here"
+\usepackage[justification=centering]{caption}             % Center captions
+\usepackage{subfig} %allow multiple floats in a figure
+
+
+
+%\usepackage{datetime}                                     % Custom date format for date field
+%\newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}    % Defining month year date format
+\usepackage{tikz}                                        % Timelines and other drawings
+\usetikzlibrary{decorations}                             % Formating for Tikz
+\usetikzlibrary{calc}
+\usetikzlibrary{matrix}
+\usetikzlibrary{positioning}
+\definecolor{darkred}{rgb}{0.8,0,0}
+\usepackage{tikz-3dplot}
+
+
+
+
+%%%%%%%%%%%MATH
+\usepackage{graphicx}
+\usepackage{caption}
+%\usepackage{subcaption} %this produces an error with the package subfig
+
+%Flow Chart
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block}    = [rectangle, draw, fill=black!25, text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line}     = [draw, -latex']
+\tikzstyle{cloud}    = [draw, ellipse,fill=red!20, node distance=3cm, minimum height=2em]
+
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\begin{document}
+
+
+\begin{center}
+\begin{table}[]
+\begin{tabular}{cccll}
+                          & Left                     & Right                    &  &  \\ \cline{2-3}
+\multicolumn{1}{c|}{Up}   & \multicolumn{1}{c|}{1,1} & \multicolumn{1}{c|}{2,0} &  &  \\ \cline{2-3}
+\multicolumn{1}{c|}{Down} & \multicolumn{1}{c|}{0,2} & \multicolumn{1}{c|}{2,2} &  &  \\ \cline{2-3}
+\multicolumn{1}{l}{}      & \multicolumn{1}{l}{}     & \multicolumn{1}{l}{}     &  & 
+\end{tabular}
+\end{table}
+\end{center}
+
+\newpage
+
+\begin{figure}[!h]
+	\centering
+	\begin{tikzpicture}[scale=0.5, node distance = 2cm, auto]
+	\node [block] (st1) {Buyers invest
+		\\+\\ Sellers invest};
+	\node [block, right of=st1, node distance=
+	4cm] (st1a) {Investments affect surplus of matching};
+	\node [block, right of=st1a, node distance=4cm] (st2) {Price divides surplus};
+	\path [line] (st1) -- (st1a);
+	\path [line] (st1a) -- (st2);
+	\node [above of=st1, node distance=2cm] (1) {\underline{\Large{Stage 1: Investment}}};
+	\node [above of=st2, node distance=2cm] (2) {\underline{\Large{Stage 2: Market}}};
+	\end{tikzpicture}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!h]
+    \centering
+    \begin{tikzpicture}[scale=0.5, node distance = 2cm, auto]
+        \node [block] (st1) {Each type $t$ picks an $a$ and pays cost $c(a,t)$};
+        \node [block, right of=st1, node distance=
+4cm] (st1a) {Distribution of attributes $\mu \in M_+(A)$};
+        \node [block, right of=st1a, node distance=4cm] (st2) {Assignment game with a Walrasian equilibrium};
+        \path [line] (st1) -- (st1a);
+        \path [line] (st1a) -- (st2);
+		\node [above of=st1, node distance=2cm] (1) {\underline{\Large{Stage 1: Investment}}};
+		\node [above of=st2, node distance=2cm] (2) {\underline{\Large{Stage 2: Market}}};
+    \end{tikzpicture}
+\end{figure}
+
+
+\newpage
+
+\begin{figure}
+\begin{tikzpicture}[scale=1.5]
+\node [above] at (0.55, 1.1) {$s=1$};
+
+\node [above] at (5.3, 1.1) {$s=1$};
+
+\node [above] at (2.5, 2.2) {$b=1$};
+
+\node [above] at (2.5, 1.1) {$s=0$};
+
+\node [above] at (5.5, 2.1) {$b=0$};
+
+\node [above] at (7.5, 1.1) {$s=0$};
+
+
+\draw [fill] (1.3, 1.8) circle [radius=0.1] node [above] {Seller};
+
+\draw [fill] (6.5, 1.8) circle [radius=0.1] node [above] {Seller};
+
+\draw [fill = white] (3.9, 2.7) circle [radius=0.1] node [above] {Buyer};
+
+\draw (0, 0) node [below] {$(1/4,1/4)$}-- (1.3, 1.8) -- (3.83, 2.65);
+
+\draw (3.96, 2.65) -- (6.5, 1.8) -- (7.8, 0) node [below] {$(0,0)$};
+
+\draw (1.3, 1.8) -- (2.6, 0) node [below] {$(-1/4,0)$};
+
+\draw (6.5, 1.8) -- (5.2, 0) node [below] {$(0,-1/4)$};
+\end{tikzpicture}
+\end{figure}
+
+\newpage
+
+
+
+\end{document}
