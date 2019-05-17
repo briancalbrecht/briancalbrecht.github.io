@@ -22,22 +22,17 @@ bibliography: [libs/library.bib]
 Competitive Coordination
 ====================================
 
-- Real investments are sunk in the face of possible coordination problems
-  - Invest in education before signing a wage contract
-  - Produce goods before having a buyer lined up
+- Important investments are sunk in the face of possible coordination problems
+
+  - Invest in education before being hired
+  - Produce goods before having a buyer
   - Write a JMP before knowing the topic is unpopular
+  
 --
 <br>
-<br>
-- When investments are sunk before entering a competitive market, **coordination problems** can arise*
 
-- $\Rightarrow$ People may underinvest in skills
-
-
-
-<font color=#777777>
-.footnote[.red.bold[*] Makowski & Ostroy (1995), Cole, Malaith, & Postlewaite (1999a, 1999b), Makowski (2004), N&ouml;ldeke & Samuelson (2014), Felli & Roberts (2016)]
-</font>
+- When investments are sunk before entering a **competitive market**, coordination problems can still arise
+  - Makowski & Ostroy (1995), Cole, Malaith, & Postlewaite (1999a, 1999b), Makowski (2004), N&ouml;ldeke & Samuelson (2014), Felli & Roberts (2016)
 
 ---
 My JMP
@@ -46,7 +41,7 @@ My JMP
 
 - Are the sunk investments we see likely to be inefficient?
 
-- **No**, if people are price-takers
+- **No**, if markets are competitive
 
 - Formally, inefficient equilibria are not robust to a reasonable refinement: trembling hand perfection
 
@@ -56,11 +51,20 @@ Sketch of Environment
 
 - Continuum of buyers and sellers, finite types
 
-- Quasi-linear utility
+- Transferable utility
 
 --
+
 .center[![](images/jmp/tikz_b.png)]
 
+
+---
+Results so far
+=====================
+
+- **Theorem 1**: With a continuum of players, every perfect equilibria is efficient.
+
+- **Theorem 2**: In the limit of any sequence of finite games, every perfect equilibria is efficient.
 
 ---
 Simple General Mechanism
@@ -87,18 +91,10 @@ Simple General Mechanism
 Road Forward
 =======================
 
-- What I Have Proven:
+- Extend to imperfectly transferable utility case
+  - More relevant for matching literature
 
-  - With a continuum of players, every perfect equilibria is efficient
-
-  - In an appropriate limit of any sequence of finite games, every perfect equilibria is efficient
-
-
-- Next Steps:
-
-  - Extend to imperfectly transferable utility case
-
-  - Drop price-taking assumption to study boundaries of perfect competition
+- Drop price-taking assumption to study boundaries of perfect competition
 
 
 ---
