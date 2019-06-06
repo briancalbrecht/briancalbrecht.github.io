@@ -156,13 +156,13 @@ Example
 
 - Surplus $v(s) = bs$ is split through transfer to seller $p(s)$
 
-- Price is only a function of $s$ because the seller does not care which $b$ pays her $p(s)$
+  - Price is only a function of $s$ because the seller does not care which $b$ pays her $p(s)$
 
 ---
 Investment Equilibrium
 ====================================
 
-1. Prices clear matching market
+1. Prices clear the matching market
 
 1. Each buyer $i$ chooses $b$ to maximize utility, given price conjectures: $\tilde{p}^i(s)$
 
@@ -183,23 +183,42 @@ Giving the Theory Predictive Power
 
 - Off-path conjectures are a free parameter
 
-- With no condition, there is a continuum of investment equilibria:
+- With no other restrictions, there is a continuum of investment equilibria:
   - Efficient: $b=s=1$
   - Worst: $b=s=0$
 
-- Basically no predictive power from a Nash-style equilibrium
+- **Zero predictive power** in the equilibrium used by all of the literature*
 
-- The perfect equilibrium refinement generates predictions
+<br>
+<font color=#777777>
+.footnote[.red.bold[*] As considered in Makowski & Ostroy (1995), Cole, Malaith, & Postlewaite (1999a, 1999b), Makowski (2004), N&ouml;ldeke & Samuelson (2014), Felli & Roberts (2016)]
+</font>
+
+---
+name:thp
+
+Perfection
+====================================
+
+- For predictive power, conjectures must be disciplined even off-path
+
+- Selten (1975): rational behavior is a limiting case of irrational behavior
+
+- "Trembles" are perturbations or mistakes to explain off-path moves
+
+- Note that for general games, trembling hand perfect equilibria [can be inefficient](#thp_proof)
+
+
 
 ---
 Perturbed Strategies
 ====================================
 
-- Uniform trembling hand: each attribute must be chosen with positive probability density $\epsilon>0$ by each buyer and seller
+- Trembling hand: each attribute must be chosen with positive probability density $\epsilon(b)>0, \epsilon(s)>0$ by each buyer and seller
 
 - Assume in the aggregate each attribute must be chosen by a positive density of players
   
-- Perfect equilibrium: limit of some sequence of $\epsilon$
+- Perfect equilibrium: limit of a sequence of $\epsilon \to 0$
 
 - Claim: The unique perfect equilibrium allocation is efficient
 
@@ -214,7 +233,7 @@ Perturbed Strategies
 
 --
 
-- For any perturbation, equilibrium requires
+- Therefore, for any perturbation, equilibrium requires
 $$p(1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$$
 
 
@@ -283,9 +302,8 @@ Stage 1: Attributes
 
 --
 
-- I assume "naive" perfect competition in the continuum through price-taking
-
-- Everyone acts like price-takers, even when they do not face perfectly elastic demand and supply curves
+- I assume "naive" competition in the continuum through price-taking
+  - Everyone acts like price-takers, even when they do not face perfectly elastic demand and supply curves
 
 - Ultimately, I don't want to assume price-taking but prove as in Gretsky, Ostroy, & Zame (1999) or Makowski (2004)
 
@@ -333,12 +351,12 @@ Stage 2: Equilibrium
 <font color=#125972><b>Definition:</b></font> The pair $(x,p)$ is an (ex post) **Walrasian equilibrium** for $\mu$ if $x$ is feasible for $\mu$, $p(0) \equiv 0$,
 --
 
-- For each $b \in  \text{supp } \mu$ and each $(s) \in \text{supp } x,$
+- For each $b \in  \text{supp } \mu$ and each $(b,s) \in \text{supp } x,$
 
 $$v(s) - p(s)= v_b^*(p) \equiv \max_{s' \in S^0} v(b,s') - p(b,s')$$
 --
 
-- For each $s \in  \text{supp } \mu$ and each $(s) \in \text{supp } x,$, $b \in B$ implies 
+- For each $s \in  \text{supp } \mu$ and each $(b,s) \in \text{supp } x,$, $b \in B$ implies 
 
 $$p(s) = v_s^*(p) \equiv \max \left\{p(s), v(0,s)\right\},$$
 
@@ -347,7 +365,7 @@ Stage 2: Efficiency
 ====================================
 - **Conditional First Welfare Theorem**:  If a pair $(x,p)$ is Walrasian for $\mu$, then it is conditionally efficient
 
-- It is conditional because maximization only holds within the support
+- Conditional because maximization only occurs within the support of $\mu$
 
 - $\mu$ may be missing the efficient $b$ and $s$
 
@@ -401,13 +419,13 @@ Efficiency
 - Total surplus from $\nu$ is
 $$G(\nu) = g(\nu_{A}) - \int c d\nu$$
 
-- The allocation $\nu$ is unconditionally **efficient** for $E$ if it is feasible and $G(\nu) \geq G(\nu')$ for all other feasible allocation $\nu'$
+- The allocation $\nu$ is **efficient** for $E$ if it is feasible and $G(\nu) \geq G(\nu')$ for all other feasible allocation $\nu'$
 
 ---
 Return to Example
 ====================================
 
-- Investment equilibria need not be unconditionally efficient
+- Investment equilibria need not be fully efficient
 
 - Consider again the continuum example $B=S=[0,1]$
 
@@ -424,9 +442,9 @@ Unconstrained Beliefs
 
 - Without more structure, there will often be many equilibria
 
-- Off-path beliefs are a free parameter
+- Because off-path beliefs are a free parameter
 
-- Why would sellers conjecture $p(1) = 0$?
+- But why would sellers conjecture $p(1) = 0$?
 
 --
 
@@ -455,7 +473,7 @@ $\epsilon$-Investment Equilibria
 ====================================
 
 - An allocation $\nu(\epsilon)$ is $\epsilon$-feasible for $E$ if  $\nu_T = E$ and for all $a \in A$
-$$\nu_{A}(\epsilon(a)) \geq \epsilon(a)$$
+$$\nu_{A}(\epsilon) \geq \epsilon(a)$$
 
 - A pair $(\nu(\epsilon), p)$ is an $\epsilon$-investment equilibrium for $E$ if $\nu$ is $\epsilon$-feasible, $p$ is a Walrasian price for $\mu$, and for all $(a,t)$ such that $\nu_{A}(\epsilon) > \epsilon$,
 
@@ -572,7 +590,7 @@ Conclusion
 
 
 ---
-To Do
+Next Steps
 ====================================
 
 - Extend to imperfectly transferable utility case
@@ -584,7 +602,7 @@ To Do
 - Extend to moral hazard as in Zame (2007) and Rahman (2012)
 
 - Move from Walrasian to perfectly competitive equilibrium
-  - All examples in the literature are not perfectly competitive
+  - All examples in the literature (including mine) are not perfectly competitive
 
 - Longer term: experimentally test predictions
 
@@ -609,7 +627,7 @@ THP Equilibria Need Not Be Efficient
 
 - Selten (1975)'s original, extensive-form example is inefficient
 
-
+- [Return](#thp)
 ---
 Price-Taking Solves Hold-up
 ====================================
