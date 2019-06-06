@@ -24,7 +24,7 @@ Competitive Coordination
 
 - Important investments are sunk before entering a market
 
-  - Invest in education before being hired
+  - Invest in education before finding a job
   - Produce goods before having a buyer
   - Write JMP before knowing schools want a general equilibrium theorist
   
@@ -65,7 +65,7 @@ My Question
 
 --
 
-- We should predict an efficient outcome
+- Therefore we should predict an efficient outcome
 
 ---
 Sketch of Environment
@@ -148,15 +148,16 @@ Road Map for Talk
 Example
 ====================================
 
-- Buyers pick $b \in B$, sellers pick $s \in S$
 
-- Suppose $B = S = [0,1]$, continuum of buyers and sellers
+- Continuum of buyers and sellers
+
+- Buyers pick $b \in B$, sellers pick $s \in S$, where $B = S = [0,1]$,
 
 - Cost to buyer = $\frac{1}{4}b$;  Cost to seller = $\frac{1}{4}s$
 
 - Surplus $v(s) = bs$ is split through transfer to seller $p(s)$
 
-  - Price is only a function of $s$ because the seller does not care which $b$ pays her $p(s)$
+  - Price is only a function of $s$ because the seller does not care which $b$ pays her $p(s) \equiv \max_b p(b,s)$
 
 ---
 Investment Equilibrium
@@ -164,9 +165,9 @@ Investment Equilibrium
 
 1. Prices clear the matching market
 
-1. Each buyer $i$ chooses $b$ to maximize utility, given price conjectures: $\tilde{p}^i(s)$
+1. Each buyer $i$ invest in $b$ to maximize utility, given price conjectures: $\tilde{p}^i(s)$
 
-2. Each seller $j$ chooses $s$ to maximize utility, given price conjectures: $\tilde{p}^j(s)$
+2. Each seller $j$ invest in $s$ to maximize utility, given price conjectures: $\tilde{p}^j(s)$
 
 3. Rational conjectures: conjectures are not contradicted by the data
   - If $s$ exists in the economy, $\tilde{p}^i (s) = \tilde{p}^j (s)= p(s)$
@@ -178,7 +179,7 @@ Investment Equilibrium
   
   
 ---
-Giving the Theory Predictive Power
+Predictive Power
 ====================================
 
 - Off-path conjectures are a free parameter
@@ -202,11 +203,11 @@ Perfection
 
 - For predictive power, conjectures must be disciplined even off-path
 
-- Selten (1975): rational behavior is a limiting case of irrational behavior
+- Following Selten (1975), I see rational behavior (and any equilibrium) as a limiting case of irrational behavior
 
-- "Trembles" are perturbations or mistakes to explain off-path moves
+- "Trembles" are perturbations or mistakes to explain off-path beliefs
 
-- Note that for general games, trembling hand perfect equilibria [can be inefficient](#thp_proof)
+- Trembling hand perfect equilibria [can be inefficient](#thp_proof) in general
 
 
 
@@ -225,7 +226,7 @@ Perturbed Strategies
   
 ---
 
-- With trembling hand, each $b$b and $s$ are played $\Rightarrow$ $\tilde{p}^i(s) = \tilde{p}^j(s) = p(s)$
+- With trembling hand, each  $s$ is played $\Rightarrow$ $\tilde{p}^i(s) = \tilde{p}^j(s) = p(s)$
 
 - If $p(1) > \frac{1}{4}$, sellers want to choose $s=1$ as much as possible: $1 - \epsilon$
 
