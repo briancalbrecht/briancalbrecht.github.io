@@ -65,7 +65,7 @@ My Question
 
 --
 
-- We should predict an efficient outcome
+- We should predict efficient market outcomes
 
 ---
 Sketch of Environment
@@ -505,13 +505,15 @@ $$ + \underbrace{Q(\epsilon)}_{\text{Constrained Choice}}$$
 Full Efficiency
 ====================================
 
-- **Theorem 1**: If $(\nu, p)$ is a perfect investment equilibrium, then it is efficient.
+- **Theorem**: If $(\nu, p)$ is a perfect investment equilibrium, then it is efficient.
 
 --
 
 - Proof: 
 
  Immediate from Lemma 1, since  $\underbrace{Q(\epsilon)}_{\text{Constrained Choice}} \to 0$ $\qquad \qquad \qquad \qquad \blacksquare$
+ 
+
 
 ---
 Other Justifications
