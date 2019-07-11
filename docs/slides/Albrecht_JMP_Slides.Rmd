@@ -1,10 +1,10 @@
 ---
 title: "Perfect Equilibria under Competition: <br> Investment without Coordination Failures<br><br>"
-author: "Brian C. Albrecht<br> <span style = 'font-size: 50%;'> University of Minnesota<br> Department of Economics</span><br><br>"
-date: '`r format(Sys.time(), "%B %d, %Y")`'
+author: "Brian C. Albrecht<br> <span style = 'font-size: 50%;'> University of Minnesota<br> Department of Economics</span>"
+date: '`r format(Sys.time(), "%B %d, %Y")`<br><br> `r icon::fa("link")` [bit.ly/Albrecht-JMP-Slides](https://bit.ly/Albrecht-JMP-Slides) <br>`r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
 output:
   xaringan::moon_reader:
-    css: [libs/brian-xaringan-themer.css]
+    css: ["https://briancalbrecht.github.io//defaults/brian-xaringan-themer.css"]
     nature:
       titleSlideClass: ["left", "middle", "inverse"]
       ratio: "16:9"
@@ -15,7 +15,7 @@ output:
           </div>
         </div>`
     citation_package: natbib
-bibliography: ["C:/Users/Brian/Documents/defaults/library.bib"]
+bibliography: ["C:/Users/Brian/Documents/githubprivate/defaults/library.bib"]
 ---
 
 
@@ -24,7 +24,7 @@ Competitive Coordination
 
 - Important investments are sunk before entering a market
 
-  - Invest in education before finding a job
+  - Invest in education before being hired
   - Produce goods before having a buyer
   - Write JMP before knowing schools want a general equilibrium theorist
   
@@ -65,7 +65,7 @@ My Question
 
 --
 
-- Therefore we should predict an efficient outcome
+- We should predict an efficient outcome
 
 ---
 Sketch of Environment
@@ -148,26 +148,25 @@ Road Map for Talk
 Example
 ====================================
 
+- Buyers pick $b \in B$, sellers pick $s \in S$
 
-- Continuum of buyers and sellers
-
-- Buyers pick $b \in B$, sellers pick $s \in S$, where $B = S = [0,1]$,
+- Suppose $B = S = \{0,1\}$, continuum of buyers and sellers
 
 - Cost to buyer = $\frac{1}{4}b$;  Cost to seller = $\frac{1}{4}s$
 
 - Surplus $v(s) = bs$ is split through transfer to seller $p(s)$
 
-  - Price is only a function of $s$ because the seller does not care which $b$ pays her $p(s) \equiv \max_b p(b,s)$
+- Price is only a function of $s$ because the seller does not care which $b$ pays her $p(s)$
 
 ---
 Investment Equilibrium
 ====================================
 
-1. Prices clear the matching market
+1. Prices clear matching market
 
-1. Each buyer $i$ invest in $b$ to maximize utility, given price conjectures: $\tilde{p}^i(s)$
+1. Each buyer $i$ chooses $b$ to maximize utility, given price conjectures: $\tilde{p}^i(s)$
 
-2. Each seller $j$ invest in $s$ to maximize utility, given price conjectures: $\tilde{p}^j(s)$
+2. Each seller $j$ chooses $s$ to maximize utility, given price conjectures: $\tilde{p}^j(s)$
 
 3. Rational conjectures: conjectures are not contradicted by the data
   - If $s$ exists in the economy, $\tilde{p}^i (s) = \tilde{p}^j (s)= p(s)$
@@ -179,54 +178,35 @@ Investment Equilibrium
   
   
 ---
-Predictive Power
+Giving the Theory Predictive Power
 ====================================
 
 - Off-path conjectures are a free parameter
 
-- With no other restrictions, there is a continuum of investment equilibria:
+- With no condition, two investment equilibria:
   - Efficient: $b=s=1$
-  - Worst: $b=s=0$
+  - Coordination failure: $b=s=0$
 
-- **Zero predictive power** from the equilibrium concept used by all of the literature*
+- Basically no predictive power from a Nash-style equilibrium
 
-<br>
-<font color=#777777>
-.footnote[.red.bold[*] Makowski & Ostroy (1995), Cole, Malaith, & Postlewaite (1999a, 1999b), Makowski (2004), N&ouml;ldeke & Samuelson (2014), Felli & Roberts (2016)]
-</font>
-
----
-name:thp
-
-Perfection
-====================================
-
-- For predictive power, conjectures must be disciplined even off-path
-
-- Following Selten (1975), I see rational behavior (and any equilibrium) as a limiting case of irrational behavior
-
-- "Trembles" are perturbations or mistakes to explain off-path beliefs
-
-- Trembling hand perfect equilibria [can be inefficient](#thp_proof) in general
-
-
+- The perfect equilibrium refinement generates predictions
 
 ---
 Perturbed Strategies
 ====================================
 
-- Trembling hand: each attribute must be chosen with positive probability density $\epsilon(b)>0, \epsilon(s)>0$ by each buyer and seller
+- Uniform trembling hand: each attribute must be chosen with positive probability density $\epsilon>0$ by each buyer and seller
 
 - Assume in the aggregate each attribute must be chosen by a positive density of players
   
-- Perfect equilibrium: limit of a sequence of $\epsilon \to 0$
+- Perfect equilibrium: limit of some sequence of $\epsilon$
 
 - Claim: The unique perfect equilibrium allocation is efficient
 
   
 ---
 
-- With trembling hand, each  $s$ is played $\Rightarrow$ $\tilde{p}^i(s) = \tilde{p}^j(s) = p(s)$
+- With trembling hand, each $b$ and $s$ are played $\Rightarrow$ $\tilde{p}^i(s) = \tilde{p}^j(s) = p(s)$
 
 - If $p(1) > \frac{1}{4}$, sellers want to choose $s=1$ as much as possible: $1 - \epsilon$
 
@@ -234,11 +214,12 @@ Perturbed Strategies
 
 --
 
-- Therefore, for any perturbation, equilibrium requires
+- For any perturbation, equilibrium requires
 $$p(1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$$
 
 
 - As perturbations go to zero, $(1,1)$ is the unique equilibrium strategy profile
+
   - Prices are not necessarily unique
 
 
@@ -303,8 +284,9 @@ Stage 1: Attributes
 
 --
 
-- I assume "naive" competition in the continuum through price-taking
-  - Everyone acts like price-takers, even when they do not face perfectly elastic demand and supply curves
+- I assume "naive" perfect competition in the continuum through price-taking
+
+- Everyone acts like price-takers, even when they do not face perfectly elastic demand and supply curves
 
 - Ultimately, I don't want to assume price-taking but prove as in Gretsky, Ostroy, & Zame (1999) or Makowski (2004)
 
@@ -352,12 +334,12 @@ Stage 2: Equilibrium
 <font color=#125972><b>Definition:</b></font> The pair $(x,p)$ is an (ex post) **Walrasian equilibrium** for $\mu$ if $x$ is feasible for $\mu$, $p(0) \equiv 0$,
 --
 
-- For each $b \in  \text{supp } \mu$ and each $(b,s) \in \text{supp } x,$
+- For each $b \in  \text{supp } \mu$ and each $(s) \in \text{supp } x,$
 
 $$v(s) - p(s)= v_b^*(p) \equiv \max_{s' \in S^0} v(b,s') - p(b,s')$$
 --
 
-- For each $s \in  \text{supp } \mu$ and each $(b,s) \in \text{supp } x,$, $b \in B$ implies 
+- For each $s \in  \text{supp } \mu$ and each $(s) \in \text{supp } x,$, $b \in B$ implies 
 
 $$p(s) = v_s^*(p) \equiv \max \left\{p(s), v(0,s)\right\},$$
 
@@ -366,7 +348,7 @@ Stage 2: Efficiency
 ====================================
 - **Conditional First Welfare Theorem**:  If a pair $(x,p)$ is Walrasian for $\mu$, then it is conditionally efficient
 
-- Conditional because maximization only occurs within the support of $\mu$
+- It is conditional because maximization only holds within the support
 
 - $\mu$ may be missing the efficient $b$ and $s$
 
@@ -420,13 +402,13 @@ Efficiency
 - Total surplus from $\nu$ is
 $$G(\nu) = g(\nu_{A}) - \int c d\nu$$
 
-- The allocation $\nu$ is **efficient** for $E$ if it is feasible and $G(\nu) \geq G(\nu')$ for all other feasible allocation $\nu'$
+- The allocation $\nu$ is unconditionally **efficient** for $E$ if it is feasible and $G(\nu) \geq G(\nu')$ for all other feasible allocation $\nu'$
 
 ---
 Return to Example
 ====================================
 
-- Investment equilibria need not be fully efficient
+- Investment equilibria need not be unconditionally efficient
 
 - Consider again the continuum example $B=S=[0,1]$
 
@@ -443,9 +425,9 @@ Unconstrained Beliefs
 
 - Without more structure, there will often be many equilibria
 
-- Because off-path beliefs are a free parameter
+- Off-path beliefs are a free parameter
 
-- But why would sellers conjecture $p(1) = 0$?
+- Why would sellers conjecture $p(1) = 0$?
 
 --
 
@@ -474,7 +456,7 @@ $\epsilon$-Investment Equilibria
 ====================================
 
 - An allocation $\nu(\epsilon)$ is $\epsilon$-feasible for $E$ if  $\nu_T = E$ and for all $a \in A$
-$$\nu_{A}(\epsilon) \geq \epsilon(a)$$
+$$\nu_{A}(\epsilon(a)) \geq \epsilon(a)$$
 
 - A pair $(\nu(\epsilon), p)$ is an $\epsilon$-investment equilibrium for $E$ if $\nu$ is $\epsilon$-feasible, $p$ is a Walrasian price for $\mu$, and for all $(a,t)$ such that $\nu_{A}(\epsilon) > \epsilon$,
 
@@ -590,29 +572,19 @@ Conclusion
 - Even though in equilibrium, markets are endogenous and incomplete
 
 
----
-Next Steps
-====================================
-
-- Extend to imperfectly transferable utility case
-
-  - Especially relevant for competitive matching models
-  - N&ouml;ldeke & Samuelson (2014, 2018) provide framework
-
-
-- Extend to moral hazard as in Zame (2007) and Rahman (2012)
-
-- Move from Walrasian to perfectly competitive equilibrium
-  - All examples in the literature (including mine) are not perfectly competitive
-
-- Longer term: experimentally test predictions
-
-  - Currently talking with Cesar Martinelli about running at ICES lab
 
 ---
+
 class: center, middle
 
 # Thank You
+
+<br>
+
+###`r icon::fa("link")` Paper: [bit.ly/Albrecht-JMP](https://bit.ly/Albrecht-JMP) <br>
+###`r icon::fa("link")` Slides: [bit.ly/Albrecht-JMP-Slides](https://bit.ly/Albrecht-JMP-Slides) <br>
+###`r icon::fa("twitter")` [@briancalbrecht](https://twitter.com/briancalbrecht)
+
 
 ---
 name:thp_proof
@@ -622,13 +594,13 @@ THP Equilibria Need Not Be Efficient
 
 - Consider the following 2x2 game
 
-.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_A.png)]
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_a.png)]
 
 - (Up, Left) is the unique THP equilibrium
 
 - Selten (1975)'s original, extensive-form example is inefficient
 
-- [Return](#thp)
+
 ---
 Price-Taking Solves Hold-up
 ====================================
