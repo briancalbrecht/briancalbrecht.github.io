@@ -4,7 +4,7 @@ author: "Brian C. Albrecht<br> <span style = 'font-size: 50%;'> University of Mi
 date: '`r format(Sys.time(), "%B %d, %Y")`<br><br> `r icon::fa("link")` [bit.ly/Albrecht-JMP-Slides](https://bit.ly/Albrecht-JMP-Slides) <br>`r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
 output:
   xaringan::moon_reader:
-    css: ["https://briancalbrecht.github.io//defaults/brian-xaringan-themer.css"]
+    css: ["https://briancalbrecht.github.io/defaults/brian-xaringan-themer.css"]
     nature:
       titleSlideClass: ["left", "middle", "inverse"]
       ratio: "16:9"
