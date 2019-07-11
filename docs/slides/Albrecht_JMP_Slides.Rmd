@@ -581,7 +581,7 @@ class: center, middle
 
 <br>
 
-###`r icon::fa("link")` Paper: [bit.ly/Albrecht-JMP](https://bit.ly/Albrecht-JMP) <br>
+<!-- ###`r icon::fa("link")` Paper: [bit.ly/Albrecht-JMP](https://bit.ly/Albrecht-JMP) <br> -->
 ###`r icon::fa("link")` Slides: [bit.ly/Albrecht-JMP-Slides](https://bit.ly/Albrecht-JMP-Slides) <br>
 ###`r icon::fa("twitter")` [@briancalbrecht](https://twitter.com/briancalbrecht)
 
@@ -594,7 +594,7 @@ THP Equilibria Need Not Be Efficient
 
 - Consider the following 2x2 game
 
-.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_a.png)]
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_A.png)]
 
 - (Up, Left) is the unique THP equilibrium
 
