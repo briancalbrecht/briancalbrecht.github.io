@@ -50,6 +50,7 @@
 %\newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}    % Defining month year date format
 \usepackage{tikz}                                        % Timelines and other drawings
 \usetikzlibrary{decorations}                             % Formating for Tikz
+\usetikzlibrary{decorations.pathreplacing}
 \usetikzlibrary{calc}
 \usetikzlibrary{matrix}
 \usetikzlibrary{positioning}
@@ -123,39 +124,62 @@
 
 \newpage
 
-\begin{figure}
-\begin{tikzpicture}[scale=1.5]
-\node [above] at (0.55, 1.1) {$s=1$};
-
-\node [above] at (5.3, 1.1) {$s=1$};
-
-\node [above] at (2.5, 2.2) {$b=1$};
-
-\node [above] at (2.5, 1.1) {$s=0$};
-
-\node [above] at (5.5, 2.1) {$b=0$};
-
-\node [above] at (7.5, 1.1) {$s=0$};
-
-
-\draw [fill] (1.3, 1.8) circle [radius=0.1] node [above] {Seller};
-
-\draw [fill] (6.5, 1.8) circle [radius=0.1] node [above] {Seller};
-
-\draw [fill = white] (3.9, 2.7) circle [radius=0.1] node [above] {Buyer};
-
-\draw (0, 0) node [below] {$(1/4,1/4)$}-- (1.3, 1.8) -- (3.83, 2.65);
-
-\draw (3.96, 2.65) -- (6.5, 1.8) -- (7.8, 0) node [below] {$(0,0)$};
-
-\draw (1.3, 1.8) -- (2.6, 0) node [below] {$(-1/4,0)$};
-
-\draw (6.5, 1.8) -- (5.2, 0) node [below] {$(0,-1/4)$};
-\end{tikzpicture}
-\end{figure}
+%\begin{figure}
+%\begin{tikzpicture}[scale=1.5]
+%\node [above] at (0.55, 1.1) {$s=1$};
+%
+%\node [above] at (5.3, 1.1) {$s=1$};
+%
+%\node [above] at (2.5, 2.2) {$b=1$};
+%
+%\node [above] at (2.5, 1.1) {$s=0$};
+%
+%\node [above] at (5.5, 2.1) {$b=0$};
+%
+%\node [above] at (7.5, 1.1) {$s=0$};
+%
+%
+%\draw [fill] (1.3, 1.8) circle [radius=0.1] node [above] {Seller};
+%
+%\draw [fill] (6.5, 1.8) circle [radius=0.1] node [above] {Seller};
+%
+%\draw [fill = white] (3.9, 2.7) circle [radius=0.1] node [above] {Buyer};
+%
+%\draw (0, 0) node [below] {$(1/4,1/4)$}-- (1.3, 1.8) -- (3.83, 2.65);
+%
+%\draw (3.96, 2.65) -- (6.5, 1.8) -- (7.8, 0) node [below] {$(0,0)$};
+%
+%\draw (1.3, 1.8) -- (2.6, 0) node [below] {$(-1/4,0)$};
+%
+%\draw (6.5, 1.8) -- (5.2, 0) node [below] {$(0,-1/4)$};
+%\end{tikzpicture}
+%\end{figure}
 
 \newpage
 
 
+\begin{figure}[t]
+	
+	\begin{tikzpicture}[scale=1]
+	
+	\draw [->] (0,0) node [below] {0} -- (0,0) -- (6,0) node [right] {Seller Surplus};
+	
+	\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,5.5) node [above] {Buyer Surplus};
+	
+	\draw [line width=3, red](0,5)--(5,0);
+
+	\node [left] at (0,5) {$\frac{1}{2}$};
+	
+	\node [below] at (5,0) {$\frac{1}{2}$};
+	
+	\draw [fill,red] (0,0) circle [radius =0.15];
+	
+	\draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+	(5,0) -- (0,5) node [black,midway,xshift=1cm, yshift=.75cm] {$\frac{1}{2}- p(s)$};
+	
+	\end{tikzpicture}
+	
+	
+\end{figure}
 
 \end{document}
