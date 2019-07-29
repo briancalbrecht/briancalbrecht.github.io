@@ -31,13 +31,25 @@ Iroquois and Wampum
 - Yet wampum was extremely valuable for the Iroquois
     - “the magnet which drew the beaver out”- Weeden (1884, 15)
 ]
-.pull-right[
-[](https://briancalbrecht.github.io/docs/slides/images/wampum/wampum_large.0.webp)
-]
-
+.pull-right[.middle[![belt](https://briancalbrecht.github.io/docs/slides/images/wampum/shell_to_belt.jpg)]]
 
 ---
-![my-greens](http://bit.ly/arm-greens)
+Iroquois and Wampum
+====================================
+
+.pull-left[
+- Wampum is most famous for econs as a colonial money
+    - Legal tender in New Netherlands (New York)
+    - Official exchange rate in MA Bay Colony
+
+- The Iroquois did not use wampum as a money
+    - Tooker (1978, 423), Snyderman (1954, 470), Woodward (1878, 20)
+
+- Yet wampum was extremely valuable for the Iroquois
+    - “the magnet which drew the beaver out”- Weeden (1884, 15)
+]
+.pull-right[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/shell_to_belt.jpg" width="100%" align="middle" />
+]
 
 ---
 Two Main Points
