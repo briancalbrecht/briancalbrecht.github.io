@@ -58,29 +58,42 @@ Wampum as Contract
   
 - As contract, wampum sustained relative peace before Europeans and after
 ]
-.right-column[.middle[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/hiawatha.jpg" width="100%" align="middle" />
+
+.right-column[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/hiawatha.jpg" width="100%" align="middle" />
 .center[Hiawatha Belt that established The Great Peace]
-]
 ]
 
 ---
 Three Stages of Wampum's History
 ====================================
 
+### 1. The Great Peace
+  - \~ 1390 - 1621
+  - Wampum belts "exchanged" between tribes as peace offerings
+
+--
+### 2. Early Colonial
+  - 1621 - \~ 1700
+  - Wampum facilitates peaceful fur trade with Dutch/English/French
+
+--  
+### 3. Later Colonial
+  - After 1700
+  - Wampum continues to be used, but increasingly hurts Iroquois
+
 ---
 Two Themes of Today's Talk
 ====================================
 
 
-### Institutional Economics
+### Wampum as Institution
 
-- Wampum allowed peaceful cooperation and the division of labor without resorting to a sovereign to enforce agreements <br>- Period 1
+- Wampum allowed peaceful cooperation and the division of labor without resorting to a sovereign to enforce agreements
 
 - Rigid institutions that fail to adapt can go from beneficial to harmful
-  - Period 3
 
 
-### Monetary Economics
+### Wampum as Money
 
 - Case study of a non-monetary society being forced into contact with monetary society
 
