@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.27)  30 JUL 2019 12:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.27)  30 JUL 2019 17:10
 entering extended mode
 **./wampum.tex
 (wampum.tex
@@ -753,14 +753,6 @@ File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
 ibraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-(C:\Users\brian\AppData\Roaming\MiKTeX\2.9\tex\latex\tikz-3dplot\tikz-3dplot.st
-y ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(C:\Users\brian\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
-ibraries\tikzlibrary3d.code.tex
-File: tikzlibrary3d.code.tex 2013/07/17 v3.0.1a (rcs-revision 1.2)
-)
 (C:\Users\brian\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
 ibraries\tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
@@ -769,7 +761,15 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 arrows.code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 \arrowsize=\dimen183
-)))
+))
+(C:\Users\brian\AppData\Roaming\MiKTeX\2.9\tex\latex\tikz-3dplot\tikz-3dplot.st
+y ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\brian\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrary3d.code.tex
+File: tikzlibrary3d.code.tex 2013/07/17 v3.0.1a (rcs-revision 1.2)
+))
 (C:\Users\brian\AppData\Roaming\MiKTeX\2.9\tex\latex\pgfplots\pgfplots.sty
 (C:\Users\brian\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.revisi
 on.tex)
@@ -945,25 +945,25 @@ Package: luatex85 2016/06/15 v1.4 pdftex aliases for luatex
 (wampum.aux)
 \openout1 = `wampum.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 86.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 82.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 86.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 82.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1073,77 +1073,34 @@ enefit from \pgfplotsset{compat=1.16} (current compat level: 1.11).
 
 Preview: Fontsize 12pt
 Preview: PDFoutput 1
-\yearOne=\count151
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 140.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 89.
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 140.
+Overfull \hbox (208.53404pt too wide) in paragraph at lines 100--100
+[][] 
+ []
 
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 140
-.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 140
-.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 140.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 140.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 140.
-LaTeX Font Info:    Try loading font information for U+msa on input line 140.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 140.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 Preview: Tightpage -65536 -65536 65536 65536
 [1{C:/Users/brian/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(wampum.aux) ) 
+Overfull \hbox (208.53404pt too wide) in paragraph at lines 119--119
+[][] 
+ []
+
+[2] (wampum.aux) ) 
 Here is how much of TeX's memory you used:
- 26834 strings out of 492973
- 675497 string characters out of 3135932
- 832352 words of memory out of 3000000
- 30168 multiletter control sequences out of 15000+200000
- 19961 words of font info for 33 fonts, out of 3000000 for 9000
+ 26690 strings out of 492973
+ 672050 string characters out of 3135932
+ 830359 words of memory out of 3000000
+ 30050 multiletter control sequences out of 15000+200000
+ 21594 words of font info for 22 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,96p,730b,791s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Pro
-gram Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX
- 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dv
-ips/lm/lm-ec.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmsy10.pfb>
-Output written on wampum.pdf (1 page, 54111 bytes).
+ 62i,11n,96p,730b,1065s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on wampum.pdf (2 pages, 29322 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
+ 17 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

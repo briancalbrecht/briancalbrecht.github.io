@@ -1,7 +1,7 @@
 ---
 title: "Wampum Beads as Money and Non-Money: <br> An Institutional Tragedy<br><br>"
 author: "Brian C. Albrecht <span style = 'font-size: 50%;'> University of Minnesota</span> <br> <br> Andrew T. Young  <span style = 'font-size: 50%;'> Texas Tech University</span><br><br>"
-date: '`r format(Sys.time(), "%B %d, %Y")`<br><br> `r icon::fa("link")` Paper [bit.ly/bca-wampum](https://bit.ly/bca-wampum) <br>`r icon::fa("link")` Slides [bit.ly/bca-AIER2019](https://bit.ly/bca-AIER2019) <br> `r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
+date: '`r format(Sys.time(), "%B %d, %Y")`<br><br> `r icon::fa("link")` Paper [bit.ly/bca-wampum](https://bit.ly/bca-wampum) <br>`r icon::fa("link")` Slides [bit.ly/bca-SMP](https://bit.ly/bca-SMP) <br> `r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
 output:
   xaringan::moon_reader:
     css: ["https://briancalbrecht.github.io/defaults/brian-xaringan-themer.css"]
@@ -20,7 +20,7 @@ bibliography: ["C:/Users/Brian/Documents/githubprivate/defaults/library.bib"]
 Wampum as Colonial Money
 ====================================
 .left-column[
-- Know to economists as a **colonial** money
+- Know to economists as a **colonial money**
 
 - Today: money = medium of exchange
 
@@ -74,14 +74,16 @@ Three Stages of Wampum's History
   - Wampum belts "exchanged" between tribes as peace offerings
 
 --
+
 ### 2. Early Colonial
   - 1621 - \~ 1700
   - Wampum facilitates peaceful fur trade with Dutch/English/French
 
---  
+--
+
 ### 3. Later Colonial
   - After 1700
-  - Wampum continues to be used, but increasingly hurts Iroquois
+  - Wampum continues to be used while trade relations fall apart
 
 ---
 Two Themes of Today's Talk
@@ -99,112 +101,127 @@ Two Themes of Today's Talk
 
 - Case study of a non-monetary society being forced into contact with monetary society
 
-- Certain people can use a good as money without everyone doing so
+- Certain people can use a good as money even if others do not
 
-
----
-Wampum was effective for the Iroquois League before and immediately after the arrival of European colonists
-
-The exchange of wampum promoted reciprocity and enforced credible commitment
-
-Colonists degraded the credible commitment
-
-Yet the Iroquois increased their use on wampum, leading to further exploitation by the colonists
-
-
-
-
----
-Wampum's Role
-====================================
-
-
-Instead of money, wampum was a political and economic institution: more like a contract
-
-Established, recorded, and enforced reciprocal obligations
-
-Screening: gifts, as costly signals, separate good trading partners from bad ones
-
-Memory: the pre-literate society could “write” down their obligations
-
+- Both roles required wampum to be sound
 ---
 class: center, middle
 
-<iframe width="1400" height="670" src="https://www.youtube.com/embed/S6dLNz8NZ8A?start=16" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+.left[What was Wampum?]
+=================================
 
 
----
-Wampum's History
-=====================================
-
-Condolence Council, a predecessor to the Iroquois League
-
-Upon the death of a chief, wampum was given as a gift
-
-Peace offering quelled political turmoil
-
-Costly signal: 7 days of work per 6 foot belt
-
-Elaborate ceremony
+<iframe width="1000" height="500" src="https://www.youtube.com/embed/S6dLNz8NZ8A?start=16" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
----
-Wampum's History
-=====================================
-
-Recorded the words of the Condolence Council
-
-Belts were mnemonic devices, not written words
-
-Regularly “read” aloud and posted publicly 
-
-Wampum was a gift and a record
-Debt contract without a unit of payment
-Cost of production limited the amount of debts created
 
 
 
 ---
-Wampum's History
+Wampum's Early History
 =====================================
-Condolence Council initiated The Great Peace
-Peace among the Five Nations for over three hundred years
 
-“Wampum, the chief instrument of the Council, became the vehicle necessary for all important political transactions” - Snyderman (1954, 479)
+- Earliest uses go to the Condolence Council, a predecessor to the Iroquois League
 
-Upon arrival of Europeans, wampum was used in all international negotiations	
-Forest diplomacy
-Europeans needed to learn the rituals
+- Upon the death of a chief, wampum was given as a gift
+
+- Peace offering quelled political turmoil
+
+- Condolence Council initiated The Great Peace
+  - Peace among the Five Nations for over three hundred years
+
+- “Wampum, the chief instrument of the Council, became the vehicle necessary for all important political transactions” - Snyderman (1954, 479)
 
 
+
+---
+Role for the Iroqouis
+====================================
+
+- Wampum was a political and economic institution. more like a contract/treaty than money
+
+- In particular, wampum established, recorded, and enforced reciprocal obligations
+  - Like a credit agreement???
+
+--
+
+### Two Services
+
+1. Memory: the pre-literate society could “write” down their obligations
+
+2. Screening: wampum "gifts" were costly signals to separate good trading partners from bad
+
+
+---
+Memory Role
+==========================
+
+- Recorded the words of the Condolence Council
+
+- Belts were mnemonic devices, not written words
+
+- Regularly “read” aloud and posted publicly 
+
+- Wampum was a public record
+  - Like a debt contract without a unit of payment
+  - Cost of production limited the amount of debts created
+
+
+
+
+
+
+
+---
+Screening Role
+=========================
+
+- Upon arrival of Europeans, wampum was used in all international negotiations	
+
+- Besides being a public record, wampum was also a gift from one side to another
+  
+- Especially costly signal: 7 days of work per 6 foot belt
+
+- In addition, Europeans hadd to learn and participate in an elaborate ceremony
+  - Lowering social distance (Akerlof 1997, Leeson 2008)
+
+- Only patient groups wanting to invest in long-term trade relations would pay the cost
+
+
+
+---
+Trading Network
+====================================
+
+.center[![](https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_B.png)]
 
 ---
 Institutional Shock
 ===================================
 
-European arrival brought European tools
+- However, European arrival brought European tools
 
-Signal becomes less costly
-Production costs decreased by factor of ten
+- Signal becomes less costly
+  - Production costs decreased by factor of ten
 
-Wampum production skyrockets
-Some early anthropologists thought wampum only came after European contact
+- Wampum production skyrockets
+  - Some early anthropologists thought wampum only came after European contact
 
-Colonists would promise more than they could deliver
-Goods, protection, land
+- Colonists would promise more than they would deliver 
+  - Goods, protection, land
 
 ---
 Institutional Tragedy
 ===================================
 
-An efficient system would change with the costs
-Decreased cost => shift of supply => decreased marginal value 
+- An efficient system would change with the costs
+  - Decreased cost => shift of supply => decreased marginal value 
 
-Instead forest diplomacy became more important
+- Instead forest diplomacy became more important
 
-18th century saw forest diplomacy’s “perfection” (Fenton 1998, 7)
+- 18th century saw forest diplomacy’s “perfection” (Fenton 1998, 7)
  
-And the loss of the Iroquois’s last settlements in New York State (Foster 1985, 100–101). 
+- And the loss of the Iroquois’s last settlements in New York State (Foster 1985, 100–101). 
 
 ---
 Institutional Elites
@@ -223,19 +240,28 @@ Cultural brokers could “slant speeches in ways advantageous to himself”- Jen
 The Wampum Legacy
 ==================================
 
-Wampum was an effective institution for over three hundred years for promoting cooperation
+- Wampum was an effective institution for over three hundred years for promoting cooperation
 
-Promoted cooperation through two roles:
-Screening
-Memory
+- Promoted cooperation through two roles:
+  - Memory
+  - Screening
 
-After colonial expansion, wampum became ineffective
+- Dual institutional role:
+  - Money among Europeans Dutch
+  - Contract/treaty between tribes and Europeans
 
-Yet, the Iroquois continued to rely on wampum 
+- After colonial expansion, wampum became ineffective
 
-Iroquois kept wampum because certain people still benefited 
+- Yet, the Iroquois continued to rely on wampum 
+  - Possible tension: Iroquois kept wampum because certain people still benefited 
 
 
+---
+Implications for Today
+================================
+
+--
+- None
 ---
 
 class: center, middle
@@ -244,8 +270,8 @@ class: center, middle
 
 <br>
 
-<!-- ###`r icon::fa("link")` Paper: [bit.ly/Albrecht-JMP](https://bit.ly/Albrecht-JMP) <br> -->
-###`r icon::fa("link")` Slides: [bit.ly/Albrecht-JMP-Slides](https://bit.ly/Albrecht-JMP-Slides) <br>
+###`r icon::fa("link")` Paper: [bit.ly/Albrecht-wampum](https://bit.ly/Albrecht-wampum) <br>
+###`r icon::fa("link")` Slides: [bit.ly/Albrecht-SMP](https://bit.ly/Albrecht-SMP) <br>
 ###`r icon::fa("twitter")` [@briancalbrecht](https://twitter.com/briancalbrecht)
 
 ---
@@ -254,3 +280,14 @@ economies. That being said, surely the more common
 occurrence throughout history was when a society that did not use money came into contact with
 one that did. (E.g., when Germanic barbarian groups came into sustained contact with the Roman
 Empire in the first century AD.)
+
+---
+Wampum was effective for the Iroquois League before and immediately after the arrival of European colonists
+
+The exchange of wampum promoted reciprocity and enforced credible commitment
+
+Colonists degraded the credible commitment
+
+Yet the Iroquois increased their use of wampum, leading to further exploitation by the colonists
+
+
