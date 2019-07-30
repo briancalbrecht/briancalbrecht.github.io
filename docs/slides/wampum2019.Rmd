@@ -190,11 +190,7 @@ Screening Role
 
 
 ---
-Trading Network
-====================================
-
-.center[![](https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_B.png)]
-
+<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_B.png" width="50%" align="middle" />
 ---
 Institutional Shock
 ===================================
