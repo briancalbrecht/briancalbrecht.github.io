@@ -37,6 +37,7 @@ Wampum as Colonial Money
 Wampum as Iroquois Non-Money
 ====================================
 
+.left-column[
 - Much more than a historic, monetary oddity
 
 - In fact, Iroquois **did not use wampum as a money**
@@ -46,7 +47,10 @@ Wampum as Iroquois Non-Money
   - “the magnet which drew the beaver out”- Weeden (1884, 15)
     
 - Why was wampum valuable to Iroquois?
+]
 
+.right-column[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/iroquois.png" width="100%" align="middle" />
+]
 ---
 Wampum as Contract
 ====================================
