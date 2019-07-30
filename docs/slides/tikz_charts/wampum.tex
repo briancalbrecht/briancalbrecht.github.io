@@ -1,0 +1,144 @@
+\documentclass[12pt,letterpaper]{article}           % fleqn: align equations left
+
+% Document:
+\usepackage{geometry}                                     % Custom margins for single page, etc.
+\usepackage{fullpage}                                     % Use the full page
+\usepackage{setspace}                                     % Enables custom margins, doublespacing, etc.
+\usepackage{pdflscape}                                    % Use: \begin{landscape} ... \end{landscape}
+
+% Font/text:
+\usepackage[latin9]{inputenc}                             % Font definition and input type
+\usepackage[T1]{fontenc}                                  % Font output type
+\usepackage{lmodern}                                      % Latin Modern fonts
+\usepackage{textcomp}                                     % Supports many additional symbols
+
+%\usepackage[urw-garamond]{mathdesign} %dont use with amssymb, etc
+%%%%Packages used without Mathdesign
+\usepackage{amsmath}                                      % Math equations, etc.
+\usepackage{amsthm}                                       % Math theorems, etc.
+\usepackage{amsfonts}                                     % Math fonts (e.g. script fonts)
+\usepackage{amssymb}                                      % Math symbols such as infinity
+\DeclareMathOperator*{\Max}{Max}                          % Better looking max function
+\DeclareMathOperator*{\Min}{Min}                          % Better looking min function
+
+%%%%%%%%%%%%%%%%%%%%%%%5
+\usepackage{xcolor}                                        % Enables colored text
+\definecolor{darkblue}{rgb}{0.0,0.0,0.66}                 % Custom color: dark blue
+
+% Images:
+\usepackage{graphicx}                                     % Allows .jpg images to be included
+%\usepackage{epstopdf}                                    % Convert .eps images on the fly
+%\usepackage{subfig}                                       % Enables arrayed images
+\usepackage[section]{placeins}                            % Forces floats to stay in section
+\usepackage{float}                                        % Used with restylefloat
+\restylefloat{figure}                                     % "H" forces a figure to be "exactly here"
+\usepackage[justification=centering]{caption}             % Center captions
+\usepackage{subfig} %allow multiple floats in a figure
+
+
+
+%\usepackage{datetime}                                     % Custom date format for date field
+%\newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}    % Defining month year date format
+\usepackage{tikz}                                        % Timelines and other drawings
+\usetikzlibrary{decorations}                             % Formating for Tikz
+\usetikzlibrary{calc}
+\usetikzlibrary{matrix}
+\usetikzlibrary{positioning}
+\definecolor{darkred}{rgb}{0.8,0,0}
+\usepackage{tikz-3dplot}
+
+
+%%%%%%%%%%%%%%%%For Filling in the area between to curves
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.11}
+\usepgfplotslibrary{fillbetween}
+\usetikzlibrary{intersections}
+\usetikzlibrary{patterns}
+\usepgfplotslibrary{ternary}
+
+
+\pgfdeclarelayer{bg}
+\pgfsetlayers{bg,main}
+
+%%%%%%%%%%%MATH
+\usepackage{graphicx}
+\usepackage{caption}
+%\usepackage{subcaption} %this produces an error with the package subfig
+
+%Flow Chart
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block}    = [rectangle, draw, fill=black!25, text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line}     = [draw, -latex']
+\tikzstyle{cloud}    = [draw, ellipse,fill=red!20, node distance=3cm, minimum height=2em]
+
+\pagestyle{empty}
+
+\usepackage{tikz}
+\usepackage{calc} % for simple arithmetic
+\tikzset{>=latex} % for LaTeX arrow head
+
+% split figures into pages
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{1pt}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\begin{document}
+
+\begin{figure}
+% TIMELINE - simple
+\begin{tikzpicture}[]
+
+% limits
+\newcount\yearOne; \yearOne=1900
+\def\w{15}    % width of axes
+\def\n{4}     % number of decades
+\def\lt{0.40} %  ten tick length
+\def\lf{0.36} % five tick length
+\def\lo{0.30} %  one tick length
+
+% help functions
+\def\yearLabel(#1,#2){\node[above] at ({(#1-\yearOne)*\w/\n/10},\lt) {#2};}
+\def\yearArrowLabel(#1,#2,#3,#4){
+	\def\xy{{(#1-\yearOne)*\w/\n/10}}; \pgfmathparse{int(#2*100)};
+	\ifnum \pgfmathresult<0
+	\def\yyp{{(\lt*(0.90+#2))}}; \def\yyw{{(\yyp-\lt*#3)}}
+	\draw[<-,thick,black,align=center] (\xy,\yyp) -- (\xy,\yyw) node[below,black] at (\xy,\yyw) {#4};
+	\else
+	\def\yyp{{(\lt*(0.10+#2)}}; \def\yyw{{(\yyp+\lt*#3)}}
+	\draw[<-,thick,black,align=center] (\xy,\yyp) -- (\xy,\yyw) node[above,black] at (\xy,\yyw) {#4};
+	\fi}
+
+% axis
+%\draw[thick] (0,0) -- (\w,0);
+\draw[->,thick] (-\w*0.03,0) -- (\w*1.03,0);
+
+% ticks
+\foreach \tick in {0,1,...,\n}{
+	\def\x{{\tick*\w/\n}}
+	\def\year{\the\numexpr \yearOne+\tick*10 \relax}
+	\draw[thick] (\x,\lt) -- (\x,-\lt) % ten tick
+	node[below] {\year};
+	
+	\ifnum \tick<\n
+	\draw[thick] ({(\x+\w/\n/2)},0) -- ({(\x+\w/\n/2)},\lf); % five tick
+	\foreach \ticko in {1,2,3,4,6,7,8,9}{
+		\def\xo{{(\x+\ticko*\w/\n/10)}}
+		\draw[thick] (\xo,0) -- (\xo,\lo);  % one tick
+	}\fi
+}
+
+% label
+\yearLabel(1923,lol)
+\yearArrowLabel(1932.2, 1.0,1.0,foo)
+\yearArrowLabel(1937.2, 1.0,10.5,foo bar)
+\yearArrowLabel(1907.5, 0.0,1.5,small)
+
+
+\draw[->,thick] (-\w*0.03,4) -- (\w*1.03,7);
+\draw [decorate,decoration={brace,amplitude=10pt,mirror,raise=4pt},yshift=0pt]
+(5,0) -- (0,5) node [black,midway,xshift=1cm, yshift=.75cm] {$\frac{1}{2}- p(s)$};
+\end{tikzpicture}
+\end{figure}
+
+\end{document}

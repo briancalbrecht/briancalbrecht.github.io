@@ -19,26 +19,27 @@ bibliography: ["C:/Users/Brian/Documents/githubprivate/defaults/library.bib"]
 ---
 Wampum as Colonial Money
 ====================================
-.pull-left[
-- Wampum is most famous for economists as a **colonial** money
+.left-column[
+- Know to economists as a **colonial** money
 
-- Today's discussion:
-  - Money = medium of exchange
+- Today: money = medium of exchange
 
-- Cited as money by Friedman (1951), Samuelson (1951)
+- E.g., Friedman (1951), Samuelson (1951)
 
 - Legal tender in New Netherlands
 
-- Official exchange rate in Mass Bay Colony
+- Official exchange rate in Massachusetts Bay Colony
 ]
-.pull-right[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/shell_to_belt.jpg" width="100%" align="middle" />
+.right-column[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/shell_to_belt.jpg" width="100%" align="middle" />
 ]
 
 ---
 Wampum as Iroquois Non-Money
 ====================================
 
-- Iroquois **did not use wampum as a money**
+- Much more than a historic, monetary oddity
+
+- In fact, Iroquois **did not use wampum as a money**
   - Tooker (1978, 423), Snyderman (1954, 470), Woodward (1878, 20)
 
 - Yet wampum was extremely valuable for the Iroquois
@@ -50,27 +51,41 @@ Wampum as Iroquois Non-Money
 Wampum as Contract
 ====================================
 
-.pull-left[
-- Instead, wampum was a contract between tribes
+.left-column[
+- Instead, wampum was a pseudo-contract, gift, promise (credit) between tribes
 
-- [The] act of sacrificing wampum established reciprocity as the obligatory force or **unwritten contract** that would bind living to nonliving, kin to nonkin, village to village, and tribe to tribe to tribe in the league
-  - Ceci (1982)
+- "[The] act of sacrificing wampum established reciprocity as the obligatory force or **unwritten contract**" - Ceci (1982)
+  
+- As contract, wampum sustained relative peace before Europeans and after
 ]
-.pull-right[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/hiawatha.jpg" width="100%" align="middle" />
+.right-column[.middle[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/hiawatha.jpg" width="100%" align="middle" />
+.center[Hiawatha Belt that established The Great Peace]
+]
 ]
 
 ---
 Three Stages of Wampum's History
 ====================================
 
-## Monetary Economics
-- Wampum provides a unique case study in the theory and historical development of monies
+---
+Two Themes of Today's Talk
+====================================
 
 
+### Institutional Economics
+
+- Wampum allowed peaceful cooperation and the division of labor without resorting to a sovereign to enforce agreements <br>- Period 1
+
+- Rigid institutions that fail to adapt can go from beneficial to harmful
+  - Period 3
 
 
-# Institutional Economics
-- Wampum shows how rigid institutions that fail to adapt go from beneficial to hamful
+### Monetary Economics
+
+- Case study of a non-monetary society being forced into contact with monetary society
+
+- Certain people can use a good as money without everyone doing so
+
 
 ---
 Wampum was effective for the Iroquois League before and immediately after the arrival of European colonists
@@ -203,7 +218,7 @@ After colonial expansion, wampum became ineffective
 
 Yet, the Iroquois continued to rely on wampum 
 
-Iroquois kept wampum because certain people still benefitted 
+Iroquois kept wampum because certain people still benefited 
 
 
 ---
