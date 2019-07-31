@@ -188,9 +188,14 @@ Screening Role
 - Only patient groups wanting to invest in long-term trade relations would pay the cost
 
 
+---
+<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_A.png" width="100%" align="middle" />
+
 
 ---
-<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_B.png" width="50%" align="middle" />
+<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_B.png" width="100%" align="middle" />
+
+
 ---
 Institutional Shock
 ===================================
