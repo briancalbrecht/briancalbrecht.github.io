@@ -32,7 +32,7 @@ myBib <- ReadBib("C:/Users/Brian/Documents/githubprivate/defaults/library.bib", 
 Wampum was Colonial Money
 ====================================
 .left-column[
-- Know to economists as a **colonial money**
+- Known to economists as a **colonial money**
   -E.g., `r Citet(myBib, "Friedman1951", "Samuelson1951")`
 
 - Today: money = medium of exchange
@@ -127,7 +127,7 @@ Gresham's Law Aside
 Medium of Exchange in Fur Trade
 ========================
 
-- Wampum was produce by Algonquian tribe, consumed by Iroquois
+- Wampum was produced by Algonquian tribe, consumed by Iroquois
 
 - No evidence of trade between Algonquians and Iroquois, although they were in contact
   - Zero coincidence of wants
