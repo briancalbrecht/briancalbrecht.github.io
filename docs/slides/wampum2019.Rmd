@@ -141,12 +141,14 @@ Medium of Exchange in Fur Trade
 
 - Near perfect example of Menger, `r Citet(myBib, "Kiyotaki1989")`
 
----
-<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_A.png" width="100%" align="middle" />
-
 
 ---
-<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_B.png" width="100%" align="middle" />
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_A.png)
+background-size: contain
+
+---
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_B.png)
+background-size: contain
 
 ---
 Why Wampum?
