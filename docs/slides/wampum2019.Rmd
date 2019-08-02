@@ -295,14 +295,14 @@ Hold Up Problem
 Institutional Shock
 ===================================
 
-- However, European arrival brought European tools
+ - However, European arrival brought European tools
 
-- Production costs decreased by factor of ten
+ - Production costs decreased by factor of ten
 
-- Wampum production skyrockets
+ - Wampum production skyrockets
   - Some early anthropologists thought wampum only came after European contact
 
-- Colonists would promise more than they would deliver 
+ - Colonists would promise more than they would deliver 
   - Goods, protection, land
 
 ---
@@ -320,11 +320,12 @@ Institutional Tragedy
 ===================================
  
  - An efficient system would change with the costs
+ 
   - Decreased cost => shift of supply => decreased marginal value 
 
-- Yet, wampum and forest diplomacy continued 
+ - Yet, wampum and forest diplomacy continued 
 
-- Leading to loss of the Iroquois’s last settlements in New York State `r Citep(myBib, "Foster1985")`
+ - Leading to loss of the Iroquois’s last settlements in New York State `r Citep(myBib, "Foster1985")`
 
 ---
 Rents to Maintain???
