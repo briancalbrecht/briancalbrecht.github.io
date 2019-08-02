@@ -94,6 +94,8 @@ class: center, middle
 New Netherlands 
 ========================
 
+- 17th century colony
+
 - Well-documented that wampum was medium of exchange within New Netherlands
 
 - Director Willem Kieft started to pay employees and debts
@@ -112,9 +114,9 @@ New Netherlands
 Gresham's Law Aside
 ========================
 
-- Exchange rate to local currency was fixed
+- Fixed exchange rate with Dutch stiver
 
-- Ordinance that outlawed unpolished wampum, because that was all that circulated
+- Later, an ordinance outlawed unpolished wampum, because that was all that circulated
 
 - By 1641 the different grades of wampum had created an inequity in the exchange system
 
@@ -130,7 +132,7 @@ Medium of Exchange in Fur Trade
 - Wampum was produced by Algonquian tribe, consumed by Iroquois
 
 - No evidence of trade between Algonquians and Iroquois, although they were in contact
-  - Zero coincidence of wants
+
 
 - The arrival of Europeans
   - Created single coincidence of wants
