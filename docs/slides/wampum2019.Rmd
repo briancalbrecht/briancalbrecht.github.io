@@ -1,7 +1,7 @@
 ---
 title: "Wampum as Money and Not Money: <br>Why Colonists and the Iroquois used Shell Beads<br><br>"
 author: "Brian C. Albrecht <span style = 'font-size: 50%;'> University of Minnesota</span> <br> <br> Andrew T. Young  <span style = 'font-size: 50%;'> Texas Tech University</span><br><br>"
-date: '`r format(Sys.time(), "%B %d, %Y")`<br><br> `r icon::fa("link")` Paper [bit.ly/bca-wampum](https://bit.ly/bca-wampum) <br>`r icon::fa("link")` Slides [bit.ly/bca-SMP](https://bit.ly/bca-SMP) <br> `r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
+date: '`r format(Sys.time(), "%B %d, %Y")`<br><br> `r icon::fa("link")` Paper [bit.ly/Albrecht-wampum](https://bit.ly/Albrecht-wampum) <br>`r icon::fa("link")` Slides [bit.ly/Albrecht-SMP](https://bit.ly/Albrecht-SMP) <br> `r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
 output:
   xaringan::moon_reader:
     css: ["https://briancalbrecht.github.io/defaults/brian-xaringan-themer.css"]
@@ -39,9 +39,10 @@ Wampum was Colonial Money
 
 - Shells were broken into beads and strung into belts
 
+- Official exchange rate in Massachusetts Bay Colony
+
 - Legal tender in New Netherlands (New York)
 
-- Official exchange rate in Massachusetts Bay Colony
 ]
 .right-column[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/shell_to_belt.jpg" width="100%" align="middle" />
 ]
@@ -323,7 +324,7 @@ Institutional Tragedy
 
 - Yet, wampum and forest diplomacy continued 
 
-- Leading to loss of the Iroquois’s last settlements in New York State `r Citep(myBib, "Foster1985")`, 100–101). 
+- Leading to loss of the Iroquois’s last settlements in New York State `r Citep(myBib, "Foster1985")`
 
 ---
 Rents to Maintain???
