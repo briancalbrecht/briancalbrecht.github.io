@@ -384,7 +384,7 @@ class: center, middle
 # References
 
 ```{r refs1, echo=FALSE, results="asis"}
-PrintBibliography(myBib, start = 1, end = 4)
+PrintBibliography(myBib, start = 1, end = 3)
 ```
 
 
@@ -392,19 +392,19 @@ PrintBibliography(myBib, start = 1, end = 4)
 # References
 
 ```{r refs2, echo=FALSE, results="asis"}
-PrintBibliography(myBib, start = 5, end = 9)
+PrintBibliography(myBib, start = 4, end = 8)
 ````
 
 ---
 # References
 
 ```{r refs3, echo=FALSE, results="asis"}
-PrintBibliography(myBib, start = 10, end = 13)
+PrintBibliography(myBib, start = 9, end = 12)
 ````
 
 ---
 # References
 
 ```{r refs4, echo=FALSE, results="asis"}
-PrintBibliography(myBib, start = 14)
+PrintBibliography(myBib, start = 13)
 ````
