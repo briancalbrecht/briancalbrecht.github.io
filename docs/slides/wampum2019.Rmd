@@ -142,7 +142,7 @@ Medium of Exchange in Fur Trade
 - Near perfect example of Menger, `r Citet(myBib, "Kiyotaki1989")`
 
 ---
-<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_A.png" height="100%" align="middle" />
+<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_A.png" width="100%" align="middle" />
 
 
 ---
