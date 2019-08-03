@@ -62,7 +62,7 @@ Wampum was **NOT** Iroquois Money
 - Today's talk lays out and partially resolves some puzzles about wampum as money and non-money
 ]
 
-.right-column[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/Iroquois.png" width="100%" align="middle" />
+.right-column[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/iroquois.png" width="100%" align="middle" />
 ]
 
 ---
