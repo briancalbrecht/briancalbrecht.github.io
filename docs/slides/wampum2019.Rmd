@@ -226,7 +226,7 @@ Wampum's Early History
 - Condolence Council initiated The Great Peace
   - Peace among the Five Nations for over three hundred years
 
-- “Wampum, the chief instrument of the Council, became the vehicle necessary for all important political transactions” - `r Citet(myBib, "Snyderman1954a")`
+- “Wampum, the chief instrument of the Council, became the vehicle necessary for all important political transactions” - `r Citet(myBib, "Snyderman1954")`
 
 
 
