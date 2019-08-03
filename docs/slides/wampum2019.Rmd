@@ -55,14 +55,14 @@ Wampum was **NOT** Iroquois Money
 .left-column[
 - Contrary to Friedman, Samuelson, etc, the Iroquois **did not use wampum as a money**
 
-- Recent archaeologists: `r Citet(myBib, "Tooker1978", "Snyderman1954")`
+- All modern archaeologists agree: e.g. `r Citet(myBib, "Tooker1978", "Snyderman1954")`
 
-- Yet, why was wampum “the magnet which drew the beaver out”? `r Citep(myBib, "Weeden1884")`
+- So why was wampum “the magnet which drew the beaver out”? `r Citep(myBib, "Weeden1884")`
     
 - Today's talk lays out and partially resolves some puzzles about wampum as money and non-money
 ]
 
-.right-column[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/iroquois.png" width="100%" align="middle" />
+.right-column[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/Iroquois.png" width="100%" align="middle" />
 ]
 
 ---
@@ -192,6 +192,8 @@ Value to Iroquois
 
 - But why?
 
+- Not completely unrelated to why money is valuable
+
 ---
 class: center, middle
 
@@ -215,7 +217,7 @@ class: center, middle
 Wampum's Early History
 =====================================
 
-- Earliest uses go to the Condolence Council, a predecessor to the **Iroquois League**
+- Earliest uses go back to the Condolence Council, a predecessor to the **Iroquois League**
 
 - Upon the death of a chief, wampum was given as a gift
 
@@ -310,7 +312,7 @@ Institutional Importance
 ===================================
 
 
-- Instead forest diplomacy became more important
+- Instead wampum became **even more important** in forest diplomacy
 
 - 18th century saw forest diplomacy’s “perfection” (Fenton 1998, 7)
 
