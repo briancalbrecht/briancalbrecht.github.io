@@ -98,44 +98,44 @@ I am also consider the idea of people presenting new simple, price theory models
 Any other suggestions are appreciated!
 \newpage
 
-## Schedule {-}
+## Schedule (Tentative) {-}
 
 
 ### `r advdate(mon, 1)`: Discussion Group Planning {-}
 
 
-### `r advdate(mon, 2)`: Chapters 1 and 2 {-}
+### `r advdate(mon, 2)`: Chapters 1 and 2: Utility Max, Cost Min, Demand {-}
 
 
-### `r advdate(mon, 3)`: Chapters 3 and 4 {-}
-
-
-
-
-### `r advdate(mon, 4)`: Chapters 5 and 6 {-}
+### `r advdate(mon, 3)`: Chapters 3 and 4: Relating Marshall/Hicks, Price Indices {-}
 
 
 
 
-### `r advdate(mon, 5)`: Chapter 7 {-}
+### `r advdate(mon, 4)`: Chapters 5 and 6: Nudges, Short vs Long Run Demand, Addiction {-}
 
 
 
-### `r advdate(mon, 6)`: Chapter 8  {-}
-### `r advdate(mon, 7)`: Chapter 9 {-}
-### `r advdate(mon, 8)`: Chapter 10 {-}
 
-### `r advdate(mon, 9)`: Chapters 11 and 12 {-}
+### `r advdate(mon, 5)`: Chapter 7: Discrete Choice, Product Quality {-}
 
-### `r advdate(mon, 10)`: Chapters 13 and 14 {-}
 
-### `r advdate(mon, 11)`: Chapter 15 {-}
+
+### `r advdate(mon, 6)`: Chapter 8: Location Choice, Equilibrium  {-}
+### `r advdate(mon, 7)`: Chapter 9: Learning by Doing {-}
+### `r advdate(mon, 8)`: Chapter 10: Production, Profits, and Factor Demand {-}
+
+### `r advdate(mon, 9)`: Chapters 11 and 12: Industry Model, Prohibition {-}
+
+### `r advdate(mon, 10)`: Chapters 13 and 14: The Core, Multi-factor Model {-}
+
+### `r advdate(mon, 11)`: Chapter 15: Durable Production Factors {-}
 
 ### `r advdate(mon, 12)`: No Reading Group: Thanksgiving {-}
 
-### `r advdate(mon, 13)`: Chapters 16 and 17 {-}
+### `r advdate(mon, 13)`: Chapters 16 and 17: Capital Accumulation, Investment from Planning Perspective {-}
 
-### `r advdate(mon, 14)`: Chapter 18 {-} 
+### `r advdate(mon, 14)`: Chapter 18: Applied Factor Supply and Demand I {-} 
 
-### `r advdate(mon, 15)`: Chapter 19 {-}
+### `r advdate(mon, 15)`: Chapter 19: Applied Factor Supply and Demand II {-}
 
