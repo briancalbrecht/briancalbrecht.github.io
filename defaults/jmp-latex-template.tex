@@ -81,10 +81,9 @@ $endif$
 
 
 
-$if(anonymous)$$else$\author{$for(author)$\Large $author.name$\vspace{0.05in} \newline\normalsize\emph{$author.affiliation$}  $sep$ \and $endfor$}$endif$
+$if(anonymous)$$else$\author{$for(author)$\Large $author.name$\and $endfor$}$endif$
 
 
-\date{}
 
 %\usepackage{titlesec}
 
@@ -140,9 +139,9 @@ $endif$
 	pdfkeywords = {$if(keywords)$$keywords$$endif$},
 	pdftitle={$title$$if(subtitle)$: $subtitle$$endif$},
 	colorlinks=true,
-	citecolor=$if(citecolor)$$citecolor$$else$blue$endif$,
-	urlcolor=$if(urlcolor)$$urlcolor$$else$blue$endif$,
-	linkcolor=$if(linkcolor)$$linkcolor$$else$magenta$endif$,
+	citecolor=darkblue,
+	urlcolor=darkblue,
+	linkcolor=darkblue,
 	pdfborder={0 0 0}}
 \urlstyle{same}  % don't use monospace font for urls
 
@@ -167,7 +166,7 @@ $endif$
 	
 	
 %%%%%%%%Brian's Added Packages%%%%%%%%%%
-
+\definecolor{darkblue}{rgb}{0.0,0.0,0.66}
 
 
 
@@ -247,7 +246,7 @@ $endif$
 	
 	$if(toc)$
 	{
-		\hypersetup{linkcolor=black}
+		\hypersetup{linkcolor=darkblue,urlcolor=darkblue,citecolor=darkblue}
 		\setcounter{tocdepth}{$toc-depth$}
 		\tableofcontents
 	}
