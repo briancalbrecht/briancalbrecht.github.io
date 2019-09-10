@@ -76,6 +76,12 @@ Sketch of Environment
 
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_B.png)]
 
+???
+Simple set up to focus on the coordination aspect
+
+Ignore hold-up, bargaining issues
+
+
 ---
 Formal Results
 =====================
@@ -158,9 +164,13 @@ Example
 - Total buyer utility: `\(v(b,s) - p(s) - \frac{1}{4}b\)`
 
 - Total seller utility: `\(p(s) - \frac{1}{4}s\)`
+
+
 ---
 Investment Equilibrium
 ====================================
+
+Informal Definition: 
 
 1. Prices clear matching market
 
@@ -176,24 +186,43 @@ Investment Equilibrium
 
 - Equilibrium does not require optimization "off-path" (like Nash)
   
-
+???
+Informal Definition
  
 ---
-Weak Predictive Power
+Equilibria
 ====================================
 
+- Efficient equilibrium: `\(b=s=1\)`
 
-- With no more conditions, two investment equilibria:
-  - Efficient: `\(b=s=1\)`
-  - Coordination failure: `\(b=s=0\)`
+  - Realized prices: `\(p(1) \in \left[\frac{1}{4}, \frac{3}{4}\right]\)`
+  - Non-contradicting conjectures: `\(\tilde{p}^i(0) \geq 0\)` and `\(\tilde{p}^j(s) \leq 1/2\)`
+  
+--
 
-- `\(p(0) = 0\)` and `\(p(1) \in \left[\frac{1}{4}, \frac{3}{4}\right]\)`
+- Coordination failure: `\(b=s=0\)`
+  - Realized prices: `\(p(0)=0\)`
+  - Contradicting conjectures: `\(\tilde{p}^i(1) \geq 3/4\)` and `\(\tilde{p}^j(1) \leq 1/4\)`
+
+--
+
+- What can we predict?
+  - Everyone can invest (max surplus) or not (min surplus)
 
 - Little predictive power from a Nash-style equilibrium
+
+???
+SLOW SLOW SLOW
 
 ---
 background-image:url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_D.png)
 background-size:contain
+
+???
+
+This is display of surplus equilibrium surplus
+
+Ignoring any mixed strategies or mixed prices
 
 ---
 
@@ -209,17 +238,19 @@ background-size:contain
 --
 
 - Reason: Off-path conjectures are a free parameter
-  - Pick `\(\tilde{p}^j(s)\)` sufficiently low to discourage
+  - Theorist can pick `\(\tilde{p}^j(s)\)` sufficiently low to discourage all other actions
 
 - I consider a mild refinement to avoid this free belief parameter
   - Trembling-hand perfection
 
+???
+Robert Lucas taught us to beware of theorists bearing free parameters
 
 ---
 Perturbed Strategies
 ====================================
 
-- Back to two actions: `\(B=S=\{0,1\}\)`
+- Back to two actions example: `\(B=S=\{0,1\}\)`
 
 - Symmetric trembling hand: each attribute must be chosen with positive probability density `\(\epsilon^i&gt;0\)` by each buyer and seller
 
@@ -229,7 +260,8 @@ Perturbed Strategies
 
 - Claim: The unique perfect equilibrium allocation is efficient
 
-  
+???
+Symmetric: all players and all actions have same tremble
 ---
 Uniqueness Proof
 ==========
@@ -245,6 +277,9 @@ Uniqueness Proof
   - Drives price up
 
 - Investment equilibrium:  `$$p(1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$$`
+
+???
+Draw on board supply and demand
 
 ---
 
@@ -367,6 +402,9 @@ Stage 2: Equilibrium
 - For each `\(s \in  \text{supp } \mu\)` and each `\((b,s) \in \text{supp } x,\)`, `\(b \in B\)` implies 
 
 `$$p(b,s) = v_s^*(p) \equiv \max \left\{p(b,s), v(0,s)\right\},$$`
+
+???
+Walk slowly through each
 
 ---
 Stage 2: Efficiency
@@ -579,7 +617,7 @@ Finite Buyers and Sellers
 
 - Approaches on previous slide would directly extend Theorem 1 to finite players
 
-- In general, my trembling hand does not offer a refinement with finite players
+- In general, trembling hand does not offer a refinement with finite players
 
 - But it does offer a refinement for a specific limit
 
