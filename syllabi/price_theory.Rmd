@@ -75,7 +75,7 @@ myopts <- BibOptions(bib.style = "authoryear", style="latex", first.inits=FALSE,
 
 This virtual discussion group is meant for graduate students and professors across the world to work together to better understand Chicago price theory, through the new textbook.
 
-All discussions will take place via Google Hangouts. I will post a link to the discussion.
+All discussions will take place via Google Meet. Please use [this link](https://meet.google.com/ngm-ksav-vky).
 
 ## Time (Tentative) {-}
 
