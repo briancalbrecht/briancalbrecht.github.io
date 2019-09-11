@@ -91,7 +91,7 @@ Wednesday 2-3PM Central (if that does not work, please message me with a better 
 
 Each week's discussion will start and end on time. 
 
-To facilitate conversation with the lags of Google Hangouts, the discussion will be run like a Liberty Fund seminar. For those who are unfamiliar, we will go through the details in week 1 and we can modify it as we go. The important part is that people will notify me to be "added to the queue" and the discussion will follow the queue. We will see how this will work when we are working through the details of a model.
+We will be going through the textbook, page by page. I as discussion leader will ask, "are there any questions on page X?,,, Are there any questions on page X+1?"
 
 I am also consider the idea of people presenting new simple, price theory models outside of the reading. For the first 10 minutes or so, one participant will explain either 1) a model they are working on or 2) a model from another paper. This is meant to help bridge the gap between the textbook treatment and the ultimate use of price theory as a tool for understanding.
 
@@ -104,20 +104,20 @@ Any other suggestions are appreciated!
 ### `r advdate(mon, 1)`: Discussion Group Planning {-}
 
 
-### `r advdate(mon, 2)`: Chapters 1 and 2: Utility Max, Cost Min, Demand {-}
+### `r advdate(mon, 2)`: Introduction and Chapter 1 and 2: Utility Max{-}
 
 
-### `r advdate(mon, 3)`: Chapters 3 and 4: Relating Marshall/Hicks, Price Indices {-}
-
-
-
-
-### `r advdate(mon, 4)`: Chapters 5 and 6: Nudges, Short vs Long Run Demand, Addiction {-}
+### `r advdate(mon, 3)`: Chapters 2 and 3: Cost Min and Relating Marshall/Hicks {-}
 
 
 
 
-### `r advdate(mon, 5)`: Chapter 7: Discrete Choice, Product Quality {-}
+### `r advdate(mon, 4)`: Chapters 4 and 5: Price Indices and Nudges {-}
+
+
+
+
+### `r advdate(mon, 5)`: Chapter 6 and 7: Short vs Long Run Demand, Discrete Choice, Product Quality {-}
 
 
 
