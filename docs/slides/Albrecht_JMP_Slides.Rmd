@@ -266,7 +266,7 @@ Uniqueness Proof
 
 --
 
-- If $p(1,1)$ is high ($> \frac{1}{4})$, sellers want to choose $s=1$ as much as possible: $1 - \epsilon^i$
+- If $p(1,1)$ is high $(> \frac{1}{4})$, sellers want to choose $s=1$ as much as possible: $1 - \epsilon^i$
   - Drives price down
 
 --
