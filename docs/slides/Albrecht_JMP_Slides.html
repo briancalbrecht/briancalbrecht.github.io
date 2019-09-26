@@ -187,7 +187,7 @@ Investment Equilibrium
 Informal Definition
 
 ---
-Payoffs
+Example Payoffs
 =====================================
 
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_G.png)]
@@ -215,15 +215,15 @@ Constructing Equilibria
 
 - Coordination failure: `\(b=s=0\)`
 
-  - Supposed ralized prices: `\(p(0,0)=0\)`
-  - **Contradicting** conjectures: `\(\tilde{p}^i (1,1) = 1\)` and `\(\tilde{p}^j(1,1) = 0\)`
+  - Realized prices: `\(p(0,0)=0\)`
+  - **Contradicting** conjectures: 
+      - To avoid buyer deviating: `\(\tilde{p}^i (1,1) \geq \frac{3}{4}\)`
+      - To avoid seller deviating: `\(\tilde{p}^j(1,1) \leq \frac{1}{4}\)`
 
 --
 
 - What are the efficiency implications?
   - Max or min feasible surplus
-
-- Little predictive power from a Nash-style equilibrium
 
 ???
 SLOW SLOW SLOW
@@ -234,8 +234,13 @@ SLOW SLOW SLOW
 Refinement
 =======================
 
-- Reason for multiplicity: Off-path conjectures are a free parameter
-  - Theorist can pick `\(\tilde{p}^j(b,s)\)` sufficiently low to discourage all other actions
+
+- Multiplicity from a Nash-style equilibrium
+
+
+- But one equilibria relies on Off-path conjectures as a free parameter
+  - Theorist can pick `\(\tilde{p}^j(b,s)\)` discourage all other actions
+  - Ignored by previous theorists
 
 - I consider a mild refinement to avoid this free belief parameter
   - Trembling-hand perfection
@@ -249,9 +254,10 @@ Robert Lucas taught us to beware of theorists bearing free parameters
 Perturbed Strategies
 ====================================
 
-- No mistakes/trembles in matching market 
+- For simplicity, assume no mistakes/trembles in competitive matching market 
 
-- Symmetric trembling hand: each attribute must be chosen with positive probability `\(\epsilon^i&gt;0\)` by each buyer and seller
+- Symmetric trembling hand at investment stage: 
+  - Each attribute must be chosen with positive probability `\(\epsilon^i&gt;0\)` by each buyer and seller
 
 - Assume in the aggregate each attribute must be chosen by a positive density of players
 
