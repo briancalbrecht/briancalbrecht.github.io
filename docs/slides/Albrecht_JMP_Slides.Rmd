@@ -556,7 +556,7 @@ $\epsilon$-Investment Equilibria
 - An allocation $\nu(\epsilon)$ is $\epsilon$-feasible for $E$ if  $\nu_T = E$ and for all $a \in A$
 $$\nu_{A}(\epsilon(a)) \geq \epsilon(a)$$
 
-- A pair $(\nu(\epsilon), p)$ is an $\epsilon$-investment equilibrium for $E$ if $\nu$ is $\epsilon$-feasible, $p$ is a competitive price for $\mu$, and for all $(a,t)$ such that $\nu_{A}(\epsilon) > \epsilon$,
+- A pair $(\nu(\epsilon), p)$ is an $\epsilon$-investment equilibrium for $E$ if $\nu$ is $\epsilon$-feasible, $p$ is a competitive price for $\nu_T$, and for all $(a,t)$ such that $\nu_{A}(\epsilon) > \epsilon$,
 
 $$v_a^*(p) - c(a,t) \geq v^*_{a'}(p) - c(a',t) ~~~\forall a' \in A$$
 
