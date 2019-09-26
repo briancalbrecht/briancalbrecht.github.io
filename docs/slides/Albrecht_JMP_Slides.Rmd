@@ -170,13 +170,17 @@ Investment Equilibrium
 
 2. Each seller $j$ chooses $(b,s)$ to maximize utility, given price $\tilde{p}^j(b,s)$
 
+--
+
 3. Rational conjectures: conjectures are not contradicted by the data
   - If positive mass of agents choose $(b,s)$, conjectures agree with the observed price: $\tilde{p}^i (b,s) = \tilde{p}^j (b,s)= p(b,s)$
   
   - Otherwise conjectures are not pinned down 
 
+--
+
 4. Prices clear matching markets
-  - Mass of buyers choosing $(b,s)$ = mass of sellers
+  - Mass of buyers choosing $(b,s)$ = mass of sellers choosing $(b,s)$
 
   
 ???
@@ -189,8 +193,9 @@ Payoffs
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_G.png)]
 
 --
+- Conjectures are endogenous
 
-- If a match $(b,s)$ is chosen, $\tilde{p}^i (b,s) = \tilde{p}^j (b,s)= p(b,s)$
+- Rational conjectures: if a match $(b,s)$ is chosen, $\tilde{p}^i (b,s) = \tilde{p}^j (b,s)= p(b,s)$
 
 - Equilibrium does not require optimization or correct conjectures "off-path" (like Nash)
 
