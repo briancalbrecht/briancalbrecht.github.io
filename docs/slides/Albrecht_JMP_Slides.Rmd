@@ -193,7 +193,7 @@ Example Payoffs
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_G.png)]
 
 --
-- Conjectures are endogenous
+- Prices and conjectures are endogenous
 
 - Rational conjectures: if a match $(b,s)$ is chosen, $\tilde{p}^i (b,s) = \tilde{p}^j (b,s)= p(b,s)$
 
