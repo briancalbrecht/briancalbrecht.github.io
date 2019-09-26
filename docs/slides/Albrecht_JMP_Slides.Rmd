@@ -76,7 +76,7 @@ Makowski & Ostroy (1995), Cole, Malaith, & Postlewaite (1999), Makowski (2004), 
    - Contribution: focus on dynamic models with coordination failures
      
 <font color=#125972><b>Coordination failures are not robust:</b></font> Albrecht (2016), Penta & Zuazo-Garin (2018)
-  - Contribution: price-taking makes coordination failures non-robust
+  - Contribution: Competition makes coordination failures non-robust
 
 
 
@@ -656,11 +656,11 @@ Simple General Mechanism
 Conclusion
 ====================================
 
-- With price-taking, coordination failures rely on using beliefs as a free parameter and constructing overly pessimistic conjectures
+- With competition, coordination failures rely on using beliefs as a free parameter and constructing overly pessimistic conjectures
 
 - If we want predictive power, we must use a refinement
 
-- Trembling hand perfection is one option
+- Trembling-hand perfection is one option
 
 - In an competitive matching model with investment, every perfect equilibrium is efficient
 
