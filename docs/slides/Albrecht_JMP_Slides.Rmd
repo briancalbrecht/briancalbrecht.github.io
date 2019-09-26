@@ -1,7 +1,7 @@
 ---
 title: "Investment without Coordination Failures<br><br>"
 author: "Brian C. Albrecht<br> <span style = 'font-size: 50%;'> University of Minnesota<br> Department of Economics</span>"
-date: '`r format(Sys.time(), "%B %d, %Y")`<br><br>Paper `r icon::fa("link")`  [bit.ly/Albrecht-JMP](http://bit.ly/Albrecht-JMP) <br>Slides `r icon::fa("link")`  [bit.ly/Albrecht-JMP-Slides](http://bit.ly/Albrecht-JMP-Slides) <br>`r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
+date: '`r format(Sys.time(), "%B %d, %Y")`<br><br>Paper `r icon::fa("link")`  [bit.ly/Albrecht-JMP](http://bit.ly/Albrecht-JMP) <br>Slides `r icon::fa("link")`  [bit.ly/Albrecht-JMP-Slides](http://bit.ly/Albrecht-JMP-Slides)'
 output:
   xaringan::moon_reader:
     css: ["https://briancalbrecht.github.io/defaults/brian-xaringan-themer.css"]
