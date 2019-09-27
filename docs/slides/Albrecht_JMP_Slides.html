@@ -13,7 +13,7 @@ class: left, middle, inverse, title-slide
 
 # Investment without Coordination Failures<br><br>
 ### Brian C. Albrecht<br> <span style="font-size: 50%;"> University of Minnesota<br> Department of Economics</span>
-### September 26, 2019<br><br>Paper <i class="fas  fa-link "></i> <a href="http://bit.ly/Albrecht-JMP">bit.ly/Albrecht-JMP</a> <br>Slides <i class="fas  fa-link "></i> <a href="http://bit.ly/Albrecht-JMP-Slides">bit.ly/Albrecht-JMP-Slides</a>
+### September 27, 2019<br><br>Paper <i class="fas  fa-link "></i> <a href="http://bit.ly/Albrecht-JMP">bit.ly/Albrecht-JMP</a> <br>Slides <i class="fas  fa-link "></i> <a href="http://bit.ly/Albrecht-JMP-Slides">bit.ly/Albrecht-JMP-Slides</a>
 
 ---
 
@@ -103,7 +103,7 @@ Road Map for Talk
 
 
 ---
-Sketch of Environment
+Sketch of General Environment
 ====================================
 
 - Continuum of buyers and sellers, finite types
@@ -132,33 +132,42 @@ Example
 
 - Cost to buyer = `\(\frac{1}{4}b\)`;  Cost to seller = `\(\frac{1}{4}s\)`
 
-- Surplus `\(v(b,s) = bs\)` is split through transfer to seller through price
+- Surplus `\(v(b,s) = bs\)` of matching
 
---
 
-- Price transfer: `\(p : B \times S \to \mathbb{R}\)`
-  - Transfer from buyer with `\(b\)` to seller with `\(s\)`
+
   
-- Total buyer utility: `\(v(b,s) - p(b,s) - \frac{1}{4}b\)`
 
-- Total seller utility: `\(p(b,s) - \frac{1}{4}s\)`
+---
+Stage 2: Matching Market
+===================================
+
+- In the competitive market, an agent buys the  **contractual right** to match another agent
+
+- Price schedule for matches: `\(p : B \times S \to \mathbb{R}\)`
+
+- `\(p(b,s)\)`: transfer from buyer with `\(b\)` to seller with `\(s\)`
+
+- Final buyer utility: `\(v(b,s) - p(b,s) - \frac{1}{4}b\)`
+
+- Final seller utility: `\(p(b,s) - \frac{1}{4}s\)`
 
 
 ---
-Decision Problem
+Stage 1: Decision Problem
 ==============================
 
-- Agents make their decisions based on some price conjectures: `\(\tilde{p}(b,s)\)`
+- Agents make investment decisions based on price conjectures: `\(\tilde{p}^i(b,s)\)`
+  - They take as given the contract they will buy in stage 2
 
 - Buyer's problem
 
-`$$\max_{b'} \left\{\max_{s'} v(b',s') - \tilde{p}^i(b',s') - \frac{1}{4}b'\right\}$$`
+`$$\max_{b'} \left\{\max_{s'}\left\{ \underbrace{v(b',s') - \tilde{p}^i(b',s')}_{\text{Contract Choice}}\right\} - \frac{1}{4}b'\right\}$$`
 
 
 - Seller's problem 
 
-`$$\max_{s'} \left\{\max_{b'}  \tilde{p}^j(b',s') - \frac{1}{4}s'\right\}$$`
-
+`$$\max_{s'} \left\{\max_{b'}\left\{\underbrace{\tilde{p}^j(b',s')}_{\text{Contract Choice}}\right\} - \frac{1}{4}b'\right\}$$`
 
 ---
 Investment Equilibrium
@@ -168,12 +177,12 @@ Investment Equilibrium
 
 1. Each buyer `\(i\)` chooses `\((b,s)\)` to maximize utility, given `\(\tilde{p}^i(b,s)\)`
 
-2. Each seller `\(j\)` chooses `\((b,s)\)` to maximize utility, given price `\(\tilde{p}^j(b,s)\)`
+2. Each seller `\(j\)` chooses `\((b,s)\)` to maximize utility, given `\(\tilde{p}^j(b,s)\)`
 
 --
 
 3. Rational conjectures: conjectures are not contradicted by the data
-  - If positive mass of agents choose `\((b,s)\)`, conjectures agree with the observed price: `\(\tilde{p}^i (b,s) = \tilde{p}^j (b,s)= p(b,s)\)`
+  - If positive mass of agents choose contract `\((b,s)\)`, conjectures agree with the posted price: `\(\tilde{p}^i (b,s) = \tilde{p}^j (b,s)= p(b,s)\)`
   
   - Otherwise conjectures are not pinned down 
 
@@ -263,9 +272,9 @@ Perturbed Strategies
 
 --
 
-- Perfect equilibrium: limit of some sequence of `\(\epsilon = (\epsilon^i,\epsilon^j)\)`
+- Perfect equilibrium: limit of some sequence `\(\to 0\)` of `\(\epsilon = (\epsilon^i,\epsilon^j)\)`
 
-- **Claim**: The unique perfect equilibrium allocation is efficient
+- **Claim**: The unique perfect equilibrium matching is efficient
 
 ???
 Symmetric: all players and all actions have same tremble
@@ -277,22 +286,27 @@ Uniqueness Proof
 
 --
 
-- If `\(p(1,1)\)` is high `\((&gt; \frac{1}{4})\)`, sellers want to choose `\(s=1\)` as much as possible: `\(1 - \epsilon^i\)`
-  - Drives price down
+- If `\(p(1,1)\)` is low `\((&lt; \frac{3}{4})\)`, no buyers want to choose `\(b=0\)` 
+  - Instead, choose `\(b=1\)` as much as possible: `\(1 - \epsilon^i\)`
+  - Drives `\(p(1,1)\)` up
 
 --
 
-- If `\(p(1,1)\)` is low `\((&lt; \frac{3}{4})\)`, buyers want to choose `\(b=1\)` as much as possible: `\(1 - \epsilon^j\)`
-  - Drives price up
+- If `\(p(1,1)\)` is high `\((&gt; \frac{1}{4})\)`, no sellers want to choose `\(s=0\)`
+  - Instead choose `\(s=1\)` as much as possible: `\(1 - \epsilon^j\)`
+  - Drives `\(p(1,1)\)` down
+
+
+- A `\(p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]\)` clears all markets
 
 --
 
-- Investment equilibrium:  `\(p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]\)`
 
-
-- As perturbations go to zero, `\((1,1)\)` is the still unique equilibrium strategy profile
+- For any `\(\epsilon \to 0\)`, `\((1,1)\)` is the unique equilibrium strategy profile
 
 ???
+
+  - Besides `\(p(1,1)\)`, all prices must be zero
 Draw on board supply and demand
 
 ---
@@ -625,7 +639,7 @@ Full Efficiency
 
 
 ---
-Other Justifications
+Common Conjectures Justifications
 ====================================
 
 - Predictive power comes from imposing more restrictions on beliefs than just rational expectations
@@ -654,11 +668,11 @@ Simple General Mechanism
 
 --
 
-- Possibility of "mistakes" constrains equilibrium conjectures
+- Possibility of mistakes constrains equilibrium conjectures
 
 &lt;!--  - With a trembling-hand, all strategies are played --&gt;
 
-- Refined beliefs are constrained to be as-if markets were complete
+- Beliefs are constrained to be as-if markets were complete
 
 - As-if complete markets gives efficiency
 
@@ -671,11 +685,7 @@ Conclusion
 
 - If we want predictive power, we must use a refinement
 
-- Trembling-hand perfection is one option
-
 - In an competitive matching model with investment, every perfect equilibrium is efficient
-
-- Mathematical mechanism: trembles generate complete markets
 
 - Even though in equilibrium, markets are endogenous and incomplete
 
