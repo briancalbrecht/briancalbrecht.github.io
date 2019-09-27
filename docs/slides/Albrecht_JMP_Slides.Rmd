@@ -226,8 +226,8 @@ Constructing Equilibria
 
   - Realized prices: $p(0,0)=0$
   - **Contradicting** conjectures: 
-      - To avoid buyer deviating: $\tilde{p}^i (1,1) \geq \frac{3}{4}$
-      - To avoid seller deviating: $\tilde{p}^j(1,1) \leq \frac{1}{4}$
+      - To prevent buyer deviating: $\tilde{p}^i (1,1) \geq \frac{3}{4}$
+      - To prevent seller deviating: $\tilde{p}^j(1,1) \leq \frac{1}{4}$
 
 --
 
@@ -263,7 +263,7 @@ Robert Lucas taught us to beware of theorists bearing free parameters
 Perturbed Strategies
 ====================================
 
-- For simplicity, assume no mistakes/trembles in competitive matching market 
+- For simplicity, 
 
 - Symmetric trembling hand at investment stage: 
   - Each attribute must be chosen with positive probability $\epsilon^i>0$ by each buyer and seller
@@ -296,8 +296,13 @@ Uniqueness Proof
   - Instead choose $s=1$ as much as possible: $1 - \epsilon^j$
   - Drives $p(1,1)$ down
 
+---
+Uniqueness Proof
+==========
 
-- A $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$ clears all markets
+- Some $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$ balances forces and clears all markets
+
+- At that price, everyone wants to invest
 
 --
 
@@ -374,9 +379,9 @@ Stage 1: Attributes
 
 - $A$ is partitioned into attributes that are feasible for buyers $B$ and feasible for sellers $S$
 
-- Type determines cost of acquiring attribute $$c : A \times T \to \mathbb{R} \cup {\infty}$$
+- Type determines cost of acquiring attribute $$c : T \times A \to \mathbb{R} \cup {\infty}$$
 
-- $c(a,t)$ is the cost of acquiring $a$ for type $t$
+- $c(t,a)$ is the cost of acquiring $a$ for type $t$
 
 --
 
@@ -388,6 +393,8 @@ Stage 1: Attributes
 Stage 2: Matching Game
 ====================================
 
+- Bounded value function: $v : B^{\emptyset} \times S^{\emptyset} \to \mathbb{R}$
+
 - Competitive prices: $p : B^{\emptyset} \times S^{\emptyset} \to \mathbb{R}$ 
 
 - To allow individuals to remain unmatched, let $B^{\emptyset} \equiv B \cup {0}$ and $S^{\emptyset} \equiv S \cup {0}$
@@ -395,20 +402,10 @@ Stage 2: Matching Game
 - A matching is a measure $$x \in M_+ (B^{\emptyset} \times S^{\emptyset})$$
 
 - A matching $x$ is **feasible** for $\mu$ if $x(0,0)=0$, and for all attributes,
-$$x(b, S^{\emptyset}) = \mu(E)$$
-$$x(B^{\emptyset}, s) = \mu(F)$$
+$$x(b, S^{\emptyset}) = \mu(b)$$
+$$x(B^{\emptyset}, s) = \mu(s)$$
 
 
-
----
-Value Functions
-====================================
-- Bounded value function: $v : B^{\emptyset} \times S^{\emptyset} \to \mathbb{R}$
- 
-
-- Social matching gains function given $\mu$
-$$g(\mu) \equiv \text{max}_{x} \sum_{b \in B^{\emptyset}} \sum_{s \in S^{\emptyset}} v(b,s) x(b,s)~~~ s.t. x \text{ is feasible given } \mu$$
-- An allocation that attains $g(\mu)$ is **conditionally efficient**
 
 
 
@@ -437,6 +434,18 @@ $$b^* \in \text{ argmax }_{b}\left\{ \max_{b' \in \text{ supp } B} \left\{p(b',s
 
 ???
 Walk slowly through each
+
+
+---
+Stage 2: Efficiency
+====================================
+
+ 
+
+- Social matching gains function given $\mu$
+$$g(\mu) \equiv \text{max}_{x} \sum_{b \in B^{\emptyset}} \sum_{s \in S^{\emptyset}} v(b,s) x(b,s)~~~ s.t. x \text{ is feasible given } \mu$$
+- An allocation that attains $g(\mu)$ is **conditionally efficient**
+
 
 ---
 Stage 2: Efficiency
@@ -500,10 +509,10 @@ Equilibrium
 
 - A pair $(\nu, p)$ is an **investment equilibrium** for $E$ if $\nu$ is feasible, $(x,p)$ is a competitive equilibrium for $\nu_A$,
 
-Buyers optimize their investment: for all $(b,t) \in \text{supp } \nu$
+Buyers optimize their investment: for all $(t,b) \in \text{supp } \nu$
 
 
-$$v_b^*(\tilde{p}) - c(b,t) \geq v^*_{b'}(p) - c(b',t) ~~~\forall b' \in B$$
+$$v_b^*(\tilde{p}) - c(t,b) \geq v^*_{b'}(p) - c(t,b') ~~~\forall b' \in B$$
 
 
 Sellers optimize: for all $(s,t) \in \text{supp } \nu$
@@ -572,7 +581,7 @@ $$\sum_B \epsilon(b) \leq 1$$
 - For all sellers $\epsilon_S = (\epsilon(s))_{s \in S},$ satisfying  $\epsilon(s)>0$ for all $s \in S$ and 
 $$\sum_S \epsilon(s) \leq 1$$
 
-- A perturbed games is index by the set of perturbed strategy vectors $\epsilon = (\epsilon_B,\epsilon_S)$
+- A perturbed game is indexed by the vector of perturbed strategies $\epsilon = (\epsilon_B,\epsilon_S)$
 
 ---
 $\epsilon$-Investment Equilibria
@@ -581,9 +590,9 @@ $\epsilon$-Investment Equilibria
 - An allocation $\nu(\epsilon)$ is $\epsilon$-feasible for $E$ if  $\nu_T = E$ and for all $a \in A$
 $$\nu_{A}(\epsilon(a)) \geq \epsilon(a)$$
 
-- A pair $(\nu(\epsilon), p)$ is an $\epsilon$-investment equilibrium for $E$ if $\nu$ is $\epsilon$-feasible, $p$ is a competitive price for $\nu_T$, and for all $(a,t)$ such that $\nu_{A}(\epsilon) > \epsilon$,
+- A pair $(\nu(\epsilon), p)$ is an $\epsilon$-investment equilibrium for $E$ if $\nu$ is $\epsilon$-feasible, $p$ is a competitive price for $\nu_T$, and for all $(t,a)$ such that $\nu_{A}(\epsilon) > \epsilon$,
 
-$$v_a^*(p) - c(a,t) \geq v^*_{a'}(p) - c(a',t) ~~~\forall a' \in A$$
+$$v_a^*(p) - c(t,a) \geq v^*_{a'}(p) - c(a',t) ~~~\forall a' \in A$$
 
 --
 
@@ -604,8 +613,8 @@ Restricted Efficiency
 
 - Proof: 
 
- Let $Q(\epsilon)$ be the utility generate by the trembling actions
-$$Q(\epsilon)= \sum_a \sum_{\nu} \left[v^*_a(p) - c(a,t)\right]\epsilon(a)$$
+ Let $Q(\epsilon)$ be the utility generated by the trembling actions
+ $$Q(\epsilon)=\int_i \left\{ \sum_b  \left[v^*_b(p) - c(\beta{i},b)\right]\epsilon(b)\right\} di  + \int_j\left\{\sum_{s} \left[v^*_b(p) - c(\sigma{j},s)\right]\epsilon(s)\right\} dj.$$
 
 
 ---
@@ -614,7 +623,7 @@ Proof (continued)
 
 - Hence, 
 
-$$\underbrace{\left(\int  \left[\max_b v(b,s) - \tilde{p}^i (b,s) - c(b,i)\right] di  + \int\left[\max_s  \tilde{p}^j (b,s)  - c(s,j)\right] dj\right) \left(1 - \sum_a \epsilon(a) \right)}_{\text{Optimized Choice}}$$
+$$\underbrace{\left(\int  \left[\max_b v(b,s) - \tilde{p}^i (b,s) - c\left(\beta(i), b\right)\right] di  + \int\left[\max_s  \tilde{p}^j (b,s)  - c\left(\sigma(j), s\right)\right] dj\right) \left(1 - \sum_a \epsilon(a) \right)}_{\text{Optimized Choice}}$$
 $$ + \underbrace{Q(\epsilon)}_{\text{Constrained Choice}}$$
 
 - But since all actions are played by trembles, $\tilde{p}^i(b,s) =\tilde{p}^j(b,s)$ 
