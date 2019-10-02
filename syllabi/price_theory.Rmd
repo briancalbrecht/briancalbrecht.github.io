@@ -77,7 +77,7 @@ This virtual discussion group is meant for graduate students and professors acro
 
 All discussions will take place via Google Meet. Please use [this link](https://meet.google.com/ngm-ksav-vky).
 
-## Time (Tentative) {-}
+## Time {-}
 
 Wednesday 2-3PM Central (if that does not work, please message me with a better time)
 
@@ -112,30 +112,30 @@ Any other suggestions are appreciated!
 
 
 
-### `r advdate(mon, 4)`: Chapters 4 and 5: Price Indices and Nudges {-}
+### `r advdate(mon, 4)`: Chapters 4, 5, and 6: Price Indices, Nudges, and Short vs Long Run Demand,  {-}
 
 
 
 
-### `r advdate(mon, 5)`: Chapter 6 and 7: Short vs Long Run Demand, Discrete Choice, Product Quality {-}
+### `r advdate(mon, 5)`: Chapter 7 and 8: Discrete Choice, Product Quality, Location Choice, Equilibrium{-}
 
 
+### `r advdate(mon, 6)`: Chapter 9: Learning by Doing {-}
+### `r advdate(mon, 7)`: Chapter 10: Production, Profits, and Factor Demand {-}
 
-### `r advdate(mon, 6)`: Chapter 8: Location Choice, Equilibrium  {-}
-### `r advdate(mon, 7)`: Chapter 9: Learning by Doing {-}
-### `r advdate(mon, 8)`: Chapter 10: Production, Profits, and Factor Demand {-}
+### `r advdate(mon, 8)`: Chapters 11 and 12: Industry Model, Prohibition {-}
 
-### `r advdate(mon, 9)`: Chapters 11 and 12: Industry Model, Prohibition {-}
+### `r advdate(mon, 9)`: Chapters 13 and 14: The Core, Multi-factor Model {-}
 
-### `r advdate(mon, 10)`: Chapters 13 and 14: The Core, Multi-factor Model {-}
+### `r advdate(mon, 10)`: Chapter 15: Durable Production Factors {-}
 
-### `r advdate(mon, 11)`: Chapter 15: Durable Production Factors {-}
+### `r advdate(mon, 11)`: Chapters 16 and 17: Capital Accumulation, Investment from Planning Perspective {-}
+
 
 ### `r advdate(mon, 12)`: No Reading Group: Thanksgiving {-}
 
-### `r advdate(mon, 13)`: Chapters 16 and 17: Capital Accumulation, Investment from Planning Perspective {-}
 
-### `r advdate(mon, 14)`: Chapter 18: Applied Factor Supply and Demand I {-} 
+### `r advdate(mon, 13)`: Chapter 18: Applied Factor Supply and Demand I {-} 
 
-### `r advdate(mon, 15)`: Chapter 19: Applied Factor Supply and Demand II {-}
+### `r advdate(mon, 14)`: Chapter 19: Applied Factor Supply and Demand II {-}
 
