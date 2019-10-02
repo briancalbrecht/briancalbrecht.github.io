@@ -87,7 +87,7 @@ Wednesday 2-3PM Central (if that does not work, please message me with a better 
 
 2. Find ways to incorporate price theory into research
 
-## Discussion Structure (Tentative)  {-}
+## Discussion Structure  {-}
 
 Each week's discussion will start and end on time. 
 
@@ -98,7 +98,7 @@ I am also consider the idea of people presenting new simple, price theory models
 Any other suggestions are appreciated!
 \newpage
 
-## Schedule (Tentative) {-}
+## Schedule {-}
 
 
 ### `r advdate(mon, 1)`: Discussion Group Planning {-}
