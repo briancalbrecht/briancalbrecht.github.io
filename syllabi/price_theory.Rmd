@@ -117,10 +117,10 @@ Any other suggestions are appreciated!
 
 
 
-### `r advdate(mon, 5)`: Chapter 7 and 8: Discrete Choice, Product Quality, Location Choice, Equilibrium{-}
+### `r advdate(mon, 5)`: Chapter 7: Discrete Choice and Product Quality,{-}
 
 
-### `r advdate(mon, 6)`: Chapter 9: Learning by Doing {-}
+### `r advdate(mon, 6)`: Chapter 8 and 9:  Location Choice, Equilibrium, and Learning by Doing {-}
 ### `r advdate(mon, 7)`: Chapter 10: Production, Profits, and Factor Demand {-}
 
 ### `r advdate(mon, 8)`: Chapters 11 and 12: Industry Model, Prohibition {-}
