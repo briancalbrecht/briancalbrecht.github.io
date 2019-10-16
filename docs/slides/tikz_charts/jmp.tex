@@ -95,10 +95,10 @@
 	\centering
 	\begin{tikzpicture}[scale=0.5, node distance = 2cm, auto]
 	\node [block] (st1) {Buyers invest
-		\\+\\ Sellers invest};
+		\\+\\ sellers invest};
 	\node [block, right of=st1, node distance=
 	4cm] (st1a) {Investments affect surplus of matching};
-	\node [block, right of=st1a, node distance=4cm] (st2) {Price divides surplus};
+	\node [block, right of=st1a, node distance=4cm] (st2) {Buyers \& sellers buy contracts to join a match};
 	\path [line] (st1) -- (st1a);
 	\path [line] (st1a) -- (st2);
 	\node [above of=st1, node distance=2cm] (1) {\underline{\Large{Stage 1: Investment}}};
