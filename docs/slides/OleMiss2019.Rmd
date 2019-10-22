@@ -721,7 +721,7 @@ Common Conjectures Justifications
 
 - Predictive power comes from imposing more restrictions on beliefs than just rational expectations
 
-- Trembling hand + continuum $\Rightarrow$ complete markets
+- Trembling hand + continuum $\Rightarrow$ as-if complete markets
 
 - Complete markets means rational expectations $\Rightarrow$ common conjectures 
 
