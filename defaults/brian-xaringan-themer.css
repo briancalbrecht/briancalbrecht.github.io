@@ -204,5 +204,5 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
 }
