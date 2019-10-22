@@ -326,6 +326,7 @@ Take-aways from Example
 
 4. All surviving equilibria are efficient
 
+
 ---
 Extending the Result
 ================================
@@ -338,6 +339,15 @@ Extending the Result
   - $B=S= \{0,1\} \Rightarrow$ general investment levels
   - $\frac{1}{4}b, \frac{1}{4}s \Rightarrow$ general cost of investment that can depend on types
   - $v(b,s) =b s \Rightarrow$ general surplus function
+
+
+---
+Mathematical Argument
+================================
+
+
+
+
 
 ---
 Road Map for Talk
@@ -694,7 +704,7 @@ Conclusion
 
 - If we want predictive power, we must use a refinement
 
-- In an competitive matching model with investment, every perfect, competitive equilibrium is efficient
+- In an competitive matching model with investment, every perfect investment equilibrium is efficient
 
 - Even though in equilibrium, markets are endogenous and **incomplete**
 
