@@ -39,17 +39,18 @@ Competitive Coordination
 
 
 ---
-<img src="https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_D.png" class="center70">
+<img src="https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_D.png" class="center50">
 
 --
 
 - Two robust equilibria
+
   1. Efficient investment: (Invest, Invest)
   2. Coordination failure: (Don't Invest, Don't Invest)
 
 --
 
-- What if there are many potential entrepreneurs (2) operating through a market?
+- What if there are (1) many potential entrepreneurs (2) operating through a market?
 ---
 My Question
 ====================================
@@ -58,9 +59,7 @@ My Question
 - Are the investments we see out in the world likely to be inefficient? 
 
 
-
 - Are coordination failures **robust**?
-
 
 
 - Should we predict coordination failures?

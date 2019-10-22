@@ -199,7 +199,12 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 
 .mjx-chtml{ font-size: 100% !important; }
 
-
+.center50 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .center70 {
   display: block;
   margin-left: auto;
