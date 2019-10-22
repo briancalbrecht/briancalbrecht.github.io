@@ -45,8 +45,8 @@ Competitive Coordination
 
 - Two robust equilibria
 
-  1. Efficient Coordination: (Invest, Invest)
-  2. Coordination Failure: (Don't Invest, Don't Invest)
+  1. Efficient investment: (Invest, Invest)
+  2. Coordination failure: (Don't Invest, Don't Invest)
 
 --
 
