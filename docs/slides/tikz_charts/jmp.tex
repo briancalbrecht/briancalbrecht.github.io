@@ -188,7 +188,7 @@
 \newpage
 \begin{figure}[h]
 	\centering
-	\begin{tikzpicture}[scale=.1]
+	\begin{tikzpicture}
 	\matrix[matrix of math nodes,every odd row/.style={align=right},every even row/.style={align=left},every node/.style={text width=3.5cm},row sep=0.2cm,column sep=0.2cm] (m) {
 		$0$ & $- 1$\\
 		$0$ & $0$\\
@@ -286,6 +286,21 @@
 		& \multicolumn{1}{c|}{(0,0)} & \multicolumn{1}{c|}{$ -\tilde{p}^i(0,0)$} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$ \tilde{p}^j(0,0)$} \\ \cline{3-3} \cline{5-5} 
 		Matching & \multicolumn{1}{c|}{(0,1)} & \multicolumn{1}{c|}{$ -\tilde{p}^i(0,1)$} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$ \tilde{p}^j(0,1) -\frac{1}{4}$}  \\ \cline{3-3} \cline{5-5} 
 		Contract& \multicolumn{1}{c|}{(1,0)} & \multicolumn{1}{c|}{$ -\tilde{p}^i(1,0) - \frac{1}{4}$} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$ \tilde{p}^j(1,0)$} \\ \cline{3-3} \cline{5-5} 
+		& \multicolumn{1}{c|}{(1,1)} & \multicolumn{1}{c|}{$ 1- \tilde{p}^i(1,1) - \frac{1}{4}$} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$ \tilde{p}^j(1,1)- \frac{1}{4}$} \\ \cline{3-3} \cline{5-5} 
+	\end{tabular}
+\end{table}
+
+$ $
+
+\newpage
+
+
+\begin{table}[]
+	\begin{tabular}{lcccc}
+		&                            & Buyer Payoffs         &                       & Seller Payoffs        \\ \cline{3-3} \cline{5-5} 
+		& \multicolumn{1}{c|}{(0,0)} & \multicolumn{1}{c|}{$ 0$} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$ 0$} \\ \cline{3-3} \cline{5-5} 
+		Matching & \multicolumn{1}{c|}{(0,1)} & \multicolumn{1}{c|}{$0$} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$0 -\frac{1}{4}$}  \\ \cline{3-3} \cline{5-5} 
+		Contract& \multicolumn{1}{c|}{(1,0)} & \multicolumn{1}{c|}{$ 0 - \frac{1}{4}$} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$ 0$} \\ \cline{3-3} \cline{5-5} 
 		& \multicolumn{1}{c|}{(1,1)} & \multicolumn{1}{c|}{$ 1- \tilde{p}^i(1,1) - \frac{1}{4}$} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{$ \tilde{p}^j(1,1)- \frac{1}{4}$} \\ \cline{3-3} \cline{5-5} 
 	\end{tabular}
 \end{table}

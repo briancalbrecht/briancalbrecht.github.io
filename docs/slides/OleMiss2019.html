@@ -43,7 +43,7 @@ Competitive Coordination
 
 --
 
-- Two Equilibria
+- Two equilibria
 
   1. Efficient Coordination: (Invest, Invest)
   2. Coordination Failure: (Don't Invest, Don't Invest)
@@ -54,7 +54,7 @@ Competitive Coordination
 
 --
 
-- What if there are many entrepreneurs in the market?
+- What if there are many potential entrepreneurs in the market?
 ---
 My Question
 ====================================
@@ -265,7 +265,7 @@ Refinement
 - Multiplicity from a Nash-style equilibrium
 
 
-- But one equilibria relies on Off-path conjectures as a free parameter
+- But one equilibria relies on off-path conjectures as a free parameter
   - Theorist can pick `\(\tilde{p}^j(b,s)\)` discourage all other actions
   - Ignored by previous theorists
 
@@ -308,11 +308,58 @@ Uniqueness Proof
   - Instead, choose `\(b=1\)` as much as possible: `\(1 - \epsilon^i\)`
   - Drives `\(p(1,1)\)` up
 
+
+---
+Example Payoffs
+=====================================
+
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_G.png)]
+
+--
+- Prices and conjectures are endogenous
+
+- Rational conjectures: if a match `\((b,s)\)` is chosen, `\(\tilde{p}^i (b,s) = \tilde{p}^j (b,s)= p(b,s)\)`
+
+- Equilibrium does not require optimization or correct conjectures "off-path" (like Nash)
+
+???
+We need to find conjectures and prices
+
+---
+Uniqueness Proof
+==========
+
+- With trembling hand, each `\(b\)` and `\(s\)` are played `\(\Rightarrow\)` `\(\tilde{p}^i(b,s) = \tilde{p}^j(b,s) = p(b,s)\)`
+
+--
+
+- If `\(p(1,1)\)` is low `\((&lt; \frac{3}{4})\)`, no buyers want to choose `\(b=0\)` 
+  - Instead, choose `\(b=1\)` as much as possible: `\(1 - \epsilon^i\)`
+  - Drives `\(p(1,1)\)` up
+
 --
 
 - If `\(p(1,1)\)` is high `\((&gt; \frac{1}{4})\)`, no sellers want to choose `\(s=0\)`
   - Instead choose `\(s=1\)` as much as possible: `\(1 - \epsilon^j\)`
   - Drives `\(p(1,1)\)` down
+
+---
+Example Payoffs
+=====================================
+
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_G.png)]
+
+--
+- Prices and conjectures are endogenous
+
+- Rational conjectures: if a match `\((b,s)\)` is chosen, `\(\tilde{p}^i (b,s) = \tilde{p}^j (b,s)= p(b,s)\)`
+
+- Equilibrium does not require optimization or correct conjectures "off-path" (like Nash)
+
+???
+We need to find conjectures and prices
+---
+
 
 ---
 Uniqueness Proof
@@ -363,7 +410,7 @@ Extending the Result
 
 
 ---
-Mathematical Extension
+Structure of Proof
 ================================
 
 - General buyers' problem: `\(\max_b v(b,s) - \tilde{p}^i (b,s) - c\left(\beta(i), b\right)~~~\forall i\)`
@@ -377,7 +424,7 @@ Mathematical Extension
 
 - Total welfare
 
-`$$\int_i  \left[\max_b v(b,s) - p (b,s) - c\left(\beta(i), b\right)\right] di  + \int_j \left[\max_s  p (b,s)  - c\left(\sigma (j), s\right)\right] dj.$$`
+`$$\int_i  \left[\max_b v(b,s) - \tilde{p}^i (b,s) - c\left(\beta(i), b\right)\right] di  + \int_j \left[\max_s  \tilde{p}^j (b,s)  - c\left(\sigma (j), s\right)\right] dj.$$`
 
 --
 
@@ -385,6 +432,9 @@ Mathematical Extension
 
 `$$\max_{b,s} \int_i  v(b,s)  - c\left(\beta(i), b\right) di  + \int_j  - c\left(\sigma (j), s\right) dj.$$`
 
+--
+
+- With consistent conjectures for all players, total welfare = efficiency `\(\blacksquare\)`
 
 ---
 Road Map for Talk
@@ -677,7 +727,7 @@ $$ + \underbrace{Q(\epsilon)}_{\text{Constrained Choice}}$$
 
 - Therefore they optimize the entire left expression
 
-- It is looks exactly like a static problem, which we know is efficient `\(\qquad \blacksquare\)`
+- It is looks exactly like a static problem, which is efficient `\(\qquad \blacksquare\)`
 
 
 ---
