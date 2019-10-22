@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.27)  22 OCT 2019 12:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.27)  22 OCT 2019 12:54
 entering extended mode
 **./jmp.tex
 (jmp.tex
@@ -1143,7 +1143,7 @@ Here is how much of TeX's memory you used:
  23474 multiletter control sequences out of 15000+200000
  22976 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,16n,70p,464b,988s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,16n,70p,464b,997s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fil
 es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec
@@ -1152,7 +1152,7 @@ Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on jmp.pdf (7 pages, 102478 bytes).
+Output written on jmp.pdf (7 pages, 102470 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  10 named destinations out of 1000 (max. 500000)
