@@ -39,23 +39,22 @@ Competitive Coordination
 
 
 ---
-<img src="https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_D.png" class="center75">
+<img src="https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_D.png" class="center70">
 
 --
 
 - Two Equilibria
 
-  - Efficient Coordination: (Invest, Invest)
-  
-  - Coordination Failure; (Don't Invest, Don't Invest)
+  1. Efficient Coordination: (Invest, Invest)
+  2. Coordination Failure: (Don't Invest, Don't Invest)
 
 --
 
-- Both are stable with 2 players
+- With 2 players, both are robust to perturbations
 
 --
 
-- But what if there are many software and hardware entrepreneurs?
+- What if there are many entrepreneurs in the market?
 ---
 My Question
 ====================================
