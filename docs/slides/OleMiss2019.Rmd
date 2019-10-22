@@ -80,7 +80,7 @@ My Question
 Related Literature
 ====================================
 
-<font color=#125972><b>Non-cooperative before cooperative game:</b></font>
+<font color=#125972><b>Non-cooperative before market/cooperative game:</b></font>
 Makowski & Ostroy (1995), Cole, Malaith, & Postlewaite (1999), Makowski (2004), Brandenburger & Stuart (2007), N&ouml;ldeke & Samuelson (2014)
   -  Contribution: consider robust equilibria via a refinement
 
