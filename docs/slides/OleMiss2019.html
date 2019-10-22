@@ -38,6 +38,11 @@ Competitive Coordination
 - Previous theoretical literature only studies **existence** of coordination failures
 
 ---
+Coordination Failures
+====================================
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_D.png)]
+
+---
 My Question
 ====================================
 
@@ -335,18 +340,37 @@ Extending the Result
 
 --
 
-  - Single type `\(\Rightarrow\)` general finite types
+  - Single type `\(\Rightarrow\)` general finite types, `\(\beta(i),\sigma (j)\)`
+  
   - `\(B=S= \{0,1\} \Rightarrow\)` general investment levels
-  - `\(\frac{1}{4}b, \frac{1}{4}s \Rightarrow\)` general cost of investment that can depend on types
-  - `\(v(b,s) =b s \Rightarrow\)` general surplus function
+  
+  - `\(\frac{1}{4}b, \frac{1}{4}s \Rightarrow\)` general cost of investment that can depend on types, `\(c\left(\beta(i), b\right)\)` and `\(c\left(\sigma (j), s\right)\)`
+  
+  - `\(v(b,s) =b s \Rightarrow\)` general surplus function 
 
 
 ---
-Mathematical Argument
+Mathematical Extension
 ================================
 
+- General buyers' problem: `\(\max_b v(b,s) - \tilde{p}^i (b,s) - c\left(\beta(i), b\right)~~~\forall i\)`
+
+--
+
+- General sellers' problem: `\(\max_s  \tilde{p}^j (b,s)  - c\left(\sigma (j), s\right)~~~\forall j\)`
 
 
+--
+
+- Total welfare
+
+`$$\int_i  \left[\max_b v(b,s) - p (b,s) - c\left(\beta(i), b\right)\right] di  + \int_j \left[\max_s  p (b,s)  - c\left(\sigma (j), s\right)\right] dj.$$`
+
+--
+
+- Efficiency
+
+`$$\max_{b,s} \int_i  v(b,s)  - c\left(\beta(i), b\right) di  + \int_j  - c\left(\sigma (j), s\right) dj.$$`
 
 
 ---

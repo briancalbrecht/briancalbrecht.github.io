@@ -190,10 +190,10 @@
 	\centering
 	\begin{tikzpicture}
 	\matrix[matrix of math nodes,every odd row/.style={align=right},every even row/.style={align=left},every node/.style={text width=3.5cm},row sep=0.2cm,column sep=0.2cm] (m) {
-		$ \tilde{p}^j(0,0)$ & $\tilde{p}^j(0,1)- \frac{1}{4}$\\
-		$- \tilde{p}^i(0,0)$ & $- \tilde{p}^i(0,1)$\\
-		$\tilde{p}^j(1,0) $& $\tilde{p}^j(1,1) - \frac{1}{4}$\\
-		$-\tilde{p}^i(1,0)- \frac{1}{4}$&$1 - \tilde{p}^i(1,1) - \frac{1}{4}$\\
+		$0$ & $- 1$\\
+		$0$ & $0$\\
+		$0$& $2 -1 $\\
+		$- 1$&$2 - 1 $\\
 	};
 	\draw (m.north east) rectangle (m.south west);
 	\draw (m.north) -- (m.south);
@@ -201,16 +201,16 @@
 	
 	\coordinate (a) at ($(m.north west)!0.25!(m.north east)$);
 	\coordinate (b) at ($(m.north west)!0.75!(m.north east)$);
-	\node[above=5pt of a,anchor=base] {$s = 0$};
-	\node[above=5pt of b,anchor=base] {$s=1$};
+	\node[above=5pt of a,anchor=base] {Don't Innovate};
+	\node[above=5pt of b,anchor=base] {Innovate};
 	
 	\coordinate (c) at ($(m.north west)!0.25!(m.south west)$);
 	\coordinate (d) at ($(m.north west)!0.75!(m.south west)$);
-	\node[left=2pt of c,text width=1cm]  {$b=0$};
-	\node[left=2pt of d,text width=1cm]  {$b=1$};
+	\node[left=6pt of c,text width=3cm]  {Don't Innovate};
+	\node[left=6pt of d,text width=3cm]  {Innovate};
 	
-	\node[above=18pt of m.north] (firm b) {Seller};
-	\node[left=1.6cm of m.west,rotate=90,align=center,anchor=center] {Buyer};
+	\node[above=18pt of m.north] (firm b) {Software Developer};
+	\node[left=4cm of m.west,rotate=90,align=center,anchor=center] {Hardware Developer};
 	
 	\end{tikzpicture}\\
 \end{figure}
