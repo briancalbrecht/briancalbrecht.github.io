@@ -19,6 +19,7 @@ class: left, middle, inverse, title-slide
 
 
 
+
 Competitive Coordination
 ====================================
 
@@ -37,17 +38,29 @@ Competitive Coordination
   
 - Previous theoretical literature only studies **existence** of coordination failures
 
+
+---
+&lt;img src="https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_D.png" class="center50"&gt;
+
+--
+
+- Two Nash equilibria
+
+  1. Efficient investment: (Invest, Invest)
+  2. Coordination failure: (Don't Invest, Don't Invest)
+
+--
+
+- What if there are **many potential entrepreneurs** and they are **operating through a market?**
 ---
 My Question
 ====================================
 
 
-- Are the investments we see out in the world likely to be inefficient? 
-
+- Are the market investments we observe likely to be inefficient? 
 
 
 - Are coordination failures **robust**?
-
 
 
 - Should we predict coordination failures?
@@ -247,7 +260,7 @@ Refinement
 - Multiplicity from a Nash-style equilibrium
 
 
-- But one equilibria relies on Off-path conjectures as a free parameter
+- But one equilibria relies on off-path conjectures as a free parameter
   - Theorist can pick `\(\tilde{p}^j(b,s)\)` discourage all other actions
   - Ignored by previous theorists
 
@@ -284,17 +297,44 @@ Uniqueness Proof
 
 - With trembling hand, each `\(b\)` and `\(s\)` are played `\(\Rightarrow\)` `\(\tilde{p}^i(b,s) = \tilde{p}^j(b,s) = p(b,s)\)`
 
---
+
+- For simplicity, fix price at zero for all besides markets besides `\((1,1)\)`
+
+
+---
+Example Payoffs
+=====================================
+
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_H.png)]
+
+---
+Uniqueness Proof
+==========
 
 - If `\(p(1,1)\)` is low `\((&lt; \frac{3}{4})\)`, no buyers want to choose `\(b=0\)` 
+
   - Instead, choose `\(b=1\)` as much as possible: `\(1 - \epsilon^i\)`
   - Drives `\(p(1,1)\)` up
-
+  
 --
 
 - If `\(p(1,1)\)` is high `\((&gt; \frac{1}{4})\)`, no sellers want to choose `\(s=0\)`
+
   - Instead choose `\(s=1\)` as much as possible: `\(1 - \epsilon^j\)`
   - Drives `\(p(1,1)\)` down
+
+
+--
+- `\(p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]\)`
+
+
+---
+Example Payoffs
+=====================================
+
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_H.png)]
+
+- `\(p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]\)`
 
 ---
 Uniqueness Proof
@@ -309,10 +349,6 @@ Uniqueness Proof
 
 - For any `\(\epsilon \to 0\)`, `\((1,1)\)` is the unique equilibrium strategy profile
 
-???
-
-  - Besides `\(p(1,1)\)`, all prices must be zero
-Draw on board supply and demand
 
 ---
 Take-aways from Example
@@ -326,6 +362,7 @@ Take-aways from Example
 
 4. All surviving equilibria are efficient
 
+
 ---
 Extending the Result
 ================================
@@ -334,10 +371,41 @@ Extending the Result
 
 --
 
-  - Single type `\(\Rightarrow\)` general finite types
+  - Single type `\(\Rightarrow\)` general finite types, `\(\beta(i),\sigma (j)\)`
+  
   - `\(B=S= \{0,1\} \Rightarrow\)` general investment levels
-  - `\(\frac{1}{4}b, \frac{1}{4}s \Rightarrow\)` general cost of investment that can depend on types
-  - `\(v(b,s) =b s \Rightarrow\)` general surplus function
+  
+  - `\(\frac{1}{4}b, \frac{1}{4}s \Rightarrow\)` general cost of investment that can depend on types, `\(c\left(\beta(i), b\right)\)` and `\(c\left(\sigma (j), s\right)\)`
+  
+  - `\(v(b,s) =b s \Rightarrow\)` general surplus function 
+
+
+---
+Structure of Proof
+================================
+
+- General buyers' problem: `\(\max_b v(b,s) - \tilde{p}^i (b,s) - c\left(\beta(i), b\right)~~~\forall i\)`
+
+--
+
+- General sellers' problem: `\(\max_s  \tilde{p}^j (b,s)  - c\left(\sigma (j), s\right)~~~\forall j\)`
+
+
+--
+
+- Total welfare
+
+`$$\int_i  \left[\max_b v(b,s) - \tilde{p}^i (b,s) - c\left(\beta(i), b\right)\right] di  + \int_j \left[\max_s  \tilde{p}^j (b,s)  - c\left(\sigma (j), s\right)\right] dj.$$`
+
+--
+
+- Efficiency
+
+`$$\max_{b,s} \int_i  v(b,s)  - c\left(\beta(i), b\right) di  + \int_j  - c\left(\sigma (j), s\right) dj.$$`
+
+--
+
+- With common conjectures for all players, total welfare = efficiency  `\(\blacksquare\)`[.](#conclusion)
 
 ---
 Road Map for Talk
@@ -630,7 +698,7 @@ $$ + \underbrace{Q(\epsilon)}_{\text{Constrained Choice}}$$
 
 - Therefore they optimize the entire left expression
 
-- It is looks exactly like a static problem, which we know is efficient `\(\qquad \blacksquare\)`
+- It is looks exactly like a static problem, which is efficient `\(\qquad \blacksquare\)`
 
 
 ---
@@ -648,12 +716,15 @@ Full Efficiency
 
 
 ---
+name:conclusion
 Common Conjectures Justifications
 ====================================
 
 - Predictive power comes from imposing more restrictions on beliefs than just rational expectations
 
-- Trembling hand + continuum `\(\Rightarrow\)` as-if complete markets
+- Trembling hand + continuum `\(\Rightarrow\)` complete markets
+
+- Complete markets means rational expectations `\(\Rightarrow\)` common conjectures 
 
 --
 
@@ -662,41 +733,26 @@ Common Conjectures Justifications
   
   - Dubey, Geanakoplos, and Shubik (2005): government intervenes to sell infinitesimal quantities of each asset and fully delivers on its promises
   
-  - Zame (2007): on considers "common-belief" equilibria
-
----
-Simple General Mechanism
-====================================
-
-- Coordination failures arise because markets are incomplete
-  - Emphasis of literature
-
-- **And** people must hold conflicting, pessimistic conjectures about prices
-  - Buyers think price will be high
-  - Sellers think price will be low
-
---
-
-- Possibility of mistakes constrains equilibrium conjectures
-
-&lt;!--  - With a trembling-hand, all strategies are played --&gt;
-
-- Beliefs are constrained to be as-if markets were complete
-
-- As-if complete markets gives efficiency
+  - Zame (2007): only considers "common-belief" equilibria
 
 
 ---
 Conclusion
 ====================================
 
-- With competition, coordination failures rely on using beliefs as a free parameter and constructing overly pessimistic conjectures
+- Under competition, coordination failures rely on using beliefs as a free parameter and constructing overly pessimistic conjectures
+
+- Free parameter `\(\Rightarrow\)` many equilibria
 
 - If we want predictive power, we must use a refinement
 
-- In an competitive matching model with investment, every perfect, competitive equilibrium is efficient
+- I use trembling-hand perfection
 
-- Even though in equilibrium, markets are endogenous and *incomplete*
+
+Main theorem: Modified First Welfare Theorem
+
+  .center[Even with **incomplete and endogenous markets**,]
+  .center[every perfect, investment equilibrium is efficient.]
 
 
 
