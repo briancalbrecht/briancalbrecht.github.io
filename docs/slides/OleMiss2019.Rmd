@@ -302,28 +302,13 @@ Uniqueness Proof
 
 - With trembling hand, each $b$ and $s$ are played $\Rightarrow$ $\tilde{p}^i(b,s) = \tilde{p}^j(b,s) = p(b,s)$
 
---
 
-- If $p(1,1)$ is low $(< \frac{3}{4})$, no buyers want to choose $b=0$ 
-  - Instead, choose $b=1$ as much as possible: $1 - \epsilon^i$
-  - Drives $p(1,1)$ up
+- For simplicity, fix price at zero for all besides markets besides $(1,1)$
 
 
 ---
-Example Payoffs
-=====================================
-
-.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_G.png)]
-
---
-- Prices and conjectures are endogenous
-
-- Rational conjectures: if a match $(b,s)$ is chosen, $\tilde{p}^i (b,s) = \tilde{p}^j (b,s)= p(b,s)$
-
-- Equilibrium does not require optimization or correct conjectures "off-path" (like Nash)
-
-???
-We need to find conjectures and prices
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_H.png)
+background-size: contain
 
 ---
 Uniqueness Proof
@@ -331,7 +316,6 @@ Uniqueness Proof
 
 - With trembling hand, each $b$ and $s$ are played $\Rightarrow$ $\tilde{p}^i(b,s) = \tilde{p}^j(b,s) = p(b,s)$
 
---
 
 - If $p(1,1)$ is low $(< \frac{3}{4})$, no buyers want to choose $b=0$ 
   - Instead, choose $b=1$ as much as possible: $1 - \epsilon^i$
