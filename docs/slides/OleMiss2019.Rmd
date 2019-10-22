@@ -43,18 +43,14 @@ Competitive Coordination
 
 --
 
-- Two equilibria
+- Two robust equilibria
 
   1. Efficient Coordination: (Invest, Invest)
   2. Coordination Failure: (Don't Invest, Don't Invest)
 
 --
 
-- With 2 players, both are robust to perturbations
-
---
-
-- What if there are many potential entrepreneurs in the market?
+- What if there are (1) many potential entrepreneurs (2) in the market?
 ---
 My Question
 ====================================
@@ -410,7 +406,7 @@ $$\max_{b,s} \int_i  v(b,s)  - c\left(\beta(i), b\right) di  + \int_j  - c\left(
 
 --
 
-- With consistent conjectures for all players, total welfare = efficiency $\blacksquare$
+- With common conjectures for all players, total welfare = efficiency  $\blacksquare$[.](#conclusion)
 
 ---
 Road Map for Talk
@@ -721,6 +717,7 @@ Full Efficiency
 
 
 ---
+name:conclusion
 Common Conjectures Justifications
 ====================================
 
@@ -736,27 +733,6 @@ Common Conjectures Justifications
   - Dubey, Geanakoplos, and Shubik (2005): government intervenes to sell infinitesimal quantities of each asset and fully delivers on its promises
   
   - Zame (2007): on considers "common-belief" equilibria
-
----
-Simple General Mechanism
-====================================
-
-- Coordination failures arise because markets are incomplete
-  - Emphasis of literature
-
-- **And** people must hold conflicting, pessimistic conjectures about prices
-  - Buyers think price will be high
-  - Sellers think price will be low
-
---
-
-- Possibility of mistakes constrains equilibrium conjectures
-
-<!--  - With a trembling-hand, all strategies are played -->
-
-- Beliefs are constrained to be as-if markets were complete
-
-- As-if complete markets gives efficiency
 
 
 ---
@@ -774,9 +750,8 @@ Conclusion
 
 Main theorem: Modified First Welfare Theorem
 
-  - Even with **incomplete and endogenous markets**, every perfect, investment equilibrium is efficient
-
-
+  .center[Even with **incomplete and endogenous markets**,]
+  .center[every perfect, investment equilibrium is efficient.]
 
 
 
@@ -793,34 +768,3 @@ class: center, middle
 ###`r icon::fa("link")` Slides: [bit.ly/Albrecht-OleMiss](https://bit.ly/Albrecht-OleMiss) <br>
 
 <!--###`r icon::fa("twitter")` [@briancalbrecht](https://twitter.com/briancalbrecht) -->
-
-
----
-name:thp_proof
-
-THP Equilibria Need Not Be Efficient
-====================================
-
-- Consider the following 2x2 game
-
-.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_A.png)]
-
-- (Up, Left) is the unique THP equilibrium
-
-- Selten (1975)'s original, extensive-form example is inefficient
-
-
----
-Price-Taking Solves Hold-up
-====================================
-
-- With a hold-up problem, sellers may worry she faces a buyer that is a very tough bargainer
-
-- The transfer to seller may not cover investment cost: $p(1,1)<\frac{1}{4}$
-
-- In that case, sellers want to invest as little as possible
-
-- Price-taking ensures $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$
-
-$\Rightarrow$ each side wants to invest as much as possible
-
