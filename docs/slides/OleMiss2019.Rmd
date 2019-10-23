@@ -1,7 +1,7 @@
 ---
 title: "Investment without Coordination Failures<br><br>"
 author: "Brian C. Albrecht<br> <span style = 'font-size: 50%;'> University of Minnesota<br> Department of Economics</span>"
-date: '`r format(Sys.time(), "%B %d, %Y")`<br><br>Paper `r icon::fa("link")`  [bit.ly/Albrecht-JMP](http://bit.ly/Albrecht-JMP) <br>Slides `r icon::fa("link")`  [bit.ly/Albrecht-OleMiss](http://bit.ly/Albrecht-OleMiss)'
+date: 'October 25, 2019<br><br>Paper `r icon::fa("link")`  [bit.ly/Albrecht-JMP](http://bit.ly/Albrecht-JMP) <br>Slides `r icon::fa("link")`  [bit.ly/Albrecht-OleMiss](http://bit.ly/Albrecht-OleMiss)'
 output:
   xaringan::moon_reader:
     css: ["https://briancalbrecht.github.io/defaults/brian-xaringan-themer.css"]
@@ -302,12 +302,12 @@ Robert Lucas taught us to beware of theorists bearing free parameters
 Perturbed Strategies
 ====================================
 
-- For simplicity, 
+- For simplicity, assume
 
-- Symmetric trembling hand at investment stage: 
+1. Symmetric trembling hand at investment stage: 
   - Each attribute must be chosen with positive probability $\epsilon^i>0$ by each buyer and seller
 
-- Assume in the aggregate each attribute must be chosen by a positive density of players
+1. In the aggregate each attribute must be chosen by a positive density of players
 
 --
 
