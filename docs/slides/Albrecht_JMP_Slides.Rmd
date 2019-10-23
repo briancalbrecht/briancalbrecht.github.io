@@ -19,39 +19,44 @@ bibliography: ["C:/Users/Brian/Documents/githubprivate/defaults/library.bib"]
 ---
 
 
-
-Competitive Coordination
-====================================
-
-- Important investments are sunk before entering a market
-
-  - Invest in education before being hired
-  - Produce goods before having a buyer
-  - Write JMP before knowing schools want a general equilibrium theorist
-  
---
-
-- When investments are sunk, i.e. when markets are incomplete, coordination failures can arise even with **competitive markets**
-  - Makowski & Ostroy (1995), Cole, Malaith, & Postlewaite (1999a, 1999b), Makowski (2004), N&ouml;ldeke & Samuelson (2014), Felli & Roberts (2016)
-
---
-  
-- Previous theoretical literature only studies **existence** of coordination failures
-
-
----
 <img src="https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_D.png" class="center60">
 
 --
 
-- Two Nash equilibria
+- Two pure-strategy, Nash equilibria
 
-  1. Efficient investment: (Invest, Invest)
-  2. Coordination failure: (Don't Invest, Don't Invest)
+  1. Pareto optimal, efficient investment: (Invest, Invest)
+  2. Pareto dominated, **coordination failure**: (Don't Invest, Don't Invest)
 
 --
 
-- What if there are **many potential entrepreneurs** and they are **operating through a market?**
+- Both are stable, mixed strategy equilibrium is not
+---
+Competitive Coordination
+====================================
+
+
+- What if there are **many players** and they are **operating in a market**?
+
+--
+
+- This extension matters because important real-world investments are sunk before entering a market
+
+  - Invest in education before being hired
+  - Produce goods before having a buyer
+  - Write JMP before knowing schools want a general equilibrium theorist
+
+--
+
+- When investments are sunk, i.e. when markets are incomplete, coordination failures can arise even with competitive markets
+  - Makowski & Ostroy (1995), Cole, Malaith, & Postlewaite (1999a, 1999b), Makowski (2004), N&ouml;ldeke & Samuelson (2014), Felli & Roberts (2016)
+
+--
+  
+- Previous literature only studied **existence of coordination failures**
+
+
+
 ---
 My Question
 ====================================
@@ -60,7 +65,7 @@ My Question
 - Are the market investments we observe likely to be inefficient? 
 
 
-- Are coordination failures **robust**?
+- **Are coordination failures robust**?
 
 
 - Should we predict coordination failures?
@@ -75,7 +80,7 @@ My Question
 - Formally, inefficient equilibria are not robust to errors in a trembling-hand refinement
 
 
-- $\Rightarrow$ we should predict efficient market outcomes
+$\Rightarrow$ We should predict efficient market outcomes
 
 ---
 Related Literature
@@ -83,13 +88,33 @@ Related Literature
 
 <font color=#125972><b>Non-cooperative before market/cooperative game:</b></font>
 Makowski & Ostroy (1995), Cole, Malaith, & Postlewaite (1999), Makowski (2004), Brandenburger & Stuart (2007), N&ouml;ldeke & Samuelson (2014)
-  -  Contribution: consider robust equilibria via a refinement
+  -  Contribution: **focus on robust equilibria** via a refinement
+
+---
+Related Literature
+====================================
+
+<font color=#125972><b>Non-cooperative before market/cooperative game:</b></font>
+Makowski & Ostroy (1995), Cole, Malaith, & Postlewaite (1999), Makowski (2004), Brandenburger & Stuart (2007), N&ouml;ldeke & Samuelson (2014)
+  -  Contribution: focus on robust equilibria via a refinement
 
 <font color=#125972><b>Competitive equilibrium refinements:</b></font> Gale (1992, 1996), Dubey & Geanakoplos (2002), Dubey, Geanakoplos, & Shubik (2004), Zame (2007), Scheuer & Smetters (2018)
-   - Contribution: focus on dynamic models with coordination failures
-     
+   - Contribution: study **dynamic models with coordination failures**
+
+
+---
+Related Literature
+====================================
+
+<font color=#125972><b>Non-cooperative before market/cooperative game:</b></font>
+Makowski & Ostroy (1995), Cole, Malaith, & Postlewaite (1999), Makowski (2004), Brandenburger & Stuart (2007), N&ouml;ldeke & Samuelson (2014)
+  -  Contribution: focus on robust equilibria via a refinement
+
+<font color=#125972><b>Competitive equilibrium refinements:</b></font> Gale (1992, 1996), Dubey & Geanakoplos (2002), Dubey, Geanakoplos, & Shubik (2004), Zame (2007), Scheuer & Smetters (2018)
+   - Contribution: study dynamic models with coordination failures
+
 <font color=#125972><b>Coordination failures are not robust:</b></font> Albrecht (2016), Penta & Zuazo-Garin (2018)
-  - Contribution: Competition makes coordination failures non-robust
+  - Contribution: **Competition rules out** coordination failures
 
 
 
@@ -332,9 +357,11 @@ Uniqueness Proof
 Example Payoffs
 =====================================
 
-.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_H.png)]
+# $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$
 
-- $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_I.png)]
+
+
 
 ---
 Uniqueness Proof
@@ -381,7 +408,7 @@ Extending the Result
 
 
 ---
-Structure of Proof
+Structure of General Proof
 ================================
 
 - General buyers' problem: $\max_b v(b,s) - \tilde{p}^i (b,s) - c\left(\beta(i), b\right)~~~\forall i$
