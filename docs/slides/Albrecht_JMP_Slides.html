@@ -18,7 +18,6 @@ class: left, middle, inverse, title-slide
 ---
 
 
-
 &lt;img src="https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_D.png" class="center60"&gt;
 
 --
@@ -40,7 +39,9 @@ Competitive Coordination
 
 --
 
-- This extension matters because important real-world investments are sunk before entering a market
+- These features matter because important real-world investments are sunk before entering a market
+
+--
 
   - Invest in education before being hired
   - Produce goods before having a buyer
@@ -48,7 +49,7 @@ Competitive Coordination
 
 --
 
-- When investments are sunk, i.e. when markets are incomplete, coordination failures can arise even with competitive markets
+- When investments are sunk, *i.e.* when markets are incomplete, coordination failures can arise even with competitive markets
   - Makowski &amp; Ostroy (1995), Cole, Malaith, &amp; Postlewaite (1999a, 1999b), Makowski (2004), N&amp;ouml;ldeke &amp; Samuelson (2014), Felli &amp; Roberts (2016)
 
 --
@@ -180,7 +181,7 @@ Example
 Stage 2: Matching Market
 ===================================
 
-- In the competitive market, an agent buys the  **contractual right** to match another agent
+- In the competitive market, every agent buys the  **contractual right** to match with another agent
 
 - Price schedule for matches: `\(p : B \times S \to \mathbb{R}\)`
 
@@ -312,7 +313,7 @@ Perturbed Strategies
 
 - Perfect equilibrium: limit of some sequence `\(\to 0\)` of `\(\epsilon = (\epsilon^i,\epsilon^j)\)`
 
-- **Claim**: The unique perfect equilibrium matching is efficient
+- **Claim**: The unique perfect equilibrium allocation is efficient
 
 ???
 Symmetric: all players and all actions have same tremble
@@ -354,20 +355,17 @@ Uniqueness Proof
 
 
 ---
-Example Payoffs
-=====================================
 
 # `\(p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]\)`
 
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_I.png)]
 
 
-
 ---
 Uniqueness Proof
 ==========
 
-- Some `\(p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]\)` balances forces and clears all markets
+- For any tremble, some `\(p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]\)` balances supply and demand and clears all markets
 
 - At that price, everyone wants to invest
 
@@ -387,7 +385,7 @@ Take-aways from Example
 
 3. Mistakes/trembles eliminates contradictions `\(\Rightarrow\)` no coordination failures
 
-4. All surviving equilibria are efficient
+4. [All perfect, competitive equilibria are efficient](#fulltalk)
 
 
 ---
@@ -432,9 +430,26 @@ Structure of General Proof
 
 --
 
-- With common conjectures for all players, total welfare = efficiency  `\(\blacksquare\)`[.](#conclusion)
+- With common conjectures for all players, total welfare = efficiency  `\(\blacksquare\)`
 
 ---
+  Not *So* Simple
+====================================
+
+As in any theory paper, technical complications arise, *e.g.* I need to
+
+
+1. Model an explicit Walrasian, matching market, given fixed investments, compared to picking a match ex ante
+
+1. Integrate the non-cooperative investment stage with a Walrasian matching market
+
+1. Define a tremble and perfect equilibrium with a continuum of players
+
+
+- [Example highlights the core ideas](#conclusion)
+
+---
+name:fulltalk
 Road Map for Talk
 ====================================
 1. Example
@@ -780,6 +795,7 @@ Main theorem: Modified First Welfare Theorem
 
   .center[Even with **incomplete and endogenous markets**,]
   .center[every perfect, investment equilibrium is efficient.]
+
 
 
 ---
