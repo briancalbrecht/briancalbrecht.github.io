@@ -311,7 +311,7 @@ Perturbed Strategies
 
 --
 
-- Perfect equilibrium: limit of some sequence $\to 0$ of $\epsilon = (\epsilon^i,\epsilon^j)$
+- Perfect equilibrium: limit of some sequence of $\epsilon = (\epsilon^i,\epsilon^j) \to 0$
 
 - **Claim**: The unique perfect equilibrium allocation is efficient
 
