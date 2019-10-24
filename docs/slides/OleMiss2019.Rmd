@@ -404,15 +404,7 @@ Supply and Demand for $(1,1)$
 
 Step 2: For any $\epsilon >> 0$, $(1,1)$ can be sustained as an equilibrium choice
 
-- If $p(1,1)$ is low $(< \frac{3}{4})$, all buyers want to choose $b=1$ as much as possible: $1 - \epsilon(b)$
-
-  - Drives $p(1,1)$ up
-  
---
-
-- If $p(1,1)$ is high $(> \frac{1}{4})$, no sellers want to choose $s=1$ as much as possible: $1 - \epsilon(s)$
-
-  - Drives $p(1,1)$ down
+- Draw the supply and demand for the match $(1,1)$
 
 
 --
@@ -433,7 +425,9 @@ background-size:contain
 background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_N.png)
 background-size:contain
 
-
+---
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_O.png)
+background-size:contain
 
 
 ---
