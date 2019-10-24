@@ -316,15 +316,9 @@ Constructing Equilibria
 
 --
 
-- **No mixed strategy equilibrium**
-  - If other people are mixing between `\((0,0)\)` and `\((1,1)\)`, each player strictly prefers `\((1,1)\)`
-  - Different from 2-player game
-
-
---
 
 - What are the efficiency implications?
-  - Weak: maximum or mininimum feasible surplus
+  - Weak: maximum or minimum feasible surplus
 
 ???
 SLOW SLOW SLOW
@@ -356,13 +350,13 @@ Perturbed Strategies
 For simplicity when defining trembles, assume
 
 1. Symmetric trembling hand at investment stage: 
-  - Each attribute must be chosen with positive probability `\(\epsilon^i&gt;0\)` by each buyer and seller
+  - Each attribute must be chosen with positive probability `\(\epsilon(b), \epsilon(s) &gt;0\)` by each buyer and seller
 
 1. In the aggregate each attribute must be chosen by a positive density of players
 
 --
 
-- Definition: A perfect equilibrium is limit of some sequence of equilibria for `\(\epsilon = (\epsilon^i,\epsilon^j) \to (0,0)\)`
+- Definition: A perfect equilibrium is limit of some sequence of equilibria for `\(\epsilon = (\epsilon(b),\epsilon(s)) \to (0,0)\)`
 
 - **Claim**: The unique perfect equilibrium *allocation* is efficient
 
@@ -373,42 +367,50 @@ Symmetric: all players and all actions have same tremble
 Uniqueness Proof
 ==========
 
+- Step 1: for any `\(\epsilon &gt;&gt;0\)`, at least one side will not choose `\((0,0)\)` in any equilibrium
 
-- With trembling hand, each `\(b\)` and `\(s\)` are played `\(\Rightarrow\)` `\(\tilde{p}^i(b,s) = \tilde{p}^j(b,s) = p(b,s)\)`
-
-- Prices are no longer a free parameter
-
-- Step 1: for any `\(\epsilon &gt;&gt;0\)`, in any equilibrium, buyers and sellers choose `\((1,1)\)`
-
-- Proof: Suppose for contradiction they both chose `\((0,0)\)`
+- Proof: Suppose for contradiction everyone chooses `\((0,0)\)`
 
 - For simplicity, fix at zero for all besides markets besides `\((1,1)\)`
   - Can think of those as being "unmatched", since no value
 
 
----
-Example Payoffs
-=====================================
+- With trembling hand, each `\(b\)` and `\(s\)` are played `\(\Rightarrow\)` `\(\tilde{p}^i(b,s) = \tilde{p}^j(b,s) = p(b,s)\)`
 
+- Prices are no longer a free parameter
+
+
+
+---
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_H.png)]
+
+--
 
 - For a buyer to choose `\((0,0)\)`, `\(p(1,1) \geq \frac{3}{4}\)` 
 
+--
+
 - For a seller choose `\((0,0)\)`, `\(p(1,1) \leq \frac{1}{4}\)`.
 
-- Contradiction proves at least one side does not choose `\((0,0)\)`. Same holds for `\((1,0)\)` and `\((0,1)\)`
+--
+
+- Contradiction proves one side does not choose `\((0,0)\)`.  If one side does not, market clearing implies the other side does not
+
+- Same argumnet holds for `\((1,0)\)` and `\((0,1)\)`
 
 ---
 Supply and Demand for `\((1,1)\)`
 ==========
 
-- If `\(p(1,1)\)` is low `\((&lt; \frac{3}{4})\)`, all buyers want to choose `\(b=1\)` as much as possible: `\(1 - \epsilon^i\)`
+Step 2: For any `\(\epsilon &gt;&gt; 0\)`, `\((1,1)\)` can be sustained as an equilibrium choice
+
+- If `\(p(1,1)\)` is low `\((&lt; \frac{3}{4})\)`, all buyers want to choose `\(b=1\)` as much as possible: `\(1 - \epsilon(b)\)`
 
   - Drives `\(p(1,1)\)` up
   
 --
 
-- If `\(p(1,1)\)` is high `\((&gt; \frac{1}{4})\)`, no sellers want to choose `\(s=1\)` as much as possible: `\(1 - \epsilon^j\)`
+- If `\(p(1,1)\)` is high `\((&gt; \frac{1}{4})\)`, no sellers want to choose `\(s=1\)` as much as possible: `\(1 - \epsilon(s)\)`
 
   - Drives `\(p(1,1)\)` down
 
@@ -416,22 +418,26 @@ Supply and Demand for `\((1,1)\)`
 --
 - Some price `\(p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]\)` clears market
 
-- At that price, everyone wants to invest if they can match
-  - `\(\text{min}\left\{1- \epsilon^i, 1- \epsilon^j\right\}\)` invest on both sides
+&lt;!--- - At that price, everyone wants to invest if they can match ---&gt;
+&lt;!---  - `\(\text{min}\left\{1- \epsilon(b), 1- \epsilon(s)\right\}\)` invest on both sides ---&gt;
 
 
 ???
 Draw demand and supply for (1,1) market
 ---
-
-# `\(p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]\)`
-
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_I.png)]
 
 
-- For every `\(\epsilon \to (0,0)\)`, `\((1,1)\)` is the unique equilibrium strategy profile `\(\blacksquare\)`
+- For every `\(\epsilon \to (0,0)\)`, `\((1,1)\)` is the unique equilibrium strategy choice `\(\blacksquare\)`
 
-- Prices are not unique
+--
+
+- Indirectly proved no mixed Nash, unlike 2-entrepreneur example
+  - If someone is mixing between `\((0,0)\)` and `\((1,1)\)`, `\(p(1,1)\)` is public and either buyers or sellers strictly prefer `\((1,1)\)`
+
+--
+
+- However, prices are not unique
 
 
 
