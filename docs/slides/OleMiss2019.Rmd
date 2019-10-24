@@ -249,6 +249,8 @@ Example Payoffs
 
 ???
 We need to find conjectures and prices
+
+
 ---
 
 Constructing Equilibria
@@ -259,14 +261,63 @@ Constructing Equilibria
   - Suppose realized prices: $p(1,1)= \frac{1}{2}$
   - Non-contradicting conjectures: $\tilde{p}^i = \tilde{p}^j = 0$ otherwise
     
---
+
+
+???
+SLOW SLOW SLOW
+
+---
+Efficient Equilibrium Payoffs
+=====================================
+
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_J.png)]
+
+
+---
+
+Constructing Equilibria
+====================================
+
+- Efficient equilibrium: $b=s=1$
+
+  - Suppose realized prices: $p(1,1)= \frac{1}{2}$
+  - Non-contradicting conjectures: $\tilde{p}^i = \tilde{p}^j = 0$ otherwise
+    
 
 - Coordination failure: $b=s=0$
 
   - Realized prices: $p(0,0)=0$
   - **Contradicting** conjectures: 
-      - To prevent buyer deviating: $\tilde{p}^i (1,1) \geq \frac{3}{4}$
-      - To prevent seller deviating: $\tilde{p}^j(1,1) \leq \frac{1}{4}$
+      - To prevent buyer deviating: $\tilde{p}^i (1,1) = 1 \geq \frac{3}{4}$
+      - To prevent seller deviating: $\tilde{p}^j(1,1) = 0 \leq \frac{1}{4}$
+
+???
+SLOW SLOW SLOW
+
+---
+Coordination Failure Payoffs
+=====================================
+
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_K.png)]
+
+???
+Only optimize, given prices.
+
+Think deeper: Need to think price will be 1 and that will clear market
+---
+
+Constructing Equilibria
+====================================
+
+- Efficient equilibrium: $b=s=1$
+
+
+- Coordination failure: $b=s=0$
+
+
+- No mixed strategy equilibrium
+  - Different from 2-player game
+
 
 --
 
@@ -275,8 +326,6 @@ Constructing Equilibria
 
 ???
 SLOW SLOW SLOW
-
-
 
 ---
 Refinement
@@ -288,12 +337,12 @@ Refinement
 
 - But one equilibria relies on off-path conjectures as a free parameter
   - Theorist can pick $\tilde{p}^j(b,s)$ discourage all other actions
-  - Ignored by previous theorists
 
 - I consider a mild refinement to avoid this free belief parameter
   - Trembling-hand perfection
 
 - Show which equilibria are robust/stable to small mistakes
+
 
 ???
 Robert Lucas taught us to beware of theorists bearing free parameters
@@ -311,9 +360,10 @@ Perturbed Strategies
 
 --
 
-- Perfect equilibrium: limit of some sequence of $\epsilon = (\epsilon^i,\epsilon^j) \to 0$
+- Perfect equilibrium: limit of some sequence of $\epsilon = (\epsilon^i,\epsilon^j) \to (0,0)$
 
 - **Claim**: The unique perfect equilibrium allocation is efficient
+
 
 ???
 Symmetric: all players and all actions have same tremble
@@ -321,10 +371,17 @@ Symmetric: all players and all actions have same tremble
 Uniqueness Proof
 ==========
 
+
 - With trembling hand, each $b$ and $s$ are played $\Rightarrow$ $\tilde{p}^i(b,s) = \tilde{p}^j(b,s) = p(b,s)$
 
+- Prices are no longer a free parameter
 
-- For simplicity, fix price at zero for all besides markets besides $(1,1)$
+- Step 1: for any $\epsilon >>0$, in any equilibrium, buyers and sellers choose $(1,1)$
+
+- Proof: Suppose for contradiction they both chose $(0,0)$
+
+- For simplicity, fix at zero for all besides markets besides $(1,1)$
+  - Can think of those as being "unmatched", since no value
 
 
 ---
@@ -333,27 +390,36 @@ Example Payoffs
 
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_H.png)]
 
+- For a buyer to choose $(0,0)$, $p(1,1) \geq \frac{3}{4}$ 
+
+- For a seller choose $(0,0)$, $p(1,1) \leq \frac{1}{4}$.
+
+- Contradiction proves at least one side does not choose $(0,0)$. Same holds for $(1,0)$ and $(0,1)$
+
 ---
-Uniqueness Proof
+Supply and Demand for $(1,1)$
 ==========
 
-- If $p(1,1)$ is low $(< \frac{3}{4})$, no buyers want to choose $b=0$ 
+- If $p(1,1)$ is low $(< \frac{3}{4})$, all buyers want to choose $b=1$ as much as possible: $1 - \epsilon^i$
 
-  - Instead, choose $b=1$ as much as possible: $1 - \epsilon^i$
   - Drives $p(1,1)$ up
   
 --
 
-- If $p(1,1)$ is high $(> \frac{1}{4})$, no sellers want to choose $s=0$
+- If $p(1,1)$ is high $(> \frac{1}{4})$, no sellers want to choose $s=1$ as much as possible: $1 - \epsilon^j$
 
-  - Instead choose $s=1$ as much as possible: $1 - \epsilon^j$
   - Drives $p(1,1)$ down
 
 
 --
-- $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$
+- Some price $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$ clears market
+
+- At that price, everyone wants to invest if they can match
+  - $\text{min}\left\{1- \epsilon^i, 1- \epsilon^j\right\}$ invest on both sides
 
 
+???
+Draw demand and supply for (1,1) market
 ---
 
 # $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$
@@ -361,18 +427,12 @@ Uniqueness Proof
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_I.png)]
 
 
----
-Uniqueness Proof
-==========
+- For every $\epsilon \to (0,0)$, $(1,1)$ is the unique equilibrium strategy profile $\blacksquare$
 
-- For any tremble, some $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$ balances supply and demand and clears all markets
+- Price are not unique
 
-- At that price, everyone wants to invest
 
 --
-
-
-- For any $\epsilon \to 0$, $(1,1)$ is the unique equilibrium strategy profile
 
 
 ---
@@ -439,7 +499,7 @@ $$\max_{b,s} \int_i  v(b,s)  - c\left(\beta(i), b\right) di  + \int_j  - c\left(
 As in any theory paper, technical complications arise, *e.g.* I need to
 
 
-1. Model an explicit Walrasian, matching market, given fixed investments, compared to picking a match ex ante
+1. Model an explicit competitive matching market, given fixed investments, compared to picking a match ex ante
 
 1. Integrate the non-cooperative investment stage with a Walrasian matching market
 
@@ -503,17 +563,18 @@ Stage 1: Attributes
 Stage 2: Matching Game
 ====================================
 
+- To allow individuals to remain unmatched, let $B^{\emptyset} \equiv B \cup {0}$ and $S^{\emptyset} \equiv S \cup {0}$
+
 - Bounded value function: $v : B^{\emptyset} \times S^{\emptyset} \to \mathbb{R}$
 
 - Competitive prices: $p : B^{\emptyset} \times S^{\emptyset} \to \mathbb{R}$ 
 
-- To allow individuals to remain unmatched, let $B^{\emptyset} \equiv B \cup {0}$ and $S^{\emptyset} \equiv S \cup {0}$
 
 - A matching is a measure $$x \in M_+ (B^{\emptyset} \times S^{\emptyset})$$
 
-- A matching $x$ is **feasible** for $\mu$ if $x(0,0)=0$, and for all attributes,
-$$x(b, S^{\emptyset}) = \mu(b)$$
-$$x(B^{\emptyset}, s) = \mu(s)$$
+- A matching $x$ is **feasible** for $\mu$ if $x(0,0)=0$, and
+$$\sum_{s' \in S^{\emptyset}}x(b,s') = \mu(b)~~~\forall b$$
+$$\sum_{b' \in B^{\emptyset}}x(b', s) = \mu(s)~~~\forall s$$
 
 
 
@@ -598,6 +659,8 @@ Stage 1: Attributes
 
 - Each agent $i$ has price conjectures: $\tilde{p} : B^{\emptyset} \times S^{\emptyset} \to \mathbb{R}$
 
+????
+$\nu$ is not v$
 ---
 Conjectured Indirect Utility
 ====================================
@@ -614,10 +677,10 @@ $$v^*_s(\tilde{p}) = \max_{b}\left\{ \max_{b' \in \text{ supp } B} \left\{p(b',s
 
 
 ---
-Equilibrium
+Investment Equilibrium
 ====================================
 
-- A pair $(\nu, p)$ is an **investment equilibrium** for $E$ if $\nu$ is feasible, $(x,p)$ is a competitive equilibrium for $\nu_A$,
+- A pair $(\nu,p,x)$ is an **investment equilibrium** for $E$ if $\nu$ is feasible, $(x,p)$ is a competitive equilibrium for $\nu_A$,
 
 Buyers optimize their investment: for all $(t,b) \in \text{supp } \nu$
 
@@ -627,10 +690,10 @@ $$v_b^*(\tilde{p}) - c(t,b) \geq v^*_{b'}(p) - c(t,b') ~~~\forall b' \in B$$
 
 Sellers optimize: for all $(s,t) \in \text{supp } \nu$
 
-$$v_s^*(\tilde{p}) - c(s,t) \geq v^*_{s'}(p) - c(s',t) ~~~\forall s' \in s$$
+$$v_s^*(\tilde{p}) - c(s,t) \geq v^*_{s'}(p) - c(s',t) ~~~\forall s' \in S$$
 
 
-Rational conjectures: $$\tilde{p}(b,s) = p(b,s) ~~\forall (b,s) \in \text{ supp } x$$
+Rational conjectures: $$\tilde{p}(b,s) = p(b,s) ~~\forall (b,s) \in \text{ supp } B \times  \text{ supp } S $$
 
 
 ---
@@ -669,7 +732,7 @@ Need for Refinement
 
 - Off-path beliefs are a free parameter
 
-- Why would sellers conjecture $p(1,1) = 0$?
+- Why would sellers conjecture $\tilde{p}(1,1) = 0$?
 
 --
 
@@ -700,7 +763,7 @@ $\epsilon$-Investment Equilibria
 - An allocation $\nu(\epsilon)$ is $\epsilon$-feasible for $E$ if  $\nu_T = E$ and for all $a \in A$
 $$\nu_{A}(\epsilon(a)) \geq \epsilon(a)$$
 
-- A pair $(\nu(\epsilon), p)$ is an $\epsilon$-investment equilibrium for $E$ if $\nu$ is $\epsilon$-feasible, $p$ is a competitive price for $\nu_T$, and for all $(t,a)$ such that $\nu_{A}(\epsilon) > \epsilon$,
+- A pair $(\nu(\epsilon), p,x)$ is an $\epsilon$-investment equilibrium for $E$ if $\nu$ is $\epsilon$-feasible, $p$ is a competitive price for $\nu_T$, and for all $(t,a)$ such that $\nu_{A}(\epsilon) > \epsilon$,
 
 $$v_a^*(p) - c(t,a) \geq v^*_{a'}(p) - c(a',t) ~~~\forall a' \in A$$
 
@@ -710,7 +773,7 @@ $$v_a^*(p) - c(t,a) \geq v^*_{a'}(p) - c(a',t) ~~~\forall a' \in A$$
 
 --
 
-- A pair $(\nu,p)$ is a **perfect investment equilibria** if there exists a sequence of $\epsilon$, such that $\lim_{k \to \infty} M(\epsilon^k)=0$ such that $(\nu(\epsilon^k),p) \to (\nu,p)$.
+- A triple $(\nu,p,x)$ is a **perfect investment equilibria** if there exists a sequence of $\epsilon$, such that $\lim_{k \to \infty} M(\epsilon^k)=0$ such that $(\nu(\epsilon^k),p,x) \to (\nu,p,x)$.
 
 ---
 Restricted Efficiency
@@ -724,7 +787,7 @@ Restricted Efficiency
 - Proof: 
 
  Let $Q(\epsilon)$ be the utility generated by the trembling actions
- $$Q(\epsilon)=\int_i \left\{ \sum_b  \left[v^*_b(p) - c(\beta{i},b)\right]\epsilon(b)\right\} di  + \int_j\left\{\sum_{s} \left[v^*_b(p) - c(\sigma{j},s)\right]\epsilon(s)\right\} dj.$$
+ $$Q(\epsilon)=\int_i \left\{ \sum_b  \left[v^*_b(p) - c(\beta(i),b)\right]\epsilon(b)\right\} di  + \int_j\left\{\sum_{s} \left[v^*_b(p) - c(\sigma(j),s)\right]\epsilon(s)\right\} dj.$$
 
 
 ---
@@ -747,7 +810,7 @@ $$ + \underbrace{Q(\epsilon)}_{\text{Constrained Choice}}$$
 Full Efficiency
 ====================================
 
-- **Theorem**: If $(\nu, p)$ is a perfect investment equilibrium, then it is efficient.
+- **Theorem**: If $(\nu,p,x)$ is a perfect investment equilibrium, then it is efficient.
 
 --
 
@@ -762,11 +825,11 @@ name:conclusion
 Common Conjectures Justifications
 ====================================
 
-- Predictive power comes from imposing more restrictions on beliefs than just rational expectations
+- Predictive power comes from imposing more restrictions on beliefs than just rational conjectures
 
-- Trembling hand + continuum $\Rightarrow$ as-if complete markets
+- Trembling hand + large market $\Rightarrow$ as-if complete markets
 
-- Complete markets means rational expectations $\Rightarrow$ common conjectures 
+- Complete markets means rational conjectures $\Rightarrow$ common conjectures 
 
 --
 
@@ -794,7 +857,7 @@ Conclusion
 Main theorem: Modified First Welfare Theorem
 
   .center[Even with **incomplete and endogenous markets**,]
-  .center[every perfect, investment equilibrium is efficient.]
+  .center[every perfect investment equilibrium is efficient.]
 
 
 
