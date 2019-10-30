@@ -29,7 +29,10 @@ bibliography: ["C:/Users/Brian/Documents/githubprivate/defaults/library.bib"]
 
 --
 
-- Both are stable, mixed strategy equilibrium is not
+- Both pure-strategy are stable; mixed-strategy is not
+
+???
+Sunk investments
 ---
 Competitive Coordination
 ====================================
@@ -39,13 +42,13 @@ Competitive Coordination
 
 --
 
-- These features matter because important real-world investments are sunk before entering a market
+- These features matter because important real-world investments are sunk before entering a market with many players
 
 --
 
   - Invest in education before being hired
   - Produce goods before having a buyer
-  - Write JMP before knowing schools want a general equilibrium theorist
+<!---  - Write JMP before knowing schools want a general equilibrium theorist --->
 
 --
 
@@ -134,7 +137,7 @@ Road Map for Talk
   - Competitive Equilibria with Fixed Investments
   - Ex Post Efficiency
 
-3. Investment Game where Players Choose Attributes
+3. Investment Game where Players Choose Investments
 
   - Investment Equilibria
   - Perfect Investment Equilibria
@@ -165,11 +168,19 @@ Ignore hold-up, bargaining issues
 Example
 ====================================
 
-- Continuum of buyers and sellers
+- Agents are endowed with a type $t \in T = \{\beta, \sigma\}$: "buyer" or "seller"
 
-- Buyers pick $b \in B= \{0,1\}$, sellers pick $s \in S = \{0,1\}$
+  - Measure one of both
 
-- Cost to buyer = $\frac{1}{4}b$;  Cost to seller = $\frac{1}{4}s$
+- Buyers choose an investment $b \in B= \{0,1\}$
+
+- Sellers choose an investment $s \in S = \{0,1\}$
+
+--
+
+- Cost to buyer = $\frac{1}{4}b$
+
+- Cost to seller = $\frac{1}{4}s$
 
 - Surplus $v(b,s) = bs$ of matching
 
@@ -181,32 +192,49 @@ Example
 Stage 2: Matching Market
 ===================================
 
-- In the competitive market, every agent buys the  **contractual right** to match with another agent
 
-- Price schedule for matches: $p : B \times S \to \mathbb{R}$
+- A buyer $b$ chooses a **match contract** $(b,s) \in \left\{(b,0) , (b,1)\right\}$ guaranteeing the right to join a match with $s$
+
+- A seller $s$ chooses $(b,s) \in \left\{(0,s) , (1,s)\right\}$
+
+--
+
+- Matches have competitive prices: $p : B \times S \to \mathbb{R}$
 
 - $p(b,s)$: transfer from buyer with $b$ to seller with $s$
 
-- Final buyer utility: $v(b,s) - p(b,s) - \frac{1}{4}b$
 
-- Final seller utility: $p(b,s) - \frac{1}{4}s$
+--
+
+- Matching market indirect utility for $b$:
+
+$$v^*_b(p) = \max_{s}\left\{ v(b,s) - p(b,s) \right\}$$
+
+--
+
+- Matching market indirect utility for $s$:
+
+$$v^*_s(p) = \max_{b}\left\{ p(b,s) \right\}$$
 
 
 ---
 Stage 1: Decision Problem
 ==============================
 
-- Agents make investment decisions based on price conjectures: $\tilde{p}^i(b,s)$
-  - They take as given the contract they will buy in stage 2
 
-- Buyer's problem
+- Each type $t$ makes investments before seeing prices
 
-$$\max_{b'} \left\{\max_{s'}\left\{ \underbrace{v(b',s') - \tilde{p}^i(b',s')}_{\text{Contract Choice}}\right\} - \frac{1}{4}b'\right\}$$
+- Agents only have **price conjectures**: $\tilde{p}^t : B \times S \to \mathbb{R}$
+  
+  - Not a distribution but can think of conjectures = expected price
+    
+--
 
+- Buyer's investment problem: $$\max_{b} \left\{\underbrace{ v^*_b\left(\tilde{p}^\beta\right)}_{\text{Utility from Conjectured Optimal Contract}}  - \underbrace{\frac{1}{4}b}_{\text{Investment Cost}}\right\}$$
 
-- Seller's problem 
+--
 
-$$\max_{s'} \left\{\max_{b'}\left\{\underbrace{\tilde{p}^j(b',s')}_{\text{Contract Choice}}\right\} - \frac{1}{4}b'\right\}$$
+- Seller's investment problem: $\max_{s} \left\{ v^*_s\left(\tilde{p}^\sigma\right)  - \frac{1}{4}s\right\}$
 
 ---
 Investment Equilibrium
@@ -214,14 +242,14 @@ Investment Equilibrium
 
 
 
-1. Each buyer $i$ chooses $(b,s)$ to maximize utility, given $\tilde{p}^i(b,s)$
+1. Each buyer chooses $(b,s)$ to maximize utility, given $\tilde{p}^\beta(b,s)$
 
-2. Each seller $j$ chooses $(b,s)$ to maximize utility, given $\tilde{p}^j(b,s)$
+2. Each seller chooses $(b,s)$ to maximize utility, given $\tilde{p}^\sigma(b,s)$
 
 --
 
 3. Rational conjectures: conjectures are not contradicted by the data
-  - If positive mass of agents choose contract $(b,s)$, conjectures agree with the posted price: $\tilde{p}^i (b,s) = \tilde{p}^j (b,s)= p(b,s)$
+  - If positive mass of agents choose contract $(b,s)$, conjectures agree with the posted price: $\tilde{p}^\beta (b,s)=\tilde{p}^\sigma (b,s)= p(b,s)$
   
   - Otherwise conjectures are not pinned down 
 
@@ -243,9 +271,9 @@ Example Payoffs
 --
 - Prices and conjectures are endogenous
 
-- Rational conjectures: if a match $(b,s)$ is chosen, $\tilde{p}^i (b,s) = \tilde{p}^j (b,s)= p(b,s)$
+- Rational conjectures: if a match $(b,s)$ is chosen, $\tilde{p}^\beta (b,s)= \tilde{p}^\sigma (b,s)= p(b,s)$
 
-- Equilibrium does not require optimization or correct conjectures "off-path" (like Nash)
+- Allows disagreement "off-path" (like Nash)
 
 ???
 We need to find conjectures and prices
@@ -259,7 +287,7 @@ Constructing Equilibria
 - Efficient equilibrium: $b=s=1$
 
   - Suppose realized prices: $p(1,1)= \frac{1}{2}$
-  - Non-contradicting conjectures: $\tilde{p}^i = \tilde{p}^j = 0$ otherwise
+  - Non-contradicting conjectures: $\tilde{p}^\beta = \tilde{p}^\sigma = 0$ otherwise
     
 
 
@@ -281,15 +309,15 @@ Constructing Equilibria
 - Efficient equilibrium: $b=s=1$
 
   - Suppose realized prices: $p(1,1)= \frac{1}{2}$
-  - Non-contradicting conjectures: $\tilde{p}^i = \tilde{p}^j = 0$ otherwise
+  - Non-contradicting conjectures: $\tilde{p}^\beta = \tilde{p}^\sigma = 0$ otherwise
     
 
 - Coordination failure: $b=s=0$
 
   - Realized prices: $p(0,0)=0$
   - **Contradicting** conjectures: 
-      - To prevent buyer deviating: $\tilde{p}^i (1,1) = 1 \geq \frac{3}{4}$
-      - To prevent seller deviating: $\tilde{p}^j(1,1) = 0 \leq \frac{1}{4}$
+      - To prevent buyer deviating: $\tilde{p}^\beta (1,1) = 1 \geq \frac{3}{4}$
+      - To prevent seller deviating: $\tilde{p}^\sigma(1,1) = 0 \leq \frac{1}{4}$
 
 ???
 SLOW SLOW SLOW
@@ -331,11 +359,15 @@ Refinement
 - Multiplicity from a Nash-style equilibrium
 
 
-- But one equilibria relies on off-path conjectures as a free parameter
-  - Theorist can pick $\tilde{p}^j(b,s)$ discourage all other actions
+- But one equilibria requires contradictory beliefs
 
-- I consider a mild refinement to avoid this free belief parameter
-  - Trembling-hand perfection
+--
+
+- To discipline beliefs, I introduce a mild refinement
+
+  - Trembling-hand perfection (Selten 1975)
+  
+  - Simple way to capture mistakes/experimentation
 
 - Show which equilibria are robust/stable to small mistakes
 
@@ -347,12 +379,12 @@ Robert Lucas taught us to beware of theorists bearing free parameters
 Perturbed Strategies
 ====================================
 
-For simplicity when defining trembles, assume
+When defining trembles,
 
-1. Symmetric trembling hand at investment stage: 
-  - Each attribute must be chosen with positive probability $\epsilon(b), \epsilon(s) >0$ by each buyer and seller
+1. Symmetric trembling hand only at investment stage: 
+  - Each investment must be chosen with positive probability $\epsilon(b), \epsilon(s) >0$ by each buyer and seller
 
-1. In the aggregate each attribute must be chosen by a positive density of players
+1. Law of large numbers: in the aggregate each investment must be chosen by at least  $\epsilon(b)$ buyers and  $\epsilon(s)$ sellers
 
 --
 
@@ -367,42 +399,41 @@ Symmetric: all players and all actions have same tremble
 Uniqueness Proof
 ==========
 
-- Step 1: for any $\epsilon >>0$, at least one side will not choose $(0,0)$ in any equilibrium
-
-- Proof: Suppose for contradiction everyone chooses $(0,0)$
-
-- For simplicity, fix at zero for all besides markets besides $(1,1)$
-  - Can think of those as being "unmatched", since no value
-
-
-- With trembling hand, each $b$ and $s$ are played $\Rightarrow$ $\tilde{p}^i(b,s) = \tilde{p}^j(b,s) = p(b,s)$
+- With trembling hand, each $b$ and $s$ are played $\Rightarrow$ $\tilde{p}^\beta(b,s) = \tilde{p}^\sigma(b,s) = p(b,s)$
 
 - Prices are no longer a free parameter
+
+--
+
+- Step 1: fix all prices besides markets besides $p(1,1)$ at 0
+  - Verify ex post this is part of equilibrium
+
 
 
 
 ---
+$p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$ 
+================================================
+
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_H.png)]
 
 --
 
-- For a buyer to choose $(0,0)$, $p(1,1) \geq \frac{3}{4}$ 
+- Step 2: In any equilibrium for $\epsilon >> 0$, $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$ 
+
+- For $p(1,1) > \frac{3}{4}$, all sellers choose $(1,1)$ but no buyers, not equilibrium
 
 --
 
-- For a seller choose $(0,0)$, $p(1,1) \leq \frac{1}{4}$.
+- For $p(1,1) < \frac{1}{4}$. all buyers choose $(1,1)$ but no sellers, not equilibrium
 
---
 
-- Contradiction proves one side does not choose $(0,0)$. And if one side does not, market clearing requires that the other side does not
-
-- Same argument holds for $(1,0)$ and $(0,1)$
 
 ---
 Supply and Demand for $(1,1)$
 ==========
 
-Step 2: For any $\epsilon >> 0$, $(1,1)$ can be sustained as an equilibrium choice
+Step 3: For any $\epsilon >> 0$, $(1,1)$ can be sustained as an equilibrium choice
 
 - Draw the supply and demand for the match $(1,1)$
 
@@ -438,71 +469,78 @@ background-size:contain
 
 --
 
-- Indirectly proved no mixed Nash, unlike 2-entrepreneur example
-  - If someone is mixing between $(0,0)$ and $(1,1)$, $p(1,1)$ is public and either buyers or sellers strictly prefer $(1,1)$
+- However, prices are not unique
+- *e.g.* if equilibrium payoffs are $\frac{1}{4}$, other prices can be in $\left[0, \frac{1}{4}\right)$
 
 --
 
-- However, prices are not unique
+- Indirectly proved no mixed strategy equilibrium (endogenous trembles)
+  - This is different from 2-entrepreneur example
+
+<!--  - If someone is mixing between $(0,0)$ and $(1,1)$, $p(1,1)$ is public and either buyers or sellers strictly prefer $(1,1)$ -->
+
 
 
 
 ---
-Take-aways from Example
+Results for the Example
 ==============================
 
-1. Coordination failures can exist with competition
+1. Inefficiencies (coordination failures) can occur under competition
 
-2. However, coordination failures are sustained by contradictory conjectures
+2. However, coordination failures require contradictory beliefs
 
 3. Mistakes/trembles eliminates contradictions $\Rightarrow$ no coordination failures
 
 4. [All perfect, competitive equilibria are efficient](#fulltalk)
 
+--
 
+- These results hold in a general environment 
+ 
 ---
-Extending the Result
+Extending the Results
 ================================
 
 - **Main Theorem**: for a general class of matching models with investments, all *perfect* investment equilibria are efficient
 
 --
 
-  - Single type $\Rightarrow$ general finite types, $\beta(i),\sigma (j)$
+  - Single type on each side $\Rightarrow$ general finite types, $\beta \in X,\sigma \in Y$
   
-  - $B=S= \{0,1\} \Rightarrow$ general investment levels
+  - $B=S= \{0,1\} \Rightarrow$ general finite investment levels
   
-  - $\frac{1}{4}b, \frac{1}{4}s \Rightarrow$ general cost of investment that can depend on types, $c\left(\beta(i), b\right)$ and $c\left(\sigma (j), s\right)$
+  - $\frac{1}{4}b, \frac{1}{4}s \Rightarrow$ general cost of investment that can depend on types, $c\left(\beta, b\right)$ and $c\left(\sigma, s\right)$
   
-  - $v(b,s) =b s \Rightarrow$ general surplus function 
+  -  Surplus function $b s \Rightarrow v(b,s)$
 
 
 ---
 Structure of General Proof
 ================================
 
-- General buyers' problem: $\max_b v(b,s) - \tilde{p}^i (b,s) - c\left(\beta(i), b\right)~~~\forall i$
+- General buyers' problem: $\max_{b,s} v(b,s) - \tilde{p}^\beta (b,s) - c\left(\beta, b\right)$
 
 --
 
-- General sellers' problem: $\max_s  \tilde{p}^j (b,s)  - c\left(\sigma (j), s\right)~~~\forall j$
+- General sellers' problem: $\max_{b,s}  \tilde{p}^\sigma (b,s)  - c\left(\sigma, s\right)$
 
 
 --
 
-- Total welfare
+- Total welfare, given measure over types $\mathcal{E}(\beta), \mathcal{E}(\sigma)$
 
-$$\int_i  \left[\max_b v(b,s) - \tilde{p}^i (b,s) - c\left(\beta(i), b\right)\right] di  + \int_j \left[\max_s  \tilde{p}^j (b,s)  - c\left(\sigma (j), s\right)\right] dj.$$
-
+$$\sum_\beta \left[ \max_{b,s}  v(b,s) - \tilde{p}^\beta (b,s)- c\left(\beta, b\right)\right] \mathcal{E}(\beta)  +  \sum_\sigma \left[\max_{b,s}  \tilde{p}^\sigma (b,s)  - c\left(\sigma, s\right)\right]\mathcal{E}(\sigma)$$
 --
 
 - Efficiency
 
-$$\max_{b,s} \int_i  v(b,s)  - c\left(\beta(i), b\right) di  + \int_j  - c\left(\sigma (j), s\right) dj.$$
+$$\max_{b,s}  \left\{  \sum_\beta \left[v(b,s)  - p(b,s)- c\left(\beta, b\right)\right]\mathcal{E}(\beta) +    
+  \sum_\sigma\left[p(b,s) - c\left(\sigma, s\right)\right] \mathcal{E}(\sigma)\right\}$$
 
 --
 
-- With common conjectures for all players, total welfare = efficiency  $\blacksquare$
+- With common conjectures for all players, since each agent is choosing both $(b,s)$, total welfare = efficiency  $\blacksquare$
 
 ---
   Not *So* Simple
@@ -532,7 +570,7 @@ Road Map for Talk
   - Competitive Equilibria with Fixed Investments
   - Conditional Efficiency
 
-3. Investment Game where Players Choose Attributes
+3. Investment Game where Players Choose Investments
 
   - Investment Equilibria
   - Perfect Investment Equilibria
@@ -544,47 +582,79 @@ Road Map for Talk
 ---
 Stage 1: Types
 ====================================
-- Buyer names: $i \in I$ $~~~~$ Seller names: $j \in J$
 
-- Finite Types: $\beta : I \to \mathcal{B}$ $~~~~$  $\sigma : J \to \mathcal{S}$
+- General endowed types: $t \in T$
 
-- Possible types: $t \in T = \mathcal{B} \cup \mathcal{S}$
+- Partitioned into 
+
+  - Buyer endowed types: $\beta \in X$
+
+  - Seller endowed types: $\sigma \in Y$
+
+
 
 - Economy: a positive measure on $T$: $$E \in M_+(T)$$
 
 
 
 ---
-Stage 1: Attributes
+Stage 1: Investments
 ====================================
-- Each individual must acquire/invest in one attribute  $A$
 
-- $A$ is partitioned into attributes that are feasible for buyers $B$ and feasible for sellers $S$
+- General investments: $a \in A$
 
-- Type determines cost of acquiring attribute $$c : T \times A \to \mathbb{R} \cup {\infty}$$
+- Partitioned into
 
-- $c(t,a)$ is the cost of acquiring $a$ for type $t$
+  - Buyer investments: $b \in B$
+  
+  - Seller investments: $s \in S$
 
 --
 
-- Individual choices lead to distribution of attributes $\mu \in M_+(A)$
+- Type determines cost of acquiring investment $$c : T \times A \to \mathbb{R} \cup {\infty}$$
 
-- For any attribute $a \subset A$, $\mu(E)$ is the mass of individuals with attribute $a$
+- $c(t,a)$ is the cost to a type $t$ of investment $a$
+
+---
+Stage 2: Matching Game Distribution
+====================================
+
+- Individual choices lead to distribution of investments $\mu \in M_+(A)$
+
+  - Not keeping track of $M_+(T \times A)$ 
+
+- For any investment $a$, $\mu(a)$ is the mass of individuals with investment $a$
+
+  - Buyers: $\mu_b \in M_+(B)$
+  
+  - Sellers: $\mu_s \in M_+(S)$
+
 
 ---
 Stage 2: Matching Game
 ====================================
 
-- To allow individuals to remain unmatched, let $B^{\emptyset} \equiv B \cup {0}$ and $S^{\emptyset} \equiv S \cup {0}$
+- To allow individuals to remain unmatched, let $B^{\emptyset} \equiv B \cup \emptyset$ and $S^{\emptyset} \equiv S \cup \emptyset$
 
 - Bounded value function: $v : B^{\emptyset} \times S^{\emptyset} \to \mathbb{R}$
 
-- Competitive prices: $p : B^{\emptyset} \times S^{\emptyset} \to \mathbb{R}$ 
+- Competitive prices: $p : B^{\emptyset} \times S^{\emptyset} \to \mathbb{R}$
+  - Normalize: $p(b,\emptyset) \equiv p(\emptyset,s) \equiv 0$
 
+--
+
+- Could generalize to $v(\beta,b,\sigma,s)$, if sufficient prices $p(\beta,b,\sigma,s)$
+
+- To focus on investment choice and coordination failures, I don't allow this
+
+
+---
+Stage 2: Matching Game
+====================================
 
 - A matching is a measure $$x \in M_+ (B^{\emptyset} \times S^{\emptyset})$$
 
-- A matching $x$ is **feasible** for $\mu$ if $x(0,0)=0$, and
+- A matching $x$ is **feasible** for $\mu$ if $x(\emptyset,\emptyset)=0$, and
 $$\sum_{s' \in S^{\emptyset}}x(b,s') = \mu(b)~~~\forall b$$
 $$\sum_{b' \in B^{\emptyset}}x(b', s) = \mu(s)~~~\forall s$$
 
@@ -599,21 +669,21 @@ Stage 2: Equilibrium
 ====================================
 
 
-<font color=#125972><b>Definition:</b></font> The pair $(x,p)$ is an (ex post) **competitive equilibrium** for $\mu$ if $x$ is feasible for $\mu$, $p(b,\emptyset)= p(\emptyset,s) \equiv 0$,
+<font color=#125972><b>Definition:</b></font> The pair $(x,p)$ is an (ex post) **competitive equilibrium** for $\mu$ if $x$ is feasible for $\mu$,
 --
 
-- For each $b \in  \text{ supp } \mu$ and each $(b,s^*) \in \text{ supp } x,$
+- For each $b \in  \text{ supp } \mu_b$ and each $(b,s^*) \in \text{ supp } x,$
 the match maximizes $b$'s utility:
 
 --
 
-$$s^* \in \text{ argmax }_{s} \left\{\max_{s' \in \text{ supp }  S}\left\{ v(b,s') - p(b,s')\right\}, v(b, \emptyset)\right\},$$
+$$s^* \in \text{ argmax }_{s \in \text{ supp }  \mu_s }\left\{ v(b,s) - p(b,s)\right\},$$
 --
 
-- For each $s \in  \text{ supp } \mu$ and each $(b^*,s) \in \text{ supp } x$, the match maximizes $s$'s utility:
+- For each $s \in  \text{ supp } \mu_s$ and each $(b^*,s) \in \text{ supp } x$, the match maximizes $s$'s utility:
 --
 
-$$b^* \in \text{ argmax }_{b}\left\{ \max_{b' \in \text{ supp } B} \left\{p(b',s)\right\}, v(\emptyset,s)\right\}.$$
+$$b^* \in \text{ argmax }_{s \in \text{ supp }  \mu_b } \left\{p(b,s)\right\}.$$
 
 ???
 Walk slowly through each
@@ -637,7 +707,7 @@ Stage 2: Efficiency
 
 - It is conditional because maximization only holds within the support
 
-- $\mu$ may be missing the efficient $b$ and $s$
+- $\text{supp }\mu$ may not include the ex ante efficient $b$ and $s$
 
 - Given the choice in a non-cooperative setting, do people choose the efficient $b$ and $s$?
 
@@ -651,25 +721,25 @@ Road Map for Talk
   - Competitive Equilibria with Fixed Investments
   - Conditional Efficiency
 
-3. **Investment Game where Players Choose Atrributes**
+3. **Investment Game where Players Choose Investments**
 
   - Investment Equilibria
   - Perfect Investment Equilibria
   - Efficiency
 
 ---
-Stage 1: Attributes
+Stage 1: Investments
 ====================================
 
-- Fix the ex ante population $E$
+- Fix the ex ante population $\mathcal{E}$
 
-- An allocation of attributes is a measure $\nu \in M_+(A\times T)$
-  - Marginals: $\nu_{A}, \nu_T$
+- An allocation of investments is a measure $\nu \in M_+(T\times A)$
+  - Marginals: $\nu_{T}, \nu_A$
   - $\mu = \nu_{A}$
   
-- An allocation $\nu$ is *feasible* for $E$ if $\nu_T = E$
+- An allocation $\nu$ is *feasible* for $\mathcal{E}$ if $\nu_T = \mathcal{E}$
 
-- Each agent $i$ has price conjectures: $\tilde{p} : B^{\emptyset} \times S^{\emptyset} \to \mathbb{R}$
+- Each agent of type $t$ has price conjectures: $\tilde{p}^t : B^{\emptyset} \times S^{\emptyset} \to \mathbb{R}$
 
 ???
 $\nu$ is not v$
@@ -679,45 +749,44 @@ Conjectured Indirect Utility
 
 - Define conjectured indirect utility of matching
 
+- Buyer with $b$ who conjectures $\tilde{p}^\beta$
 
-- Buyer $b$ who conjectures $\tilde{p}$
+$$v^*_b\left(\tilde{p}^\beta\right) = \max_{s \in S^\emptyset}\left\{ v(b,s) - \tilde{p}^\beta(b,s)\right\}$$
+- Seller with $s$ who conjectures $\tilde{p}$
 
-$$v^*_b(\tilde{p}) = \max_{s} \left\{\max_{s' \in \text{ supp }  S}\left\{ v(b,s') - \tilde{p}^i(b,s')\right\}, v(b, \emptyset)\right\}$$
-- Seller $s$ who conjectures $\tilde{p}$
-
-$$v^*_s(\tilde{p}) = \max_{b}\left\{ \max_{b' \in \text{ supp } B} \left\{p(b',s)\right\}, v(\emptyset,s)\right\}$$
+$$v^*_s\left(\tilde{p}^\sigma\right) = \max_{b \in B^\emptyset} \left\{\tilde{p}^\sigma(b,s)\right\}$$
 
 
 ---
 Investment Equilibrium
 ====================================
 
-- A pair $(\nu,p,x)$ is an **investment equilibrium** for $E$ if $\nu$ is feasible, $(x,p)$ is a competitive equilibrium for $\nu_A$,
+- A tuple $\left(\nu,\left\{ \tilde{p}^t\ \right\}_{t\in T},p,x\right)$ is an **investment equilibrium** for $\mathcal{E}$ if $\nu$ is feasible, $(x,p)$ is a competitive equilibrium for $\nu_A$,
 
 Buyers optimize their investment: for all $(t,b) \in \text{supp } \nu$
 
 
-$$v_b^*(\tilde{p}) - c(t,b) \geq v^*_{b'}(p) - c(t,b') ~~~\forall b' \in B$$
+$$v_b^*(\tilde{p}^\beta) - c(t,b) \geq v^*_{b'}(\tilde{p}^\beta) - c(t,b') ~~~\forall b' \in B$$
 
 
 Sellers optimize: for all $(s,t) \in \text{supp } \nu$
 
-$$v_s^*(\tilde{p}) - c(s,t) \geq v^*_{s'}(p) - c(s',t) ~~~\forall s' \in S$$
+$$v_s^*(\tilde{p}^\sigma) - c(s,t) \geq v^*_{s'}(\tilde{p}^\sigma) - c(s',t) ~~~\forall s' \in S$$
 
 
-Rational conjectures: $$\tilde{p}(b,s) = p(b,s) ~~\forall (b,s) \in \text{ supp } B \times  \text{ supp } S $$
+Rational conjectures: $$\tilde{p}^t(b,s) = p(b,s) ~~\forall (b,s) \in \text{ supp } \mu_b \times  \text{ supp } \mu_s $$
 
 
 ---
 Efficiency
 ====================================
 
-- Total cost of attributes $\nu$ is $\sum_A \sum_T c(t,a) \nu(t,a).$
+- Total cost of investments $\nu$ is $\sum_A \sum_T c(t,a) \nu(t,a).$
 
 - Total surplus from $\nu$ is
 $$G(\nu) = g(\nu_{A}) - \sum_A \sum_T c(t,a) \nu(t,a).$$
 
-- The allocation $\nu$ is unconditionally **efficient** for $E$ if it is feasible and $G(\nu) \geq G(\nu')$ for all other feasible allocation $\nu'$
+- The allocation $\nu$ is unconditionally **efficient** for $\mathcal{E}$ if it is feasible and $G(\nu) \geq G(\nu')$ for all other feasible allocation $\nu'$
 
 
 ---
@@ -744,7 +813,7 @@ Need for Refinement
 
 - Off-path beliefs are a free parameter
 
-- Why would sellers conjecture $\tilde{p}(1,1) = 0$?
+- Why would sellers conjecture $\tilde{p}^t(1,1) = 0$?
 
 --
 
@@ -772,12 +841,12 @@ $$\sum_S \epsilon(s) \leq 1$$
 $\epsilon$-Investment Equilibria
 ====================================
 
-- An allocation $\nu(\epsilon)$ is $\epsilon$-feasible for $E$ if  $\nu_T = E$ and for all $a \in A$
+- An allocation $\nu(\epsilon)$ is $\epsilon$-feasible for $\mathcal{E}$ if  $\nu_T = \mathcal{E}$ and for all $a \in A$
 $$\nu_{A}(\epsilon(a)) \geq \epsilon(a)$$
 
-- A pair $(\nu(\epsilon), p,x)$ is an $\epsilon$-investment equilibrium for $E$ if $\nu$ is $\epsilon$-feasible, $p$ is a competitive price for $\nu_T$, and for all $(t,a)$ such that $\nu_{A}(\epsilon) > \epsilon$,
+- A pair $(\nu(\epsilon), p,x)$ is an $\epsilon$-investment equilibrium for $\mathcal{E}$ if $\nu$ is $\epsilon$-feasible, $p$ is a competitive price for $\nu_T$, and for all $(t,a)$ such that $\nu_{A}(\epsilon) > \epsilon$,
 
-$$v_a^*(p) - c(t,a) \geq v^*_{a'}(p) - c(a',t) ~~~\forall a' \in A$$
+$$v_a^*(\tilde{p}^t) - c(t,a) \geq v^*_{a'}(\tilde{p}^t) - c(a',t) ~~~\forall a' \in A$$
 
 --
 
@@ -785,12 +854,12 @@ $$v_a^*(p) - c(t,a) \geq v^*_{a'}(p) - c(a',t) ~~~\forall a' \in A$$
 
 --
 
-- A triple $(\nu,p,x)$ is a **perfect investment equilibria** if there exists a sequence of $\epsilon$, such that $\lim_{k \to \infty} M(\epsilon^k)=0$ such that $(\nu(\epsilon^k),p,x) \to (\nu,p,x)$.
+- A triple  $\left(\nu,\left\{ \tilde{p}^t\ \right\}_{t\in T},p,x\right)$ is a **perfect investment equilibria** if there exists a sequence of $\epsilon$, such that $\lim_{k \to \infty} M(\epsilon^k)=0$ such that $(\nu(\epsilon^k),p,x) \to (\nu,p,x)$.
 
 ---
 Restricted Efficiency
 ====================================
-- The allocation $\nu(\epsilon)$ is $\epsilon$-efficient for $E$ if it is feasible and $G(\nu(\epsilon)) \geq G(\nu'(\epsilon))$ for all other $\epsilon$-feasible allocation $\nu'$
+- The allocation $\nu(\epsilon)$ is $\epsilon$-efficient for $\mathcal{E}$ if it is feasible and $G(\nu(\epsilon)) \geq G(\nu'(\epsilon))$ for all other $\epsilon$-feasible allocation $\nu'$
 
 - **Lemma 1**: If $(\nu(\epsilon), p)$ is an $\epsilon$-investment equilibrium, then it is $\epsilon$-efficient.
 
@@ -799,7 +868,10 @@ Restricted Efficiency
 - Proof: 
 
  Let $Q(\epsilon)$ be the utility generated by the trembling actions
- $$Q(\epsilon)=\int_i \left\{ \sum_b  \left[v^*_b(p) - c(\beta(i),b)\right]\epsilon(b)\right\} di  + \int_j\left\{\sum_{s} \left[v^*_b(p) - c(\sigma(j),s)\right]\epsilon(s)\right\} dj.$$
+
+ $$Q(\epsilon)=  \sum_b \left\{\sum_\beta  \left[v^*_b\left(\tilde{p}^\beta\right) - c(\beta,b)\right]\nu_T(\beta)\right\}\epsilon(b)$$
+ 
+$$+ \sum_s \left\{\sum_\sigma  \left[v^*_s\left(\tilde{p}^\sigma\right) - c(\sigma,s)\right]\nu_T(\sigma)\right\}\epsilon(s).$$
 
 
 ---
@@ -808,21 +880,25 @@ Proof (continued)
 
 - Hence, 
 
-$$\underbrace{\left(\int  \left[\max_b v(b,s) - \tilde{p}^i (b,s) - c\left(\beta(i), b\right)\right] di  + \int\left[\max_s  \tilde{p}^j (b,s)  - c\left(\sigma(j), s\right)\right] dj\right) \left(1 - \sum_a \epsilon(a) \right)}_{\text{Optimized Choice}}$$
+$$\sum_\beta \left[ \max_{b,s}  v(b,s) - \tilde{p}^\beta (b,s)- c\left(\beta, b\right)\right] \nu_T(\beta)\left( 1 - \epsilon(b)\right)$$  
+
+$$+  \sum_\sigma \left[\max_{b,s}  \tilde{p}^\sigma (b,s)  - c\left(\sigma, s\right)\right]\nu_T(\sigma)\left( 1 - \epsilon(s)\right)$$
+
+<!--$$\underbrace{\left(  \left[\max_b v(b,s) - \tilde{p}^\beta (b,s) - c\left(\beta, b\right)\right] + \left[\max_s  \tilde{p}^\sigma (b,s)  - c\left(\sigma, s\right)\right] \right) \left(1 - \sum_a \epsilon(a) \right)}_{\text{Optimized Choice}}$$-->
 $$ + \underbrace{Q(\epsilon)}_{\text{Constrained Choice}}$$
 
-- But since all actions are played by trembles, $\tilde{p}^i(b,s) =\tilde{p}^j(b,s)$ 
+- But since all actions are played by trembles, $\tilde{p}^\beta(b,s) =\tilde{p}^\sigma(b,s)$ 
 
 - Therefore they optimize the entire left expression
 
-- It is looks exactly like a static problem, which is efficient $\qquad \blacksquare$
+- It is exactly the complete market problem, which is efficient $\qquad \blacksquare$
 
 
 ---
 Full Efficiency
 ====================================
 
-- **Theorem**: If $(\nu,p,x)$ is a perfect investment equilibrium, then it is efficient.
+- **Theorem**: If  $\left(\nu,\left\{ \tilde{p}^t\ \right\}_{t\in T},p,x\right)$ is a perfect investment equilibrium, then it is efficient.
 
 --
 
