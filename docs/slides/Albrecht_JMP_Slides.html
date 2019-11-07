@@ -13,7 +13,7 @@ class: left, middle, inverse, title-slide
 
 # Investment without Coordination Failures<br><br>
 ### Brian C. Albrecht<br> <span style="font-size: 50%;"> University of Minnesota<br> Department of Economics</span>
-### October 30, 2019<br><br>Paper <i class="fas  fa-link "></i> <a href="http://bit.ly/Albrecht-JMP">bit.ly/Albrecht-JMP</a> <br>Slides <i class="fas  fa-link "></i> <a href="http://bit.ly/Albrecht-JMP-Slides">bit.ly/Albrecht-JMP-Slides</a>
+### November 06, 2019<br><br>Paper <i class="fas  fa-link "></i> <a href="http://bit.ly/Albrecht-JMP">bit.ly/Albrecht-JMP</a> <br>Slides <i class="fas  fa-link "></i> <a href="http://bit.ly/Albrecht-JMP-Slides">bit.ly/Albrecht-JMP-Slides</a>
 
 ---
 
@@ -222,7 +222,7 @@ Stage 1: Decision Problem
 ==============================
 
 
-- Each type `\(t\)` makes investments before seeing prices
+- 
 
 - Agents only have **price conjectures**: `\(\tilde{p}^t : B \times S \to \mathbb{R}\)`
   
@@ -593,7 +593,7 @@ Stage 1: Types
 
 
 
-- Economy: a positive measure on `\(T\)`: `$$E \in M_+(T)$$`
+- Economy: a positive measure on `\(T\)`: $\mathcal{E} \in M_+(T)$$`
 
 
 
@@ -830,7 +830,7 @@ Need for Refinement
 Perturbations
 ====================================
 
-- Consider a perturbed strategy vector for all buyers `\(i \in I\)`, `\(\epsilon_B = (\epsilon(b))_{b \in B},\)` satisfying  `\(\epsilon(b)&gt;0\)` for all `\(b \in B\)` and 
+- Consider a perturbed strategy vector for all buyers, `\(\epsilon_B = (\epsilon(b))_{b \in B},\)` satisfying  `\(\epsilon(b)&gt;0\)` for all `\(b \in B\)` and 
 `$$\sum_B \epsilon(b) \leq 1$$`
 - For all sellers `\(\epsilon_S = (\epsilon(s))_{s \in S},\)` satisfying  `\(\epsilon(s)&gt;0\)` for all `\(s \in S\)` and 
 `$$\sum_S \epsilon(s) \leq 1$$`
@@ -844,7 +844,7 @@ Perturbations
 - An allocation `\(\nu(\epsilon)\)` is `\(\epsilon\)`-feasible for `\(\mathcal{E}\)` if  `\(\nu_T = \mathcal{E}\)` and for all `\(a \in A\)`
 `$$\nu_{A}(\epsilon(a)) \geq \epsilon(a)$$`
 
-- A pair `\((\nu(\epsilon), p,x)\)` is an `\(\epsilon\)`-investment equilibrium for `\(\mathcal{E}\)` if `\(\nu\)` is `\(\epsilon\)`-feasible, `\(p\)` is a competitive price for `\(\nu_T\)`, and for all `\((t,a)\)` such that `\(\nu_{A}(\epsilon) &gt; \epsilon\)`,
+- A tuple `\(\left(\nu(\epsilon), \left\{ \tilde{p}^t\ \right\}_{t\in T},p,x\right)\)` is an `\(\epsilon\)`-investment equilibrium for `\(\mathcal{E}\)` if `\(\nu\)` is `\(\epsilon\)`-feasible, `\(p\)` is a competitive price for `\(\nu_A\)`, and for all `\((t,a)\)` such that `\(\nu_{A}(\epsilon) &gt; \epsilon\)`,
 
 `$$v_a^*(\tilde{p}^t) - c(t,a) \geq v^*_{a'}(\tilde{p}^t) - c(a',t) ~~~\forall a' \in A$$`
 
@@ -854,7 +854,7 @@ Perturbations
 
 --
 
-- A triple  `\(\left(\nu,\left\{ \tilde{p}^t\ \right\}_{t\in T},p,x\right)\)` is a **perfect investment equilibria** if there exists a sequence of `\(\epsilon\)`, such that `\(\lim_{k \to \infty} M(\epsilon^k)=0\)` such that `\((\nu(\epsilon^k),p,x) \to (\nu,p,x)\)`.
+- A tuple  `\(\left(\nu,\left\{ \tilde{p}^t\ \right\}_{t\in T},p,x\right)\)` is a **perfect investment equilibria** if there exists a sequence of `\(\epsilon\)`, such that `\(\lim_{k \to \infty} M(\epsilon^k)=0\)` such that `\(\left(\nu(\epsilon),\left\{ \tilde{p}^t\ \right\}_{t\in T},p,x\right) \to \left(\nu,\left\{ \tilde{p}^t\ \right\}_{t\in T},p,x\right)\)`.
 
 ---
 Restricted Efficiency
