@@ -300,16 +300,16 @@ Efficient Equilibrium Payoffs
 
 
 ---
-background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_L.png)
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_T.png)
 background-size:contain
 
 ---
-background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_M.png)
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_U.png)
 background-size:contain
 
 
 ---
-background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_O.png)
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_W.png)
 background-size:contain
 
 ---
@@ -430,13 +430,17 @@ $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$
 
 --
 
-- Step 2: In any equilibrium for $\epsilon >> 0$, $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$ 
+- Step 2: For $\epsilon >> 0$
 
-- For $p(1,1) > \frac{3}{4}$, all sellers choose $(1,1)$ but no buyers, not equilibrium
+- For $p(1,1) > \frac{1}{4}$, all sellers choose $(1,1)$
 
 --
 
-- For $p(1,1) < \frac{1}{4}$. all buyers choose $(1,1)$ but no sellers, not equilibrium
+- For $p(1,1) < \frac{3}{4}$. all buyers choose $(1,1)$ 
+
+--
+- For any price, someone wants to deviate from $(0,0)$    
+
 
 
 
@@ -444,13 +448,7 @@ $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$
 Supply and Demand for $(1,1)$
 ==========
 
-Step 3: For any $\epsilon >> 0$, $(1,1)$ can be sustained as an equilibrium choice
-
-- Draw the supply and demand for the match $(1,1)$
-
-
---
-- Some price $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$ clears market
+Step 3: For any $\epsilon >> 0$, again some price $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$ clears market
 
 <!--- - At that price, everyone wants to invest if they can match --->
 <!---  - $\text{min}\left\{1- \epsilon(b), 1- \epsilon(s)\right\}$ invest on both sides --->
