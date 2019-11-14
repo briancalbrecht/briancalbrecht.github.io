@@ -549,7 +549,7 @@ $$\max_{b,s}  \left\{  \sum_\beta \left[v(b,s)  - p(b,s)- c\left(\beta, b\right)
 
 --
 
-- With common conjectures for all players, since each agent is choosing both $(b,s)$, total welfare = efficiency  $\blacksquare$
+- Since each agent is choosing both $(b,s)$, total welfare = efficiency  $\blacksquare$
 
 ---
   Not *So* Simple
@@ -565,7 +565,7 @@ As in any theory paper, technical complications arise, *e.g.* I need to
 1. Define a tremble and perfect equilibrium with a continuum of players
 
 
-- [Example highlights the core ideas](#conclusion)
+- [Example highlights the core ideas](#conclusions)
 
 ---
 name:fulltalk
@@ -602,7 +602,7 @@ Stage 1: Types
 
 
 
-- Economy: a positive measure on $T$: $\mathcal{E} \in M_+(T)$$
+- Economy: a positive measure on $T$: $\mathcal{E} \in M_+(T)$
 
 
 
@@ -918,7 +918,7 @@ Full Efficiency
 
 
 ---
-name:conclusion
+name:conclusions
 Common Conjectures Justifications
 ====================================
 

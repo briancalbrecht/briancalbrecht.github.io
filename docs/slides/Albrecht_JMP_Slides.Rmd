@@ -222,8 +222,6 @@ Stage 1: Decision Problem
 ==============================
 
 
-- 
-
 - Agents only have **price conjectures**: $\tilde{p}^t : B \times S \to \mathbb{R}$
   
   - Not a distribution but can think of conjectures = expected price
@@ -300,6 +298,19 @@ Efficient Equilibrium Payoffs
 
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_J.png)]
 
+
+---
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_U.png)
+background-size:contain
+
+---
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_V.png)
+background-size:contain
+
+
+---
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_X.png)
+background-size:contain
 
 ---
 
@@ -419,13 +430,17 @@ $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$
 
 --
 
-- Step 2: In any equilibrium for $\epsilon >> 0$, $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$ 
+- Step 2: For $\epsilon >> 0$
 
-- For $p(1,1) > \frac{3}{4}$, all sellers choose $(1,1)$ but no buyers, not equilibrium
+- For $p(1,1) > \frac{1}{4}$, all sellers choose $(1,1)$
 
 --
 
-- For $p(1,1) < \frac{1}{4}$. all buyers choose $(1,1)$ but no sellers, not equilibrium
+- For $p(1,1) < \frac{3}{4}$. all buyers choose $(1,1)$ 
+
+--
+- For any price, someone wants to deviate from $(0,0)$    
+
 
 
 
@@ -433,13 +448,7 @@ $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$
 Supply and Demand for $(1,1)$
 ==========
 
-Step 3: For any $\epsilon >> 0$, $(1,1)$ can be sustained as an equilibrium choice
-
-- Draw the supply and demand for the match $(1,1)$
-
-
---
-- Some price $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$ clears market
+Step 3: For any $\epsilon >> 0$, again some price $p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]$ clears market
 
 <!--- - At that price, everyone wants to invest if they can match --->
 <!---  - $\text{min}\left\{1- \epsilon(b), 1- \epsilon(s)\right\}$ invest on both sides --->
@@ -540,7 +549,7 @@ $$\max_{b,s}  \left\{  \sum_\beta \left[v(b,s)  - p(b,s)- c\left(\beta, b\right)
 
 --
 
-- With common conjectures for all players, since each agent is choosing both $(b,s)$, total welfare = efficiency  $\blacksquare$
+- Since each agent is choosing both $(b,s)$, total welfare = efficiency  $\blacksquare$
 
 ---
   Not *So* Simple
@@ -556,7 +565,7 @@ As in any theory paper, technical complications arise, *e.g.* I need to
 1. Define a tremble and perfect equilibrium with a continuum of players
 
 
-- [Example highlights the core ideas](#conclusion)
+- [Example highlights the core ideas](#conclusions)
 
 ---
 name:fulltalk
@@ -593,7 +602,7 @@ Stage 1: Types
 
 
 
-- Economy: a positive measure on $T$: $\mathcal{E} \in M_+(T)$$
+- Economy: a positive measure on $T$: $\mathcal{E} \in M_+(T)$
 
 
 
@@ -909,7 +918,7 @@ Full Efficiency
 
 
 ---
-name:conclusion
+name:conclusions
 Common Conjectures Justifications
 ====================================
 
@@ -946,6 +955,7 @@ Main theorem: Modified First Welfare Theorem
 
   .center[Even with **incomplete and endogenous markets**,]
   .center[every perfect investment equilibrium is efficient.]
+
 
 
 
