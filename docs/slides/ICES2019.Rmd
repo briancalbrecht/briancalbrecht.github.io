@@ -264,7 +264,7 @@ Informal Definition
 Example Payoffs
 =====================================
 
-.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_G.png)]
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_P.png)]
 
 --
 - Prices and conjectures are endogenous
@@ -296,7 +296,7 @@ SLOW SLOW SLOW
 Efficient Equilibrium Payoffs
 =====================================
 
-.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_J.png)]
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_R.png)]
 
 
 ---
@@ -337,7 +337,7 @@ SLOW SLOW SLOW
 Coordination Failure Payoffs
 =====================================
 
-.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_K.png)]
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_T.png)]
 
 ???
 Only optimize, given prices.
