@@ -222,8 +222,6 @@ Stage 1: Decision Problem
 ==============================
 
 
-- 
-
 - Agents only have **price conjectures**: $\tilde{p}^t : B \times S \to \mathbb{R}$
   
   - Not a distribution but can think of conjectures = expected price
@@ -300,6 +298,19 @@ Efficient Equilibrium Payoffs
 
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_J.png)]
 
+
+---
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_L.png)
+background-size:contain
+
+---
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_M.png)
+background-size:contain
+
+
+---
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_O.png)
+background-size:contain
 
 ---
 
