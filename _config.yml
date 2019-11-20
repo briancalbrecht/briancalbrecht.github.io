@@ -4,3 +4,6 @@ url: "https://briancalbrecht.github.io" # the base hostname & protocol for your 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+
+# Google Analytics
+google_analytics: UA—31017694-4
