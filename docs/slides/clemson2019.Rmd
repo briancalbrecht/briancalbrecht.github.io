@@ -4,7 +4,7 @@ author: "<br>Brian C. Albrecht <span style = 'font-size: 50%;'> University of Mi
 date: 'February 15, 2019<br><br> Paper `r icon::fa("link")`  [bit.ly/bca-evolution](http://bit.ly/bca-evolution) <br>`r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
 output:
   xaringan::moon_reader:
-    css: [libs/brian-xaringan-themer.css]
+    css: ["https://briancalbrecht.github.io/defaults/brian-xaringan-themer.css"]
     nature:
       titleSlideClass: ["left", "middle", "inverse"]
       ratio: "16:9"
