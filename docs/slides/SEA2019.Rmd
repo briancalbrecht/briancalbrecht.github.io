@@ -1,7 +1,7 @@
 ---
 title: "Evolution, Uncertainty, and the Asymptotic Efficiency of Policy"
 author: "<br>Brian C. Albrecht <span style = 'font-size: 50%;'> University of Minnesota</span><br><br> Joshua R. Hendrickson<span style = 'font-size: 50%;'> University of Mississippi</span><br><br> Alexander William Salter<span style = 'font-size: 50%;'> Texas Tech University</span><br><br>"
-date: 'November 11, 2019<br><br> Paper `r icon::fa("link")`  [bit.ly/bca-evolution](http://bit.ly/bca-evolution) <br>`r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
+date: 'November 11, 2019<br><br> Paper `r icon::fa("link")`  [bit.ly/Albrecht-evolution](http://bit.ly/Albrecht-evolution) <br>`r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
 output:
   xaringan::moon_reader:
     css: ["https://briancalbrecht.github.io/defaults/brian-xaringan-themer.css"]
@@ -36,8 +36,7 @@ Government failure theory:
 ###.center[usually created to be **socially efficient**]
 
 ---
-Can Democratic Politics Be Efficient?
-====================================
+##Can Democratic Politics Be Efficient?
 
 ###Yes, if
 
@@ -242,30 +241,25 @@ Beyond Political "Coase" Theorem
 Adding Uncertainty
 ====================================
 
-- If steel productivity in foreign countries follows a random walk, then cost of tariff $C$ will follow a random walk
-
-- Once $C$ crosses some threshold, the consumer group will enter and **select the efficient** policy
-
-
----
-Real Option to Enter
-====================================
 
 
 - The interest group always has the option to enter the political market and end the costly policy
 
 - Option to enter is like a financial option
 
-- Can derive the value of this option as a function of the net cost of existing legislation
+--
 
-- Can determine the precise value for the net cost at which the prospective interest group will decide to enter the market
+- If steel productivity in foreign countries follows a random walk, then cost of tariff $C$ will follow a random walk
+
+- Once $C$ crosses some threshold, the consumer group will enter and **select the efficient** policy
+
 
 
 ---
 When to Enter
 ===================================
 
-- Second, let $N^*$ be the net cost when the interest group enters
+- Let $N^*$ be the net cost when the interest group enters (exercise option)
 
 - High $N^*$ raises yields greater benefit when option is exercised
   - Do not pay $O$ on low $N$ policies
@@ -478,6 +472,6 @@ Downside
 
 class: center, middle
 
-###`r icon::fa("link")` Paper: [bit.ly/bca-evolution](http://bit.ly/bca-evolution) <br>
-###`r icon::fa("link")` Slides: [bit.ly/bca-SEA](https://bit.ly/bca-SEA) <br>
+###`r icon::fa("link")` Paper: [bit.ly/Albrecht-evolution](http://bit.ly/Albrecht-evolution) <br>
+###`r icon::fa("link")` Slides: [bit.ly/Albrecht-SEA](https://bit.ly/Albrecht-SEA) <br>
 ###`r icon::fa("twitter")` [@briancalbrecht](https://twitter.com/briancalbrecht)
