@@ -300,13 +300,12 @@ Dynamic vs. Static
 
 
 ---
-background-image: url(images/evolution/tikz_A.png)
-background-size: contain
-
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/evolution/tikz_A.png)
+background-size:contain
 
 ---
-background-image: url(images/evolution/tikz_B.png)
-background-size: contain
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/evolution/tikz_B.png)
+background-size:contain
 
 ---
 Model Implications
