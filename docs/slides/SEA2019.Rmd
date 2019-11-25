@@ -1,0 +1,483 @@
+---
+title: "Evolution, Uncertainty, and the Asymptotic Efficiency of Policy"
+author: "<br>Brian C. Albrecht <span style = 'font-size: 50%;'> University of Minnesota</span><br><br> Joshua R. Hendrickson<span style = 'font-size: 50%;'> University of Mississippi</span><br><br> Alexander William Salter<span style = 'font-size: 50%;'> Texas Tech University</span><br><br>"
+date: 'November 11, 2019<br><br> Paper `r icon::fa("link")`  [bit.ly/bca-evolution](http://bit.ly/bca-evolution) <br>`r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
+output:
+  xaringan::moon_reader:
+    css: ["https://briancalbrecht.github.io/defaults/brian-xaringan-themer.css"]
+    nature:
+      titleSlideClass: ["left", "middle", "inverse"]
+      ratio: "4:3"
+      class: ["left", "middle"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+    citation_package: natbib
+bibliography: ["C:/Users/Brian/Documents/githubprivate/defaults/library.bib"]
+---
+Views of Politics
+====================================
+
+Government failure theory:
+
+  - Political decision makers have power and can extract from citizens 
+  
+  - Politics involves concentrated benefits and dispersed costs (Olson 1965)
+  
+  - Politics as social conflict (Acemoglu 2003)
+  
+--
+
+  - Douglass North (1995):
+  
+###.center[Institutions are **not** necessarily or even]
+###.center[usually created to be **socially efficient**]
+
+---
+Can Democratic Politics Be Efficient?
+====================================
+
+###Yes, if
+
+1. Define away inefficiency
+
+  - Cheung (1998): "The Pareto condition is always satisfied"
+  
+--
+
+2. No transaction costs (Coase 1960)
+
+  - Wittman (1989): "Democratic political markets are structured to reduce these costs"
+  
+--
+
+3. Democracy **selects** for efficient policies
+  - Today's presentation
+
+---
+Our Evolutionary Middle-ground
+====================================
+
+
+- Alchian (1950): profit mechanism selects for firms who have made relatively
+better choices concerning profit-making
+
+- In markets, selection replaces explicit choice of firm managers
+
+$\Rightarrow$ In the long-run, production is efficient
+
+--
+
+- **Our paper**: develop model of politics as dynamic, evolutionary process
+
+- In politics, interest group formation replaces explicit choice of politicians
+
+$\Rightarrow$ In the long-run, policy is efficient
+
+---
+A Selection Mechanism
+====================================
+
+
+- At any point in time, interest groups may want to leave gains from trade on the table
+
+- Once possible gains are large enough:
+  - Interest groups pay cost to form,
+  
+  - Enter politics, and 
+  
+  - Overturn policies
+
+- Interest group entry is a democratic selection mechanism
+
+---
+Preview of Results
+====================================
+
+- ### Proposition 1: 
+  - Policy inefficiencies are eliminated in the long run
+
+--
+
+- ### Proposition 2: 
+  - The level of inefficiency is bounded in the short run
+
+--
+
+- ### Proposition 3:
+  - Policies remain in the dynamic problem that do not in the static
+
+
+---
+Building On
+====================================
+  
+- Interest group models of politics
+
+  - Stigler (1971), Peltzman (1976), Posner (1974), Becker (1983), Tollison (1988)
+  
+  - Focus on dynamic **selection mechanisms**
+  
+--
+
+- Evolutionary perspective of institutions
+
+  - Markets: Alchian (1950), Smith (2007), Todd and Gigerenzer (2012)
+  
+  - Common law: Rubin (1977), Priest (1977), Gennaioli and Shleifer (2007)
+  
+  - Focus on **legislative institutions**
+
+
+
+---
+Road Map for Talk
+====================================
+
+1. Simple Coasean Example: Static Bargaining
+  
+2. Real Option: Dynamic Bargaining
+
+3. Model Results
+
+  a. Formal Propositions
+  
+  b. Broader Implications
+
+---
+Static Political "Coase" Theorem
+====================================
+
+- Suppose competing interest groups bargain over policy
+  - e.g. steel producers vs. steel consumers
+
+- Steel producers want to enact tariffs with benefit $B$ to them
+
+- Consumers would incur a cost $C$
+
+- Without transaction costs, new policy is enacted if $B > C$
+
+---
+Static Political "Coase" Theorem
+====================================
+
+- In a competitive model, tariffs are inefficient: $B < C$
+
+- Consumers can organize into their own interest group and block tariff
+
+- Consumers can offer to pay producers an amount $B + \epsilon < C$
+
+- Without transaction costs, the no tariff policy is efficient and enacted
+
+--
+
+- Yet we see many tariffs: why?
+
+- As Coase taught us, there must be relevant transaction costs
+
+---
+Adding Organizational Costs
+====================================
+
+
+- Cost of organizing an interest $~O_i$ for $i \in \{P,C\}$
+
+- Producers want to organize and enact tariff if $B - O_P > 0$
+
+- If $B<C$, to prevent inefficient tariff, consumers must form and pay a bribe, costing them:  $$\underbrace{B - O_P + \epsilon}_{\textrm{Bribe/Transfer}} + \underbrace{O_C}_{\textrm{Organizational Cost}}$$
+
+--
+
+- If $B < C$, but $B + \epsilon + (O_C - O_P) > C$, then bribe will never materialize
+
+- Consumers are better off living with $C$ than working to prevent
+
+- $O_C - O_P$ creates friction that prevents efficient bargains (Olson 1965)
+
+
+
+---
+Moving to Dynamics
+====================================
+
+- These examples can't speak to long-lasting vs. temporary policies
+  - No distinction in Becker (1983), Wittman (1989), Peltzman (1990), etc
+
+- These examples are like a one time, eternal vote on policy
+
+- A policy passed last week is just as likely to be inefficient as long-lasting and widespread policies
+
+--
+
+- We argue there is an important difference
+
+- Long-lasting policies have survived an (imperfectly) competitive selection mechanism
+
+---
+class:middle,center
+
+# Real Options in Politics
+
+
+---
+Beyond Political "Coase" Theorem
+====================================
+- $N = C - B$: net social cost of the current policy
+
+- If $N$ is positive, current policy is **inefficient** 
+  - Current policy fails standard cost/benefit
+
+- In a Coasean world with no transaction costs, the policy will be overturned
+
+--
+
+- We have two frictions:
+  1. Organizational costs
+  2. Uncertainty about future cost of policy
+
+
+---
+Adding Uncertainty
+====================================
+
+- If steel productivity in foreign countries follows a random walk, then cost of tariff $C$ will follow a random walk
+
+- Once $C$ crosses some threshold, the consumer group will enter and **select the efficient** policy
+
+
+---
+Real Option to Enter
+====================================
+
+
+- The interest group always has the option to enter the political market and end the costly policy
+
+- Option to enter is like a financial option
+
+- Can derive the value of this option as a function of the net cost of existing legislation
+
+- Can determine the precise value for the net cost at which the prospective interest group will decide to enter the market
+
+
+---
+When to Enter
+===================================
+
+- Second, let $N^*$ be the net cost when the interest group enters
+
+- High $N^*$ raises yields greater benefit when option is exercised
+  - Do not pay $O$ on low $N$ policies
+  
+- However, high $N^*$ means longer wait times on policies
+
+--
+
+- The optimal $N^*$ trades these off
+
+
+
+---
+Selection Mechanism
+====================================
+
+- Consider a particular policy $j$
+
+- Prospective interest groups will enter whenever $N_j \geq N^*_j$
+
+- Interest group entry is a **selection mechanism** that eliminates inefficient policies
+
+- Inefficient policies will tend to be eliminated faster as $N^*_j$ declines, such as when $O$ declines
+
+---
+Asymptotic Efficiency
+====================================
+
+### Proposition 1: The probability that any inefficient policy $j$ survives goes to zero as time goes to infinity.
+--
+Idea: 
+
+- Two things can happen over time:
+  - $N \to -\infty$: efficient
+  - $N \to \infty$: worth overturning
+
+---
+class:middle, center
+
+## "Every durable social institution or practice is efficient, <br> or it would not persist over time."
+
+.right[George Stigler (1992)]
+
+
+---
+Bounded Inefficiency
+====================================
+
+### Proposition 2: For any parameters, there is an upper bound on the level of inefficiency.
+
+--
+
+- Corollary: The bound is increasing in the organizational costs, $O_j$.
+
+- Similar result to static example with $O_C - O_P$
+
+
+---
+Dynamic vs. Static 
+====================================
+### Proposition 3: Policies remain in the dynamic problem that do not in the static problem.
+
+- People prefer to wait and see if the net costs are moderate before paying the organizational costs
+
+- If costs remain moderate, people will be willing to tolerate them
+
+
+---
+background-image: url(images/evolution/tikz_A.png)
+background-size: contain
+
+
+---
+background-image: url(images/evolution/tikz_B.png)
+background-size: contain
+
+---
+Model Implications
+====================================
+
+1. Losers must be compensated 
+
+2. Durable legislation improves efficiency
+
+3. Lowering political organizational costs improves efficiency
+
+
+
+---
+Just Compensation (Cutsinger 2018)
+====================================
+
+- In 2010, the House of Representatives changed significantly
+
+- They eliminated a housing counseling assistance program 
+
+- Program had given $88 million to non-profit organization
+
+- Justice Department's settlement authority restored half of funding
+
+- $30 million came from large banks based on their conduct in the mortgage backed securities market
+
+
+---
+Durability of Legislation
+====================================
+
+- Settlement authority makes policy effectively **more durable**: even if overturned, must be paid value of rents
+
+- Durability raises $E\int_0^{\infty} e^{-\rho t} C_j(t) dt$ and encourages entry
+
+
+- If legislation is likely to be overturned later legislatures, willingness to pay $O_j$ drops
+
+--
+
+- Similar result to principal-agent models of politicians:
+
+  - Future benefits encourage efficient action today
+
+- $\Rightarrow$ Institutions that enhance durability improve efficiency
+
+
+---
+Independent Judiciary 
+====================================
+
+
+- If durability has value, then legislatures will have an incentive to make it difficult to overturn legislation 
+
+- Landes and Posner (1975): independent judiciary can favor original interpretations and need not be subservient to current legislatures
+
+- Anderson, Shughart, and Tollison (1989): legislatures reward judges who display independence with higher salaries
+
+- Implication: judicial independence could explain variation in interest group
+formation and the efficiency of policy
+
+
+---
+Free Speech
+====================================
+
+- Our most direct implication: lower $O_j$ improves efficiency
+
+- U.S. Supreme Court upheld freedom of speech for corporations, unions, and non-profits
+making explicit reference to interest groups
+
+- Justice Kennedy argued in favor of the **informational role** of interest groups, not just constitutional rights
+
+- Speech restrictions increase the organizational costs
+
+- If our theory is correct, the ruling is efficiency enhancing
+
+
+---
+Re-framing Political Economy
+====================================
+
+Normative Implications:
+
+- Propositions 1 and 2 lead to a *pre*sumption of efficiency 
+  (Breton 1993)
+  
+- However, policies are **not efficient by assumption**
+  - Avoid "whatever is, is efficient" tautologies
+  
+--
+  
+- Between government failure and "efficiency always"
+
+- Long last policies likely have a hidden efficiency justification
+  - Hendrickson, Salter, and Albrecht (2018): capital taxation helps for national defense 
+
+
+---
+Implication for Political Economy
+====================================
+
+
+- Political economists who want to argue that a particular long-lasting policy is inefficient must
+
+  1. Reconsider the magnitude of the cost of the policy, or
+  
+  2. Explain why the organizational costs are so high
+  
+- Otherwise, political economists can go around claiming there are $10 trillion bills on the sidewalk
+
+---
+Re-framing Political Economy
+====================================
+
+Positive Implications:
+
+- Role of political economist is to identify the relevant organizational costs
+
+- Retain efficiency as a tool for positive economics
+
+- Mirrors Steven Cheung's (1998) approach to study of markets:
+
+.center["whenever the Pareto condition fails to hold we would]
+.center[immediately know that some constraints are missing."]
+
+--
+
+Downside
+- Only applies to long-lasting policies
+
+
+---
+
+class: center, middle
+
+###`r icon::fa("link")` Paper: [bit.ly/bca-evolution](http://bit.ly/bca-evolution) <br>
+###`r icon::fa("link")` Slides: [bit.ly/bca-SEA](https://bit.ly/bca-SEA) <br>
+###`r icon::fa("twitter")` [@briancalbrecht](https://twitter.com/briancalbrecht)
