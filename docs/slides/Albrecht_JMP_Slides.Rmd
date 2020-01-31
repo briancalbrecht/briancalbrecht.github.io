@@ -953,10 +953,15 @@ Common Conjectures Justifications
 
 ---
 name:conclusions
-Policy Relevance
+Implications for Applied Work
 ====================================
 
-- "Big push"
+- "Big push" policies attempts to move economies/sectors from the coordination failure to a more efficient outcome
+  - 
+  
+---
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/jep.png)
+background-size:contain
 
 ---
 Conclusion
