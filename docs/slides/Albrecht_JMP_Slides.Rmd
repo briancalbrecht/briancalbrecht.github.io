@@ -540,6 +540,23 @@ Extending the Results
 
 
 ---
+  Not *So* Simple
+====================================
+
+As in any paper, technical complications arise, *e.g.* I need to
+
+
+1. Model an explicit competitive matching market, given fixed investments, compared to picking a match ex ante
+
+1. Integrate the non-cooperative investment stage with the competitive matching market
+
+1. Define a tremble and perfect equilibrium with a continuum of players
+
+
+- [Example highlights the core ideas](#conclusions)
+
+
+---
 Structure of General Proof
 ================================
 
@@ -566,21 +583,6 @@ $$\max_{b,s}  \left\{  \sum_\beta \left[v(b,s)  - p(b,s)- c\left(\beta, b\right)
 
 - Since each agent is choosing both $(b,s)$, total welfare = efficiency  $\blacksquare$
 
----
-  Not *So* Simple
-====================================
-
-As in any paper, technical complications arise, *e.g.* I need to
-
-
-1. Model an explicit competitive matching market, given fixed investments, compared to picking a match ex ante
-
-1. Integrate the non-cooperative investment stage with the competitive matching market
-
-1. Define a tremble and perfect equilibrium with a continuum of players
-
-
-- [Example highlights the core ideas](#conclusions)
 
 ---
 name:fulltalk
