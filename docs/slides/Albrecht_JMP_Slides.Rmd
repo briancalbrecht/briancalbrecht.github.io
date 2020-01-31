@@ -91,17 +91,22 @@ Mechanism
 
 --
 
-- To not invest, software entreprenuer must conjecture he would get paid less than 1 if she invests
+- To not invest, each entreprenuer must conjecture she would get paid less than 1 if she invests
 
-- To not invest, hardware entreprenuer must conjecture she would get paid less than 1 if she invests
 
 --
 
-- **Somebody must be wrong*
+- **Somebody must be wrong**
 
-- Conjectures must contradict for any coordination failure
+--
+- Main Results:
+  
+  - Prop 1: Conjectures must contradict during any coordination failure
 
-- But disagreement is not robust to a trembling hand
+--
+
+  - Theorem 1: Contradictory conjectures are not robust to a trembles
+  - $\Rightarrow$ Coordination failures are not robust
 
 
 ---
