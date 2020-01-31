@@ -957,10 +957,13 @@ Food for Applied Thought
 ====================================
 
 - "Big push" policies attempts to move economies/sectors from coordination failure to more efficient outcome
+  
+  - Rosenstein-Rodan (1943), Murphy, Shleifer & Vishny (1988)
 
-- Idea: government policy can chose to invest, so other actors' best-reply is to also invest
 
-- Low cost way to increase output
+- Idea: government policy can force investment, so other actors' best-reply is to also invest
+
+- If works, very low cost way to increase output
 
 ---
 <img src="https://briancalbrecht.github.io/docs/slides/images/jmp/tikz2_D.png">
