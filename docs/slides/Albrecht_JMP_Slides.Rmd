@@ -337,7 +337,7 @@ Constructing Equilibria
 - Efficient equilibrium: everyone invests
 
   - Suppose realized prices: $p(1,1)= \frac{1}{2}$
-  - Non-contradicting conjectures: $\tilde{p}^\beta = \tilde{p}^\sigma = 0$ otherwise
+  - Conjectures: $\tilde{p}^\beta = \tilde{p}^\sigma = 0$ otherwise
     
 
 - Coordination failure: no one invests
