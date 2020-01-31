@@ -183,62 +183,37 @@
 %	
 %\end{figure}
 %
-%\newpage
-
 \newpage
+
+
 \begin{figure}[h]
-\begin{tikzpicture}[scale=.8]
-
-\draw[thick,<->] (0,10) node[above]{Optimal Investment}--(0,0)--(10,0) node[right]{Average Investment};
-
-\node [below left] at (0,0) {$0$};
-
-\draw(0,0)--(9,9) node[above right]{$ 45^{\circ}$};
-
-%\draw(0,1) ..controls (6,2) and (6,8) .. (10,9) node[right]{$sf(k)$};
-\coordinate [] (A) at (0,1);
-
-\coordinate [] (B) at (3,2);
-\coordinate [] (C) at (4.5,5);
-\coordinate [] (D) at (6,7);
-\coordinate [] (E) at (10,8);
-
-\draw[very thick,red] plot [smooth] coordinates { (A) (B) (C) (D) (E) };
-
-\node [below right] at (1,1) {Inefficient Equilibria};
-\node [below right] at (7.5,7.5) {Efficient Equilibria};
-\end{tikzpicture}
+	\centering
+	\begin{tikzpicture}
+	\matrix[matrix of math nodes,every odd row/.style={align=right},every even row/.style={align=left},every node/.style={text width=2cm},row sep=0.2cm,column sep=0.2cm] (m) {
+		$0$ & $- 1$\\
+		$0$ & $0$\\
+		$0$& $2 -1 $\\
+		$- 1$&$2 - 1 $\\
+	};
+	\draw (m.north east) rectangle (m.south west);
+	\draw (m.north) -- (m.south);
+	\draw (m.east) -- (m.west);
+	
+	\coordinate (a) at ($(m.north west)!0.25!(m.north east)$);
+	\coordinate (b) at ($(m.north west)!0.75!(m.north east)$);
+	\node[above=5pt of a,anchor=base] {Don't Invest};
+	\node[above=5pt of b,anchor=base] {Invest};
+	
+	\coordinate (c) at ($(m.north west)!0.25!(m.south west)$);
+	\coordinate (d) at ($(m.north west)!0.75!(m.south west)$);
+	\node[left=5pt of c,text width=2.5cm]  {Don't Invest};
+	\node[left=5pt of d,text width=2.5cm]  {Invest};
+	
+	\node[above=18pt of m.north] (firm b) {Software Entrepreneur};
+	\node[left=3.5cm of m.west,rotate=90,align=center,anchor=center] {Hardware Entrepreneur};
+	
+	\end{tikzpicture}\\
 \end{figure}
-
-
-%%\begin{figure}[h]
-%	\centering
-%	\begin{tikzpicture}
-%	\matrix[matrix of math nodes,every odd row/.style={align=right},every even row/.style={align=left},every node/.style={text width=2cm},row sep=0.2cm,column sep=0.2cm] (m) {
-%		$0$ & $- 1$\\
-%		$0$ & $0$\\
-%		$0$& $2 -1 $\\
-%		$- 1$&$2 - 1 $\\
-%	};
-%	\draw (m.north east) rectangle (m.south west);
-%	\draw (m.north) -- (m.south);
-%	\draw (m.east) -- (m.west);
-%	
-%	\coordinate (a) at ($(m.north west)!0.25!(m.north east)$);
-%	\coordinate (b) at ($(m.north west)!0.75!(m.north east)$);
-%	\node[above=5pt of a,anchor=base] {Don't Invest};
-%	\node[above=5pt of b,anchor=base] {Invest};
-%	
-%	\coordinate (c) at ($(m.north west)!0.25!(m.south west)$);
-%	\coordinate (d) at ($(m.north west)!0.75!(m.south west)$);
-%	\node[left=5pt of c,text width=2.5cm]  {Don't Invest};
-%	\node[left=5pt of d,text width=2.5cm]  {Invest};
-%	
-%	\node[above=18pt of m.north] (firm b) {Software Entrepreneur};
-%	\node[left=3.5cm of m.west,rotate=90,align=center,anchor=center] {Hardware Entrepreneur};
-%	
-%	\end{tikzpicture}\\
-%\end{figure}
 
 \newpage
 
