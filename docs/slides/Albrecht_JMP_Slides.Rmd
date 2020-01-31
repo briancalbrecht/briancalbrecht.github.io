@@ -18,18 +18,7 @@ output:
 bibliography: ["C:/Users/Brian/Documents/githubprivate/defaults/library.bib"]
 ---
 
-<img src="https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_D.png" class="center60">
-
---
-
-- Two pure-strategy, Nash equilibria
-
-  1. Pareto optimal, efficient investment: (Invest, Invest)
-  2. Pareto dominated, **coordination failure**: (Don't Invest, Don't Invest)
-
---
-
-- Both pure-strategy are stable; mixed-strategy is not
+.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_B.png)]
 
 ???
 Sunk investments
@@ -271,7 +260,7 @@ Example Payoffs
 
 - Rational conjectures: if a match $(b,s)$ is chosen, $\tilde{p}^\beta (b,s)= \tilde{p}^\sigma (b,s)= p(b,s)$
 
-- Allows disagreement "off-path" (like Nash)
+- Allows disagreement "off-path" (self-confirming equilibrium)
 
 ???
 We need to find conjectures and prices
@@ -555,7 +544,7 @@ $$\max_{b,s}  \left\{  \sum_\beta \left[v(b,s)  - p(b,s)- c\left(\beta, b\right)
   Not *So* Simple
 ====================================
 
-As in any theory paper, technical complications arise, *e.g.* I need to
+As in any paper, technical complications arise, *e.g.* I need to
 
 
 1. Model an explicit competitive matching market, given fixed investments, compared to picking a match ex ante
