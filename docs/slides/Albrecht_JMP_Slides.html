@@ -97,7 +97,7 @@ Mechanism
 
 - One must be wrong
 
-- Conjectures must disagree for any coordination failure
+- Conjectures must contradict for any coordination failure
 
 - This disagreement is not robust to a trembling hand
 
@@ -337,15 +337,15 @@ Constructing Equilibria
 - Efficient equilibrium: everyone invests
 
   - Suppose realized prices: `\(p(1,1)= \frac{1}{2}\)`
-  - Non-contradicting conjectures: `\(\tilde{p}^\beta = \tilde{p}^\sigma = 0\)` otherwise
+  - Conjectures: `\(\tilde{p}^\beta = \tilde{p}^\sigma = 0\)` otherwise
     
 
 - Coordination failure: no one invests
 
   - Suppose realized prices: `\(p(0,0)=0\)`
   - Conjectures: 
-      - To prevent buyer deviating: `\(\tilde{p}^\beta (1,1) = 1\)`
-      - To prevent seller deviating: `\(\tilde{p}^\sigma(1,1) = 0\)`
+      - Buyers: `\(\tilde{p}^\beta (1,1) = 1\)`
+      - Sellers: `\(\tilde{p}^\sigma(1,1) = 0\)`
 
 ???
 SLOW SLOW SLOW
@@ -355,6 +355,18 @@ Coordination Failure Payoffs
 =====================================
 
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_K.png)]
+
+--
+
+- To prevent buyer deviating: `\(\tilde{p}^\beta (1,1) \geq \frac{3}{4}\)`
+
+- To prevent seller deviating: `\(\tilde{p}^\sigma(1,1) \leq \frac{1}{4}\)`
+
+--
+
+- **Result**: Every coordination involves contradictory conjectures
+  - `\(\tilde{p}^\beta (1,1) \neq \tilde{p}^\sigma(1,1)\)`
+
 
 ???
 Only optimize, given prices.
@@ -369,11 +381,11 @@ Refinement
 - Multiplicity from a Nash-style equilibrium
 
 
-- But the coordination failure requires contradictory beliefs
+- But the coordination failure requires contradictory conjectures
 
 --
 
-- To discipline beliefs and give predictive power, I introduce a mild refinement
+- To discipline conjectures and give predictive power, I introduce a mild refinement
 
   - Trembling-hand perfection (Selten 1975)
   
@@ -415,21 +427,23 @@ Uniqueness Proof
 
 --
 
-- Step 1: fix all prices besides markets besides `\(p(1,1)\)` at 0
+- Step 1: Besides `\(p(1,1)\)` fix all other prices a 0
   - Verify ex post this is part of equilibrium
 
 
 
 
 ---
-`\(p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]\)` 
+Deviating from `\((0,0)\)`
 ================================================
+
+
+- Step 2: For `\(\epsilon &gt;&gt; 0\)`
 
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_H.png)]
 
 --
 
-- Step 2: For `\(\epsilon &gt;&gt; 0\)`
 
 - For `\(p(1,1) &gt; \frac{1}{4}\)`, all sellers choose `\((1,1)\)`
 
@@ -438,8 +452,8 @@ Uniqueness Proof
 - For `\(p(1,1) &lt; \frac{3}{4}\)`. all buyers choose `\((1,1)\)` 
 
 --
-- For any price, someone wants to deviate from `\((0,0)\)`    
-
+- `\(\Rightarrow\)` For any price, someone wants to deviate from `\((0,0)\)`
+  - `\((0,0)\)` cannot be voluntarily chosen in an equilibrium
 
 
 
@@ -473,7 +487,7 @@ background-size:contain
 .center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_I.png)]
 
 
-- For every `\(\epsilon \to (0,0)\)`, `\((1,1)\)` is the unique equilibrium strategy choice `\(\blacksquare\)`
+- For every `\(\epsilon \to (0,0)\)`, the match `\((1,1)\)` is the unique equilibrium strategy choice `\(\blacksquare\)`
 
 --
 
@@ -496,9 +510,9 @@ Results for the Example
 
 1. Inefficiencies (coordination failures) can occur under competition
 
-2. However, coordination failures require contradictory beliefs
+2. However, coordination failures require contradictory conjectures
 
-3. Mistakes/trembles eliminates contradictions `\(\Rightarrow\)` no coordination failures
+3. Experimentation eliminates contradictions `\(\Rightarrow\)` no coordination failures
 
 4. [All perfect, competitive equilibria are efficient](#fulltalk)
 
@@ -514,13 +528,13 @@ Extending the Results
 
 --
 
-  - Single type on each side `\(\Rightarrow\)` general finite types, `\(\beta \in X,\sigma \in Y\)`
+  - General finite types, `\(\beta \in X,\sigma \in Y\)`
   
-  - `\(B=S= \{0,1\} \Rightarrow\)` general finite investment levels
+  - General finite investment levels
   
-  - `\(\frac{1}{4}b, \frac{1}{4}s \Rightarrow\)` general cost of investment that can depend on types, `\(c\left(\beta, b\right)\)` and `\(c\left(\sigma, s\right)\)`
+  - General cost of investment that can depend on types, `\(c\left(\beta, b\right)\)` and `\(c\left(\sigma, s\right)\)`
   
-  -  Surplus function `\(b s \Rightarrow v(b,s)\)`
+  -  General surplus function `\(v(b,s)\)`
 
 
 ---
@@ -798,7 +812,7 @@ Efficiency
 
 
 ---
-Unconstrained Beliefs
+Unconstrained conjectures
 ====================================
 
 - Without more structure, there will often be many equilibria
@@ -819,7 +833,7 @@ Unconstrained Beliefs
 Need for Refinement
 ====================================
 
-- Off-path beliefs are a free parameter
+- Off-path conjectures are a free parameter
 
 - Why would sellers conjecture `\(\tilde{p}^t(1,1) = 0\)`?
 
@@ -827,7 +841,7 @@ Need for Refinement
 
 - Economists have recognized this issue in other competitive contexts:
 
-  - Zame (2007) - "imposing no discipline would admit equilibria which are **viable only because different agents hold contradictory beliefs**"
+  - Zame (2007) - "imposing no discipline would admit equilibria which are **viable only because different agents hold contradictory conjectures**"
 
 --
 
@@ -921,7 +935,7 @@ name:conclusions
 Common Conjectures Justifications
 ====================================
 
-- Predictive power comes from imposing more restrictions on beliefs than just rational conjectures
+- Predictive power comes from imposing more restrictions on conjectures than just rational conjectures
 
 - Trembling hand + large market `\(\Rightarrow\)` as-if complete markets
 
@@ -934,16 +948,16 @@ Common Conjectures Justifications
   
   - Dubey, Geanakoplos, and Shubik (2005): government intervenes to sell infinitesimal quantities of each asset and fully delivers on its promises
   
-  - Zame (2007): only considers "common-belief" equilibria
+  - Zame (2007): only considers "common-conjecture" equilibria
 
 
 ---
 Conclusion
 ====================================
 
-- Under competition, coordination failures rely on using beliefs as a free parameter and constructing overly pessimistic conjectures
+- Under competition, coordination failures rely contradictory conjectures
 
-- Free parameter `\(\Rightarrow\)` many equilibria
+- If people can disagree, then of course there are many equilibria
 
 - If we want predictive power, we must use a refinement
 
@@ -972,36 +986,6 @@ class: center, middle
 ###<i class="fas  fa-link "></i> Slides: [bit.ly/Albrecht-JMP-Slides](https://bit.ly/Albrecht-JMP-Slides) &lt;br&gt;
 
 &lt;!--###<i class="fab  fa-twitter "></i> [@briancalbrecht](https://twitter.com/briancalbrecht) --&gt;
-
-
----
-name:thp_proof
-
-THP Equilibria Need Not Be Efficient
-====================================
-
-- Consider the following 2x2 game
-
-.center[![](https://briancalbrecht.github.io/docs/slides/images/jmp/tikz_A.png)]
-
-- (Up, Left) is the unique THP equilibrium
-
-- Selten (1975)'s original, extensive-form example is inefficient
-
-
----
-Price-Taking Solves Hold-up
-====================================
-
-- With a hold-up problem, sellers may worry she faces a buyer that is a very tough bargainer
-
-- The transfer to seller may not cover investment cost: `\(p(1,1)&lt;\frac{1}{4}\)`
-
-- In that case, sellers want to invest as little as possible
-
-- Price-taking ensures `\(p(1,1) \in \left[\frac{1}{4}, \frac{3}{4}\right]\)`
-
-`\(\Rightarrow\)` each side wants to invest as much as possible
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
