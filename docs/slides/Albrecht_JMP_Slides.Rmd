@@ -953,15 +953,32 @@ Common Conjectures Justifications
 
 ---
 name:conclusions
-Implications for Applied Work
+Food for Applied Thought
 ====================================
 
-- "Big push" policies attempts to move economies/sectors from the coordination failure to a more efficient outcome
-  - 
-  
+- "Big push" policies attempts to move economies/sectors from coordination failure to more efficient outcome
+
+- Idea: government policy can chose to invest, so other actors' best-reply is to also invest
+
+- Low cost way to increase output
+
+---
+<img src="https://briancalbrecht.github.io/docs/slides/images/jmp/tikz2_D.png">
+
+
+---
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/jde.png)
+background-size:contain
 ---
 background-image: url(https://briancalbrecht.github.io/docs/slides/images/jmp/jep.png)
 background-size:contain
+
+---
+<img src="https://briancalbrecht.github.io/docs/slides/images/jmp/tikz2_D.png">
+
+---
+<img src="https://briancalbrecht.github.io/docs/slides/images/jmp/tikz2_E.png">
+
 
 ---
 Conclusion
