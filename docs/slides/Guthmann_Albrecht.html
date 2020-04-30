@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>On the Informational Efficiency of Decentralized Price Formation</title>
+    <meta charset="utf-8">
+    <meta name="author" content="  Rafael R. Guthmann PUC-Rio  Brian C. Albrecht  University of Minnesota" />
+    <meta name="date" content="2020-04-16" />
+    <link rel="stylesheet" href="https:\\briancalbrecht.github.io\defaults\brian-xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: left, middle, inverse, title-slide
+
+# On the Informational Efficiency of<br>Decentralized Price Formation<br>
+### <br> Rafael R. Guthmann<span style="font-size: 50%;"> PUC-Rio</span><br><br>Brian C. Albrecht <span style="font-size: 50%;"> University of Minnesota</span><br><br>
+### April 16, 2020
+
+---
+
+Informational Efficiency
+====================================
+
+- Since Hayek (1937, 1945), economists have assessed institutions by their relativeability to incorporate and communicate information
+
+- Studies such as Mount and Reiter (1974), Hurwicz (1977a, 1977b, 1977c), Jordan (1982),and Chander (1983) developed a formal concept of informational efficiency 
+
+ - They proved that the competitive equilibrium is informationally efficient in the sense that competitive prices communicate the minimum amount of information neces-sary to implement a Pareto efficient allocation
+ 
+= Jordan (1982) proves that competitive prices are the **unique** decentralized mechanism that achieves this informational efficiency
+
+---
+Decentralized Price Formation
+====================================
+
+- More recently, people have developed alternative to competitive equilibrium that involve decentralied price formation (e.g. search)
+  - No auctioneer
+  
+- We ask, how informationall efficient are these mechanisms?
+
+- Results:
+  - Search is inefficient
+  - A model of market-makers is relatively efficient
+
+
+---
+Road Map for Talk
+====================================
+1. **Abstract Mechanisms and Message Space**
+  
+  
+2. Competitive Mechanism
+  - Best
+
+
+3. Search Mechanism
+  - Worst
+
+
+4. Market-maker Mechanism
+  - Not so bad
+---
+Physical Environments
+======================
+
+- We are interested in a class of environments `\(E\)` 
+
+- `\(L=2\)` goods: an indivisible good and a divisible numeraire good
+  
+- Continuum of agents with measure normalized to `\(1\)` and indexed by `\(i\)`
+
+- For an environment `\(e\in E\)` a fraction `\(s\in[0,1]\)` are sellers 
+  - Set denoted `\(S=[0,s]\)`) who are willing to supply a unit of the indivisible good for a higher price (in the numeraire good) than their cost `\(c^i\)`. 
+  
+- A fraction `\(b=1-s\)` are buyers (set denoted `\(B=(s,1]\)`) who are willing to buy a unit of the indivisible good for a lower price (in the numeraire good) than their valuation `\(v^i\)`.
+
+---
+
+- Valuations for the good are distributed according to CDF `\(G\)` and `\(F\)` for sellers and buyers, respectively which are strictly increasing and differentiable. 
+
+- The CDFs `\(G\)` and `\(F\)` have supports `\(\left[\underline{c},\overline{c}\right]\subset\mathcal{R}_{++},\left[\underline{v},\overline{v}\right]\subset\mathcal{R}_{++}\)`, respectively, where `\(\overline{v}&gt;\underline{c}\)` (so that there is possibility for mutually beneficial trade and the market does not shut down)
+
+
+---
+
+
+- Let `\(E^{i}\)` be the set of possible types for consumer `\(i\)` which indicates whether `\(i\)` is a buyer or a seller and `\(i\)`'s valuation. 
+
+- A realization of `\(e\in E\)` is an environment `\(e=(e^{i})_{i\in[0,1]}\)`, where `\(e^{i} \in E^{i}\)` with `\(e^{i}=c^{i}\)` if `\(i\in S\)` and `\(e^{i}=v^{i}\)` if `\(i\in B\)` which are distributed according to the CDFs `\(G\)` and `\(F\)`.
+
+---
+Feasible Allocations
+=======================
+
+- Let `\(Y\)` be the set of net-trades which satisfy feasibility conditions:
+
+  - `\(y_{1}(i)\in\{-1,0,1\}\)`, 
+  - `\(y_{2}(i)\in\mathcal{R}\)`, 
+  - `\(\int_{0}^{1}y_{1}(i)=0\)`, and
+  - `\(\int_{0}^{1}y_{2}(i)=0\)`.
+  
+  
+---
+Abstract Message Process
+======================
+
+- Message space: `\(M\)` 
+
+- Non-empty valued correspondence `\(\mu: E \rightrightarrows M\)` 
+  
+  - Specifies the messages for each environment
+  
+- A message process `\((\mu,M)\)` is **privacy-preserving** if there exists a correspondence `\(\mu^{i}:E^{i} \rightrightarrows M\)` for each `\(i\)` such that for each `\(e \in E\)` `\(\mu(e)=\cap_{i\in[0,1]}\mu^{i}(e^{i})\)`.
+
+--
+
+  
+- Outcome function `\(g: M \to Y\)` maps messages to trades/allocations
+
+- An **allocation mechanism** is a triple `\((\mu,M,g)\)`.
+
+
+---
+Road Map for Talk
+====================================
+1. Abstract Mechanisms and Message Space
+  
+  
+2. **Competitive Mechanism**
+  - Best
+
+
+3. Search Mechanism
+  - Worst
+
+
+4. Market-maker Mechanism
+  - Not so bad
+---
+Competitive Mechanism
+======================
+
+
+- Competitive messages: `\(M_{c}=\{(p,y)\in\mathcal{R_{++}}\times Y:py_{1}(i)+y_{2}(i)=0,\forall i\}\)`
+
+- For an environment `\(e\in E\)`, each `\(i\in S\cup B\)` define the correspondence
+`\(\mu_{c}^{i}:E\rightrightarrows M_{c}\)`
+by
+`$$\mu_{c}^{i}(e^{i})=(p,y)\in M_{c}:\left\{y(i)= \begin{array}{} (1, p)&amp; \text{if }i\in B\text{ and }v^{i}\geq p\\
+(0,0) &amp; \text{if }i\in B\text{ and }v^{i}&lt;p\text{ or }i\in S\text{ and }c^{i}&gt;p\\
+(-1,p) &amp; \text{if }i\in S\text{ and }c^{i}&lt;p
+\end{array}\right\},$$`
+
+- In words, a buyer purchases the good for `\(p\)` if his valuation is higher
+and a seller sells the good for `\(p\)` is her cost is lower
+
+---
+
+- Competitive messages: `\(\mu_{c}(e)=\cap_{i\in[0,1]}\mu_{c}^{i}(e^{i})\)`
+
+- Competitive message process: `\((\mu_{c},M_{c})\)` 
+
+- Competitive allocation mechanism: `\((\mu_{c},M_{c},g_{c})\)`
+
+- `\(g_{c}:M_{c}\rightarrow Y\)` is the outcome function given by `\(g_{c}(p,y)=y\)`.
+
+---
+Benchmark Results
+===================
+
+- **Mount and Reider (1974) and Hurwicz (1977)** - No efficient, privacy-preserving mechanism uses a smaller message space than the competitive mechanism.
+
+- **Jordan (1982)** - The competitive mechanism is the *unique* efficient, privacy-preserving mechanism that minimizes the size of the message space.
+
+---
+
+- We want to look at decentralized price formation
+
+- However, to compare to the competitive benchmark, we want mechanisms the approximate the competitive mechanism in an appropriate limit
+
+- Decentralize Mechanism #1: Random Search and Bargaining
+
+---
+Road Map for Talk
+====================================
+1. Abstract Mechanisms and Message Space
+  
+  
+2. Competitive Mechanism
+  - Best
+
+
+3. **Search Mechanism**
+  - Worst
+
+
+4. Market-maker Mechanism
+  - Not so bad
+---
+Search Environment
+=======================
+
+- Entry rate of `\(s&gt;0\)` potential sellers and `\(b = 1-s &gt;0\)` potential buyers
+
+- Given stocks of `\(B\)` buyers and `\(S\)` sellers currently in the market, buyers and sellers meet at the rate `\(M(B,S)\)`
+
+- Buyer/seller ratio `\(\theta=B/S\)` 
+
+- Seller meet buyers at rate `\(m(\theta)=M(B,S)/S\)`, 
+
+- Buyers meet sellers at rate `\(m(\theta)/\theta\)` 
+
+- There are discount rates and search costs for buyers and sellers, respectively given by `\((r,c_{b},c_{s})\in\mathcal{R}_{+}\)`
+
+- Generalized Nash Bargaining: Sellers' bargaining power is `\(\beta\in(0,1)\)`
+
+---
+Steady-state
+============================
+
+- To compare to the competitive mechanism, we will focus on the steady-state
+
+- Marginal types of buyers and sellers `\((R_{b},R_{s})\)`, 
+
+- Buyer with valuation `\(x&gt;R_{b}\)` enters and seller with cost `\(y&lt;R_{s}\)` enters, 
+
+- This pair satisfies the condition `\(sG(R_{s})=b[1-F(R_{b})]\)`, 
+ 
+- Steady-state: the distribution of participating types is constant
+
+---
+Equilibrium, Mortensen and Wright (2002)
+============================
+
+- Steady-state search equilibrium is characterized by `\((V_{b},V_{s},R_{b},R_{s},\Phi,\Gamma)\)`,
+  - Value functions: `\((V_{b},V_{s})\)`, 
+  - Cutoff valuations: `\((R_{b},R_{s})\)`, 
+  - Distributions of participating types `\((\Phi,\Gamma)\)` of buyers and sellers
+  
+- Transaction prices between buyer `\(x\)` and seller `\(y\)`: `\(p(x,y)=y+V_{s}(y)+\beta[x-y-V_{b}(x)-V_{s}(y)]\)`
+
+---
+Equilibrium, Mortensen and Wright (2002)
+============================
+
+- If search costs are strictly positive and `\(r\)` is lower than some threshold `\(\hat{r}&gt;0\)`
+then all meetings result in trade
+
+- In steady-state, distribution of operating types `\((\Phi,\Gamma)\)` is given
+by the densities of `\((F,G)\)` on the types who participate
+in the market ($v \geq R_b, c \leq R_s$)
+
+- For `\(r\in(0,\hat{r})\)`, there is price dispersion. In this case the equilibrium price
+for the transaction with seller with cost `\(y\)` and buyer with valuation `\(x\)`
+satisfies `$$p(x,y)=\beta\left[\frac{r\theta x+(1-\beta)m(\theta)R_{b}}{r\theta+(1-\beta)m(\theta)}\right]+(1-\beta)\left[\frac{ry+\beta m(\theta)R_{s}}{\beta m(\theta)+r}\right]$$`
+---
+Convergence to Competitive Equilibrium
+====================
+
+- As `\(r \to 0\)`, the Law of One Price holds and there is a unique equilibrium price 
+`$$\hat{p}=\beta R_{b}+(1-\beta)R_{s}$$`
+
+- As search costs `\((c_{b},c_{s})\)` converge to zero then `\(\hat{p}\)`
+converges to the competitive price `\(p^*\)` and `\(R_{s},R_{b}\)` both converge
+to the same value `\(R=p^*\)`
+
+- Search equilibrium allocation also converges to `\(sG(p^{*})\)` which is the quantity sold in competitive equilibrium
+
+--
+
+`\(\Rightarrow\)` We can compare `\(c&gt;0\)` (search mechanism) vs. `\(c=0\)` (competitive mechanism) in terms of information 
+
+---
+Pricing Distribution
+=======================
+
+- Since matching is random, prices are not deterministic but can be summarized by a distribution:  `\(P:[\underline{p},\overline{p}]\rightarrow[0,1]\)`
+  
+- Allocation mechanism can be described by a pair `\((p_{s},y)\)` where `\(p_{s}:[0,1]\rightarrow\mathcal{R}_{+}\)`
+
+- `\(p_{s}(i)\)` specifies the equilibrium transaction price for agent `\(i\)`, `\(\emptyset\)` if does not participate
+
+
+- Any function `\(p_s\)` consistent with the search equilibrium implies in
+an equilibrium distribution of prices `\(P\)`
+
+---
+Search Messaging Process
+=========================
+
+- Let `\(\mathcal{F}\)` is the space of functions on `\([0,1]\)` to `\(\mathcal{R}_{++}\)`.
+
+- Message space: `$$M_{s}=\{(p_{s},y)\in\mathcal{F}\times Y:p_{s}(i)y_{1}(i)+y_{2}(i)=0,\forall i\},$$`
+
+- Message correspondence: `\(\mu_{s}^{i}:E^{i}\rightrightarrows M_{s}\)` given by
+
+`$$\mu_{s}^{i}(x^{i})=(p_{s},y)\in M_{s}:\left\{y(i)= \begin{array}{} (1,-p_{s}(i)) &amp; \text{if }i\in B\text{ and }x^{i}\geq p_{s}(i)\\
+(0,0) &amp; \text{if }i\in B\text{ and }x^{i}&lt;p_{s}(i)\\
+(-1,p_{s}(i)) &amp; \text{if }i\in S\text{ and }x^{i}&gt;p_{s}(i)
+\end{array}\right\},$$`
+
+---
+
+- Define the correspondence `\(\mu_{s}:E\rightrightarrows M_{s}\)` by `\(\mu_{s}(e)=\cap_{i}\mu^{i}(e^{i})\cap(p_{s}(e)\times Y),\label{eq: message correspondence}\)`
+  - Messages must be consistent with the search environment
+
+- The search mechanism is a triple `\((\mu_{s},M_{s},g_{s})\)` where `\(g_{s}(p,y)=y\)`
+is a projection from `\(M_{s}\)` to `\(Y\)`
+
+---
+Search Informational Efficiency
+============================
+
+- We have one minor problem
+
+- Message spaces of Hurwicz et al are finite
+
+- The standard search model that we consider has a continuum of agents and smooth distributions of types
+  - Any allocation `\(y \in Y\)` is an infinite-dimensional object, so message space is infinite
+
+--
+
+- Simple solution: Consider a sequence of finite-type economies
+
+---
+Finite Economies
+=============
+
+- Let `\(\{e_{k}\}_{k\geq2}\)` be a sequence of environments, called a `\(k\)`-environment
+
+- Buyers and seller types are distributed according to `\(\{F_{k},G_{k}\}\)`, sequences of step-functions. 
+
+- A pair `\((F_{k},G_{k})\)` is the cumulative distributions of types of buyers and sellers
+  - `\(k\)` types of buyers and `\(k\)` types of sellers 
+  - Each type of measure `\(1/k\)` 
+  
+- The pair of sequences `\(\{F_{k},G_{k}\}_{k}\)` converges to `\(F\)` and `\(G\)`,
+
+- Finally, `\(F_{k},G_{k}\)` are such that `\(p^{*}\)` is consistent with competitive equilibrium in economy `\(e_{k}\)`.
+
+---
+`\(k\)`-Environment Competitive Allocations
+===================================
+- Let `\(b\in\{1,\ldots,k\}\)` index buyer types and `\(v\in\{1,\ldots,k\}\)` seller types
+
+  - `\(x(b)\)`: valuation of a buyer of type `\(b\)`
+  - `\(y(v)\)`: cost of a seller of type `\(v\)`
+  
+--
+
+- Profile of net trades for each of the `\(2k\)`-types of traders: `\(y=\left((y^{B}(b))^{k}_{b=1},(y^{S}(v))^{k}_{v=1}\right)\)`
+  - `\(y^{B}(b)=(y^{B}(b)_{1},y^{B}(b)_{2})\)`: net trades for a buyer of type `\(b\)`
+  - `\(y^{S}(v)=(y^{S}(v)_{1},y^{S}(v)_{2})\)`: net trades for a seller of type `\(v\)`
+
+---
+`\(k\)`-Environment Competitive Messages
+===================================
+- The set of net feasible trades: `$$Y^{c}_{k} = \left\{ y\in((-1,0,1)\times\mathcal{R}_{+})^{2k}:\sum^{k}_{b=1} y^{B}(b) + \sum^{k}_{v=1} y^{S}(v) = (0,0) \right\}$$`
+
+- Competitive message space in the `\(k\)`-environment specifies a price of `\(p\)` and allocation `\(y\)` where `\(y\in Y^c_k\)`
+
+- Message space `\(M^k_c\)`  **grows at a constant rate** of `\(2k\)`
+
+  - `\(M^k_c\)` is a `\(2k\)` dimensional manifold
+  
+--
+
+  - I do not understand what this means; Rafa told me it is the correct terminology
+
+
+---
+Search is Informationally Inefficient
+===================================
+
+- **Proposition 1**: The search message space is a `\(3k^2 -1\)` dimensional manifold. Therefore, as `\(k\to \infty\)` the ratio of the dimensional size of search mechanism to the competitive mechanism converges to infinity.
+--
+
+- Proof: 
+
+  - Step 1: construct the `\(k\)`-environment search mechanism and message space
+
+--
+
+  - Step 2: Show it grows at a rate of `\(k^2\)`
+  
+--
+  
+  - Step 3: Divide `\(\blacksquare\)`
+  
+---
+Proof `\(k\)`-Environment Mechanism
+===============================
+
+-  Partition buyers of each type `\(b\)` into `\(k\)` subsets `\(\{m(b,v)\}^{k}_{v=1}\)` corresponding to each seller type that a buyer could be matched with
+
+- Each subset `\(m(b,v)\)` can transact at a price `\(p(b,v)\)`
+
+- Not all pairs will participate and transact
+
+--
+
+- Let `\(\lambda(b,v)\)` be the probability that a transaction is between a buyer of valuation `\(x(b)\)` and a seller of valuation `\(y(v)\)`
+
+- If `\(b\)` does participate, `\(\lambda(b,v)\)` is the measure of the set `\(m(b,v)\)` divided by the sum of the measure of sets `\(\{m(b,v'):v'\in \{1,2,\ldots,k\} \}\)`. 
+
+- If buyer type `\(b\)` does not participate in the market `\(\lambda(b,v)=0~~~ \forall v\)`
+
+---
+Proof `\(k\)`-Environment Messages
+===============================
+
+- The search message space specifies prices for each possible pairing of buyers-seller types `\(\Rightarrow k^{2}\)` prices
+
+- Profile of net-trades: `\(y = \left(y^{B}(b,v),y^{S}(v,b))\right)_{b,v\in\{1,\ldots,k\}}\)`
+
+- Set of net feasible trades:
+`$$Y^{s}_{k} = \left\{y\in((-1,0,1)\times\mathcal{R}_{+})^{2k^2}:\sum_{b} \sum_{v} \lambda(b,v)[y^{B}(b,v)+y^{S}(b,v)]=(0,0) \right\}$$`
+
+--
+
+- Message space: `$$M_{s}^{k} =\{(p,y)\in\mathcal{R}_{++}^{k^{2}}\times Y^{s}_{k}:p(b,v)y_{1}^{j}(b,v)+y_{2}^{j}(b,v)=0,\forall j\in\{B,S\},\forall b,v\in\{1,\ldots,k\}\}$$`
+
+---
+Proof `\(k\)`-Environment Messages
+===============================
+
+- In the search mechanism the `\(k\)`-economy there are `\(k^{2}\)` prices and effectively `\(2k^2\)` different types of agents
+
+- Each agent must form expectations regarding prices for transactions with each of the `\(k\)`-types  of sellers (buyers) in the other side of the market
+
+- Each buyer (seller) individually has to form expectations regarding `\(k\)` distinct prices (each of which depends on the opportunity costs that depend on the distribution of buyers' types).
+
+- Message space dimension is `\(k^{2}\)` (prices) plus `\(\sum^{k}_{i=1} (k + k)\)` different types of agents minus one dimension `\(1\)` due to Walras' Law
+
+- Ratio of the dimensional size of `\(M_{s}^{k}\)` to `\(M_{c}^{k}\)` converges to infinity `\(\blacksquare\)`
+
+---
+Road Map for Talk
+====================================
+1. Abstract Mechanisms and Message Space
+  
+  
+2. Competitive Mechanism
+  - Best
+
+
+3. Search Mechanism
+  - Worst
+
+
+4. **Market-maker Mechanism**
+  - Not so bad
+
+---
+Market-makers
+===================================
+
+
+- Unlike the search mechanism, buyers and sellers do not directly match with each other
+
+- Suppose that in addition to buyers and seller there is a finite set `\(J\)` of **market-makers** in this economy (with abuse of notation, `\(J\)` has cardinality `\(J\)`)
+
+- Market-makers are profit-maximizing intermediaries who "make the market" by posting bid and ask prices for the indivisible good
+
+- They intermediate trade between the suppliers (sellers) and the final consumers (buyers) in the economy
+
+-  Buyers purchase from the lowest priced market-maker they have access too as long as it is lower than their valuation
+
+---
+Perfectly Competitive Market-makers
+===================================
+
+- In the baseline, all traders have costless access to all contracts posted by all market-makers
+
+- Suppose a market-maker `\(j\in J\)` who posts a pair of prices which the market-maker offers to buy and sell the good
+  - Prices are higher and lower than prices posted by all other market-makers
+
+- Profits: `\(\pi(p_{s},p_{b}) = (p_{s}-p_{b})\times b[1-F(p_{s})]\)`
+
+- Feasibility: `\(b(1-F(p_{s})) = sG(p_{b})\)`
+
+- **Proposition:** Without trade frictions, if `\(J\geq2\)`, there is only one Nash equilibrium: for at least two market-makers to post a pair of bid-ask prices `\((p_{b},p_{s})=(p^{*},p^{*})\)`
+
+---
+Adding Frictions
+===================================
+
+- We model the frictions of trading by assuming that consumers (buyers and sellers) have constrained choice sets regarding the market-makers that they can trade with
+  - Call constrained sets **imperfect awareness**, following Perla (2016) and Guthmann (2019)
+  
+
+- For each `\(j\)`,  `\(A^{j}\subset[0,1]\)` specifies the buyers and sellers who have access to market-maker `\(j\)`
+
+- `\(A^{i}=\{j\in J:i\in A^{i}\}\)` be the set of market-makers that `\(i\)` has access to
+
+---
+Market-maker Environments
+=============================
+
+- Set of environments `\(E\)` includes the market-makers and the awareness among buyers and sellers regarding them 
+
+- "Aware of `\(j\)`" means `\(j \in A^{j}\)`
+  
+- An environment `\(e\in E\)` specifies by `\(\boldsymbol{A} = \{A^{j}\}_{j \in J}\)` and the distributions of buyers valuations `\(F\)` and sellers costs `\(G\)`
+
+- Awareness parameter `\(m^{j}\)` given by `\(m^{j}=\lambda(A^{j})\in(0,1]\)`, the (Lebesgue) measure of `\(A^{j}\)`
+
+-  We assume that `\(A^{j}\)` is a simple random sample
+
+---
+Market-maker Mechanism
+======================
+
+
+- Set of feasible trades `$$Y_{m}=\left\{ y:[0,1]\rightarrow\{-1,0,1\}\times\mathcal{R}:\int_{0}^{1}y_{1}(i)di=0,\int_{0}^{1}y_{2}(i))di\leq0\right\}$$`
+
+- Given a realized profile of prices `\(p_{m}=(p_{1},\ldots,p_{J})\)` which describes the equilibrium at some date the message space is given by
+
+`$$M_{m}=\{(p_{m},y)\in\mathcal{R}_{++}^{J}\times Y_{m}:\text{for each }i,\exists j\in A^{i}\text{ s.t. }i\in A^{j}\text{ and }p^{j}y_{1}(i)+y_{2}(i)=0\}$$`
+
+- Paper goes into the details of the equilibrium, mostly following Rafa's earlier work
+
+---
+-- `\(\mu_{m}\)` is a correspondence on `\(E\)` to `\(M_{m}\)` that satisfies
+`\(\mu_{m}=\cap_{i}\mu_{m}^{i}(e^{i})\)`
+
+- where `\(\mu_{m}^{i}:E^{i}\rightrightarrows M_{m}\)` satisfies
+`$$\mu_{m}^{i}(e^{i})= (p_{m},y)\in M_{m}:$$`
+
+`$$\left\{y_{1}(i)=\begin{array}{} (0,0) &amp; \text{if }i\in B\text{ and }v^{i}&lt;\min\{p_{s}^{j}:j\in A^{i}\}\text{ or }A^{i}=\emptyset\\ (1,-\min\{p^{j}:j\in A^{i}\}) &amp; \text{if }i\in B\text{ and }v^{i}\geq\min\{p_{s}^{j}:j\in A^{i}\}\\ (0,0) &amp; \text{if }i\in S\text{ and }c^{i}&gt;\min\{p_{b}^{j}:j\in A^{i}\}\text{ or }A^{i}=\emptyset\\ (-1,\min\{p^{j}:j\in A^{i}\}) &amp; \text{if }i\in S\text{ and }c^{i}\leq\min\{p_{b}^{j}:j\in A^{i}\} \end{array}\right\}$$`
+---
+Consumer Types
+=======================
+
+- If there are `\(N \leq J\)` market-makers with non-zero awareness parameters then there are `\(2N\)` different prices
+
+- Plus we have the subset of consumers who are not aware of any market-makers
+
+- The number of consumer types is determined by the discrete distributions of valuations `\((G_{k},F_{k})\)` and `\(N\)`
+
+- Therefore, there are `\(2kN\)` or `\(2k(N+1)\)` types of consumers if the subset of consumers who are not aware of any market-makers is respectively empty or non-empty
+
+`\(\Rightarrow\)` Message space = `\(Z=2N +(2k-1)N\)` or `\(Z= 2N +(2k-1)(N+1)\)`
+
+
+---
+Relative Efficiency of Market-makers
+==================================
+
+- Proposition: As `\(k\)` increases to infinity the ratio of the dimensional size of the message spaces of the market-maker mechanism to the competitive mechanism `\(Z/2k\)` converges to `\(N\)` or `\(N+1\)`.
+
+- We show in the paper that `\(N\)` can equal 1, so the market maker mechanism is like the competitive mechanism except there is a bid-ask spread
+
+
+---
+
+class: center, middle
+
+# Thank You
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"class": ["left", "middle"],
+"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div>` "
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
