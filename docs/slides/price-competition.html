@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Price Competition and the Use of Consumer Data</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Brian C. Albrecht   University of Minnesota  Department of Economics" />
+    <meta name="date" content="2020-07-06" />
+    <link rel="stylesheet" href="https:\\briancalbrecht.github.io\defaults\brian-xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: left, middle, inverse, title-slide
+
+# Price Competition and the Use of Consumer Data
+### Brian C. Albrecht<br> <span style="font-size: 50%;"> University of Minnesota<br> Department of Economics</span>
+### July 6, 2020
+
+---
+
+Consumer Data and Price Discrimination
+====================================
+
+.left-column[
+-  Firms are collecting more and more data on consumers 
+
+-  That data/information   is vital to price discrimination
+
+-  Monopoly: information raises total profit
+  -  Information is valuable for single receiver: Blackwell (1951), Bergemann, Brooks, and Morris (2015)
+    
+-  Unless output increases, price discrimination **lowers consumer surplus**
+]
+
+.right-column[
+  ![](./images/pricecomp/pricing.gif)
+]
+
+---
+Competition and Price Discrimination
+====================================
+-  But one role of price discrimination is to lure buyers from other sellers
+
+-  Studying this aspect of price discrimination requires an explicit model of competition
+
+-  We know price discrimination can **raise consumer surplus**
+    - *e.g.* Holmes (1989)
+    
+--
+
+- However, most models only consider special information structures
+  - *e.g.* Full information vs. no information
+
+--
+
+- Goal: build a model that does not rely on specific details of the data
+  - **Robust mechanism design** (Bergemann &amp; Morris 2013)
+
+---
+My Dissertation Chapter
+====================================
+
+.left-column[
+- Fix the underlying valuations, i.e. demand curve in the aggregate market
+
+- Vary the information to each seller, allowing price discrimination
+
+- Not all firms need to have the same information `\(\implies\)` higher order beliefs matter
+
+- *e.g.* Target doesn't know my exact address, but Target knows that Amazon knows...
+]
+.right-column[
+  ![](./images/pricecomp/demand.png)
+  ]
+  
+---
+Environment Considered
+==================
+
+
+- 2 sellers of differentiated goods, produced at constant marginal cost (normalized to zero)
+
+--
+
+- 3 types of buyers who are willing to pay at most 1
+
+    -  Loyal to seller 1, only buy from 1
+    
+    -  Loyal to seller 2, only buy from 2
+    
+    -  Indifferent between seller 1 and seller 2, buy at cheapest price
+
+--
+
+-  Definition: a market for seller is a distribution of types of buyers
+
+    - Example: `\(\left(\frac{1}{4}, \frac{1}{6}, \frac{7}{12}\right)\)`
+
+---
+Main Results
+====================================
+
+
+-  New construction of  equilibrium, requires price dispersion
+
+--
+
+-  Price discrimination can help or hurt consumers even when output is constant
+    - Consumer surplus under complete public information `\(&gt;=\)` consumer surplus under no information
+
+--
+
+- **Bounds**
+  - Max consumer surplus: complete public data
+  - Min consumer surplus with public data: nested markets
+  - Lower consumer surplus with private data: (conjecture a specific bound, do not have proof yet)
+    
+
+
+---
+Road Map for Today's Talk
+================
+1. Introduction: Consumer Data and Competition
+
+2. **Environment and Baseline Information**
+  - Complete Information
+  - No Information
+
+3. General Public Information
+  - Consumer Surplus Maximizing
+  - Profit Maximizing
+
+4. General Public + Private Information
+
+
+---
+Basic Game: Consumer Types
+============================
+
+- 2 sellers with differentiated goods that cost 0 to produce
+
+
+- Each consumer's type is a pair of valuations
+
+`$$v = (v_1,v_2) \in \{(1,0),(0,1),(1,1)\} = V$$`
+
+- Continuum of non-strategic consumers each have unit demand for total consumption
+
+- Summarized through a residual demand curve
+
+- Common prior: `\((m_{10}, m_{01}, m_{11})\)`
+
+
+
+---
+Information Structure
+============================
+
+- An information structure is a set of signals for each seller `\(S_i\)`, 
+
+- And a probability distribution which maps the profile of the consumer's values to the profile of signals:
+
+`$$\pi~:~ V \to \Delta (S).$$`
+
+- The utility functions and the information structure `\((S, \pi)\)` are the parameters for a game of incomplete information
+
+- Define the rest of the game fixing `\((S, \pi)\)`
+
+- Most price discrimination models fix an implicit information structure
+
+
+
+---
+Strategies for Fixed `\((S, \pi)\)`
+============================
+
+
+- Fix `\((S, \pi)\)`
+
+- Seller `\(i\)` observes a signal `\(s_i \in S_i\)`
+
+- Pure strategy for seller `\(i\)` is a price `\(\{p_i\}_{s_i} \in \mathbb{R}_+^{|S_i|}\)` and 
+
+- Discontinuity of payoffs requires mixed prices (price dispersion)
+
+--
+
+- Mixed strategy, `\(F_i(p|s_i)\)`, is the probability that `\(p_i\leq p\)` given receiving a signal `\(s_i\)`
+
+--
+
+- Buyers: choose which seller (or no seller) to maximize value minus price
+  
+
+
+
+---
+Equilibrium
+============================
+
+-  For a given `\((S, \pi)\)`, a strategy profile is a Bayes Nash equilibrium (BNE) if `\(f_i ( p_i | s_i)\)` is not defined (*i.e.* `\(p_i\)` is played with positive probability) or `\(f_i ( p_i | s_i) &gt; 0\)` implies
+`\begin{align*}
+&amp;p_i \in \underset{p_i'}{\text{arg max}}  &amp;p_i' \underbrace{\mathbb{E}[v_i=1,v_j=0| s_i]}_\text{Loyal Buyers}  + p_i'\underbrace{\mathbb{E}\left[\left(1 - F_j(p_i)\right),v_i=1,v_j=1| s_i\right]}_\text{Indifferent Buyers},
+\end{align*}`
+
+given `\(F_j(p)\)`, for all `\(s_i,s_j, i, j\)`.
+
+--
+
+- A strategy profile is a **Bayes correlated equilibrium (BCE)** if it is a BNE for some information structure (Bergemann &amp; Morris 2016)
+
+---
+Road Map for Today's Talk
+================
+1. Introduction: Consumer Data and Competition
+
+2. Environment and Baseline Information
+  - **Complete Information**
+  - No Information
+
+3. General Public Information
+  - Consumer Surplus Maximizing
+  - Profit Maximizing
+
+4. General Public + Private Information
+
+---
+Complete Information: Perfect PD
+============================
+
+- One case is complete information: `\(s_1 = s_2 = v\)`
+
+- Three markets:
+
+  - Loyal to Seller 1 market: price = 1
+  
+  - Loyal to Seller 2 market: price = 1
+  
+  - Indifferent customer market: price = 0
+
+
+- If `\(v_i=0\)`, seller `\(j\)` sets monopoly price of 1
+
+- If `\(v_1=v_2=1\)`, both sellers set competitive price of 0
+
+
+
+---
+
+background-image: url(./images/pricecomp/pricing_example1.png)
+background-size: contain
+
+
+
+
+---
+Road Map for Today's Talk
+================
+1. Introduction: Consumer Data and Competition
+
+2. Environment and Baseline Information
+  - Complete Information
+  - **No Information**
+
+3. General Public Information
+  - Consumer Surplus Maximizing
+  - Profit Maximizing
+
+4. General Public + Private Information
+
+---
+
+background-image: url(./images/pricecomp/market2.png)
+background-size: contain
+
+
+
+---
+No Information: No PD
+============================
+
+- Conditional on `\(v_1 =1\)`, seller 1 assigns probability `\(\frac{m_{10}}{m_{10} + m_{11}}\)` to being the monopolist
+
+- Regardless of what seller 2 does, seller 1 will never set a price below `\(\underline{p} =\frac{m_{10}}{m_{10} + m_{11}}\)`
+
+- Neither will seller 2
+
+--
+ 
+- Both firms will randomize between `\([\underline{p}, 1]\)`
+
+
+
+
+---
+Lemma (Narasimhan 1988)
+===========================
+Let `\(m_{10} \geq m_{01}\)`. The unique BNE profit is `\(m_{10}\)` for seller 1 and `\(\frac{m_{10}}{m_{10} + m_{11}}(1-m_{10})\)` for seller 2. The unique strategies are given by
+
+`$$F^*_1(p) = \begin{cases} \begin{aligned} &amp; 0 &amp; &amp;p&lt; \underline{p}&amp;\\ &amp; 1 - \frac{\underline{p}(m_{11} + m_{01}) - p m_{01}}{pm_{11}} &amp; &amp;p \in \left[\underline{p}, 1\right)&amp;\\ &amp; 1 &amp; &amp;p\geq 1 &amp; \end{aligned}\end{cases}$$`
+
+and
+
+`$$F^*_2 (p) = \begin{cases} \begin{aligned} &amp;0 &amp; &amp;p&lt; \underline{p}\\ &amp;1 - \frac{m_{10}(1 - p)}{pm_{11}}&amp; &amp;p \in \left[\underline{p}, 1\right], \end{aligned}\end{cases}$$`
+???
+The construction relies on simple observations of the each seller's best-response when facing a residual demand curve
+
+---
+background-image: url(./images/pricecomp/tikz_A.png)
+background-size: contain
+
+---
+background-image: url(./images/pricecomp/tikz_C.png)
+background-size: contain
+---
+background-image: url(./images/pricecomp/tikz_D.png)
+background-size: contain
+
+---
+background-image: url(./images/pricecomp/tikz_E.png)
+background-size: contain
+
+---
+background-image: url(./images/pricecomp/tikz_F.png)
+background-size: contain
+---
+background-image: url(./images/pricecomp/tikz_G.png)
+background-size: contain
+
+---
+background-image: url(./images/pricecomp/pricing_example2.png)
+background-size: contain
+
+
+---
+Road Map for Today's Talk
+================
+1. Introduction: Consumer Data and Competition
+
+2. Environment and Baseline Information
+  - Complete Information
+  - No Information
+
+3. **General Public Information**
+  - Consumer Surplus Maximizing
+  - Profit Maximizing
+
+4. General Public + Private Information
+
+---
+General Markets
+==================
+
+- The lemma applies to any market, not just the "aggregate" market
+
+- Total industry profits:
+
+`$$m_{10} + \frac{m_{10}}{m_{10} + m_{11}}(1-m_{10})$$`
+
+--
+
+- Consumer surplus; `$$1 - \left(m_{10} + \frac{m_{10}}{m_{10} + m_{11}}(1-m_{10})\right)$$`
+
+---
+background-image: url(./images/pricecomp/cs_simplex.png)
+background-size: contain
+
+---
+Corollaries
+=============
+1. Consumer surplus under perfect price discrimination is weakly higher than consumer surplus under no price discrimination.
+
+2. Total profits under perfect price discrimination are weakly lower than total profits under no price discrimination.
+
+3. The relationships are strict if `\(m_{10} \neq m_{01}.\)`
+
+--
+
+- We can also consider all intermediate levels of information
+
+
+---
+Concavification
+=========================
+- Bayes' Law only restricts the ex-post distributions of types to sum to the prior
+
+- We can maximize/minimize over all feasible markets by "concavification" of the consumer surplus function (Kamenica and Gentzkow 2011)
+
+- Max feasible consumer surplus is equal to lowest concave envelope of the consumer surplus function at the prior (aggregate market)
+
+--
+
+- **Proposition**: With only public data, consumer surplus is maximized under perfect price discrimination.
+
+
+---
+background-image: url(./images/pricecomp/cs_simplex.png)
+background-size: contain
+---
+background-image: url(./images/pricecomp/cs_concave.png)
+background-size: contain
+
+---
+Nested Markets Maximize Profit
+=====================
+- Definition: a **nested market** is a market where one firm's potential customers are a subset of the other firm's (Armstrong and Vickers 2019)
+
+- That is, it is a market on the two sides of the simplex (not all loyal)
+
+--
+
+- Profit is just one minus consumer surplus
+
+- **Proposition**: With only public data, total profits are maximized with nested markets.
+
+---
+background-image: url(./images/pricecomp/profit_concave.png)
+background-size: contain
+
+---
+background-image: url(./images/pricecomp/pricing_example3.png)
+background-size: contain
+
+
+---
+Road Map for Today's Talk
+================
+1. Introduction: Consumer Data and Competition
+
+2. Environment and Baseline Information
+  - Complete Information
+  - No Information
+
+3. General Public Information
+  - Consumer Surplus Maximizing
+  - Profit Maximizing
+
+4. **General Public + Private Information**
+
+---
+Private Data
+=================
+
+- Most models of market competition assume firms only have public information
+
+- However, firms often collect their own information 
+  - Therefore, I am a different person according to Amazon vs. Target, depending on the data they collect
+  
+- But Amazon's data collection may affect Target's pricing strategy in equilibrium
+
+---
+Baseline Private Information
+==================
+- To see how this works, consider a baseline form of private information
+  - Firm 1: complete information
+  - Firm 2: no information
+  
+- No longer one objective market for both firms
+  
+- Higher-order beliefs matter for pricing and we need to specify those
+
+- Consider when first-order information is common knowledge
+
+
+
+---
+
+background-image: url(./images/pricecomp/market_firm1_pd1.png)
+background-size: contain
+
+---
+One Firm Private Data
+====================
+
+- We can then compare this information structure to no information for either firm
+
+- Profits: `$$m_{10} + \left(1-m_{10}\right)  \underbrace{\left(\frac{m_{01}}{m_{01}+m_{11}} + \frac{m_{01}}{m_{01} + m_{11}}(1-m_{01})\right)}_{\text{Profit from Lemma 1}}$$`
+
+
+
+- In general, profits/consumer surplus can go up or down
+
+`$$m_{10} +m_{01} + m_{01}(1-m_{01}) \lessgtr m_{10} + \frac{m_{10}}{m_{10} + m_{11}}(1-m_{10})$$`
+
+---
+background-image: url(./images/pricecomp/pricing_example4.png)
+background-size: contain
+---
+background-image: url(./images/pricecomp/pricing_example5.png)
+background-size: contain
+
+---
+Symmetric Markets
+=========
+
+- If we are interested in symmetric markets, we can prove more
+
+--
+
+- **Proposition**: For any symmetric interior market, perfect price discrimination by only one firm strictly decreases consumer surplus relative to no price discrimination.
+
+- Proof is just from comparing profit functions
+
+--
+
+- It is a simple comparison of profit functions
+  - Not sure of interesting comparisons???
+  - This is why bounding all information structures is more relevant
+
+
+---
+Correlated Information
+=========
+- We now want to find the maximum feasible profit for any information structure
+
+- For now, I just have a weaker proposition
+
+- **Proposition**: Imperfectly correlated data can strictly increase profits relative to any public data.
+
+---
+Construction
+=======
+
+- Imagine an information designer who reveals consumer data to the firms and recommends an incentive-compatible price
+
+- The designer's problem is choose information and allocations to maximize project, subject to the allocation is a BNE given the information 
+
+- Suppose the designer commits the following information for the indifferent consumers, only partially revealing the indifferent consumers
+
+
+&lt;img src="./images/pricecomp/tikz_J.png" class="center60"&gt;
+
+---
+Proof
+============
+
+- First, fix the information: `\(\alpha_1\)` and `\(\alpha_2\)`
+
+- Consider when firm 1 receives a signal and knows the consumer is indifferent
+
+- Prices will not be driven to zero because firm 1 does not know whether firm 2 knows that the consumer is indifferent
+
+- With probability `\(\alpha_1\)`, firm 2 did not receive a signal and will, therefore, follow the designer's recommend strategy and set a price of 1.
+
+- Otherwise, firm 2 will price according to a distribution over `\([\underline{p},1]\)`.
+
+- How high can the designer raises firm 2's pricing distribution and still remain incentive compatible?
+
+---
+background-image: url(./images/pricecomp/tikz_L.png)
+background-size: contain
+
+
+---
+background-image: url(./images/pricecomp/tikz_M.png)
+background-size: contain
+
+---
+Proof Cont.
+============
+
+- We have constructed incentive compatible strategies for when the firm receives no signal
+
+- Now we need to do the same for after a signal
+
+
+---
+background-image: url(./images/pricecomp/tikz_O.png)
+background-size: contain
+
+
+---
+background-image: url(./images/pricecomp/tikz_P.png)
+background-size: contain
+
+---
+Incentive Constraints
+============
+
+- Therefore, we have found an incentive compatible allocation, given the information
+
+- The relevant ICs
+`$$\begin{align}    &amp;\underline{p} \geq \frac{\alpha_1}{1-\alpha_2}\quad \text{and}\\ &amp;\underline{p} \geq \frac{\alpha_2}{1-\alpha_1},\end{align}$$`
+and 
+`$$\begin{align}  &amp;m_{10} \geq \underline{p} \left(m_{10} + \alpha_2 m_{11} \right) ~\quad \text{and}\\ &amp;m_{01} \geq \underline{p} \left(m_{01} + \alpha_1 m_{11} \right)   \end{align}$$`
+---
+Designer's Problem
+=========================
+
+- The designer's problem is to maximize
+`$$\text{Industry Profit } = \alpha_1 + \frac{\alpha_1}{1-\alpha_2}
+\left(1 - \alpha_1\right) + m_{10} + \frac{\alpha_1}{1-\alpha_2} \left(m_{01} + \alpha_1 m_{11}\right)$$`
+
+- Subject to
+
+`$$\begin{align}    &amp;\underline{p} \geq \frac{\alpha_1}{1-\alpha_2},\\ &amp;\underline{p} \geq \frac{\alpha_2}{1-\alpha_1},\\  &amp;m_{10} \geq \underline{p} \left(m_{10} + \alpha_2 m_{11} \right) ~\quad \text{and}\\ &amp;m_{01} \geq \underline{p} \left(m_{01} + \alpha_1 m_{11} \right)   \end{align}$$`
+
+--
+
+- In general, first and third ICs (for firm 1) will bind
+
+
+---
+background-image: url(./images/pricecomp/pricing_example6.png)
+background-size: contain
+---
+background-image: url(./images/pricecomp/surplus.png)
+background-size: contain
+
+---
+Conclusion
+==================
+
+- I argue studying price discrimination should involve an explicit model of competition
+
+- Results of monopoly price discrimination can be completely reversed under competition
+  - I prove perfect price discrimination is optimal for consumers
+  
+- However, results may be sensitive to exact informational assumptions
+
+- Bound equilibrium outcomes
+  - Max consumer surplus: complete public data
+  - Min consumer surplus with public data: nested markets
+  - Lower consumer surplus with private data
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"class": ["left", "middle"],
+"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div>` "
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
