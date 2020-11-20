@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="" xml:lang="">
   <head>
     <title>Evolution, Uncertainty, and the Asymptotic Efficiency of Policy</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="author" content=" Brian C. Albrecht  University of Minnesota   Joshua R. Hendrickson University of Mississippi   Alexander William Salter Texas Tech University" />
-    <link href="SEA2019_files/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https:\\briancalbrecht.github.io\defaults\brian-xaringan-themer.css" type="text/css" />
+    <meta name="date" content="2019-11-11" />
+    <link rel="stylesheet" href="https://briancalbrecht.github.io/defaults/brian-xaringan-themer.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -13,7 +13,7 @@ class: left, middle, inverse, title-slide
 
 # Evolution, Uncertainty, and the Asymptotic Efficiency of Policy
 ### <br>Brian C. Albrecht <span style="font-size: 50%;"> University of Minnesota</span><br><br> Joshua R. Hendrickson<span style="font-size: 50%;"> University of Mississippi</span><br><br> Alexander William Salter<span style="font-size: 50%;"> Texas Tech University</span><br><br>
-### November 11, 2019<br><br> Paper <i class="fas  fa-link "></i> <a href="http://bit.ly/Albrecht-evolution">bit.ly/Albrecht-evolution</a> <br><i class="fab  fa-twitter "></i> <a href="https://twitter.com/briancalbrecht">briancalbrecht</a>
+### November 11, 2019
 
 ---
 
@@ -437,33 +437,71 @@ Positive Implications:
 
 Downside
 - Only applies to long-lasting policies
-
-
----
-
-class: center, middle
-
-###<i class="fas  fa-link "></i> Paper: [bit.ly/Albrecht-evolution](http://bit.ly/Albrecht-evolution) &lt;br&gt;
-###<i class="fas  fa-link "></i> Slides: [bit.ly/Albrecht-SEA](https://bit.ly/Albrecht-SEA) &lt;br&gt;
-###<i class="fab  fa-twitter "></i> [@briancalbrecht](https://twitter.com/briancalbrecht)
     </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"ratio": "4:3",
+"ratio": "16:9",
 "class": ["left", "middle"],
-"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div>` "
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>`\n"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
-(function() {
-  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
   if (!r) return;
   s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
   d.head.appendChild(s);
-})();</script>
+})(document);
 
-<script>
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
 (function() {
   var links = document.getElementsByTagName('a');
   for (var i = 0; i < links.length; i++) {
@@ -471,12 +509,11 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
       links[i].target = '_blank';
     }
   }
-})();
-</script>
+})();</script>
 
 <script>
-(function() {
-  var i, text, code, codes = document.getElementsByTagName('code');
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
   for (i = 0; i < codes.length;) {
     code = codes[i];
     if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
@@ -490,7 +527,8 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     i++;
   }
-})();
+};
+slideshow._releaseMath(document);
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

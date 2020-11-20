@@ -1,13 +1,13 @@
 ---
 title: "Evolution, Uncertainty, and the Asymptotic Efficiency of Policy"
 author: "<br>Brian C. Albrecht <span style = 'font-size: 50%;'> University of Minnesota</span><br><br> Joshua R. Hendrickson<span style = 'font-size: 50%;'> University of Mississippi</span><br><br> Alexander William Salter<span style = 'font-size: 50%;'> Texas Tech University</span><br><br>"
-date: 'November 11, 2019<br><br> Paper `r icon::fa("link")`  [bit.ly/Albrecht-evolution](http://bit.ly/Albrecht-evolution) <br>`r icon::fa("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
+date: 'November 11, 2019'
 output:
   xaringan::moon_reader:
     css: ["https://briancalbrecht.github.io/defaults/brian-xaringan-themer.css"]
     nature:
       titleSlideClass: ["left", "middle", "inverse"]
-      ratio: "4:3"
+      ratio: "16:9"
       class: ["left", "middle"]
       slideNumberFormat: |
         <div class="progress-bar-container">
@@ -15,7 +15,6 @@ output:
           </div>
         </div>`
     citation_package: natbib
-bibliography: ["C:/Users/Brian/Documents/githubprivate/defaults/library.bib"]
 ---
 Views of Politics
 ====================================
@@ -439,10 +438,3 @@ Downside
 - Only applies to long-lasting policies
 
 
----
-
-class: center, middle
-
-###`r icon::fa("link")` Paper: [bit.ly/Albrecht-evolution](http://bit.ly/Albrecht-evolution) <br>
-###`r icon::fa("link")` Slides: [bit.ly/Albrecht-SEA](https://bit.ly/Albrecht-SEA) <br>
-###`r icon::fa("twitter")` [@briancalbrecht](https://twitter.com/briancalbrecht)
