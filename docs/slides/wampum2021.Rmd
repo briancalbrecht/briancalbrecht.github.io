@@ -1,0 +1,319 @@
+---
+title: "Wampum as Money and Not Money: <br>Why Colonists and the Iroquois used Shell Beads<br><br>"
+author: "Brian C. Albrecht <br><br>"
+date: '`r format(Sys.time(), "%B %d, %Y")`<br><br>  Paper [bit.ly/Albrecht-wampum](https://bit.ly/Albrecht-wampum) <br>'
+output:
+  xaringan::moon_reader:
+    css: ["https://briancalbrecht.github.io/defaults/brian-xaringan-themer.css"]
+    nature:
+      titleSlideClass: ["left", "middle", "inverse"]
+      ratio: "16:9"
+      class: ["left", "middle"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+    citation_package: natbib
+bibliography: ["/Users/balbrec4/Documents/Github/githubprivate/defaults/library.bib"]
+---
+
+```{r, load_refs, include=FALSE, cache=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE,
+           bib.style = "authoryear",
+           style = "markdown",
+           hyperlink = FALSE,
+           dashed = TRUE)
+myBib <- ReadBib("/Users/balbrec4/Documents/Github/githubprivate/defaults/library.bib", check = FALSE)
+```
+
+
+Wampum was Colonial Money
+====================================
+.left-column[
+- Known to economists as a **colonial money**
+  -E.g., `r Citet(myBib, "Friedman1951", "Samuelson1951")`
+
+- Today: money = medium of exchange
+
+- Shells were broken into beads and strung into belts
+
+- Official exchange rate in Massachusetts Bay Colony
+
+- Legal tender in New Netherlands (New York)
+
+]
+.right-column[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/shell_to_belt.jpg" width="100%" align="middle" />
+]
+
+
+---
+Wampum was **NOT** Iroquois Money
+====================================
+
+.left-column[
+- Contrary to Friedman, Samuelson, etc, the Iroquois **did not use wampum as a money**
+
+- All modern archaeologists agree: e.g. `r Citet(myBib, "Tooker1978", "Snyderman1954")`
+
+- So why was wampum “the magnet which drew the beaver out”? `r Citep(myBib, "Weeden1884")`
+    
+- Today's talk lays out and partially resolves some puzzles about wampum as money and non-money
+]
+
+.right-column[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/iroquois.png" width="100%" align="middle" />
+]
+
+---
+Two Themes of Today's Talk
+====================================
+
+### Monetary Case Study
+
+- Non-monetary society forced into contact with monetary society
+
+- Certain people can use a good as money even if others do not
+
+- If not as money, why was wampum valuable to Iroquois?
+
+
+---
+class: center, middle
+
+# Wampum as Colonial Money
+
+---
+New Netherlands 
+========================
+
+- 17th century colony
+
+- Well-documented that wampum was medium of exchange within New Netherlands
+
+- Director Willem Kieft started to pay employees and debts
+
+- For Dutch, fiat money with no intrinsic value
+
+--
+
+- Wampum was vital to American economic development:
+
+.center["high value given wampum by the Iroquois that created wealth for the Europeans and colonials, that underlay colonial ‘confidence’ in this unusual shell bead coinage, and that contributed finally to the success of colonial expansion." - `r Citet(myBib, "Ceci1982")`]
+
+
+
+---
+Medium of Exchange in Fur Trade
+========================
+
+- Wampum was produced by Algonquian tribe, consumed by Iroquois
+
+- No evidence of trade between Algonquians and Iroquois, although they were in contact
+
+
+- The arrival of Europeans
+  - Created single coincidence of wants
+  
+- Wampum overcame the issue of single coincidence of wants
+
+- Near perfect example of Menger, `r Citet(myBib, "Kiyotaki1989")`
+
+
+---
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_A.png)
+background-size: contain
+
+---
+background-image: url(https://briancalbrecht.github.io/docs/slides/images/wampum/tikz_B.png)
+background-size: contain
+
+---
+Why Wampum?
+=======================
+Standard characteristics of a good medium of exchange
+
+- Durable
+
+- Divisible
+
+- Recognizable
+
+- Easy to transport
+
+---
+Atypical Money
+===========================
+
+- Only Europeans used as a general medium of exchange
+  1. International trade
+  2. Domestic
+
+- Never became money for Iroquois (unlike Germanic barbarians with Romans)
+
+- From the Iroquois, it was a barter-type exchange: $$\text{Furs} \Longleftrightarrow \text{Wampum}$$
+
+- “white man fooled himself into believing wampum was Indian money”- `r Citet(myBib, "Snyderman1954")`
+
+- Monetary story could stop there, as monetary oddity
+
+---
+Value to Iroquois
+=========================
+
+- Whole trade system relied on the Iroquois valuing wampum extremely highly
+
+- “the most precious article they possess” -`r Citet(myBib, "Tremblay2006")`
+
+- “I suppose your Honors sent them [copper kettles] here for the French Indians, who do not want such things from us… They come to us for no other reason than to get wampum” - `r Citet(myBib, "Starna2004")`
+
+- But why?
+
+- Related to why money is valuable
+
+---
+class: center, middle
+
+# Wampum as Input for
+
+# The Great Peace
+
+
+---
+class: center, middle
+
+.left[What was Wampum to Iroquois?]
+=================================
+
+
+<iframe width="1000" height="500" src="https://www.youtube.com/embed/S6dLNz8NZ8A?start=16" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+---
+Wampum's Early History
+=====================================
+
+- Earliest uses go back to the Condolence Council, a predecessor to the **Iroquois League**
+
+- Upon the death of a chief, wampum was given as a gift
+
+- Peace offering quelled political turmoil
+
+- Condolence Council initiated The Great Peace
+  - Peace among the Five Nations for over three hundred years
+
+- “Wampum, the chief instrument of the Council, became the vehicle necessary for all important political transactions” - `r Citet(myBib, "Snyderman1954")`
+
+
+
+---
+Institutional Roles for the Iroquois
+====================================
+
+
+1. Memory: the pre-literate society could “write” down their obligations
+
+2. Screening: wampum "gifts" were costly signals to separate good trading partners from bad
+
+
+---
+Memory Role
+==========================
+
+- Recorded the words of the Condolence Council
+
+- Belts were mnemonic devices, not written words
+
+- Regularly “read” aloud and posted publicly 
+
+- Wampum was a public record
+  
+- In particular, wampum established, recorded, and enforced reciprocal obligations
+  - Like a debt (credit?) contract without a unit of payment
+  - Cost of production limited the amount of debts created
+
+---
+class: center, middle
+
+# The Colonial Period
+
+
+
+---
+Screening Role
+=========================
+
+
+- Wampum was also a gift from one side to another
+  
+- Especially costly signal: 7 days of work per 6 foot belt
+
+- Europeans had to learn and participate in an elaborate ceremony
+  - Lowering social distance `r Citet(myBib, "Akerlof1997", "Leeson2008")`
+  
+- Nearly half of a treaty exchange involved an invitation process that colonial records describe as “trifling” and “tedious” `r Citet(myBib, "Foster1985")`
+
+- Only patient groups pay cost to invest in long-term trade relations
+
+
+---
+Hold Up Problem
+==========================
+
+- After European contact, there was the added threat of violence
+
+- At any meeting, Europeans may want to steal furs by gunpoint
+
+- At that point in time, Europeans are holding goods that are worthless to them
+
+- Acts as a commitment device, compared to trading furs for cloths/tools directly
+  - Similar to two-stage trading in `r Citet(myBib, "Leeson2007")`
+
+---
+Institutional Shock
+===================================
+
+ - However, European arrival brought European tools
+
+ - Production costs decreased by factor of ten
+
+ - Wampum production skyrockets
+  - Some early anthropologists thought wampum only came after European contact
+
+ - Colonists would promise more than they would deliver 
+  - Goods, protection, land
+
+---
+Institutional Importance
+===================================
+
+
+- Instead wampum became **even more important** in forest diplomacy
+
+- 18th century saw forest diplomacy’s “perfection” (Fenton 1998, 7)
+
+
+
+
+---
+The Wampum Legacy
+==================================
+
+- Dual institutional role:
+  - Money among Europeans Dutch
+  - Contract/treaty between tribes and Europeans
+
+- Wampum was an effective institution for over three hundred years for promoting cooperation
+
+- Promoted cooperation through two roles:
+  - Memory
+  - Screening
+
+- After colonial expansion, wampum became ineffective
+
+- Yet, the Iroquois continued to rely on wampum 
+  - Possible tension: Iroquois kept wampum because certain people still benefited 
+
+
+

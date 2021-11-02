@@ -1,0 +1,532 @@
+\documentclass[11pt,]{article}
+\usepackage[margin=1in]{geometry}
+\newcommand*{\authorfont}{\fontfamily{phv}\selectfont}
+\usepackage[]{mathpazo}
+\usepackage{abstract}
+\renewcommand{\abstractname}{}    % clear the title
+\renewcommand{\absnamepos}{empty} % originally center
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}} 
+\usepackage{longtable,booktabs}
+
+\usepackage{parskip}
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}
+
+\titleformat*{\subsubsection}{\normalsize\itshape}
+
+\usepackage{titling}
+\setlength{\droptitle}{-.25cm}
+
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{6pt plus 2pt minus 1pt}
+%\setlength{\emergencystretch}{3em}  % prevent overfull lines 
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{lastpage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.0pt} 
+\lhead{}
+\chead{}
+\rhead{\footnotesize ECON2105-04 Principles of Macroeconomics -- }
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+\fancypagestyle{firststyle}
+{
+\renewcommand{\headrulewidth}{0pt}%
+   \fancyhf{}
+   \fancyfoot[C]{\small \thepage/\pageref*{LastPage}}
+}
+
+%\def\labelitemi{--}
+%\usepackage{enumitem}
+%\setitemize[0]{leftmargin=25pt}
+%\setenumerate[0]{leftmargin=25pt}
+
+
+
+
+\makeatletter
+\@ifpackageloaded{hyperref}{}{%
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+}
+\@ifpackageloaded{color}{
+    \PassOptionsToPackage{usenames,dvipsnames}{color}
+}{%
+    \usepackage[usenames,dvipsnames]{color}
+}
+\makeatother
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={ ()},
+             pdfkeywords = {},  
+            pdftitle={ECON2105-04 Principles of Macroeconomics},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+
+\setcounter{secnumdepth}{0}
+
+\usepackage{longtable}
+
+
+
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+
+\usepackage{setspace}
+
+\title{ECON2105-04 Principles of Macroeconomics}
+\author{Brian Albrecht}
+\date{}
+
+
+\begin{document}  
+
+		\maketitle
+		
+	
+		\thispagestyle{firststyle}
+
+%	\thispagestyle{empty}
+
+
+	\noindent \begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} lr @{\extracolsep{\fill}}}
+
+
+E-mail: \texttt{\href{mailto:balbrec4@kennesaw.edu}{\nolinkurl{balbrec4@kennesaw.edu}}} & Web: \href{http://d2l.kennesaw.edu}{\tt d2l.kennesaw.edu}\\
+Office Hours: Tu 2-3, Th 11-12  &  Class Hours: Tu-Th 9:30 am - 10:45 am\\
+Office: Burruss Building 359  & Class Room: Student Rec \& Wellness Center 1030D\\
+	&  \\
+	\hline
+	\end{tabular*}
+	
+\vspace{2mm}
+	
+
+
+\hypertarget{usgs-covid-19-syllabus-statements}{%
+\section{USGS COVID-19 Syllabus Statements}\label{usgs-covid-19-syllabus-statements}}
+
+\hypertarget{face-masks-in-the-classroom}{%
+\subsection{Face Masks in the classroom}\label{face-masks-in-the-classroom}}
+
+As mandated by the University System of Georgia, the university requires the use of face masks in the
+classroom and in KSU buildings to protect you, your classmates, and instructors. Per the University System of
+Georgia, anyone not using a face covering when required will be asked to wear one or must leave the area.
+Repeated refusal to comply with the requirement may result in discipline through the applicable conduct code.
+
+Reasonable accommodations may be made for those who are unable to wear a face covering for documented
+health reasons. Please contact Student Disability Services at \href{mailto:sds@kennesaw.edu}{\nolinkurl{sds@kennesaw.edu}} for student accommodation
+requests.
+
+\hypertarget{shifting-modalities}{%
+\subsection{Shifting Modalities}\label{shifting-modalities}}
+
+This course will be face to face. \textbf{Students with a last name starting with A-L should come to class on Tuesday. Students with a last name starting with M-Z should come to class on Thursdays.} All students are expected to come to class on their designated day and to watch the livestream on the other day of the week.
+
+Please note that the university reserves the right to shift teaching modalities at any time during the semester, if
+health and safety guidelines require it to do so. Some teaching modalities that may be used are
+F2F, Hyflex, Hybrid, or online, both synchronous and asynchronous instruction.
+
+\hypertarget{staying-home-when-sick}{%
+\subsection{Staying Home When Sick}\label{staying-home-when-sick}}
+
+If you are ill, please stay home and contact your health professional. In that case, please email the instructor to
+say you are missing class due to illness. Signs of illness include, but are not limited to, the following:
+
+\begin{itemize}
+\tightlist
+\item
+  Cough
+\item
+  Fever of 100.4 or higher
+\item
+  Runny nose or new sinus congestion
+\item
+  Shortness of breath or difficulty
+  breathing
+\item
+  Chills
+\item
+  Sore Throat
+\item
+  New loss of taste and/or smell
+\end{itemize}
+
+\hypertarget{course-description-and-objectives}{%
+\section*{Course Description and Objectives}\label{course-description-and-objectives}}
+\addcontentsline{toc}{section}{Course Description and Objectives}
+
+To say that the economy is immensely complex is an understatement. Indeed, you may be skeptical that we can say anything meaningful about how it actually operates. This belief, while common, is mistaken.
+There are certain universal traits of human nature that yield principles capable of explaining the economic
+forces that shape the world around us. Upon successfully completing this course, you will be conversant in the basic principles of macroeconomics and prepared for more advanced coursework on this subject.
+
+\hypertarget{textbook}{%
+\subsection{Textbook}\label{textbook}}
+
+Case/Fair/Oster, Principles of Macroeconomics, 13th Edition. 2020.
+
+\hypertarget{day-one-access}{%
+\subsection*{Day One Access}\label{day-one-access}}
+\addcontentsline{toc}{subsection}{Day One Access}
+
+ECON2105 is part of a textbook program called Day One Access. The week before
+classes begin, you should receive an e-mail from KSU University Stores with instructions on how
+to access the course content (please check your junk folder if not in your inbox). The purpose of
+Day One Access is to make sure that you have access to the digital course materials on or before
+the first day of class at a highly competitive rate. Everyone enrolled in the course will
+automatically have access to the digital course materials through January 15, 2021. Those who
+have not opted-out or dropped the class by January 15th, will receive a charge from the
+bookstore on their OwlExpress student account the following week.
+
+You have the ability to Opt-Out through Friday, January 15th, via the link in the email sent to you
+by University Stores. Once you opt out, you will immediately receive a confirmation email. If you
+do not receive this email, you did not successfully opt out. If, after multiple tries, you are unable
+to successfully opt out via the link, please email \href{mailto:dayone@kennesaw.edu}{\nolinkurl{dayone@kennesaw.edu}} prior to the opt-out
+deadline and request to be manually opted out. You must include your name, student ID number,
+and the course info. Emails sent after the deadline will not be acknowledged.
+
+You should also login and register your materials via the link in D2L by Sunday, January 24 th . If you
+do not do register by this date, you may temporarily lose access and an access code may be
+requested despite not having opted out. If this happens, please email \href{mailto:dayone@kennesaw.edu}{\nolinkurl{dayone@kennesaw.edu}}.
+(DO NOT purchase an access code if this happens, as you will not be refunded. Please wait for a
+response to your email.)
+
+If you would like to know more about Day One Access, please visit
+\url{https://ksustore.kennesaw.edu/textbooks/day_one_access.php}.
+
+If you would like to know if a loose-leaf copy of the textbook is available or have any other
+questions or concerns, please email \href{mailto:dayone@kennesaw.edu}{\nolinkurl{dayone@kennesaw.edu}}.
+
+\hypertarget{course-description}{%
+\subsection{Course Description:}\label{course-description}}
+
+Analysis of socioeconomic goals, money and credit systems, theories of national
+income, employment and economic growth.
+
+\hypertarget{course-prerequisites}{%
+\subsection{Course Prerequisites:}\label{course-prerequisites}}
+
+ECON2100 and six (6) credit hours of MATH numbered 1101 or higher.
+Course Description: This course is an introduction to the formal study of macroeconomics.
+Macroeconomics involves the study of the economy as a whole. Topics that will be covered include national
+income determination, the general price level, interest rates, unemployment, and fiscal and monetary policies.
+The emphasis will be on genuine understanding of the material, and not on ``memorization''.
+
+\hypertarget{course-withdrawal-date-and-policy}{%
+\subsection{Course Withdrawal Date and Policy:}\label{course-withdrawal-date-and-policy}}
+
+Last day to withdraw without academic penalty is Fri. 4/9/2021.
+Students withdrawing after this date will receive a WF. Students who wish to withdraw with a grade of ``W''
+must do so formally through the Registrar's Office on or before 4/9. All withdrawals must be processed
+officially through the Office of The Registrar by the student.
+
+\hypertarget{make-up-exam-policy}{%
+\subsection{Make-Up Exam Policy:}\label{make-up-exam-policy}}
+
+\textbf{No make-up exams} or assignments will be given during the semester. It is the student's responsibility to check the course calendar and announcements in D2L.
+
+\hypertarget{attendance-policy}{%
+\subsection{Attendance Policy:}\label{attendance-policy}}
+
+Class success and learning depends on your interaction, online and in person,
+including reading all materials and being alert for announcements. You are expected to check D2L
+on a daily basis and if not certainly every week. Posts made to the Class Café by your professor are
+required reading and may contain important announcements. In addition, all items in the Learning
+Modules are required readings. Students should realize that it is highly unlikely that a student will
+earn a passing grade if he/she does not actively participate in this class each week. Further, office
+hours will not be dedicated to correct deficiencies induced by lack of participation.
+
+\hypertarget{grading-policy}{%
+\section{Grading Policy:}\label{grading-policy}}
+
+The following grading policy rules will apply to all students.
+There will be 4 grade components: (1) Mid-Term Exam (100-points), (2) Final Exam (100-points), (3)
+Quizzes (100-points), and (4) Extra Credit Assignments - Short Essay Questions (SE's) \&
+Discussion Questions (DQ's) (up to a maximum total of 10-points).
+
+\hypertarget{mid-term-and-final-exams}{%
+\subsection{MID-TERM and FINAL EXAMS:}\label{mid-term-and-final-exams}}
+
+\begin{itemize}
+\tightlist
+\item
+  There will be a Mid-Term and a Final exam during the semester.
+\item
+  The Mid-Term and Final Exams will be \textbf{ONLINE}. No make-up will be given for any of
+  the exams.
+\item
+  Students will have 2 hours to complete the Mid-Term and Final exams.
+\item
+  For the Mid-Term and the Final Exam, additional time will not be allowed.
+\item
+  The date for the Mid-Term Exam is \textbf{Thursday, 3/4/2021}.
+\item
+  The date for the Final Exam is \textbf{Thursday, 5/6/2021}.
+\item
+  Each exam consists of 50 multiple choice questions.
+\item
+  Each exam is worth 100 points.
+\end{itemize}
+
+\hypertarget{quizzes}{%
+\subsection{QUIZZES:}\label{quizzes}}
+
+\begin{itemize}
+\tightlist
+\item
+  There will be 12 online quizzes of which 10 highest quizzes will be included in the grade
+  calculation.
+\item
+  Each online quiz will consist of 5 questions for a total of 10pts.
+\item
+  Quizzes will be graded automatically
+\end{itemize}
+
+\hypertarget{extra-credit-assignments-short-essay-questions-se-and-discussion-questions-dq}{%
+\subsection{Extra Credit Assignments (Short Essay Questions (SE) and Discussion Questions (DQ)):}\label{extra-credit-assignments-short-essay-questions-se-and-discussion-questions-dq}}
+
+\begin{itemize}
+\tightlist
+\item
+  There will be 2 SE's and 2 DQ's for a total of 4 optional extra credit assignments for extra
+  credit (i.e.~DQ1; SE2; DQ3; SE4).
+\item
+  2 out of 4 assignments will be included in the grading formula for extra credit.
+\item
+  Each Extra Credit Assignment (either SE or DQ) is worth 5pts.
+\item
+  SE's are submitted in ``Assignments'' but DQ's are posted in ``Discussions.'' See the rubrics for
+  details.
+\item
+  \textbf{SE's and DQ's MUST be 1-page and 1-page ONLY!} They must include the student's first and
+  last names and the SE\# or DQ\# in the upper left corner and in the body of the submission or
+  posting (i.e.~Joe Smith--SE4 or Joe Smith-DQ3 and then students' answers etc). Otherwise, 2-
+  points will be taken off the grades (1-point for not having the first/last name and 1-point for not
+  having the DQ\# or SE\#).
+\end{itemize}
+
+The following also apply to all students:
+
+\begin{itemize}
+\tightlist
+\item
+  There will be NO adjustments, NO curves, NO extra points to test grades or the class grade.
+\item
+  Overall class grades will be rounded to the nearest number (e.g.~89.33 will be rounded to 89, 89.67 to
+  90, or 59.72 to 60 etc.), and will be calculated according to the following formula:
+\end{itemize}
+
+\hypertarget{overall-class-grade-mid-term-final-10-highest-quizzes-2-highest-extra-credit-assignments-3}{%
+\subsection{Overall Class Grade = (Mid-Term + Final + 10 Highest Quizzes + 2 Highest Extra Credit Assignments) / 3}\label{overall-class-grade-mid-term-final-10-highest-quizzes-2-highest-extra-credit-assignments-3}}
+
+\begin{itemize}
+\tightlist
+\item
+  The grading scale will be as follows: 100-90 A, 80-89 B, 70-79 C, 60-69 D, 59-0 F
+\end{itemize}
+
+Incomplete Grades: Incompletes are awarded for non-academic reasons at the instructor's discretion, and
+not at students' discretion.
+
+Note: For all other questions related to grading policy, see the KSU 2020-2021 undergraduate catalogue.
+\newpage
+
+\hypertarget{tentative-schedule}{%
+\subsection*{Tentative Schedule}\label{tentative-schedule}}
+\addcontentsline{toc}{subsection}{Tentative Schedule}
+
+\emph{Note}: This is my first semester using Case/Fair/Oster. I may adjust the schedule as the semester progresses. Any updates will be posted on D2L.
+
+\hypertarget{week-01-0111---0115-course-introduction-and-introduction-to-macroeconomics-ch-5}{%
+\subsubsection*{Week 01, 01/11 - 01/15: Course Introduction and Introduction to Macroeconomics (Ch 5)}\label{week-01-0111---0115-course-introduction-and-introduction-to-macroeconomics-ch-5}}
+\addcontentsline{toc}{subsubsection}{Week 01, 01/11 - 01/15: Course Introduction and Introduction to Macroeconomics (Ch 5)}
+
+\hypertarget{week-02-0118---0122-measuring-output-ch-6}{%
+\subsubsection*{Week 02, 01/18 - 01/22: Measuring Output (Ch 6)}\label{week-02-0118---0122-measuring-output-ch-6}}
+\addcontentsline{toc}{subsubsection}{Week 02, 01/18 - 01/22: Measuring Output (Ch 6)}
+
+\hypertarget{week-03-0125---0129-unemployment-inflation-and-long-run-growth-ch-7}{%
+\subsubsection*{Week 03, 01/25 - 01/29: Unemployment inflation and Long-run growth (Ch 7)}\label{week-03-0125---0129-unemployment-inflation-and-long-run-growth-ch-7}}
+\addcontentsline{toc}{subsubsection}{Week 03, 01/25 - 01/29: Unemployment inflation and Long-run growth (Ch 7)}
+
+\hypertarget{week-04-0201---0205-aggregate-expenditure-ch-8}{%
+\subsubsection*{Week 04, 02/01 - 02/05: Aggregate Expenditure (Ch 8)}\label{week-04-0201---0205-aggregate-expenditure-ch-8}}
+\addcontentsline{toc}{subsubsection}{Week 04, 02/01 - 02/05: Aggregate Expenditure (Ch 8)}
+
+\hypertarget{week-05-0208---0212-government-and-fiscal-policy-ch-9}{%
+\subsubsection*{Week 05, 02/08 - 02/12: Government and Fiscal Policy (Ch 9)}\label{week-05-0208---0212-government-and-fiscal-policy-ch-9}}
+\addcontentsline{toc}{subsubsection}{Week 05, 02/08 - 02/12: Government and Fiscal Policy (Ch 9)}
+
+\hypertarget{week-06-0215---0219-money-and-the-fed-ch-10}{%
+\subsubsection*{Week 06, 02/15 - 02/19: Money and the Fed (Ch 10)}\label{week-06-0215---0219-money-and-the-fed-ch-10}}
+\addcontentsline{toc}{subsubsection}{Week 06, 02/15 - 02/19: Money and the Fed (Ch 10)}
+
+\hypertarget{week-07-0222---0226-aggregate-output-the-price-level-and-interest-rates-ch-11}{%
+\subsubsection*{Week 07, 02/22 - 02/26: Aggregate Output, the Price Level, and Interest Rates (Ch 11)}\label{week-07-0222---0226-aggregate-output-the-price-level-and-interest-rates-ch-11}}
+\addcontentsline{toc}{subsubsection}{Week 07, 02/22 - 02/26: Aggregate Output, the Price Level, and Interest Rates (Ch 11)}
+
+\hypertarget{week-08-0301---0305-midterm-exam}{%
+\subsubsection*{\texorpdfstring{Week 08, 03/01 - 03/05: \textbf{Midterm Exam}}{Week 08, 03/01 - 03/05: Midterm Exam}}\label{week-08-0301---0305-midterm-exam}}
+\addcontentsline{toc}{subsubsection}{Week 08, 03/01 - 03/05: \textbf{Midterm Exam}}
+
+\hypertarget{week-09-0308---0312-spring-break}{%
+\subsubsection*{Week 09, 03/08 - 03/12: Spring Break}\label{week-09-0308---0312-spring-break}}
+\addcontentsline{toc}{subsubsection}{Week 09, 03/08 - 03/12: Spring Break}
+
+\hypertarget{week-10-0315---0319-policy-in-asad-model-ch-12}{%
+\subsubsection*{Week 10, 03/15 - 03/19: Policy in AS/AD Model (Ch 12)}\label{week-10-0315---0319-policy-in-asad-model-ch-12}}
+\addcontentsline{toc}{subsubsection}{Week 10, 03/15 - 03/19: Policy in AS/AD Model (Ch 12)}
+
+\hypertarget{week-11-0322---0326-labor-market-in-macro-ch-13}{%
+\subsubsection*{Week 11, 03/22 - 03/26: Labor Market in Macro (CH 13)}\label{week-11-0322---0326-labor-market-in-macro-ch-13}}
+\addcontentsline{toc}{subsubsection}{Week 11, 03/22 - 03/26: Labor Market in Macro (CH 13)}
+
+\hypertarget{week-12-0329---0402-financial-crises-ch-14}{%
+\subsubsection*{Week 12, 03/29 - 04/02: Financial Crises (Ch 14)}\label{week-12-0329---0402-financial-crises-ch-14}}
+\addcontentsline{toc}{subsubsection}{Week 12, 03/29 - 04/02: Financial Crises (Ch 14)}
+
+\hypertarget{week-13-0405---0409-long-run-growth-ch-16}{%
+\subsubsection*{Week 13, 04/05 - 04/09: Long-Run Growth (Ch 16)}\label{week-13-0405---0409-long-run-growth-ch-16}}
+\addcontentsline{toc}{subsubsection}{Week 13, 04/05 - 04/09: Long-Run Growth (Ch 16)}
+
+\hypertarget{week-14-0412---0416-alternative-views-of-macroeconomics-ch-17}{%
+\subsubsection*{Week 14, 04/12 - 04/16: Alternative Views of Macroeconomics (Ch 17)}\label{week-14-0412---0416-alternative-views-of-macroeconomics-ch-17}}
+\addcontentsline{toc}{subsubsection}{Week 14, 04/12 - 04/16: Alternative Views of Macroeconomics (Ch 17)}
+
+\hypertarget{week-15-0419---0423-open-economy-macro-ch-19}{%
+\subsubsection*{Week 15, 04/19 - 04/23: Open Economy Macro (Ch 19)}\label{week-15-0419---0423-open-economy-macro-ch-19}}
+\addcontentsline{toc}{subsubsection}{Week 15, 04/19 - 04/23: Open Economy Macro (Ch 19)}
+
+\hypertarget{week-16-0426---0430-final-exam}{%
+\subsubsection*{\texorpdfstring{Week 16, 04/26 - 04/30: \textbf{Final Exam}}{Week 16, 04/26 - 04/30: Final Exam}}\label{week-16-0426---0430-final-exam}}
+\addcontentsline{toc}{subsubsection}{Week 16, 04/26 - 04/30: \textbf{Final Exam}}
+
+\textbf{Note}: Changes to this course outline and schedule, if needed, will be announced through the Class Café
+discussion, via D2L email, or both. It is the responsibility of students to stay aware of changes that may occur
+during the semester.
+
+\hypertarget{course-policies}{%
+\section{Course Policies}\label{course-policies}}
+
+\textbf{Instructor Contact Information:} If I am online in D2L and available, you are welcome to initiate a chat. If I'm
+online, click the ``Send Chat Invitation'' button. If it is not a convenient time to engage in a conversation, I will
+decline the invitation - please follow-up by sending me a D2L e-mail message.
+
+During D2L maintenance, or if you are unable to access it -- You may contact me through campus e-mail at
+\href{mailto:balbrec4@kennesaw.edu}{\nolinkurl{balbrec4@kennesaw.edu}}
+
+\textbf{Instructor Response:} Questions of a general nature should be asked in the Class Café discussion.
+Students are encouraged to answer and help other students.
+
+Specific questions for the instructor should be emailed through D2L. Responses will be provided within 24 hours during
+the business week. Questions received on weekends will be answered at first opportunity on Monday. Feedback and
+scores on graded work are provided within one week of the assignment due date.
+
+\textbf{Late Assignments:} Late assignments will NOT be accepted. Check the calendar for the due dates. In the event of a
+server failure or natural occurrences, students are required to submit assignments through campus e-mail (to:
+\href{mailto:balbrec4@kennesaw.edu}{\nolinkurl{balbrec4@kennesaw.edu}}) PRIOR to the expiration time of the assignment.
+
+\textbf{Important:} DO NOT WAIT until a few minutes before an assignment is due. Taking an Online Quiz, uploading your Short
+Essay document, or posting your Online Discussion Question response will take time, and will depend on file size, the
+processing speed of your computer, the speed of your internet connection, and the load on the server. Assignment
+submission times are recorded
+
+\textbf{Important:} D2L has scheduled maintenance times. These dates/times are determined in advance and displayed when
+you log into VISTA. You are responsible for noting these and adjusting your schedule accordingly. Late assignments will
+not be accepted because of D2L inaccessibility due to scheduled maintenance.
+
+\hypertarget{university-policies}{%
+\section{University Policies}\label{university-policies}}
+
+\hypertarget{academic-integrity-statement}{%
+\subsection{Academic Integrity Statement}\label{academic-integrity-statement}}
+
+Every KSU student is responsible for upholding the provisions of the Student Code of Conduct, as published in
+the Undergraduate and Graduate Catalogs. Section 5c of the Student Code of Conduct addresses the University
+'s policy on academic honesty, including provisions regarding plagiarism and cheating, unauthorized access
+to university materials, misrepresentation/falsification of university records or academic work, malicious
+removal, retention, or destruction of library materials, malicious/intentional misuse of computer facilities and/or
+services, and misuse of student identification cards. Incidents of alleged academic misconduct will be
+handled through the established procedures of the Department of Student Conduct and Academic
+Integrity(SCAI, which includes either an ``informal'' resolution by a faculty member, resulting in a grade
+adjustment, or a formal hearing procedure, which may subject a student to the Code of Conduct's
+minimum one semester suspension requirement. See also \url{https://web.kennesaw.edu/scai/content/}
+ksu-student-code-conduct
+\#\# Disruptive Behavior
+Belligerent, abusive, profane, threatening and/or inappropriate behavior on the part of students is a violation of
+the KSU Student Code of Conduct. According to university policy regarding disruptive behavior, students who
+are found in violation of the Code of Conduct may be subject to immediate dismissal from the university. Also,
+those violations, which may constitute misdemeanor or felony violations of state or federal law, may also be
+subject to criminal action beyond the university disciplinary process.
+
+\hypertarget{special-needs-accommodations}{%
+\subsection{Special Needs \& Accommodations}\label{special-needs-accommodations}}
+
+Kennesaw State University provides program accessibility and reasonable accommodations for persons
+defined as disabled under Section 504 of the Rehabilitation Act of 1973 and the Americans with
+Disabilities Act of 1990. Students with disabilities who require accommodations (academic adjustments and/
+or auxiliary aids or services) for this course must contact the Office for Disabled Student Support Services,
+ADA Compliance Officer for Students, at 770-423-6443 (V) or 770-423-6480 (TDD). Please do not request
+accommodations directly from the professor or instructor without a letter of accommodation from the
+Office for Disabled Student Support Services. For additional information, please visit: \url{http://www.kennesaw.edu/stu_dev/dsss/dsss.html}.
+\#\# Student Code of Conduct -- Strictly Enforced
+
+\hypertarget{plagiarism-and-cheating}{%
+\subsubsection{Plagiarism and Cheating}\label{plagiarism-and-cheating}}
+
+No student shall receive, attempt to receive, knowingly give or attempt to give unau-thorized assistance in
+the preparation of any work required to be submitted for credit as part of a course (including exami¬nations,
+laboratory reports, essays, themes, term papers, etc.). When direct quotations are used, they should be
+indicated, and when the ideas, theories, data, figures, graphs, programs, electronic based infor¬mation or
+illustrations of someone other than the student are incorporated into a paper or used in a project, they should
+be duly acknowledged.
+
+\hypertarget{translated-examples-of-academic-dishonesty-covered-under-the-student-code-of-conduct}{%
+\subsubsection{Translated Examples of Academic Dishonesty Covered Under the Student Code of Conduct}\label{translated-examples-of-academic-dishonesty-covered-under-the-student-code-of-conduct}}
+
+All graded work is to be performed by the individual, unless otherwise specified as a group project. Work
+submitted that is not representative of individual effort is prohibited and considered a violation of the code of
+conduct. This includes the shared use of electronic files. Use of any electronic file not specifically made
+available to the individual in the currently enrolled course is prohibited and considered a violation of the
+code of conduct. In a credit-generating course where class attendance/participation is tied directly to a
+grading structure or point system, misrepresentation of attendance/participation is considered a
+violation of the code of conduct. On-line examinations are subject to the same classroom setting
+protocols as traditional examinations.
+
+
+
+
+\end{document}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+%  \null
+%  \vskip 2em%
+%  \begin{center}%
+  \let \footnote \thanks
+    {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
+}
+%\fi
+\makeatother

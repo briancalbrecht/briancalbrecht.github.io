@@ -1,7 +1,7 @@
 ---
-title: "On the Informational Efficiency of<br>Decentralized Price Formation<br>"
-author: "<br> Rafael R. Guthmann<span style = 'font-size: 50%;'> PUC-Rio</span><br><br>Brian C. Albrecht <span style = 'font-size: 50%;'> University of Minnesota</span><br><br>"
-date: '`r format(Sys.time(), "%B %d, %Y")`'
+title: "Market Microstructure and <br> Informational Efficiency<br>"
+author: "<br> Rafael R. Guthmann<span style = 'font-size: 50%;'></span><br><br>Brian C. Albrecht <span style = 'font-size: 50%;'></span><br><br>"
+date: 'October 22, 2021<br><br> Paper `r icons::fontawesome("link")`  [bit.ly/bca-informational-efficiency](http://bit.ly/bca-informational-efficiency) <br>Slides `r icons::fontawesome("link")`  [bit.ly/bca-ttu](http://bit.ly/bca-ttu) <br>`r icons::fontawesome("twitter")` [briancalbrecht](https://twitter.com/briancalbrecht)'
 output:
   xaringan::moon_reader:
     css: ["https://briancalbrecht.github.io/defaults/brian-xaringan-themer.css"]
@@ -19,13 +19,13 @@ output:
 Informational Efficiency
 ====================================
 
-- Since Hayek (1937, 1945), economists have assessed institutions by their relativeability to incorporate and communicate information
+- Since Hayek (1937, 1945), economists have assessed institutions by their relative ability to incorporate and communicate information
 
 - Studies such as Mount and Reiter (1974), Hurwicz (1977a, 1977b, 1977c), Jordan (1982),and Chander (1983) developed a formal concept of informational efficiency 
 
  - They proved that the competitive equilibrium is informationally efficient in the sense that competitive prices communicate the minimum amount of information neces-sary to implement a Pareto efficient allocation
  
-= Jordan (1982) proves that competitive prices are the **unique** decentralized mechanism that achieves this informational efficiency
+- Jordan (1982) proves that competitive prices are the **unique** decentralized mechanism that achieves this informational efficiency
 
 ---
 Decentralized Price Formation
@@ -34,7 +34,7 @@ Decentralized Price Formation
 - More recently, people have developed alternative to competitive equilibrium that involve decentralied price formation (e.g. search)
   - No auctioneer
   
-- We ask, how informationall efficient are these mechanisms?
+- We ask, how informationally efficient are these mechanisms?
 
 - Results:
   - Search is inefficient
@@ -42,19 +42,30 @@ Decentralized Price Formation
 
 
 ---
+Comparing Apples to Apples
+==================================
+- To isolate the informational efficiency of  market-makers, we focus on the relevant frictionless limit,
+
+--
+
+  - e.g. an allocation that approximates the competitive equilibrium and so is efficient as an allocation
+ 
+--
+
+- If same allocation, the only difference is in how the prices emerge: 
+  1. Set by auctioneer,
+  2. Set by bargaining between searchers
+  3. Set by market-makers
+  
+
+---
 Road Map for Talk
 ====================================
 1. **Abstract Mechanisms and Message Space**
-  
-  
 2. Competitive Mechanism
   - Best
-
-
 3. Search Mechanism
   - Worst
-
-
 4. Market-maker Mechanism
   - Not so bad
 ---

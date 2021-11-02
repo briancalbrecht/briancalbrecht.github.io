@@ -1,0 +1,354 @@
+---
+title: ECON2105 Principles of Macroeconomics
+author: Brian Albrecht
+date:
+output:
+  bookdown::pdf_document2:
+    citation_package: natbib
+    fig_caption: yes
+    keep_tex: yes
+    latex_engine: pdflatex
+    template: https://briancalbrecht.github.io/defaults/svm-latex-syllabus.tex
+    toc: no
+  bookdown::gitbook:
+  bookdown::html_document2:
+    toc: yes
+  config:
+    toc:
+      collapse: subsubsection
+      scroll_highlight: yes
+      before: null
+      after: null
+    toolbar:
+      position: fixed
+    edit : null
+    download: null
+    search: yes
+    fontsettings:
+      theme: white
+      family: sans
+      size: 2
+    sharing:
+      facebook: no
+      twitter: no
+      google: no
+      linkedin: no
+      weibo: no
+      instapaper: no
+      vk: no
+      all: ['facebook', 'google', 'twitter', 'linkedin', 'weibo', 'instapaper']
+email: balbrec4@kennesaw.edu
+fontfamily: mathpazo
+fontsize: 11pt
+geometry: margin=1in
+header-includes: \linespread{1.05}
+office: Burruss Building 359
+officehours: Tu 2-3, Th 11-12
+classroom: 
+classhours: Tu-Th
+web: d2l.kennesaw.edu
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=FALSE, dev='pdf')
+mon <- as.Date("2021-01-11")
+# fri <- as.Date("2016-01-08")
+advdate <- function(obj, adv) {
+ tmon <- obj + 7*(adv-1)
+ tfri <- obj + 4 + 7*(adv-1)
+ tmon <- format(tmon, format="%m/%d")
+ tfri <- format(tfri, format="%m/%d")
+ zadv <- sprintf("%02d", adv)
+ tmp <- paste("Week ",zadv,sep='',", ", tmon," - ",tfri)
+ return(tmp)
+}
+library(RefManageR)
+library(knitcitations)
+library(rcrossref)
+```
+# USGS COVID-19 Syllabus Statements
+## Face Masks in the classroom
+As mandated by the University System of Georgia, the university requires the use of face masks in the
+classroom and in KSU buildings to protect you, your classmates, and instructors. Per the University System of
+Georgia, anyone not using a face covering when required will be asked to wear one or must leave the area.
+Repeated refusal to comply with the requirement may result in discipline through the applicable conduct code.
+
+Reasonable accommodations may be made for those who are unable to wear a face covering for documented
+health reasons. Please contact Student Disability Services at sds@kennesaw.edu for student accommodation
+requests. 
+
+## Shifting Modalities
+
+This course will be face to face. **Students with a last name starting with A-L should come to class on Tuesday. Students with a last name starting with M-Z should come to class on Thursdays.** All students are expected to come to class on their designated day and to watch the livestream on the other day of the week.
+
+Please note that the university reserves the right to shift teaching modalities at any time during the semester, if
+health and safety guidelines require it to do so. Some teaching modalities that may be used are
+F2F, Hyflex, Hybrid, or online, both synchronous and asynchronous instruction. 
+
+
+## Staying Home When Sick
+If you are ill, please stay home and contact your health professional. In that case, please email the instructor to
+say you are missing class due to illness. Signs of illness include, but are not limited to, the following:
+
+- Cough
+- Fever of 100.4 or higher
+- Runny nose or new sinus congestion
+- Shortness of breath or difficulty
+breathing
+- Chills
+- Sore Throat
+- New loss of taste and/or smell
+
+
+# Course Description and Objectives {-}
+
+To say that the economy is immensely complex is an understatement.  Indeed, you may be skeptical that we can say anything meaningful about how it actually operates.  This belief, while common, is mistaken.
+There are certain universal traits of human nature that yield principles capable of explaining the economic
+forces that shape the world around us. Upon successfully completing this course, you will be conversant in the basic principles of macroeconomics and prepared for more advanced coursework on this subject.
+
+
+## Textbook 
+Case/Fair/Oster, Principles of Macroeconomics, 13th Edition. 2020.
+
+## Day One Access {-}
+
+ECON2105 is part of a textbook program called Day One Access. The week before
+classes begin, you should receive an e-mail from KSU University Stores with instructions on how
+to access the course content (please check your junk folder if not in your inbox). The purpose of
+Day One Access is to make sure that you have access to the digital course materials on or before
+the first day of class at a highly competitive rate. Everyone enrolled in the course will
+automatically have access to the digital course materials through January 15, 2021. Those who
+have not opted-out or dropped the class by January 15th, will receive a charge from the
+bookstore on their OwlExpress student account the following week.
+
+You have the ability to Opt-Out through Friday, January 15th, via the link in the email sent to you
+by University Stores. Once you opt out, you will immediately receive a confirmation email. If you
+do not receive this email, you did not successfully opt out. If, after multiple tries, you are unable
+to successfully opt out via the link, please email dayone@kennesaw.edu prior to the opt-out
+deadline and request to be manually opted out. You must include your name, student ID number,
+and the course info. Emails sent after the deadline will not be acknowledged.
+
+You should also login and register your materials via the link in D2L by Sunday, January 24 th . If you
+do not do register by this date, you may temporarily lose access and an access code may be
+requested despite not having opted out. If this happens, please email dayone@kennesaw.edu.
+(DO NOT purchase an access code if this happens, as you will not be refunded. Please wait for a
+response to your email.)
+
+If you would like to know more about Day One Access, please visit
+https://ksustore.kennesaw.edu/textbooks/day_one_access.php.
+
+If you would like to know if a loose-leaf copy of the textbook is available or have any other
+questions or concerns, please email dayone@kennesaw.edu.
+
+## Course Description: 
+Analysis of socioeconomic goals, money and credit systems, theories of national
+income, employment and economic growth.
+
+## Course Prerequisites: 
+ECON2100 and six (6) credit hours of MATH numbered 1101 or higher.
+Course Description: This course is an introduction to the formal study of macroeconomics.
+Macroeconomics involves the study of the economy as a whole. Topics that will be covered include national
+income determination, the general price level, interest rates, unemployment, and fiscal and monetary policies.
+The emphasis will be on genuine understanding of the material, and not on "memorization". 
+
+## Course Withdrawal Date and Policy: 
+Last day to withdraw without academic penalty is Fri. 4/9/2021.
+Students withdrawing after this date will receive a WF. Students who wish to withdraw with a grade of “W”
+must do so formally through the Registrar’s Office on or before 4/9. All withdrawals must be processed
+officially through the Office of The Registrar by the student.
+
+## Make-Up Exam Policy: 
+**No make-up exams** or assignments will be given during the semester. It is the student’s responsibility to check the course calendar and announcements in D2L.
+
+## Attendance Policy: 
+Class success and learning depends on your interaction, online and in person,
+including reading all materials and being alert for announcements. You are expected to check D2L
+on a daily basis and if not certainly every week. Posts made to the Class Café by your professor are
+required reading and may contain important announcements. In addition, all items in the Learning
+Modules are required readings. Students should realize that it is highly unlikely that a student will
+earn a passing grade if he/she does not actively participate in this class each week. Further, office
+hours will not be dedicated to correct deficiencies induced by lack of participation. 
+
+# Grading Policy: 
+The following grading policy rules will apply to all students.
+There will be 4 grade components: (1) Mid-Term Exam (100-points), (2) Final Exam (100-points), (3)
+Quizzes (100-points), and (4) Extra Credit Assignments - Short Essay Questions (SE’s) &
+Discussion Questions (DQ’s) (up to a maximum total of 10-points). 
+
+## MID-TERM and FINAL EXAMS:
+- There will be a Mid-Term and a Final exam during the semester.
+- The Mid-Term and Final Exams will be **ONLINE**. No make-up will be given for any of
+the exams.
+- Students will have 2 hours to complete the Mid-Term and Final exams.
+- For the Mid-Term and the Final Exam, additional time will not be allowed.
+- The date for the Mid-Term Exam is **Thursday, 3/4/2021**.
+- The date for the Final Exam is **Thursday, 5/6/2021**.
+- Each exam consists of 50 multiple choice questions.
+- Each exam is worth 100 points.
+
+## QUIZZES:
+- There will be 12 online quizzes of which 10 highest quizzes will be included in the grade
+calculation.
+- Each online quiz will consist of 5 questions for a total of 10pts.
+- Quizzes will be graded automatically
+
+## Extra Credit Assignments (Short Essay Questions (SE) and Discussion Questions (DQ)):
+- There will be 2 SE’s and 2 DQ’s for a total of 4 optional extra credit assignments for extra
+credit (i.e. DQ1; SE2; DQ3; SE4).
+- 2 out of 4 assignments will be included in the grading formula for extra credit.
+- Each Extra Credit Assignment (either SE or DQ) is worth 5pts.
+- SE’s are submitted in “Assignments” but DQ’s are posted in “Discussions.” See the rubrics for
+details.
+- **SE’s and DQ’s MUST be 1-page and 1-page ONLY!** They must include the student’s first and
+last names and the SE# or DQ# in the upper left corner and in the body of the submission or
+posting (i.e. Joe Smith–SE4 or Joe Smith-DQ3 and then students’ answers etc). Otherwise, 2-
+points will be taken off the grades (1-point for not having the first/last name and 1-point for not
+having the DQ# or SE#).
+
+
+The following also apply to all students:
+
+- There will be NO adjustments, NO curves, NO extra points to test grades or the class grade.
+- Overall class grades will be rounded to the nearest number (e.g. 89.33 will be rounded to 89, 89.67 to
+90, or 59.72 to 60 etc.), and will be calculated according to the following formula:
+
+## Overall Class Grade = (Mid-Term + Final + 10 Highest Quizzes + 2 Highest Extra Credit Assignments) / 3
+
+- The grading scale will be as follows: 100-90 A, 80-89 B, 70-79 C, 60-69 D, 59-0 F
+
+Incomplete Grades: Incompletes are awarded for non-academic reasons at the instructor’s discretion, and
+not at students’ discretion.
+
+Note: For all other questions related to grading policy, see the KSU 2020-2021 undergraduate catalogue. 
+\newpage
+
+## Tentative Schedule {-}
+*Note*: This is my first semester using Case/Fair/Oster. I may adjust the schedule as the semester progresses. Any updates will be posted on D2L.
+
+### `r advdate(mon, 1)`: Course Introduction and Introduction to Macroeconomics (Ch 5) {-}
+
+
+### `r advdate(mon, 2)`: Measuring Output (Ch 6) {-}
+
+
+### `r advdate(mon, 3)`: Unemployment inflation and Long-run growth (Ch 7) {-}
+
+
+
+
+### `r advdate(mon, 4)`: Aggregate Expenditure (Ch 8)  {-}
+
+
+
+
+### `r advdate(mon, 5)`: Government and Fiscal Policy (Ch 9) {-}
+
+
+### `r advdate(mon, 6)`: Money and the Fed (Ch 10) {-}
+
+### `r advdate(mon, 7)`: Aggregate Output, the Price Level, and Interest Rates (Ch 11) {-}
+
+### `r advdate(mon, 8)`: **Midterm Exam** {-}
+
+### `r advdate(mon, 9)`: Spring Break {-}
+
+### `r advdate(mon, 10)`: Policy in AS/AD Model (Ch 12) {-}
+
+### `r advdate(mon, 11)`: Labor Market in Macro (CH 13) {-}
+
+
+### `r advdate(mon, 12)`: Financial Crises (Ch 14) {-}
+
+
+### `r advdate(mon, 13)`: Long-Run Growth (Ch 16) {-} 
+
+### `r advdate(mon, 14)`: Alternative Views of Macroeconomics (Ch 17) {-}
+
+### `r advdate(mon, 15)`: Open Economy Macro (Ch 19) {-}
+
+
+### `r advdate(mon, 16)`: **Final Exam** {-}
+
+**Note**: Changes to this course outline and schedule, if needed, will be announced through the Class Café
+discussion, via D2L email, or both. It is the responsibility of students to stay aware of changes that may occur
+during the semester.
+
+# Course Policies
+
+**Instructor Contact Information:** If I am online in D2L and available, you are welcome to initiate a chat. If I'm
+online, click the "Send Chat Invitation" button. If it is not a convenient time to engage in a conversation, I will
+decline the invitation - please follow-up by sending me a D2L e-mail message.
+
+During D2L maintenance, or if you are unable to access it – You may contact me through campus e-mail at
+balbrec4@kennesaw.edu
+
+**Instructor Response:** Questions of a general nature should be asked in the Class Café discussion.
+Students are encouraged to answer and help other students. 
+
+Specific questions for the instructor should be emailed through D2L. Responses will be provided within 24 hours during
+the business week. Questions received on weekends will be answered at first opportunity on Monday. Feedback and
+scores on graded work are provided within one week of the assignment due date. 
+
+**Late Assignments:** Late assignments will NOT be accepted. Check the calendar for the due dates. In the event of a
+server failure or natural occurrences, students are required to submit assignments through campus e-mail (to:
+balbrec4@kennesaw.edu) PRIOR to the expiration time of the assignment. 
+
+**Important:** DO NOT WAIT until a few minutes before an assignment is due. Taking an Online Quiz, uploading your Short
+Essay document, or posting your Online Discussion Question response will take time, and will depend on file size, the
+processing speed of your computer, the speed of your internet connection, and the load on the server. Assignment
+submission times are recorded
+
+**Important:** D2L has scheduled maintenance times. These dates/times are determined in advance and displayed when
+you log into VISTA. You are responsible for noting these and adjusting your schedule accordingly. Late assignments will
+not be accepted because of D2L inaccessibility due to scheduled maintenance. 
+
+# University Policies
+
+## Academic Integrity Statement
+Every KSU student is responsible for upholding the provisions of the Student Code of Conduct, as published in
+the Undergraduate and Graduate Catalogs. Section 5c of the Student Code of Conduct addresses the University
+’s policy on academic honesty, including provisions regarding plagiarism and cheating, unauthorized access
+to university materials, misrepresentation/falsification of university records or academic work, malicious
+removal, retention, or destruction of library materials, malicious/intentional misuse of computer facilities and/or
+services, and misuse of student identification cards. Incidents of alleged academic misconduct will be
+handled through the established procedures of the Department of Student Conduct and Academic
+Integrity(SCAI, which includes either an “informal” resolution by a faculty member, resulting in a grade
+adjustment, or a formal hearing procedure, which may subject a student to the Code of Conduct’s
+minimum one semester suspension requirement. See also https://web.kennesaw.edu/scai/content/
+ksu-student-code-conduct
+## Disruptive Behavior
+Belligerent, abusive, profane, threatening and/or inappropriate behavior on the part of students is a violation of
+the KSU Student Code of Conduct. According to university policy regarding disruptive behavior, students who
+are found in violation of the Code of Conduct may be subject to immediate dismissal from the university. Also,
+those violations, which may constitute misdemeanor or felony violations of state or federal law, may also be
+subject to criminal action beyond the university disciplinary process. 
+
+## Special Needs & Accommodations
+Kennesaw State University provides program accessibility and reasonable accommodations for persons
+defined as disabled under Section 504 of the Rehabilitation Act of 1973 and the Americans with
+Disabilities Act of 1990. Students with disabilities who require accommodations (academic adjustments and/
+or auxiliary aids or services) for this course must contact the Office for Disabled Student Support Services,
+ADA Compliance Officer for Students, at 770-423-6443 (V) or 770-423-6480 (TDD). Please do not request
+accommodations directly from the professor or instructor without a letter of accommodation from the
+Office for Disabled Student Support Services. For additional information, please visit: http://www.kennesaw.edu/stu_dev/dsss/dsss.html.
+## Student Code of Conduct – Strictly Enforced
+
+### Plagiarism and Cheating
+No student shall receive, attempt to receive, knowingly give or attempt to give unau-thorized assistance in
+the preparation of any work required to be submitted for credit as part of a course (including exami¬nations,
+laboratory reports, essays, themes, term papers, etc.). When direct quotations are used, they should be
+indicated, and when the ideas, theories, data, figures, graphs, programs, electronic based infor¬mation or
+illustrations of someone other than the student are incorporated into a paper or used in a project, they should
+be duly acknowledged.
+
+### Translated Examples of Academic Dishonesty Covered Under the Student Code of Conduct
+All graded work is to be performed by the individual, unless otherwise specified as a group project. Work
+submitted that is not representative of individual effort is prohibited and considered a violation of the code of
+conduct. This includes the shared use of electronic files. Use of any electronic file not specifically made
+available to the individual in the currently enrolled course is prohibited and considered a violation of the
+code of conduct. In a credit-generating course where class attendance/participation is tied directly to a
+grading structure or point system, misrepresentation of attendance/participation is considered a
+violation of the code of conduct. On-line examinations are subject to the same classroom setting
+protocols as traditional examinations. 

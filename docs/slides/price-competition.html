@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="" xml:lang="">
   <head>
     <title>Price Competition and the Use of Consumer Data</title>
-    <meta charset="utf-8">
-    <meta name="author" content="Brian C. Albrecht   University of Minnesota  Department of Economics" />
-    <meta name="date" content="2020-07-06" />
-    <link rel="stylesheet" href="https:\\briancalbrecht.github.io\defaults\brian-xaringan-themer.css" type="text/css" />
+    <meta charset="utf-8" />
+    <meta name="author" content=" Brian C. Albrecht  Kennesaw State University" />
+    <script src="price-competition_files/xaringanExtra-webcam-0.0.1/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <script src="price-competition_files/fabric-4.3.1/fabric.min.js"></script>
+    <link href="price-competition_files/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="price-competition_files/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30}) })</script>
+    <link rel="stylesheet" href="https://briancalbrecht.github.io/defaults/brian-xaringan-themer.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: left, middle, inverse, title-slide
 
-# Price Competition and the Use of Consumer Data
-### Brian C. Albrecht<br> <span style="font-size: 50%;"> University of Minnesota<br> Department of Economics</span>
-### July 6, 2020
+# <span style = 'font-size: 95%;'>Price Competition and the Use of Consumer Data
+### <br>Brian C. Albrecht <span style="font-size: 50%;"> Kennesaw State University</span><br>
+### April 2, 2021 <br><br> Paper <a href="http://bit.ly/bca-price-comp">bit.ly/bca-price-comp</a>
 
 ---
+
+
 
 Consumer Data and Price Discrimination
 ====================================
@@ -42,7 +49,7 @@ Competition and Price Discrimination
 
 -  Studying this aspect of price discrimination requires an explicit model of competition
 
--  We know price discrimination can **raise consumer surplus**
+-  With competition, price discrimination can **raise consumer surplus**
     - *e.g.* Holmes (1989)
     
 --
@@ -52,11 +59,11 @@ Competition and Price Discrimination
 
 --
 
-- Goal: build a model that does not rely on specific details of the data
+- Goal: build a model that does not rely on specific data
   - **Robust mechanism design** (Bergemann &amp; Morris 2013)
 
 ---
-My Dissertation Chapter
+This Paper
 ====================================
 
 .left-column[
@@ -91,7 +98,7 @@ Environment Considered
 
 --
 
--  Definition: a market for seller is a distribution of types of buyers
+-  Definition: a **market** for seller is a distribution of types
 
     - Example: `\(\left(\frac{1}{4}, \frac{1}{6}, \frac{7}{12}\right)\)`
 
@@ -110,9 +117,13 @@ Main Results
 --
 
 - **Bounds**
+
   - Max consumer surplus: complete public data
   - Min consumer surplus with public data: nested markets
-  - Lower consumer surplus with private data: (conjecture a specific bound, do not have proof yet)
+
+--
+
+- Can lower consumer surplus with private data
     
 
 
@@ -165,7 +176,7 @@ Information Structure
 
 - Define the rest of the game fixing `\((S, \pi)\)`
 
-- Most price discrimination models fix an implicit information structure
+- Most models fix an implicit information structure
 
 
 
@@ -188,8 +199,9 @@ Strategies for Fixed `\((S, \pi)\)`
 
 --
 
-- Buyers: choose which seller (or no seller) to maximize value minus price
+- Buyers: choose seller (or no seller) to max value minus price
   
+  - Buyers' problem is simple, will mostly ignore
 
 
 
@@ -206,7 +218,7 @@ given `\(F_j(p)\)`, for all `\(s_i,s_j, i, j\)`.
 
 --
 
-- A strategy profile is a **Bayes correlated equilibrium (BCE)** if it is a BNE for some information structure (Bergemann &amp; Morris 2016)
+- A strategy profile is a **Bayes correlated equilibrium (BCE)** if &lt;br&gt; it is  a BNE for some information structure &lt;br&gt;(Bergemann &amp; Morris 2016)
 
 ---
 Road Map for Today's Talk
@@ -229,16 +241,27 @@ Complete Information: Perfect PD
 
 - One case is complete information: `\(s_1 = s_2 = v\)`
 
+--
+
 - Three markets:
 
+--
+
   - Loyal to Seller 1 market: price = 1
-  
+
+--
+
   - Loyal to Seller 2 market: price = 1
-  
+
+--
+
   - Indifferent customer market: price = 0
 
+--
 
 - If `\(v_i=0\)`, seller `\(j\)` sets monopoly price of 1
+
+--
 
 - If `\(v_1=v_2=1\)`, both sellers set competitive price of 0
 
@@ -280,7 +303,11 @@ No Information: No PD
 
 - Conditional on `\(v_1 =1\)`, seller 1 assigns probability `\(\frac{m_{10}}{m_{10} + m_{11}}\)` to being the monopolist
 
+--
+
 - Regardless of what seller 2 does, seller 1 will never set a price below `\(\underline{p} =\frac{m_{10}}{m_{10} + m_{11}}\)`
+
+--
 
 - Neither will seller 2
 
@@ -296,7 +323,10 @@ Lemma (Narasimhan 1988)
 ===========================
 Let `\(m_{10} \geq m_{01}\)`. The unique BNE profit is `\(m_{10}\)` for seller 1 and `\(\frac{m_{10}}{m_{10} + m_{11}}(1-m_{10})\)` for seller 2. The unique strategies are given by
 
+--
+
 `$$F^*_1(p) = \begin{cases} \begin{aligned} &amp; 0 &amp; &amp;p&lt; \underline{p}&amp;\\ &amp; 1 - \frac{\underline{p}(m_{11} + m_{01}) - p m_{01}}{pm_{11}} &amp; &amp;p \in \left[\underline{p}, 1\right)&amp;\\ &amp; 1 &amp; &amp;p\geq 1 &amp; \end{aligned}\end{cases}$$`
+--
 
 and
 
@@ -383,7 +413,29 @@ Concavification
 =========================
 - Bayes' Law only restricts the ex-post distributions of types to sum to the prior
 
-- We can maximize/minimize over all feasible markets by "concavification" of the consumer surplus function (Kamenica and Gentzkow 2011)
+--
+
+  - Before a coin flip, prior probability of heads is 1/2
+
+  - After a coin flip, half the time posterior probability of heads is 0, half the time it is 1
+  
+  - Bayes' Law: `\(1/2 = 1/2 \times 0 + 1/2 \times 1\)`
+  
+--
+  
+  - We can maximize/minimize over all feasible markets by "concavification" of the consumer surplus function
+
+    - Kamenica and Gentzkow 2011
+---
+Concavification
+=========================
+
+
+
+ ![](./images/pricecomp/concavification.png)
+---
+Concavification
+=========================
 
 - Max feasible consumer surplus is equal to lowest concave envelope of the consumer surplus function at the prior (aggregate market)
 
@@ -479,7 +531,7 @@ One Firm Private Data
 
 - In general, profits/consumer surplus can go up or down
 
-`$$m_{10} +m_{01} + m_{01}(1-m_{01}) \lessgtr m_{10} + \frac{m_{10}}{m_{10} + m_{11}}(1-m_{10})$$`
+&lt;!-- `$$m_{10} +m_{01} + m_{01}(1-m_{01}) \lessgtr m_{10} + \frac{m_{10}}{m_{10} + m_{11}}(1-m_{10})$$` --&gt;
 
 ---
 background-image: url(./images/pricecomp/pricing_example4.png)
@@ -500,11 +552,6 @@ Symmetric Markets
 
 - Proof is just from comparing profit functions
 
---
-
-- It is a simple comparison of profit functions
-  - Not sure of interesting comparisons???
-  - This is why bounding all information structures is more relevant
 
 
 ---
@@ -522,7 +569,11 @@ Construction
 
 - Imagine an information designer who reveals consumer data to the firms and recommends an incentive-compatible price
 
+--
+
 - The designer's problem is choose information and allocations to maximize project, subject to the allocation is a BNE given the information 
+
+--
 
 - Suppose the designer commits the following information for the indifferent consumers, only partially revealing the indifferent consumers
 
@@ -535,13 +586,27 @@ Proof
 
 - First, fix the information: `\(\alpha_1\)` and `\(\alpha_2\)`
 
+--
+
 - Consider when firm 1 receives a signal and knows the consumer is indifferent
+
+--
 
 - Prices will not be driven to zero because firm 1 does not know whether firm 2 knows that the consumer is indifferent
 
+---
+Proof Cont.
+============
+
 - With probability `\(\alpha_1\)`, firm 2 did not receive a signal and will, therefore, follow the designer's recommend strategy and set a price of 1.
 
+--
+
+
 - Otherwise, firm 2 will price according to a distribution over `\([\underline{p},1]\)`.
+
+--
+
 
 - How high can the designer raises firm 2's pricing distribution and still remain incentive compatible?
 
@@ -560,7 +625,7 @@ Proof Cont.
 
 - We have constructed incentive compatible strategies for when the firm receives no signal
 
-- Now we need to do the same for after a signal
+- Now we need to do the same for after not receiving a signal
 
 
 ---
@@ -622,23 +687,70 @@ Conclusion
   - Min consumer surplus with public data: nested markets
   - Lower consumer surplus with private data
     </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "ratio": "16:9",
 "class": ["left", "middle"],
-"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div>` "
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>`\n"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
-(function() {
-  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
   if (!r) return;
   s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
   d.head.appendChild(s);
-})();</script>
+})(document);
 
-<script>
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
 (function() {
   var links = document.getElementsByTagName('a');
   for (var i = 0; i < links.length; i++) {
@@ -646,12 +758,11 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
       links[i].target = '_blank';
     }
   }
-})();
-</script>
+})();</script>
 
 <script>
-(function() {
-  var i, text, code, codes = document.getElementsByTagName('code');
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
   for (i = 0; i < codes.length;) {
     code = codes[i];
     if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
@@ -665,7 +776,8 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     i++;
   }
-})();
+};
+slideshow._releaseMath(document);
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

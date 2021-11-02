@@ -3,14 +3,14 @@ title:
 author:
 date:
 output:
-  bookdown::gitbook:
   bookdown::pdf_document2:
     citation_package: natbib
     fig_caption: yes
     keep_tex: yes
     latex_engine: pdflatex
-    template: C:/Users/Brian/Documents/briancalbrecht.github.io/defaults/svm-latex-syllabus.tex
+    template: https://briancalbrecht.github.io/defaults/svm-latex-syllabus.tex
     toc: no
+  bookdown::gitbook:
   bookdown::html_document2:
     toc: yes
   config:
@@ -67,8 +67,6 @@ advdate <- function(obj, adv) {
 library(RefManageR)
 library(knitcitations)
 library(rcrossref)
-bib <- ReadBib("C:/Users/brian/Documents/githubprivate/defaults/library.bib")
-myopts <- BibOptions(bib.style = "authoryear", style="latex", first.inits=FALSE, max.names = 20)
 ```
 
 # Chicago Price Theory Reading Group {-}
