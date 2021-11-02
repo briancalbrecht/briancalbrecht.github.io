@@ -59,7 +59,6 @@ Wampum was **NOT** Iroquois Money
 
 - So why was wampum “the magnet which drew the beaver out”? `r Citep(myBib, "Weeden1884")`
     
-- Today's talk lays out and partially resolves some puzzles about wampum as money and non-money
 ]
 
 .right-column[<img src="https://briancalbrecht.github.io/docs/slides/images/wampum/iroquois.png" width="100%" align="middle" />
@@ -115,9 +114,13 @@ Medium of Exchange in Fur Trade
 - The arrival of Europeans
   - Created single coincidence of wants
   
-- Wampum overcame the issue of single coincidence of wants
+- Europeans had cloths, wanted furs
 
-- Near perfect example of Menger, `r Citet(myBib, "Kiyotaki1989")`
+- Algonquian had wampum, wanted cloths
+
+- Iroquois had furs, wanted wampum
+  
+- Wampum overcame the issue of single coincidence of wants
 
 
 ---
@@ -258,7 +261,7 @@ Screening Role
 
 
 ---
-Hold Up Problem
+Hold Out Problem
 ==========================
 
 - After European contact, there was the added threat of violence
@@ -269,32 +272,6 @@ Hold Up Problem
 
 - Acts as a commitment device, compared to trading furs for cloths/tools directly
   - Similar to two-stage trading in `r Citet(myBib, "Leeson2007")`
-
----
-Institutional Shock
-===================================
-
- - However, European arrival brought European tools
-
- - Production costs decreased by factor of ten
-
- - Wampum production skyrockets
-  - Some early anthropologists thought wampum only came after European contact
-
- - Colonists would promise more than they would deliver 
-  - Goods, protection, land
-
----
-Institutional Importance
-===================================
-
-
-- Instead wampum became **even more important** in forest diplomacy
-
-- 18th century saw forest diplomacy’s “perfection” (Fenton 1998, 7)
-
-
-
 
 ---
 The Wampum Legacy
@@ -311,9 +288,5 @@ The Wampum Legacy
   - Screening
 
 - After colonial expansion, wampum became ineffective
-
-- Yet, the Iroquois continued to rely on wampum 
-  - Possible tension: Iroquois kept wampum because certain people still benefited 
-
 
 
